@@ -110,9 +110,28 @@ def repair_turn(seed: dict, variant: int):
     pat = chosen(seed, variant, 4, "repair-v2", r.CORRECTION_PATTERNS)
     return r.base.tidy_en(pat.format(x=clip_en(x), y=clip_en(y))), yue
 
+# Some officer shapes already contain the state cue, while a few do not.  A short
+# natural discourse heading guarantees that two encounters of the same scenario
+# cannot collapse to identical Cantonese without creating a reusable 10-Han
+# fingerprint.  Multiple headings per state avoid a new dialogue-wide tic.
+STATE_HEADS = [
+    ["今次先講", "初步睇", "第一輪先", "啱啱開始"],
+    ["今次再跟", "再聯絡呢次", "跟進嗰邊", "再睇返"],
+    ["文件呢邊", "對返文件", "兩份分開睇", "先對版本"],
+    ["限期呢邊", "到期前先", "先照日子", "時間嗰邊"],
+    ["覆核呢邊", "睇結果先", "決定嗰邊", "覆核前先"],
+]
+_old_officer = r.officer
+
+def officer(seed: dict, variant: int, action: int):
+    en, yue = _old_officer(seed, variant, action)
+    head = chosen(seed, variant, action, "state-head", STATE_HEADS[variant])
+    return en, r.f2.clean_yue(f"{head}，{yue}")
+
 r.client_model = client_model
 r.client_turn = client_turn
 r.repair_turn = repair_turn
+r.officer = officer
 
 if __name__ == "__main__":
     raise SystemExit(r.main())
