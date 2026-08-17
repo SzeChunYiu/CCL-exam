@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "rewrites": [{ "source": "/", "destination": "/web/index.html" }],
+  "headers": [
+    { "source": "/practice_pack/dialogues_metadata.json", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, s-maxage=3600" }] }
+  ]
+}
