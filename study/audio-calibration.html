@@ -1,13 +1,14 @@
-<h1>Audio Pace Calibration</h1>
-<p>The default <strong>1.0×</strong> MP3 speed is calibrated against the downloadable NAATI Cantonese CCL practice recordings. Those recordings are old CCL materials supplied by NAATI for preparation; they are <strong>not redistributed</strong> in this repository.</p>
+<h1>Audio Pace & Voice Calibration</h1>
+<p>The supplied Cantonese CCL practice recordings were used as a pacing and delivery benchmark. Source speech was measured separately from the chime and inter-segment silence.</p>
 <h2>Measured reference pace</h2>
-<p>Across six downloadable Cantonese practice recordings, source-speech timing was measured separately from the chime and inter-segment silence. The published PDF word counts were used for English; English translation word counts were used as an equivalent-length measure for Cantonese.</p>
 <ul>
-<li>English: approximately <strong>160 words per minute</strong> overall.</li>
-<li>Cantonese: approximately <strong>179 English-equivalent words per minute</strong> overall.</li>
-<li>Real speakers naturally vary by segment, syntax and pause pattern.</li>
+<li>English median: about <strong>160 words per minute</strong>; most measured segments were roughly <strong>141–196 wpm</strong>.</li>
+<li>Cantonese: about <strong>4.0 Chinese characters per second</strong>; most measured segments were roughly <strong>3.5–4.4 characters/second</strong>.</li>
+<li>Real speakers vary naturally: short reactions may be quick, while condition-heavy sentences contain small pauses and emphasis.</li>
 </ul>
-<h2>Practice audio target</h2>
-<p>The independent synthetic MP3 generator targets that average pace at <strong>1.0×</strong>. Mock Exam mode locks playback to 1.0×. Training modes offer slower/faster playback. Browser speech synthesis is only a fallback and its pace depends on the device and installed voice.</p>
-<h2>Important limitation</h2>
-<p>Matching the average pace of downloadable practice recordings does <strong>not</strong> mean a live CCL recording will use one fixed speaking rate. The calibration is for realistic practice difficulty, not a guarantee about future test audio.</p>
+<h2>V3 audio</h2>
+<p>V3 uses prerecorded <strong>Microsoft neural synthetic voices</strong> stored as individual MP3 segments in Supabase Storage. It alternates Australian-English voices <strong>William / Natasha</strong> and Hong Kong Cantonese voices <strong>WanLung / HiuGaai</strong> by speaker role.</p>
+<p>The target synthesis rate is normal speed for Australian English and a small +5% adjustment for Cantonese, chosen to move the generated material toward the measured sample pace without flattening every segment into one mechanical duration.</p>
+<h2>Playback</h2>
+<p>Mock Exam mode uses 1.0×. Training modes can use 0.9×, 1.0× or 1.08×. The two-tone interpretation cue is generated after each neural source segment. Legacy bundled audio and a suitable device voice are fallback paths only.</p>
+<div class="notice"><strong>Important:</strong> these are synthetic practice voices, not official NAATI recordings or human actors. Matching the reference pace is intended to improve practice realism, not to predict the exact speed of a future live test.</div>
