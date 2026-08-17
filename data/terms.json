@@ -1893,8 +1893,8 @@
   ],
   "yueAliases": [
    "HECS-HELP 學費貸款",
-   "HECS",
-   "HELP"
+   "HELP",
+   "HECS"
   ],
   "critical": false
  },
@@ -2024,8 +2024,8 @@
   "topic": "Australian services",
   "enAliases": [
    "my Gov",
-   "MyGov",
-   "myGov"
+   "myGov",
+   "MyGov"
   ],
   "yueAliases": [
    "myGov 政府網上戶口",
