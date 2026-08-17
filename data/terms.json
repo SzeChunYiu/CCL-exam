@@ -1,0 +1,2409 @@
+[
+ {
+  "en": "Australian Financial Complaints Authority, or AFCA",
+  "yue": "澳洲金融投訴局，即係 AFCA",
+  "topic": "Insurance",
+  "enAliases": [
+   "Australian Financial Complaints Authority",
+   "AFCA"
+  ],
+  "yueAliases": [
+   "澳洲金融投訴局",
+   "AFCA"
+  ],
+  "critical": false
+ },
+ {
+  "en": "superannuation guarantee contribution",
+  "yue": "法定退休金供款",
+  "topic": "Employment",
+  "enAliases": [
+   "superannuation guarantee contribution"
+  ],
+  "yueAliases": [
+   "法定退休金供款"
+  ],
+  "critical": false
+ },
+ {
+  "en": "NSW Civil and Administrative Tribunal, or NCAT",
+  "yue": "新州民事及行政審裁處，即係 NCAT",
+  "topic": "Housing",
+  "enAliases": [
+   "NSW Civil and Administrative Tribunal",
+   "NCAT"
+  ],
+  "yueAliases": [
+   "新州民事及行政審裁處",
+   "NCAT"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Visa Entitlement Verification Online, or VEVO",
+  "yue": "網上簽證權益查核系統，即係 VEVO",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "Visa Entitlement Verification Online",
+   "VEVO"
+  ],
+  "yueAliases": [
+   "網上簽證權益查核系統",
+   "VEVO"
+  ],
+  "critical": true
+ },
+ {
+  "en": "Vocational Education and Training, or VET",
+  "yue": "職業教育及培訓，即係 VET",
+  "topic": "Education",
+  "enAliases": [
+   "Vocational Education and Training",
+   "VET"
+  ],
+  "yueAliases": [
+   "職業教育及培訓",
+   "VET"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Pharmaceutical Benefits Scheme, or PBS",
+  "yue": "藥物福利計劃，即係 PBS",
+  "topic": "Health",
+  "enAliases": [
+   "Pharmaceutical Benefits Scheme",
+   "PBS"
+  ],
+  "yueAliases": [
+   "藥物福利計劃",
+   "PBS"
+  ],
+  "critical": false
+ },
+ {
+  "en": "BPAY customer reference number",
+  "yue": "BPAY 客戶參考號碼",
+  "topic": "Financial",
+  "enAliases": [
+   "BPAY customer reference number"
+  ],
+  "yueAliases": [
+   "BPAY 客戶參考號碼",
+   "BPAY"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Adult Migrant English Program, or AMEP",
+  "yue": "成人移民英語計劃，即係 AMEP",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "Adult Migrant English Program",
+   "AMEP"
+  ],
+  "yueAliases": [
+   "成人移民英語計劃",
+   "AMEP"
+  ],
+  "critical": false
+ },
+ {
+  "en": "financial hardship assistance",
+  "yue": "財務困難援助",
+  "topic": "Financial",
+  "enAliases": [
+   "financial hardship assistance"
+  ],
+  "yueAliases": [
+   "財務困難援助"
+  ],
+  "critical": false
+ },
+ {
+  "en": "residential tenancy agreement",
+  "yue": "住宅租約",
+  "topic": "Housing",
+  "enAliases": [
+   "residential tenancy agreement"
+  ],
+  "yueAliases": [
+   "住宅租約"
+  ],
+  "critical": false
+ },
+ {
+  "en": "unfair dismissal application",
+  "yue": "不公平解僱申請",
+  "topic": "Employment",
+  "enAliases": [
+   "unfair dismissal application"
+  ],
+  "yueAliases": [
+   "不公平解僱申請"
+  ],
+  "critical": false
+ },
+ {
+  "en": "flexible working arrangement",
+  "yue": "彈性工作安排",
+  "topic": "Employment",
+  "enAliases": [
+   "flexible working arrangement"
+  ],
+  "yueAliases": [
+   "彈性工作安排"
+  ],
+  "critical": false
+ },
+ {
+  "en": "mental health treatment plan",
+  "yue": "心理健康治療計劃",
+  "topic": "Health",
+  "enAliases": [
+   "mental health treatment plan"
+  ],
+  "yueAliases": [
+   "心理健康治療計劃"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Commonwealth Supported Place, or CSP",
+  "yue": "聯邦資助學額，即係 CSP",
+  "topic": "Education",
+  "enAliases": [
+   "Commonwealth Supported Place",
+   "CSP"
+  ],
+  "yueAliases": [
+   "聯邦資助學額",
+   "CSP"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Business Activity Statement, or BAS",
+  "yue": "業務活動報表，即係 BAS",
+  "topic": "Business",
+  "enAliases": [
+   "Business Activity Statement",
+   "BAS"
+  ],
+  "yueAliases": [
+   "業務活動報表",
+   "BAS"
+  ],
+  "critical": false
+ },
+ {
+  "en": "proprietary limited company, or Pty Ltd",
+  "yue": "私人有限公司，即係 Pty Ltd",
+  "topic": "Business",
+  "enAliases": [
+   "proprietary limited company",
+   "Pty Ltd"
+  ],
+  "yueAliases": [
+   "Pty Ltd",
+   "私人有限公司"
+  ],
+  "critical": false
+ },
+ {
+  "en": "temporary food stall permit",
+  "yue": "臨時食品攤位許可證",
+  "topic": "Business",
+  "enAliases": [
+   "temporary food stall permit"
+  ],
+  "yueAliases": [
+   "臨時食品攤位許可證"
+  ],
+  "critical": false
+ },
+ {
+  "en": "modern award classification",
+  "yue": "現代 award 職級分類",
+  "topic": "Employment",
+  "enAliases": [
+   "modern award classification"
+  ],
+  "yueAliases": [
+   "現代 award 職級分類",
+   "award"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Tax File Number declaration",
+  "yue": "稅務檔案號碼申報",
+  "topic": "Employment",
+  "enAliases": [
+   "Tax File Number declaration"
+  ],
+  "yueAliases": [
+   "稅務檔案號碼申報"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Medicare Urgent Care Clinic",
+  "yue": "Medicare 緊急護理診所",
+  "topic": "Health",
+  "enAliases": [
+   "Medicare Urgent Care Clinic"
+  ],
+  "yueAliases": [
+   "Medicare 緊急護理診所",
+   "Medicare"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Working with Children Check, or WWCC",
+  "yue": "兒童工作審查，即係 WWCC",
+  "topic": "Community",
+  "enAliases": [
+   "Working with Children Check",
+   "WWCC"
+  ],
+  "yueAliases": [
+   "兒童工作審查",
+   "WWCC"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Working with Children Check",
+  "yue": "兒童工作審查",
+  "topic": "Community",
+  "enAliases": [
+   "Working with Children Check"
+  ],
+  "yueAliases": [
+   "兒童工作審查"
+  ],
+  "critical": false
+ },
+ {
+  "en": "internal dispute resolution",
+  "yue": "內部爭議處理",
+  "topic": "Insurance",
+  "enAliases": [
+   "internal dispute resolution"
+  ],
+  "yueAliases": [
+   "內部爭議處理"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Australian Business Number, or ABN",
+  "yue": "澳洲商業號碼，即係 ABN",
+  "topic": "Business",
+  "enAliases": [
+   "Australian Business Number",
+   "ABN"
+  ],
+  "yueAliases": [
+   "澳洲商業號碼",
+   "ABN"
+  ],
+  "critical": true
+ },
+ {
+  "en": "public liability insurance",
+  "yue": "公眾責任保險",
+  "topic": "Business",
+  "enAliases": [
+   "public liability insurance"
+  ],
+  "yueAliases": [
+   "公眾責任保險"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Department of Home Affairs",
+  "yue": "內政部",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "Department of Home Affairs"
+  ],
+  "yueAliases": [
+   "內政部"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Apprehended Violence Order, or AVO",
+  "yue": "暴力禁制令，即係 AVO",
+  "topic": "Legal",
+  "enAliases": [
+   "Apprehended Violence Order",
+   "AVO"
+  ],
+  "yueAliases": [
+   "暴力禁制令",
+   "AVO"
+  ],
+  "critical": false
+ },
+ {
+  "en": "landlord / rental provider",
+  "yue": "業主／出租方",
+  "topic": "Housing",
+  "enAliases": [
+   "landlord / rental provider"
+  ],
+  "yueAliases": [
+   "業主／出租方"
+  ],
+  "critical": false
+ },
+ {
+  "en": "family dispute resolution",
+  "yue": "家庭爭議解決",
+  "topic": "Legal",
+  "enAliases": [
+   "family dispute resolution"
+  ],
+  "yueAliases": [
+   "家庭爭議解決"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Unique Student Identifier, or USI",
+  "yue": "唯一學生識別號碼，即係 USI",
+  "topic": "Education",
+  "enAliases": [
+   "Unique Student Identifier",
+   "USI"
+  ],
+  "yueAliases": [
+   "唯一學生識別號碼",
+   "USI"
+  ],
+  "critical": false
+ },
+ {
+  "en": "registered business name",
+  "yue": "註冊商業名稱",
+  "topic": "Business",
+  "enAliases": [
+   "registered business name"
+  ],
+  "yueAliases": [
+   "註冊商業名稱"
+  ],
+  "critical": false
+ },
+ {
+  "en": "thirty-day trading terms",
+  "yue": "三十日商業付款期",
+  "topic": "Business",
+  "enAliases": [
+   "thirty-day trading terms"
+  ],
+  "yueAliases": [
+   "三十日商業付款期"
+  ],
+  "critical": false
+ },
+ {
+  "en": "qualification assessment",
+  "yue": "學歷評估",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "qualification assessment"
+  ],
+  "yueAliases": [
+   "學歷評估"
+  ],
+  "critical": false
+ },
+ {
+  "en": "parent-teacher interview",
+  "yue": "家長教師面談",
+  "topic": "Education",
+  "enAliases": [
+   "parent-teacher interview"
+  ],
+  "yueAliases": [
+   "家長教師面談"
+  ],
+  "critical": false
+ },
+ {
+  "en": "unauthorised transaction",
+  "yue": "未經授權交易",
+  "topic": "Financial",
+  "enAliases": [
+   "unauthorised transaction"
+  ],
+  "yueAliases": [
+   "未經授權交易"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Australian Consumer Law",
+  "yue": "澳洲消費者法",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "Australian Consumer Law"
+  ],
+  "yueAliases": [
+   "澳洲消費者法"
+  ],
+  "critical": false
+ },
+ {
+  "en": "citizenship appointment",
+  "yue": "入籍預約",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "citizenship appointment"
+  ],
+  "yueAliases": [
+   "入籍預約"
+  ],
+  "critical": false
+ },
+ {
+  "en": "resident parking permit",
+  "yue": "居民泊車許可證",
+  "topic": "Community",
+  "enAliases": [
+   "resident parking permit"
+  ],
+  "yueAliases": [
+   "居民泊車許可證"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Goods and Services Tax, or GST",
+  "yue": "商品及服務稅，即係 GST",
+  "topic": "Business",
+  "enAliases": [
+   "Goods and Services Tax",
+   "GST"
+  ],
+  "yueAliases": [
+   "商品及服務稅",
+   "GST"
+  ],
+  "critical": true
+ },
+ {
+  "en": "personal or sick leave",
+  "yue": "個人假或者病假",
+  "topic": "Employment",
+  "enAliases": [
+   "personal or sick leave"
+  ],
+  "yueAliases": [
+   "個人假或者病假"
+  ],
+  "critical": false
+ },
+ {
+  "en": "hard-waste collection",
+  "yue": "大型廢物收集",
+  "topic": "Community",
+  "enAliases": [
+   "hard-waste collection"
+  ],
+  "yueAliases": [
+   "大型廢物收集"
+  ],
+  "critical": false
+ },
+ {
+  "en": "income tax assessment",
+  "yue": "入息稅評稅通知",
+  "topic": "Financial",
+  "enAliases": [
+   "income tax assessment"
+  ],
+  "yueAliases": [
+   "入息稅評稅通知"
+  ],
+  "critical": false
+ },
+ {
+  "en": "utility apportionment",
+  "yue": "公用事業費用分攤",
+  "topic": "Housing",
+  "enAliases": [
+   "utility apportionment"
+  ],
+  "yueAliases": [
+   "公用事業費用分攤"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Fair Work",
+  "yue": "公平工作專員公署",
+  "topic": "Australian services",
+  "enAliases": [
+   "Fair Work Commission",
+   "Fair Work Ombudsman",
+   "Fair Work"
+  ],
+  "yueAliases": [
+   "公平工作專員公署"
+  ],
+  "critical": true
+ },
+ {
+  "en": "GP",
+  "yue": "家庭醫生",
+  "topic": "Australian services",
+  "enAliases": [
+   "general practitioner",
+   "GP"
+  ],
+  "yueAliases": [
+   "家庭醫生"
+  ],
+  "critical": true
+ },
+ {
+  "en": "annual leave balance",
+  "yue": "年假結餘",
+  "topic": "Employment",
+  "enAliases": [
+   "annual leave balance"
+  ],
+  "yueAliases": [
+   "年假結餘"
+  ],
+  "critical": false
+ },
+ {
+  "en": "enterprise agreement",
+  "yue": "企業協議",
+  "topic": "Employment",
+  "enAliases": [
+   "enterprise agreement"
+  ],
+  "yueAliases": [
+   "企業協議"
+  ],
+  "critical": false
+ },
+ {
+  "en": "interest-free period",
+  "yue": "免息期",
+  "topic": "Financial",
+  "enAliases": [
+   "interest-free period"
+  ],
+  "yueAliases": [
+   "免息期"
+  ],
+  "critical": false
+ },
+ {
+  "en": "rent increase notice",
+  "yue": "加租通知",
+  "topic": "Housing",
+  "enAliases": [
+   "rent increase notice"
+  ],
+  "yueAliases": [
+   "加租通知"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Fair Work Ombudsman",
+  "yue": "Fair Work 公平工作監察專員署",
+  "topic": "Employment",
+  "enAliases": [
+   "Fair Work Ombudsman"
+  ],
+  "yueAliases": [
+   "Fair Work 公平工作監察專員署",
+   "Fair Work"
+  ],
+  "critical": false
+ },
+ {
+  "en": "specialist referral",
+  "yue": "專科轉介信",
+  "topic": "Health",
+  "enAliases": [
+   "specialist referral"
+  ],
+  "yueAliases": [
+   "專科轉介信"
+  ],
+  "critical": false
+ },
+ {
+  "en": "infringement notice",
+  "yue": "違規罰款通知",
+  "topic": "Legal",
+  "enAliases": [
+   "infringement notice"
+  ],
+  "yueAliases": [
+   "違規罰款通知"
+  ],
+  "critical": false
+ },
+ {
+  "en": "academic transcript",
+  "yue": "成績表",
+  "topic": "Education",
+  "enAliases": [
+   "academic transcript"
+  ],
+  "yueAliases": [
+   "成績表"
+  ],
+  "critical": false
+ },
+ {
+  "en": "transaction account",
+  "yue": "交易戶口",
+  "topic": "Financial",
+  "enAliases": [
+   "transaction account"
+  ],
+  "yueAliases": [
+   "交易戶口"
+  ],
+  "critical": false
+ },
+ {
+  "en": "support coordinator",
+  "yue": "支援協調員",
+  "topic": "Social services",
+  "enAliases": [
+   "support coordinator"
+  ],
+  "yueAliases": [
+   "支援協調員"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Centrelink",
+  "yue": "政府福利部門（Centrelink）",
+  "topic": "Australian services",
+  "enAliases": [
+   "Centrelink payment",
+   "Centrelink office",
+   "Centrelink"
+  ],
+  "yueAliases": [
+   "政府福利部門（Centrelink）",
+   "Centrelink"
+  ],
+  "critical": true
+ },
+ {
+  "en": "Services Australia",
+  "yue": "澳洲服務部",
+  "topic": "Australian services",
+  "enAliases": [
+   "Services Australia"
+  ],
+  "yueAliases": [
+   "澳洲服務部"
+  ],
+  "critical": true
+ },
+ {
+  "en": "consumer guarantee",
+  "yue": "消費者保障",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "consumer guarantee"
+  ],
+  "yueAliases": [
+   "消費者保障"
+  ],
+  "critical": false
+ },
+ {
+  "en": "cancellation terms",
+  "yue": "取消條款",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "cancellation terms"
+  ],
+  "yueAliases": [
+   "取消條款"
+  ],
+  "critical": false
+ },
+ {
+  "en": "refund entitlement",
+  "yue": "退款權益",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "refund entitlement"
+  ],
+  "yueAliases": [
+   "退款權益"
+  ],
+  "critical": false
+ },
+ {
+  "en": "cooling-off period",
+  "yue": "冷靜期",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "cooling-off period"
+  ],
+  "yueAliases": [
+   "冷靜期"
+  ],
+  "critical": false
+ },
+ {
+  "en": "out-of-pocket cost",
+  "yue": "自付費用",
+  "topic": "Health",
+  "enAliases": [
+   "out-of-pocket cost"
+  ],
+  "yueAliases": [
+   "自付費用"
+  ],
+  "critical": false
+ },
+ {
+  "en": "urgent care clinic",
+  "yue": "緊急護理診所",
+  "topic": "Health",
+  "enAliases": [
+   "urgent care clinic"
+  ],
+  "yueAliases": [
+   "緊急護理診所"
+  ],
+  "critical": false
+ },
+ {
+  "en": "ImmiAccount update",
+  "yue": "ImmiAccount 資料更新",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "ImmiAccount update"
+  ],
+  "yueAliases": [
+   "ImmiAccount 資料更新",
+   "ImmiAccount"
+  ],
+  "critical": false
+ },
+ {
+  "en": "identity documents",
+  "yue": "身份證明文件",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "identity documents"
+  ],
+  "yueAliases": [
+   "身份證明文件"
+  ],
+  "critical": false
+ },
+ {
+  "en": "settlement service",
+  "yue": "定居支援服務",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "settlement service"
+  ],
+  "yueAliases": [
+   "定居支援服務"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Child Care Subsidy, or CCS",
+  "yue": "托兒津貼，即係 CCS",
+  "topic": "Education",
+  "enAliases": [
+   "Child Care Subsidy",
+   "CCS"
+  ],
+  "yueAliases": [
+   "托兒津貼",
+   "CCS"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Child Care Subsidy",
+  "yue": "托兒津貼",
+  "topic": "Education",
+  "enAliases": [
+   "Child Care Subsidy"
+  ],
+  "yueAliases": [
+   "托兒津貼"
+  ],
+  "critical": false
+ },
+ {
+  "en": "financial hardship",
+  "yue": "財務困難",
+  "topic": "Financial",
+  "enAliases": [
+   "financial hardship"
+  ],
+  "yueAliases": [
+   "財務困難"
+  ],
+  "critical": false
+ },
+ {
+  "en": "rental application",
+  "yue": "租屋申請",
+  "topic": "Housing",
+  "enAliases": [
+   "rental application"
+  ],
+  "yueAliases": [
+   "租屋申請"
+  ],
+  "critical": false
+ },
+ {
+  "en": "termination notice",
+  "yue": "終止租約通知",
+  "topic": "Housing",
+  "enAliases": [
+   "termination notice"
+  ],
+  "yueAliases": [
+   "終止租約通知"
+  ],
+  "critical": false
+ },
+ {
+  "en": "routine inspection",
+  "yue": "例行租屋檢查",
+  "topic": "Housing",
+  "enAliases": [
+   "routine inspection"
+  ],
+  "yueAliases": [
+   "例行租屋檢查"
+  ],
+  "critical": false
+ },
+ {
+  "en": "proof of ownership",
+  "yue": "物品擁有證明",
+  "topic": "Insurance",
+  "enAliases": [
+   "proof of ownership"
+  ],
+  "yueAliases": [
+   "物品擁有證明"
+  ],
+  "critical": false
+ },
+ {
+  "en": "proof of purchase",
+  "yue": "購買證明",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "proof of purchase"
+  ],
+  "yueAliases": [
+   "購買證明"
+  ],
+  "critical": false
+ },
+ {
+  "en": "discharge summary",
+  "yue": "出院摘要",
+  "topic": "Health",
+  "enAliases": [
+   "discharge summary"
+  ],
+  "yueAliases": [
+   "出院摘要"
+  ],
+  "critical": false
+ },
+ {
+  "en": "visa grant notice",
+  "yue": "簽證批准通知",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "visa grant notice"
+  ],
+  "yueAliases": [
+   "簽證批准通知"
+  ],
+  "critical": false
+ },
+ {
+  "en": "witness statement",
+  "yue": "證人供詞",
+  "topic": "Legal",
+  "enAliases": [
+   "witness statement"
+  ],
+  "yueAliases": [
+   "證人供詞"
+  ],
+  "critical": false
+ },
+ {
+  "en": "local intake area",
+  "yue": "本地收生區",
+  "topic": "Education",
+  "enAliases": [
+   "local intake area"
+  ],
+  "yueAliases": [
+   "本地收生區"
+  ],
+  "critical": false
+ },
+ {
+  "en": "attendance record",
+  "yue": "出席紀錄",
+  "topic": "Education",
+  "enAliases": [
+   "attendance record"
+  ],
+  "yueAliases": [
+   "出席紀錄"
+  ],
+  "critical": false
+ },
+ {
+  "en": "insurance premium",
+  "yue": "保費",
+  "topic": "Insurance",
+  "enAliases": [
+   "insurance premium"
+  ],
+  "yueAliases": [
+   "保費"
+  ],
+  "critical": false
+ },
+ {
+  "en": "JobSeeker Payment",
+  "yue": "JobSeeker 求職者補助金",
+  "topic": "Social services",
+  "enAliases": [
+   "JobSeeker Payment"
+  ],
+  "yueAliases": [
+   "JobSeeker 求職者補助金",
+   "JobSeeker"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Parenting Payment",
+  "yue": "育兒補助金",
+  "topic": "Social services",
+  "enAliases": [
+   "Parenting Payment"
+  ],
+  "yueAliases": [
+   "育兒補助金"
+  ],
+  "critical": false
+ },
+ {
+  "en": "service agreement",
+  "yue": "服務協議",
+  "topic": "Social services",
+  "enAliases": [
+   "service agreement"
+  ],
+  "yueAliases": [
+   "服務協議"
+  ],
+  "critical": false
+ },
+ {
+  "en": "substantive visa",
+  "yue": "實質簽證",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "substantive visa"
+  ],
+  "yueAliases": [
+   "實質簽證"
+  ],
+  "critical": false
+ },
+ {
+  "en": "pet registration",
+  "yue": "寵物登記",
+  "topic": "Community",
+  "enAliases": [
+   "pet registration"
+  ],
+  "yueAliases": [
+   "寵物登記"
+  ],
+  "critical": false
+ },
+ {
+  "en": "community centre",
+  "yue": "社區中心",
+  "topic": "Community",
+  "enAliases": [
+   "community centre"
+  ],
+  "yueAliases": [
+   "社區中心"
+  ],
+  "critical": false
+ },
+ {
+  "en": "condition report",
+  "yue": "物業狀況報告",
+  "topic": "Housing",
+  "enAliases": [
+   "condition report"
+  ],
+  "yueAliases": [
+   "物業狀況報告"
+  ],
+  "critical": false
+ },
+ {
+  "en": "property manager",
+  "yue": "物業管理員／租務經理",
+  "topic": "Housing",
+  "enAliases": [
+   "property manager"
+  ],
+  "yueAliases": [
+   "物業管理員／租務經理"
+  ],
+  "critical": false
+ },
+ {
+  "en": "emergency relief",
+  "yue": "緊急生活援助",
+  "topic": "Social services",
+  "enAliases": [
+   "emergency relief"
+  ],
+  "yueAliases": [
+   "緊急生活援助"
+  ],
+  "critical": false
+ },
+ {
+  "en": "incident report",
+  "yue": "事故報告",
+  "topic": "Employment",
+  "enAliases": [
+   "incident report"
+  ],
+  "yueAliases": [
+   "事故報告"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Bridging Visa A",
+  "yue": "A 類過橋簽證",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "Bridging Visa A"
+  ],
+  "yueAliases": [
+   "A 類過橋簽證"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Bridging Visa B",
+  "yue": "B 類過橋簽證",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "Bridging Visa B"
+  ],
+  "yueAliases": [
+   "B 類過橋簽證"
+  ],
+  "critical": false
+ },
+ {
+  "en": "noise complaint",
+  "yue": "噪音投訴",
+  "topic": "Community",
+  "enAliases": [
+   "noise complaint"
+  ],
+  "yueAliases": [
+   "噪音投訴"
+  ],
+  "critical": false
+ },
+ {
+  "en": "redraw facility",
+  "yue": "提取多還款項功能",
+  "topic": "Financial",
+  "enAliases": [
+   "redraw facility"
+  ],
+  "yueAliases": [
+   "提取多還款項功能"
+  ],
+  "critical": false
+ },
+ {
+  "en": "tenant / renter",
+  "yue": "租客",
+  "topic": "Housing",
+  "enAliases": [
+   "tenant / renter"
+  ],
+  "yueAliases": [
+   "租客"
+  ],
+  "critical": false
+ },
+ {
+  "en": "policy schedule",
+  "yue": "保單資料表",
+  "topic": "Insurance",
+  "enAliases": [
+   "policy schedule"
+  ],
+  "yueAliases": [
+   "保單資料表"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Rent Assistance",
+  "yue": "租金援助",
+  "topic": "Social services",
+  "enAliases": [
+   "Rent Assistance"
+  ],
+  "yueAliases": [
+   "租金援助"
+  ],
+  "critical": false
+ },
+ {
+  "en": "casual loading",
+  "yue": "臨時僱員附加薪酬",
+  "topic": "Employment",
+  "enAliases": [
+   "casual loading"
+  ],
+  "yueAliases": [
+   "臨時僱員附加薪酬"
+  ],
+  "critical": false
+ },
+ {
+  "en": "personal leave",
+  "yue": "個人假",
+  "topic": "Employment",
+  "enAliases": [
+   "personal leave"
+  ],
+  "yueAliases": [
+   "個人假"
+  ],
+  "critical": false
+ },
+ {
+  "en": "superannuation",
+  "yue": "退休金",
+  "topic": "Employment",
+  "enAliases": [
+   "superannuation"
+  ],
+  "yueAliases": [
+   "退休金"
+  ],
+  "critical": false
+ },
+ {
+  "en": "treatment plan",
+  "yue": "治療計劃",
+  "topic": "Health",
+  "enAliases": [
+   "treatment plan"
+  ],
+  "yueAliases": [
+   "治療計劃"
+  ],
+  "critical": false
+ },
+ {
+  "en": "antenatal care",
+  "yue": "產前護理",
+  "topic": "Health",
+  "enAliases": [
+   "antenatal care"
+  ],
+  "yueAliases": [
+   "產前護理"
+  ],
+  "critical": false
+ },
+ {
+  "en": "visa condition",
+  "yue": "簽證條件",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "visa condition"
+  ],
+  "yueAliases": [
+   "簽證條件"
+  ],
+  "critical": false
+ },
+ {
+  "en": "bail condition",
+  "yue": "保釋條件",
+  "topic": "Legal",
+  "enAliases": [
+   "bail condition"
+  ],
+  "yueAliases": [
+   "保釋條件"
+  ],
+  "critical": false
+ },
+ {
+  "en": "concession fee",
+  "yue": "優惠收費",
+  "topic": "Community",
+  "enAliases": [
+   "concession fee"
+  ],
+  "yueAliases": [
+   "優惠收費"
+  ],
+  "critical": false
+ },
+ {
+  "en": "offset account",
+  "yue": "對沖戶口",
+  "topic": "Financial",
+  "enAliases": [
+   "offset account"
+  ],
+  "yueAliases": [
+   "對沖戶口"
+  ],
+  "critical": false
+ },
+ {
+  "en": "make-safe work",
+  "yue": "防止損失擴大嘅緊急工程",
+  "topic": "Insurance",
+  "enAliases": [
+   "make-safe work"
+  ],
+  "yueAliases": [
+   "防止損失擴大嘅緊急工程"
+  ],
+  "critical": false
+ },
+ {
+  "en": "waiting period",
+  "yue": "等候期",
+  "topic": "Insurance",
+  "enAliases": [
+   "waiting period"
+  ],
+  "yueAliases": [
+   "等候期"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Medicare",
+  "yue": "醫療保險（Medicare）",
+  "topic": "Australian services",
+  "enAliases": [
+   "Medicare card",
+   "Medicare"
+  ],
+  "yueAliases": [
+   "醫療保險（Medicare）",
+   "Medicare"
+  ],
+  "critical": true
+ },
+ {
+  "en": "trading terms",
+  "yue": "付款條款",
+  "topic": "Business",
+  "enAliases": [
+   "trading terms"
+  ],
+  "yueAliases": [
+   "付款條款"
+  ],
+  "critical": false
+ },
+ {
+  "en": "major failure",
+  "yue": "嚴重故障",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "major failure"
+  ],
+  "yueAliases": [
+   "嚴重故障"
+  ],
+  "critical": false
+ },
+ {
+  "en": "itemised bill",
+  "yue": "分項賬單",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "itemised bill"
+  ],
+  "yueAliases": [
+   "分項賬單"
+  ],
+  "critical": false
+ },
+ {
+  "en": "written quote",
+  "yue": "書面報價",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "written quote"
+  ],
+  "yueAliases": [
+   "書面報價"
+  ],
+  "critical": false
+ },
+ {
+  "en": "meter reading",
+  "yue": "電錶讀數",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "meter reading"
+  ],
+  "yueAliases": [
+   "電錶讀數"
+  ],
+  "critical": false
+ },
+ {
+  "en": "penalty rates",
+  "yue": "特別時段附加工資",
+  "topic": "Employment",
+  "enAliases": [
+   "penalty rates"
+  ],
+  "yueAliases": [
+   "特別時段附加工資"
+  ],
+  "critical": false
+ },
+ {
+  "en": "interim order",
+  "yue": "臨時命令",
+  "topic": "Legal",
+  "enAliases": [
+   "interim order"
+  ],
+  "yueAliases": [
+   "臨時命令"
+  ],
+  "critical": false
+ },
+ {
+  "en": "facility hire",
+  "yue": "場地租用",
+  "topic": "Community",
+  "enAliases": [
+   "facility hire"
+  ],
+  "yueAliases": [
+   "場地租用"
+  ],
+  "critical": false
+ },
+ {
+  "en": "local council",
+  "yue": "市議會",
+  "topic": "Community",
+  "enAliases": [
+   "local council"
+  ],
+  "yueAliases": [
+   "市議會"
+  ],
+  "critical": false
+ },
+ {
+  "en": "urgent repair",
+  "yue": "緊急維修",
+  "topic": "Housing",
+  "enAliases": [
+   "urgent repair"
+  ],
+  "yueAliases": [
+   "緊急維修"
+  ],
+  "critical": false
+ },
+ {
+  "en": "policy excess",
+  "yue": "保單自付額",
+  "topic": "Insurance",
+  "enAliases": [
+   "policy excess"
+  ],
+  "yueAliases": [
+   "保單自付額"
+  ],
+  "critical": false
+ },
+ {
+  "en": "covered event",
+  "yue": "受保事件",
+  "topic": "Insurance",
+  "enAliases": [
+   "covered event"
+  ],
+  "yueAliases": [
+   "受保事件"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Carer Payment",
+  "yue": "照顧者補助金",
+  "topic": "Social services",
+  "enAliases": [
+   "Carer Payment"
+  ],
+  "yueAliases": [
+   "照顧者補助金"
+  ],
+  "critical": false
+ },
+ {
+  "en": "bulk billing",
+  "yue": "直接向 Medicare 收費",
+  "topic": "Australian services",
+  "enAliases": [
+   "bulk billing",
+   "bulk billed",
+   "bulk bills",
+   "bulk bill"
+  ],
+  "yueAliases": [
+   "直接向 Medicare 收費",
+   "Medicare"
+  ],
+  "critical": true
+ },
+ {
+  "en": "annual leave",
+  "yue": "年假",
+  "topic": "Employment",
+  "enAliases": [
+   "annual leave"
+  ],
+  "yueAliases": [
+   "年假"
+  ],
+  "critical": false
+ },
+ {
+  "en": "prescription",
+  "yue": "處方",
+  "topic": "Health",
+  "enAliases": [
+   "prescription"
+  ],
+  "yueAliases": [
+   "處方"
+  ],
+  "critical": false
+ },
+ {
+  "en": "court notice",
+  "yue": "法院通知",
+  "topic": "Legal",
+  "enAliases": [
+   "court notice"
+  ],
+  "yueAliases": [
+   "法院通知"
+  ],
+  "critical": false
+ },
+ {
+  "en": "library card",
+  "yue": "圖書證",
+  "topic": "Community",
+  "enAliases": [
+   "library card"
+  ],
+  "yueAliases": [
+   "圖書證"
+  ],
+  "critical": false
+ },
+ {
+  "en": "direct debit",
+  "yue": "自動扣賬",
+  "topic": "Financial",
+  "enAliases": [
+   "direct debit"
+  ],
+  "yueAliases": [
+   "自動扣賬"
+  ],
+  "critical": false
+ },
+ {
+  "en": "entry notice",
+  "yue": "入屋通知",
+  "topic": "Housing",
+  "enAliases": [
+   "entry notice"
+  ],
+  "yueAliases": [
+   "入屋通知"
+  ],
+  "critical": false
+ },
+ {
+  "en": "plan manager",
+  "yue": "計劃管理人",
+  "topic": "Social services",
+  "enAliases": [
+   "plan manager"
+  ],
+  "yueAliases": [
+   "計劃管理人"
+  ],
+  "critical": false
+ },
+ {
+  "en": "tax invoice",
+  "yue": "稅務發票",
+  "topic": "Business",
+  "enAliases": [
+   "tax invoice"
+  ],
+  "yueAliases": [
+   "稅務發票"
+  ],
+  "critical": false
+ },
+ {
+  "en": "sole trader",
+  "yue": "獨資經營者",
+  "topic": "Business",
+  "enAliases": [
+   "sole trader"
+  ],
+  "yueAliases": [
+   "獨資經營者"
+  ],
+  "critical": false
+ },
+ {
+  "en": "partnership",
+  "yue": "合夥企業",
+  "topic": "Business",
+  "enAliases": [
+   "partnership"
+  ],
+  "yueAliases": [
+   "合夥企業"
+  ],
+  "critical": false
+ },
+ {
+  "en": "replacement",
+  "yue": "更換",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "replacement"
+  ],
+  "yueAliases": [
+   "更換"
+  ],
+  "critical": false
+ },
+ {
+  "en": "gap payment",
+  "yue": "差額自付費",
+  "topic": "Health",
+  "enAliases": [
+   "gap payment"
+  ],
+  "yueAliases": [
+   "差額自付費"
+  ],
+  "critical": false
+ },
+ {
+  "en": "ImmiAccount",
+  "yue": "ImmiAccount",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "ImmiAccount"
+  ],
+  "yueAliases": [
+   "ImmiAccount"
+  ],
+  "critical": false
+ },
+ {
+  "en": "civil claim",
+  "yue": "民事索償",
+  "topic": "Legal",
+  "enAliases": [
+   "civil claim"
+  ],
+  "yueAliases": [
+   "民事索償"
+  ],
+  "critical": false
+ },
+ {
+  "en": "adjournment",
+  "yue": "押後聆訊",
+  "topic": "Legal",
+  "enAliases": [
+   "adjournment"
+  ],
+  "yueAliases": [
+   "押後聆訊"
+  ],
+  "critical": false
+ },
+ {
+  "en": "census date",
+  "yue": "學籍及費用責任截止日，即係 census date",
+  "topic": "Education",
+  "enAliases": [
+   "census date"
+  ],
+  "yueAliases": [
+   "census date",
+   "學籍及費用責任截止日"
+  ],
+  "critical": false
+ },
+ {
+  "en": "break lease",
+  "yue": "提前終止租約",
+  "topic": "Housing",
+  "enAliases": [
+   "break lease"
+  ],
+  "yueAliases": [
+   "提前終止租約"
+  ],
+  "critical": false
+ },
+ {
+  "en": "rental bond",
+  "yue": "租屋按金",
+  "topic": "Housing",
+  "enAliases": [
+   "rental bond"
+  ],
+  "yueAliases": [
+   "租屋按金"
+  ],
+  "critical": false
+ },
+ {
+  "en": "sum insured",
+  "yue": "保額",
+  "topic": "Insurance",
+  "enAliases": [
+   "sum insured"
+  ],
+  "yueAliases": [
+   "保額"
+  ],
+  "critical": false
+ },
+ {
+  "en": "specialist",
+  "yue": "專科醫生",
+  "topic": "Health",
+  "enAliases": [
+   "specialist"
+  ],
+  "yueAliases": [
+   "專科醫生"
+  ],
+  "critical": false
+ },
+ {
+  "en": "attendance",
+  "yue": "出席紀錄",
+  "topic": "Education",
+  "enAliases": [
+   "attendance"
+  ],
+  "yueAliases": [
+   "出席紀錄"
+  ],
+  "critical": false
+ },
+ {
+  "en": "bond claim",
+  "yue": "按金申索",
+  "topic": "Housing",
+  "enAliases": [
+   "bond claim"
+  ],
+  "yueAliases": [
+   "按金申索"
+  ],
+  "critical": false
+ },
+ {
+  "en": "allowance",
+  "yue": "津貼",
+  "topic": "Employment",
+  "enAliases": [
+   "allowance"
+  ],
+  "yueAliases": [
+   "津貼"
+  ],
+  "critical": false
+ },
+ {
+  "en": "pathology",
+  "yue": "病理化驗",
+  "topic": "Health",
+  "enAliases": [
+   "pathology"
+  ],
+  "yueAliases": [
+   "病理化驗"
+  ],
+  "critical": false
+ },
+ {
+  "en": "legal aid",
+  "yue": "法律援助",
+  "topic": "Legal",
+  "enAliases": [
+   "legal aid"
+  ],
+  "yueAliases": [
+   "法律援助"
+  ],
+  "critical": false
+ },
+ {
+  "en": "mediation",
+  "yue": "調解",
+  "topic": "Legal",
+  "enAliases": [
+   "mediation"
+  ],
+  "yueAliases": [
+   "調解"
+  ],
+  "critical": false
+ },
+ {
+  "en": "microchip",
+  "yue": "晶片",
+  "topic": "Community",
+  "enAliases": [
+   "microchip"
+  ],
+  "yueAliases": [
+   "晶片"
+  ],
+  "critical": false
+ },
+ {
+  "en": "volunteer",
+  "yue": "義工",
+  "topic": "Community",
+  "enAliases": [
+   "volunteer"
+  ],
+  "yueAliases": [
+   "義工"
+  ],
+  "critical": false
+ },
+ {
+  "en": "enrolment",
+  "yue": "註冊／入學",
+  "topic": "Education",
+  "enAliases": [
+   "enrolment"
+  ],
+  "yueAliases": [
+   "註冊／入學"
+  ],
+  "critical": false
+ },
+ {
+  "en": "placement",
+  "yue": "實習",
+  "topic": "Education",
+  "enAliases": [
+   "placement"
+  ],
+  "yueAliases": [
+   "實習"
+  ],
+  "critical": false
+ },
+ {
+  "en": "HECS-HELP",
+  "yue": "HECS-HELP 學費貸款",
+  "topic": "Education",
+  "enAliases": [
+   "HECS-HELP"
+  ],
+  "yueAliases": [
+   "HECS-HELP 學費貸款",
+   "HELP",
+   "HECS"
+  ],
+  "critical": false
+ },
+ {
+  "en": "home loan",
+  "yue": "按揭／房屋貸款",
+  "topic": "Financial",
+  "enAliases": [
+   "home loan"
+  ],
+  "yueAliases": [
+   "按揭／房屋貸款"
+  ],
+  "critical": false
+ },
+ {
+  "en": "exclusion",
+  "yue": "不保事項",
+  "topic": "Insurance",
+  "enAliases": [
+   "exclusion"
+  ],
+  "yueAliases": [
+   "不保事項"
+  ],
+  "critical": false
+ },
+ {
+  "en": "turnover",
+  "yue": "營業額",
+  "topic": "Business",
+  "enAliases": [
+   "turnover"
+  ],
+  "yueAliases": [
+   "營業額"
+  ],
+  "critical": false
+ },
+ {
+  "en": "supplier",
+  "yue": "供應商",
+  "topic": "Business",
+  "enAliases": [
+   "supplier"
+  ],
+  "yueAliases": [
+   "供應商"
+  ],
+  "critical": false
+ },
+ {
+  "en": "pay slip",
+  "yue": "糧單",
+  "topic": "Employment",
+  "enAliases": [
+   "pay slip"
+  ],
+  "yueAliases": [
+   "糧單"
+  ],
+  "critical": false
+ },
+ {
+  "en": "referral",
+  "yue": "轉介信",
+  "topic": "Health",
+  "enAliases": [
+   "referral"
+  ],
+  "yueAliases": [
+   "轉介信"
+  ],
+  "critical": false
+ },
+ {
+  "en": "tribunal",
+  "yue": "審裁處",
+  "topic": "Legal",
+  "enAliases": [
+   "tribunal"
+  ],
+  "yueAliases": [
+   "審裁處"
+  ],
+  "critical": false
+ },
+ {
+  "en": "Pty Ltd",
+  "yue": "私人有限公司",
+  "topic": "Business",
+  "enAliases": [
+   "Pty Ltd"
+  ],
+  "yueAliases": [
+   "私人有限公司"
+  ],
+  "critical": false
+ },
+ {
+  "en": "hearing",
+  "yue": "聆訊",
+  "topic": "Legal",
+  "enAliases": [
+   "hearing"
+  ],
+  "yueAliases": [
+   "聆訊"
+  ],
+  "critical": false
+ },
+ {
+  "en": "premium",
+  "yue": "保費",
+  "topic": "Insurance",
+  "enAliases": [
+   "premium"
+  ],
+  "yueAliases": [
+   "保費"
+  ],
+  "critical": false
+ },
+ {
+  "en": "myGov",
+  "yue": "myGov 政府網上戶口",
+  "topic": "Australian services",
+  "enAliases": [
+   "my Gov",
+   "MyGov",
+   "myGov"
+  ],
+  "yueAliases": [
+   "myGov 政府網上戶口",
+   "myGov"
+  ],
+  "critical": true
+ },
+ {
+  "en": "repair",
+  "yue": "維修",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "repair"
+  ],
+  "yueAliases": [
+   "維修"
+  ],
+  "critical": false
+ },
+ {
+  "en": "refund",
+  "yue": "退款",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "refund"
+  ],
+  "yueAliases": [
+   "退款"
+  ],
+  "critical": false
+ },
+ {
+  "en": "remedy",
+  "yue": "補救",
+  "topic": "Consumer affairs",
+  "enAliases": [
+   "remedy"
+  ],
+  "yueAliases": [
+   "補救"
+  ],
+  "critical": false
+ },
+ {
+  "en": "roster",
+  "yue": "更表",
+  "topic": "Employment",
+  "enAliases": [
+   "roster"
+  ],
+  "yueAliases": [
+   "更表"
+  ],
+  "critical": false
+ },
+ {
+  "en": "rebate",
+  "yue": "回贈",
+  "topic": "Health",
+  "enAliases": [
+   "rebate"
+  ],
+  "yueAliases": [
+   "回贈"
+  ],
+  "critical": false
+ },
+ {
+  "en": "EFTPOS",
+  "yue": "EFTPOS",
+  "topic": "Financial",
+  "enAliases": [
+   "EFTPOS"
+  ],
+  "yueAliases": [
+   "EFTPOS"
+  ],
+  "critical": false
+ },
+ {
+  "en": "policy",
+  "yue": "保單",
+  "topic": "Insurance",
+  "enAliases": [
+   "policy"
+  ],
+  "yueAliases": [
+   "保單"
+  ],
+  "critical": false
+ },
+ {
+  "en": "excess",
+  "yue": "自付額",
+  "topic": "Insurance",
+  "enAliases": [
+   "excess"
+  ],
+  "yueAliases": [
+   "自付額"
+  ],
+  "critical": false
+ },
+ {
+  "en": "award",
+  "yue": "行業工資及僱傭條件規定",
+  "topic": "Employment",
+  "enAliases": [
+   "award"
+  ],
+  "yueAliases": [
+   "行業工資及僱傭條件規定"
+  ],
+  "critical": false
+ },
+ {
+  "en": "claim",
+  "yue": "索償",
+  "topic": "Insurance",
+  "enAliases": [
+   "claim"
+  ],
+  "yueAliases": [
+   "索償"
+  ],
+  "critical": false
+ },
+ {
+  "en": "NDIS",
+  "yue": "全國殘疾保險計劃",
+  "topic": "Australian services",
+  "enAliases": [
+   "NDIS"
+  ],
+  "yueAliases": [
+   "全國殘疾保險計劃"
+  ],
+  "critical": true
+ },
+ {
+  "en": "VEVO",
+  "yue": "網上簽證權益查核系統",
+  "topic": "Australian services",
+  "enAliases": [
+   "VEVO"
+  ],
+  "yueAliases": [
+   "網上簽證權益查核系統"
+  ],
+  "critical": true
+ },
+ {
+  "en": "AMEP",
+  "yue": "成人移民英語計劃",
+  "topic": "Immigration and settlement",
+  "enAliases": [
+   "AMEP"
+  ],
+  "yueAliases": [
+   "成人移民英語計劃"
+  ],
+  "critical": false
+ },
+ {
+  "en": "bail",
+  "yue": "保釋",
+  "topic": "Legal",
+  "enAliases": [
+   "bail"
+  ],
+  "yueAliases": [
+   "保釋"
+  ],
+  "critical": false
+ },
+ {
+  "en": "TAFE",
+  "yue": "TAFE 技術及持續教育院校",
+  "topic": "Education",
+  "enAliases": [
+   "TAFE"
+  ],
+  "yueAliases": [
+   "TAFE 技術及持續教育院校",
+   "TAFE"
+  ],
+  "critical": false
+ },
+ {
+  "en": "BPAY",
+  "yue": "BPAY",
+  "topic": "Financial",
+  "enAliases": [
+   "BPAY"
+  ],
+  "yueAliases": [
+   "BPAY"
+  ],
+  "critical": false
+ },
+ {
+  "en": "AFCA",
+  "yue": "澳洲金融投訴局",
+  "topic": "Financial",
+  "enAliases": [
+   "AFCA"
+  ],
+  "yueAliases": [
+   "澳洲金融投訴局"
+  ],
+  "critical": false
+ },
+ {
+  "en": "NCAT",
+  "yue": "新州民事及行政審裁處",
+  "topic": "Housing",
+  "enAliases": [
+   "NCAT"
+  ],
+  "yueAliases": [
+   "新州民事及行政審裁處"
+  ],
+  "critical": false
+ },
+ {
+  "en": "ABN",
+  "yue": "澳洲商業號碼",
+  "topic": "Australian services",
+  "enAliases": [
+   "ABN"
+  ],
+  "yueAliases": [
+   "澳洲商業號碼"
+  ],
+  "critical": true
+ },
+ {
+  "en": "TFN",
+  "yue": "稅務檔案號碼",
+  "topic": "Australian services",
+  "enAliases": [
+   "TFN"
+  ],
+  "yueAliases": [
+   "稅務檔案號碼"
+  ],
+  "critical": true
+ },
+ {
+  "en": "GST",
+  "yue": "商品及服務稅",
+  "topic": "Australian services",
+  "enAliases": [
+   "GST"
+  ],
+  "yueAliases": [
+   "商品及服務稅"
+  ],
+  "critical": true
+ },
+ {
+  "en": "ATO",
+  "yue": "澳洲稅務局",
+  "topic": "Australian services",
+  "enAliases": [
+   "ATO"
+  ],
+  "yueAliases": [
+   "澳洲稅務局"
+  ],
+  "critical": true
+ },
+ {
+  "en": "ACN",
+  "yue": "澳洲公司號碼",
+  "topic": "Business",
+  "enAliases": [
+   "ACN"
+  ],
+  "yueAliases": [
+   "澳洲公司號碼"
+  ],
+  "critical": false
+ },
+ {
+  "en": "BAS",
+  "yue": "業務活動報表",
+  "topic": "Business",
+  "enAliases": [
+   "BAS"
+  ],
+  "yueAliases": [
+   "業務活動報表"
+  ],
+  "critical": false
+ },
+ {
+  "en": "PBS",
+  "yue": "藥物福利計劃",
+  "topic": "Health",
+  "enAliases": [
+   "PBS"
+  ],
+  "yueAliases": [
+   "藥物福利計劃"
+  ],
+  "critical": false
+ },
+ {
+  "en": "AVO",
+  "yue": "暴力禁制令",
+  "topic": "Legal",
+  "enAliases": [
+   "AVO"
+  ],
+  "yueAliases": [
+   "暴力禁制令"
+  ],
+  "critical": false
+ },
+ {
+  "en": "VET",
+  "yue": "職業教育及培訓",
+  "topic": "Education",
+  "enAliases": [
+   "VET"
+  ],
+  "yueAliases": [
+   "職業教育及培訓"
+  ],
+  "critical": false
+ },
+ {
+  "en": "CSP",
+  "yue": "聯邦資助學額",
+  "topic": "Education",
+  "enAliases": [
+   "CSP"
+  ],
+  "yueAliases": [
+   "聯邦資助學額"
+  ],
+  "critical": false
+ },
+ {
+  "en": "USI",
+  "yue": "唯一學生識別號碼",
+  "topic": "Education",
+  "enAliases": [
+   "USI"
+  ],
+  "yueAliases": [
+   "唯一學生識別號碼"
+  ],
+  "critical": false
+ },
+ {
+  "en": "PDS",
+  "yue": "產品披露聲明",
+  "topic": "Insurance",
+  "enAliases": [
+   "PDS"
+  ],
+  "yueAliases": [
+   "產品披露聲明"
+  ],
+  "critical": false
+ },
+ {
+  "en": "CRN",
+  "yue": "客戶參考編號",
+  "topic": "Social services",
+  "enAliases": [
+   "CRN"
+  ],
+  "yueAliases": [
+   "客戶參考編號"
+  ],
+  "critical": false
+ }
+]

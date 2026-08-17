@@ -198,7 +198,7 @@
     const key=`${d.id}-${s.n}`;
     return `<article class="question-segment" id="question-${key}">
       <div class="question-seg-meta"><span>S${String(s.n).padStart(2,'0')}</span><span>${s.source_lang==='en'?'English officer → Cantonese':'Cantonese client → English'}</span></div>
-      <div class="question-source">${esc(s.source)}</div>
+      <div class="question-source" data-lang="${s.source_lang}" lang="${s.source_lang==='yue'?'zh-HK':'en-AU'}">${esc(s.source)}</div>
       <div class="question-actions">
         <button class="btn primary question-play" onclick="playVisibleQuestion('${d.id}',${s.n},this)">▶ Play</button>
         <button class="btn" onclick="toggleQuestionAnswer('${key}',this)">Reveal answer</button>

@@ -1,0 +1,6 @@
+
+# generated audio + rewrite working files
+build/
+*.pre-rewrite.*.json
+__pycache__/
+*.pyc

@@ -1,52 +1,95 @@
-# Supabase neural audio storage
+# Source audio: generation and hosting
 
-V3 serves each CCL source segment as an individual public MP3 from Supabase Storage. Vercel serves the application; Supabase serves the audio.
-
-## Project layout
+Vercel serves the application; Supabase Storage serves the audio. Each CCL source
+segment is an individual public MP3.
 
 - Supabase project: `ccl-exam` (`dmoputkgxuaeoypmdfhm`, EU North / Stockholm)
 - Public bucket: `ccl-audio`
-- V3 object path: `v3/<dialogue-id>/S<segment>.mp3`, for example `v3/D001/S01.mp3`
-- Public browser base URL is stored in `data/audio_remote.json`
-- `public.ccl_dialogues` stores the dialogue payload used during generation
-- `public.ccl_audio_assets` stores one metadata/status row per generated segment
+- Object path: `<prefix>/<dialogue-id>/S<segment>.mp3`, e.g. `v4/D001/S01.mp3`
+- The browser reads the base URL from `data/audio_remote.json`. **That file is
+  the single source of truth for which version is live** — do not restate the
+  voices or rates anywhere else, including in this document.
 
-## Voices and pace
+## Calibration
 
-Role-based neural voices:
+Delivery pace is calibrated against the six official NAATI CCL practice
+recordings, not chosen by taste. Those recordings were silence-segmented, each
+speech block aligned to its PDF transcript, and per-segment speed measured:
 
-- English provider: `en-AU-WilliamNeural`
-- English client: `en-AU-NatashaNeural`
-- Cantonese provider: `zh-HK-WanLungNeural`
-- Cantonese client: `zh-HK-HiuGaaiNeural`
+| | reference median | measured spread |
+|---|---|---|
+| English | **168.0 words/min** | n=42, p25 147.5, p75 189.9 |
+| Cantonese | **4.07 Han chars/sec** | n=38, p25 3.75, p75 4.24 |
 
-English uses normal neural rate. Cantonese uses a small `+5%` synthesis adjustment. This was chosen after benchmarking the supplied practice samples at about 160 English words/minute and roughly 4.0 Cantonese characters/second.
+Measured over 70 randomly sampled v3 objects, the previous bank delivered
+166.67 wpm English (within 1% — fine) and 3.30 Han/sec Cantonese (19% slow).
+v4 therefore re-times Cantonese and leaves English alone.
 
-The MP3 contains only source speech. The web player generates the two-tone interpretation cue immediately after the segment, then starts the practice countdown.
+Rates are **per voice**, because the voices differ enormously at the same
+nominal rate. Live values live in `VOICE_RATES` in `scripts/generate_v4_audio.py`
+and are echoed into `data/audio_remote.json` at upload time.
 
-## Security model
+## Voices
 
-The bucket is public because the practice MP3s are public study assets. The browser receives **no service-role key** and performs no writes. Database tables use RLS with public-read policies only.
+Both genders on both sides, assigned per dialogue, as the official materials do —
+each reference dialogue declares the gender of the English speaker and of the
+LOTE speaker independently. The two axes advance at different periods so all four
+pairings occur across the bank.
 
-Audio was generated server-side by temporary Supabase Edge Functions. Those functions are locked after migration completes. The site needs only the public object base URL.
+v3 used exactly two voices for all 1,412 segments (every professional the same
+man, every client the same woman). That uniformity was itself a realism defect.
 
-## Fallback order
+`zh-HK-HiuGaaiNeural` was dropped from the pool on a native listener's judgement.
+It is also the slowest zh-HK voice by a wide margin.
 
-1. V3 Supabase neural segment MP3
+## Text shaping
+
+The synthesiser receives a shaped copy of each segment; the learner-facing text
+in `data/dialogues.json` is never modified. Currently that means promoting a
+mid-sentence comma to a full stop when both halves can stand alone, which buys a
+real pause (measured ≈1.15s versus ≈0.31s for a comma).
+
+Two engine facts worth knowing before editing the pipeline:
+
+- **SSML is not supported.** Tags are read aloud as words — feeding
+  `<break time="800ms"/>` makes the listener hear the markup. Pausing can only be
+  controlled with punctuation.
+- **Some Cantonese glyphs are silently dropped.** 嚹 囖 嗻 啝 𠺝 𠿪 𡃉 唩 㖑 produce
+  no audio at all. `scripts/qa_cantonese.py` fails any script containing them.
+
+## Publishing
+
+    source ~/.ccl_supabase_env                  # SUPABASE_URL + service-role key
+    python3 scripts/generate_v4_audio.py        # -> build/audio-v4/
+    python3 scripts/upload_v4_segments.py       # -> bucket, then rewrites config
+
+`generate_v4_audio.py` is resumable (it skips existing files) and **fails loudly**
+if measured delivery drifts more than 5% from the reference — a silent pacing
+regression is the exact defect v4 exists to remove.
+
+`upload_v4_segments.py` publishes to a **new prefix** and only rewrites
+`data/audio_remote.json` after verifying objects over the public URL. Two reasons
+this matters: the switch is atomic for learners, and the public CDN caches
+objects, so overwriting a live path would serve stale audio for an unknown
+period. Rollback is reverting one config file; the previous base URL is preserved
+in it as `previousBaseUrl`.
+
+`scripts/upload_audio_to_supabase.py` is the **legacy v1 bundle uploader**. It
+pushes four monolithic `.bin` files and overwrites `data/audio_remote.json` with a
+bundle-shaped config that has no `mode` field. Running it against the current site
+breaks the segment player. It is kept only for historical recovery.
+
+## Fallback order in the player
+
+1. Supabase per-segment MP3
 2. checked-in legacy bundled MP3
-3. an eligible Australian-English or Hong Kong Cantonese device speech voice
+3. an eligible Australian-English or Hong Kong Cantonese device voice
 
-The player does not intentionally substitute a Mandarin voice for Cantonese.
+A missing object silently degrades to device speech, which sounds markedly worse.
+That is why the generator retries on failure rather than skipping a segment.
 
-## Verification
+## Provenance
 
-Release QA requires:
-
-- exactly **1,412** `ready` rows in `public.ccl_audio_assets`;
-- **0** `error` rows;
-- 100 dialogue payloads;
-- all four neural voices represented;
-- Storage objects with non-zero byte sizes;
-- Supabase security/performance advisor checks clean.
-
-The neural audio is synthetic practice material, not official NAATI audio or human voice acting.
+This is synthetic neural practice material, not official NAATI audio and not
+human voice acting. The dialogues are original; the pacing and register targets
+are derived from measurements of the official practice recordings.

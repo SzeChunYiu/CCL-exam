@@ -1,0 +1,89 @@
+/* Special-term highlighting.
+   Two tiers: ordinary glossary terms get a quiet underline, Australian service
+   entities (Centrelink, Medicare, ABN...) get a visible tint, because those are
+   the ones that actually cost marks. */
+
+.ccl-term {
+  background: transparent;
+  color: inherit;
+  padding: 0 1px;
+  border-bottom: 1px dashed #b9bbe4;
+  border-radius: 2px;
+  cursor: help;
+  position: relative;
+}
+.ccl-term:hover,
+.ccl-term:focus-visible {
+  background: #f1f1fb;
+  border-bottom-color: #7d80d8;
+  outline: none;
+}
+.ccl-term-critical {
+  background: #fff5e6;
+  border-bottom: 1px solid #e0a53a;
+  font-weight: 600;
+}
+.ccl-term-critical:hover,
+.ccl-term-critical:focus-visible {
+  background: #ffe9c7;
+}
+
+/* The gloss. Hidden until hover/focus on pointer devices, and toggled by .open
+   on touch, where :hover never fires. */
+.ccl-term::after {
+  content: attr(data-yue);
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 7px);
+  transform: translateX(-50%);
+  background: #24262c;
+  color: #f6f7f9;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.45;
+  white-space: normal;
+  width: max-content;
+  max-width: min(280px, 70vw);
+  padding: 7px 10px;
+  border-radius: 7px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .22);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .12s ease;
+  z-index: 40;
+  pointer-events: none;
+  text-align: left;
+}
+.ccl-term:hover::after,
+.ccl-term:focus-visible::after,
+.ccl-term.open::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* A Cantonese segment shows the English gloss instead, so the tooltip is always
+   the side the learner has to produce. */
+.question-source:lang(zh) .ccl-term::after,
+[data-lang="yue"] .ccl-term::after {
+  content: attr(data-en);
+}
+
+.ccl-term-legend {
+  font-size: 12px;
+  color: #6e7177;
+  margin: 0 0 12px;
+  padding: 9px 12px;
+  background: #fbfbfd;
+  border: 1px solid #ececf3;
+  border-left: 3px solid #e0a53a;
+  border-radius: 7px;
+}
+.ccl-term-legend strong { color: #4b4e55; }
+
+@media (max-width: 760px) {
+  .ccl-term::after { max-width: 78vw; font-size: 11px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ccl-term::after { transition: none; }
+}
