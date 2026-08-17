@@ -30,7 +30,7 @@ jobs:
       - name: Build immutable candidate
         run: |
           set -euo pipefail
-          python3 scripts/build_native_500_release_v2.py --out build/candidate/dialogues.json | tee build-release.json
+          python3 scripts/build_native_500_release_v2.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
       - name: Structural verification
         run: |
           set -euo pipefail
