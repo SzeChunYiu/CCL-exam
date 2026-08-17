@@ -1,0 +1,13 @@
+name: Build CCL site
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  paused:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Automatic generation is temporarily paused while the v2 sample-calibrated build is installed."

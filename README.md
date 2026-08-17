@@ -1,49 +1,59 @@
-# CCL Exam — English ⇄ Cantonese Practice Pack
+# CCL Exam Lab — English ⇄ Cantonese
 
-A 100-dialogue NAATI CCL-style English–Cantonese practice collection focused on Australian community interpreting contexts.
+A Vercel-ready English–Cantonese CCL-style training workspace built from **100 original Australian community-interpreting dialogues**.
 
-## What is included
+## Six-part training system
 
-- **100 original practice dialogues** / **1,200 alternating interpretation segments**
-- **50 mock-test pairings** (two dialogues per mock)
-- Coverage of the 12 broad CCL topic areas: business, consumer affairs, employment, health, immigration & settlement, legal, community, education, financial, housing, insurance, and social services
-- Australian terminology and scenarios (for example ABN, GST, BAS, Fair Work, Medicare, PBS, myGov, Centrelink, VEVO, HECS-HELP, NDIS, AFCA and state tenancy processes)
-- Source scripts, model interpretations, glossary, note-taking drills, self-review sheet and study guide
-- Reproducible Australian-English + Cantonese synthetic MP3 generation with a two-tone interpretation chime after every segment
+1. **Dashboard** — progress, entry points and audio status.
+2. **Mock Exam** — 50 two-dialogue mocks, 20-minute practice clock, hidden scripts, calibrated 1.0× MP3 audio, repeat tracking, optional recording and end-only review. Every mock pairs two different topic areas.
+3. **Topic Practice + Quick Drill** — choose topic/difficulty/direction, reveal-and-compare, error tagging and adjustable training speed.
+4. **Performance & History** — browser-side attempt summaries, weak segments, repeat usage, common error tags and topic exposure.
+5. **100-dialogue Library** — search/filter by topic, difficulty, completion and favourites.
+6. **Study & Vocabulary** — 198 Australian English ⇄ Cantonese terms, study guide, number/note-taking drills, self-review, references and audio-calibration notes.
 
-## Start here
+## Final content build
 
-1. Read [`practice_pack/README_FIRST.md`](practice_pack/README_FIRST.md).
-2. Use [`practice_pack/MOCK_TEST_PAIRINGS.md`](practice_pack/MOCK_TEST_PAIRINGS.md) to choose a mock test.
-3. Practise blind from generated audio; only review [`practice_pack/SOURCE_SCRIPTS.md`](practice_pack/SOURCE_SCRIPTS.md) and [`practice_pack/MODEL_ANSWERS.md`](practice_pack/MODEL_ANSWERS.md) afterwards.
-4. Record errors with [`practice_pack/SELF_REVIEW_SHEET.md`](practice_pack/SELF_REVIEW_SHEET.md).
-
-## Generate the audio
-
-The repository intentionally does **not** version the generated MP3 binaries. They are reproducible from `practice_pack/dialogues_metadata.json`.
-
-On Ubuntu/Debian:
+The site, answer key and audio are generated from one deterministic source pipeline:
 
 ```bash
-sudo apt-get update
-sudo apt-get install -y espeak ffmpeg python3-pip
-python3 -m pip install numpy
-cd resources/espeak-cantonese
-sudo espeak --compile=zhy
-cd ../..
-python3 scripts/generate_audio.py
+python3 scripts/build_all_content.py
+python3 scripts/build_audio_bundles.py
 ```
 
-This creates `practice_pack/audio/*.mp3` and a ZIP under `dist/`.
+Current generated bank:
 
-GitHub Actions also contains an audio-build workflow. A successful run publishes the generated MP3 set as a downloadable workflow artifact.
+- **100 dialogues**
+- **1,394 alternating source segments**
+- **50 cross-topic mock exams**
+- **12 topic areas**
+- **12–16 segments per dialogue**
+- **267–327 English-equivalent words per dialogue**
+- **35-word maximum source segment**
 
-## About the voices
+## Audio calibration
 
-The recordings are **synthetic practice audio**, not official NAATI recordings or leaked examination content. English uses Australian eSpeak voices. Cantonese uses the eSpeak `zh-yue` voice with the included Cantonese dictionary source.
+The independent synthetic MP3 source audio at **1.0×** is calibrated against the average speaking pace measured from NAATI's downloadable Cantonese practice materials. On the complete generated bank the current build measures about **160.16 English words/minute** and **180.13 Cantonese English-equivalent words/minute**, against reference targets of roughly **160 / 179**.
 
-The dictionary source includes its upstream attribution and is distributed under the licensing terms stated in its header (CC BY-SA 3.0).
+Mock mode locks playback to 1.0×. Training modes allow 0.9×, 1.0× and 1.08×. Browser speech synthesis remains an emergency fallback only and its exact pace depends on the device/voice.
 
-## Important exam/reference note
+No NAATI audio is redistributed. See `materials/AUDIO_CALIBRATION.md`.
 
-This is independently created study material. Exam rules and government-service procedures change. Check the official sources listed in [`practice_pack/OFFICIAL_REFERENCE_NOTES.md`](practice_pack/OFFICIAL_REFERENCE_NOTES.md) before relying on any procedural detail.
+## Generated audio design
+
+Each dialogue is encoded as MP3 and stored inside one of four compact binary bundles. `data/audio_manifest.json` stores byte ranges and per-segment timing windows, so the site can play one source segment plus its chime without shipping 1,394 separate files.
+
+The GitHub Action rebuilds content, validates the bank, compiles the Cantonese eSpeak dictionary, generates the MP3 bundles and commits deterministic generated assets.
+
+## Local development
+
+```bash
+python3 -m pip install mistune
+python3 scripts/build_all_content.py
+python3 -m http.server 8000
+```
+
+For audio generation, install eSpeak/ffmpeg and compile the Cantonese pronunciation dictionary as shown in the workflow.
+
+## Important
+
+This repository contains independent study material, not official, copied, live or leaked NAATI test content. Practice ratings in the app are self-assessment metrics, not official NAATI marks. Australian procedures and CCL rules can change; use the official references in `materials/OFFICIAL_REFERENCE_NOTES.md` for current information.
