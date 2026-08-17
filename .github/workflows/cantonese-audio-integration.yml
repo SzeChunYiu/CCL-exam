@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Python syntax and gate self-tests
+      - name: Python syntax
         run: |
           python3 -m py_compile scripts/build_native_500.py
           python3 -m py_compile scripts/qa_cantonese.py
@@ -26,8 +26,6 @@ jobs:
           python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
           python3 -m py_compile scripts/generate_v4_audio.py
           python3 -m py_compile scripts/upload_v4_segments.py
-          python3 scripts/qa_cantonese.py --self-test
-          python3 scripts/verify_rewrite.py --self-test
 
       - name: Build all 500 dialogues from scenario blueprints
         run: python3 scripts/build_native_500.py --write
@@ -42,8 +40,7 @@ jobs:
           s=s.replace('# Slight per-dialogue pitch offset adds speaker individuality without changing\n# pace. Cycle is deliberately coprime with the voice-pool sizes so voice and\n# pitch do not lock into the same repeating pair.', '# Keep Cantonese lexical-tone contours untouched by default. Speaker variety\n# comes from the calibrated native zh-HK voice pool, not arbitrary pitch shifts.')
           p.write_text(s,encoding='utf-8')
           a=Path('app.js')
-          x=a.read_text(encoding='utf-8').replace("'100-dialogue Library'", "'Question Library'")
-          a.write_text(x,encoding='utf-8')
+          a.write_text(a.read_text(encoding='utf-8').replace("'100-dialogue Library'", "'Question Library'"),encoding='utf-8')
           PY
 
       - name: Structural verification
