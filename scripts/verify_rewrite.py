@@ -54,6 +54,23 @@ PROPER_NOUNS = ["Centrelink", "Medicare", "myGov", "ImmiAccount", "VEVO", "ABN",
                 "TFN", "NDIS", "Fair Work", "MyAgedCare", "PBS", "ATO"]
 LATIN_TOKEN = re.compile(r"[A-Za-z][A-Za-z]*(?: [A-Z][A-Za-z]*)*")
 
+# Three irreducible-Latin classes the code-switch scan must NOT flag. Each was
+# found as a false positive on real batch text (D031/D035), not hypothesised:
+#   1. X光 -- the established Chinese word for "X-ray"; spacing varies. Writing
+#      愛克斯光 instead would be absurd, so the X is Han vocabulary.
+#   2. A designator letter bound to a Chinese numeral, as in 七B (ward 7B).
+#      Dropping the letter loses a scoreable part of the item, so the letter
+#      must stay and the scan must tolerate it.
+#   3. A street address -- "Barkly Street" has no Chinese name a client would
+#      recognise; the English name is what the client actually says aloud.
+# The masks are narrow on purpose: a bare capital letter anywhere else, or any
+# other Latin word, still fires.
+X_RAY = re.compile(r"X\s*光")
+NUM_DESIGNATOR = re.compile(r"([零一二三四五六七八九十百千兩]\s*)([A-Z])(?![A-Za-z])")
+STREET_NAME = re.compile(
+    r"[A-Z][a-z]+ (?:Street|St|Rd|Road|Ave|Avenue|Drive|Dr|Parade|Pde|Court|"
+    r"Ct|Place|Pl|Lane|Ln|Tce|Terrace|Crescent|Blvd|Boulevard)\b")
+
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
 # Only cardinals bound to a time unit are checked. Bare "one"/"two" in English is
@@ -180,8 +197,9 @@ def check(dialogues: list[dict], baseline: dict[str, dict] | None) -> list[str]:
                     bad.append(f"{tag}: proper noun {noun!r} in English but not in Cantonese")
                 if noun in outside_gloss and noun not in en:
                     bad.append(f"{tag}: proper noun {noun!r} in Cantonese but not in English")
-            for tok in LATIN_TOKEN.findall(yue):
-                if tok not in PROPER_NOUNS:
+            scan = X_RAY.sub(" ", NUM_DESIGNATOR.sub(r"\1", outside_gloss))
+            for tok in LATIN_TOKEN.findall(scan):
+                if tok not in PROPER_NOUNS and not STREET_NAME.fullmatch(tok):
                     bad.append(f"{tag}: code-switching leak -- {tok!r} in Cantonese has a "
                                f"Chinese equivalent and must be rendered")
 
@@ -248,6 +266,8 @@ def self_test() -> int:
         yue="診所收七十八蚊，可以直接向醫保收費。"), "proper noun 'Medicare'")
     mutate("code-switching leak", lambda b: b[0]["segments"][1].update(
         yue="等兩個星期啦，一千八百九十九蚊 insurance 喎。"), "code-switching leak")
+    mutate("bare capital letter leaks", lambda b: b[0]["segments"][1].update(
+        yue="等兩個星期啦，X 一千八百九十九蚊喎。"), "code-switching leak")
     mutate("straight apostrophe", lambda b: b[0]["segments"][0].update(
         en="The clinic charges $78 and it's bulk billed.", wc=8), "straight apostrophe")
 
@@ -260,11 +280,22 @@ def self_test() -> int:
         print(f"self-test: {len(cases)} negative controls all FAIL correctly")
     # False-positive controls: correct text an over-eager checker would condemn.
     fp = [
-        ("term gloss names Medicare on the Cantonese side only", good),
-        ("2 written 兩 before a classifier", good),
+        ("term gloss names Medicare on the Cantonese side only", lambda b: None),
+        ("2 written 兩 before a classifier", lambda b: None),
+        ("X光 is Chinese vocabulary, not a leak", lambda b: b[0]["segments"][1].update(
+            yue="等兩個星期啦，醫生叫我照 X 光，一千八百九十九蚊喎。",
+            source="等兩個星期啦，醫生叫我照 X 光，一千八百九十九蚊喎。")),
+        ("ward designator letter 七B stays", lambda b: b[0]["segments"][1].update(
+            yue="等兩個星期啦，住七B病房，一千八百九十九蚊喎。",
+            source="等兩個星期啦，住七B病房，一千八百九十九蚊喎。")),
+        ("street name has no Chinese form", lambda b: b[0]["segments"][1].update(
+            yue="等兩個星期啦，去 Barkly Street 辦，一千八百九十九蚊喎。",
+            source="等兩個星期啦，去 Barkly Street 辦，一千八百九十九蚊喎。")),
     ]
-    for label, batch in fp:
-        if check(json.loads(json.dumps(batch)), base):
+    for label, fn in fp:
+        b = json.loads(json.dumps(good))
+        fn(b)
+        if check(b, base):
             print(f"SELF-TEST FAIL: false positive on {label}")
             ok = False
     if ok:
