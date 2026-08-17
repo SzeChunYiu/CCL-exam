@@ -1,0 +1,44 @@
+name: Native 500 Immutable Release Gate
+on:
+  push:
+    branches: [release/native-500-final2]
+  workflow_dispatch:
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  candidate-gate:
+    if: ${{ !contains(github.event.head_commit.message || '', '[skip release gate]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax
+        run: |
+          set -euo pipefail
+          python3 -m py_compile scripts/build_native_500_release_v18.py scripts/generate_release_audio.py scripts/build_release_audio_manifest.py scripts/verify_final4_bank.py scripts/audit_native_cantonese_v2.py scripts/audit_cantonese_lexical_transfer.py scripts/qa_cantonese.py scripts/audit_whole_dialogue_naturalness.py
+      - name: Build immutable candidate
+        run: |
+          set -euo pipefail
+          python3 scripts/build_native_500_release_v18.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
+      - name: Structural verification
+        run: |
+          set -euo pipefail
+          python3 scripts/verify_final4_bank.py build/candidate/dialogues.json --json | tee verify-release.json
+      - name: Cantonese source native gate
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_native_cantonese_v2.py build/candidate/dialogues.json --json | tee native-release.json
+      - name: Cantonese lexical-transfer gate
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_cantonese_lexical_transfer.py build/candidate/dialogues.json --json | tee lexical-release.json
+      - name: Cantonese corpus gate
+        run: |
+          set -euo pipefail
+          python3 scripts/qa_cantonese.py build/candidate/dialogues.json --json | tee corpus-release.json
+      - name: Whole-dialogue naturalness gate
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_whole_dialogue_naturalness.py build/candidate/dialogues.json --json | tee whole-release.json

@@ -1,0 +1,534 @@
+{
+  "dialogues": 500,
+  "officer_turns": 3000,
+  "client_english_model_turns": 3000,
+  "thresholds": {
+    "officer_en_near": 25,
+    "officer_yue_near": 25,
+    "client_en_near": 25,
+    "officer_en_repeated_8gram_pct": 8.0,
+    "officer_yue_repeated_10gram_pct": 8.0,
+    "client_en_repeated_8gram_pct": 8.0,
+    "officer_yue_written_per1000": 2.0
+  },
+  "metrics": {
+    "officer_en_exact": 0,
+    "officer_yue_exact": 0,
+    "client_en_exact": 0,
+    "officer_en_near": 1,
+    "officer_yue_near": 3,
+    "client_en_near": 11,
+    "officer_en_repeated_8gram_pct": 3.81,
+    "officer_yue_repeated_10gram_pct": 10.2,
+    "client_en_repeated_8gram_pct": 8.02,
+    "officer_yue_written_per1000": 0.0,
+    "malformed_english": 0,
+    "stage_label_hits": 0
+  },
+  "audit_performance": {
+    "officer_en": {
+      "sentences": 3000,
+      "sequence_matcher_pairs": 8253,
+      "safely_pruned_pairs": 4490247
+    },
+    "officer_yue": {
+      "sentences": 3000,
+      "sequence_matcher_pairs": 22,
+      "safely_pruned_pairs": 4498478
+    },
+    "client_en": {
+      "sentences": 2500,
+      "sequence_matcher_pairs": 1956,
+      "safely_pruned_pairs": 3121794
+    }
+  },
+  "examples": {
+    "officer_en_exact": [],
+    "officer_yue_exact": [],
+    "client_en_exact": [],
+    "officer_en_near": [
+      {
+        "a": "D064:S5",
+        "b": "D196:S5",
+        "ratio": 0.897,
+        "sentence_a": "On this call, for childcare place, let me verify the time; Child Care Subsidy, or CCS comes after that.",
+        "sentence_b": "On this call, for changed childcare use, let me verify the date; Child Care Subsidy, or CCS comes after that."
+      }
+    ],
+    "officer_yue_near": [
+      {
+        "a": "D077:S2",
+        "b": "D077:S8",
+        "ratio": 0.84,
+        "sentence_a": "呢一刻，由租屋推薦資料開始；我用佢搞清租屋申請同租屋申請",
+        "sentence_b": "呢一刻，租屋推薦資料有用；我用佢對租屋申請同租屋申請"
+      },
+      {
+        "a": "D100:S2",
+        "b": "D100:S4",
+        "ratio": 0.842,
+        "sentence_a": "今次電話，現時財務資料先行；我再查緊急生活援助同緊急援助要求",
+        "sentence_b": "今次電話，現時財務資料有用；我用佢對緊急生活援助同緊急援助要求"
+      },
+      {
+        "a": "D500:S1",
+        "b": "D500:S5",
+        "ratio": 0.847,
+        "sentence_a": "未覆核之前，講緊急援助要求我要先有有相身份證，先答緊急生活援助",
+        "sentence_b": "未覆核之前，講緊急援助要求我要有相身份證；由嗰度再查緊急生活援助"
+      }
+    ],
+    "client_en_near": [
+      {
+        "a": "D064:S2",
+        "b": "D096:S1",
+        "ratio": 0.915,
+        "sentence_a": "To begin, I’m asking about a childcare place; can you clarify Child Care Subsidy, or CCS?",
+        "sentence_b": "To begin, I’m asking about changed childcare use; can you clarify Child Care Subsidy, or CCS?"
+      },
+      {
+        "a": "D156:S3",
+        "b": "D456:S4",
+        "ratio": 0.889,
+        "sentence_a": "On this call, can you clarify resident parking permit for resident parking permit?",
+        "sentence_b": "On the written answer, can you clarify resident parking permit for resident parking permit?"
+      },
+      {
+        "a": "D216:S3",
+        "b": "D232:S4",
+        "ratio": 0.891,
+        "sentence_a": "With the versions apart, please work from this detail for meter reading: the amount.",
+        "sentence_b": "With the versions apart, please work from this detail for treatment plan: the amount."
+      },
+      {
+        "a": "D248:S2",
+        "b": "D298:S1",
+        "ratio": 0.893,
+        "sentence_a": "On the documents, I have the date as the current detail; what does it mean for witness statement?",
+        "sentence_b": "On the documents, I have the date as the current detail; what does it mean for Carer Payment?"
+      },
+      {
+        "a": "D252:S4",
+        "b": "D298:S1",
+        "ratio": 0.897,
+        "sentence_a": "On the documents, I have the time as the current detail; what does it mean for adjournment?",
+        "sentence_b": "On the documents, I have the date as the current detail; what does it mean for Carer Payment?"
+      },
+      {
+        "a": "D261:S3",
+        "b": "D288:S3",
+        "ratio": 0.887,
+        "sentence_a": "Comparing the copies, the point that changed is the date; please reconsider local intake area.",
+        "sentence_b": "Comparing the copies, the point that changed is the date; please reconsider make-safe work."
+      },
+      {
+        "a": "D307:S6",
+        "b": "D377:S1",
+        "ratio": 0.88,
+        "sentence_a": "While there is time, I need the date checked before you answer on weekend market-stall application.",
+        "sentence_b": "While there is time, I need the time checked before you answer on rental application."
+      },
+      {
+        "a": "D323:S10",
+        "b": "D367:S9",
+        "ratio": 0.881,
+        "sentence_a": "With time tight, let me correct the date; I was referring to incident report.",
+        "sentence_b": "With time tight, let me correct the date; I was referring to census date."
+      },
+      {
+        "a": "D350:S10",
+        "b": "D383:S8",
+        "ratio": 0.927,
+        "sentence_a": "Before time runs out, I meant civil claim; my point about the amount was wrong.",
+        "sentence_b": "Before time runs out, I meant bond claim; my point about the amount was wrong."
+      },
+      {
+        "a": "D416:S3",
+        "b": "D432:S3",
+        "ratio": 0.895,
+        "sentence_a": "Before a review, the point that changed is the amount; please reconsider meter reading.",
+        "sentence_b": "Before a review, the point that changed is the amount; please reconsider treatment plan."
+      },
+      {
+        "a": "D461:S3",
+        "b": "D488:S2",
+        "ratio": 0.892,
+        "sentence_a": "Looking at the result, I have the date as the current detail; what does it mean for local intake area?",
+        "sentence_b": "Looking at the result, I have the date as the current detail; what does it mean for make-safe work?"
+      }
+    ],
+    "malformed": [],
+    "stage_labels": [],
+    "written_yue": [],
+    "officer_en_top_8grams": [
+      [
+        "is the point to verify before i answer",
+        85
+      ],
+      [
+        "the date is the point to verify before",
+        39
+      ],
+      [
+        "date is the point to verify before i",
+        39
+      ],
+      [
+        "the time is the point to verify before",
+        16
+      ],
+      [
+        "time is the point to verify before i",
+        16
+      ],
+      [
+        "the amount is the point to verify before",
+        12
+      ],
+      [
+        "amount is the point to verify before i",
+        12
+      ],
+      [
+        "at this point the date is the point",
+        5
+      ],
+      [
+        "this point the date is the point to",
+        5
+      ],
+      [
+        "point the date is the point to verify",
+        5
+      ],
+      [
+        "the written child care subsidy or ccs answer",
+        5
+      ],
+      [
+        "before i answer child care subsidy or ccs",
+        5
+      ],
+      [
+        "before the cutoff i’ll test the date against",
+        5
+      ],
+      [
+        "start with photo id i’ll use it to",
+        4
+      ],
+      [
+        "with photo id i’ll use it to clarify",
+        4
+      ],
+      [
+        "australian business number or abn for new sole-trader",
+        4
+      ],
+      [
+        "business number or abn for new sole-trader registration",
+        4
+      ],
+      [
+        "is is the point to verify before i",
+        4
+      ],
+      [
+        "goods and services tax or gst for gst",
+        4
+      ],
+      [
+        "and services tax or gst for gst registration",
+        4
+      ],
+      [
+        "services tax or gst for gst registration question",
+        4
+      ],
+      [
+        "business activity statement or bas for quarterly business",
+        4
+      ],
+      [
+        "activity statement or bas for quarterly business activity",
+        4
+      ],
+      [
+        "statement or bas for quarterly business activity statement",
+        4
+      ],
+      [
+        "refund entitlement for refund for a cancelled tour",
+        4
+      ],
+      [
+        "adult migrant english program or amep for english-class",
+        4
+      ],
+      [
+        "migrant english program or amep for english-class options",
+        4
+      ],
+      [
+        "english program or amep for english-class options after",
+        4
+      ],
+      [
+        "program or amep for english-class options after settlement",
+        4
+      ],
+      [
+        "wait before changing anything i’ll compare photo id",
+        4
+      ]
+    ],
+    "officer_yue_top_10grams": [
+      [
+        "日期係要核嗰點對清先",
+        22
+      ],
+      [
+        "期係要核嗰點對清先答",
+        22
+      ],
+      [
+        "嗰個日期係要核嗰點對",
+        21
+      ],
+      [
+        "個日期係要核嗰點對清",
+        21
+      ],
+      [
+        "我先核實個日子之後先",
+        20
+      ],
+      [
+        "先核實個日子之後先到",
+        20
+      ],
+      [
+        "我先核實嗰個日期之後",
+        19
+      ],
+      [
+        "先核實嗰個日期之後先",
+        19
+      ],
+      [
+        "核實嗰個日期之後先到",
+        19
+      ],
+      [
+        "唔好估先對清個時間同",
+        19
+      ],
+      [
+        "個日子係要核嗰點對清",
+        17
+      ],
+      [
+        "日子係要核嗰點對清先",
+        17
+      ],
+      [
+        "子係要核嗰點對清先答",
+        17
+      ],
+      [
+        "個時間係要核嗰點對清",
+        16
+      ],
+      [
+        "時間係要核嗰點對清先",
+        16
+      ],
+      [
+        "間係要核嗰點對清先答",
+        16
+      ],
+      [
+        "我先核實個時間之後先",
+        15
+      ],
+      [
+        "先核實個時間之後先到",
+        15
+      ],
+      [
+        "唔好估先對清嗰個日期",
+        14
+      ],
+      [
+        "好估先對清嗰個日期同",
+        14
+      ],
+      [
+        "唔好估先對清個日子同",
+        13
+      ],
+      [
+        "同小朋友小學入學申請",
+        10
+      ],
+      [
+        "同由獨資經營轉做公司",
+        9
+      ],
+      [
+        "同定居後英文課程選擇",
+        9
+      ],
+      [
+        "同新州暴力禁制令個案",
+        9
+      ],
+      [
+        "同臨時僱員工資率查詢",
+        8
+      ],
+      [
+        "額係要核嗰點對清先答",
+        7
+      ],
+      [
+        "數係要核嗰點對清先答",
+        7
+      ],
+      [
+        "講臨時僱員工資率查詢",
+        7
+      ],
+      [
+        "講定居後英文課程選擇",
+        7
+      ]
+    ],
+    "client_en_top_8grams": [
+      [
+        "as the current detail what does it mean",
+        46
+      ],
+      [
+        "the current detail what does it mean for",
+        46
+      ],
+      [
+        "the current detail is the date how does",
+        23
+      ],
+      [
+        "current detail is the date how does that",
+        23
+      ],
+      [
+        "detail is the date how does that affect",
+        23
+      ],
+      [
+        "the point that changed is the date please",
+        22
+      ],
+      [
+        "point that changed is the date please reconsider",
+        22
+      ],
+      [
+        "i need the date checked before you answer",
+        22
+      ],
+      [
+        "need the date checked before you answer on",
+        22
+      ],
+      [
+        "does not line up i need the right",
+        16
+      ],
+      [
+        "not line up i need the right version",
+        16
+      ],
+      [
+        "line up i need the right version identified",
+        16
+      ],
+      [
+        "i have the date as the current detail",
+        16
+      ],
+      [
+        "have the date as the current detail what",
+        16
+      ],
+      [
+        "the date as the current detail what does",
+        16
+      ],
+      [
+        "date as the current detail what does it",
+        16
+      ],
+      [
+        "i have the time as the current detail",
+        14
+      ],
+      [
+        "have the time as the current detail what",
+        14
+      ],
+      [
+        "the time as the current detail what does",
+        14
+      ],
+      [
+        "time as the current detail what does it",
+        14
+      ],
+      [
+        "the point that changed is the time please",
+        14
+      ],
+      [
+        "point that changed is the time please reconsider",
+        14
+      ],
+      [
+        "details is what i have what else does",
+        13
+      ],
+      [
+        "the current detail is the time how does",
+        11
+      ],
+      [
+        "current detail is the time how does that",
+        11
+      ],
+      [
+        "detail is the time how does that affect",
+        11
+      ],
+      [
+        "i need to amend the date please use",
+        10
+      ],
+      [
+        "details tell me what is still needed for",
+        9
+      ],
+      [
+        "the point that changed is the amount please",
+        9
+      ],
+      [
+        "point that changed is the amount please reconsider",
+        9
+      ]
+    ]
+  },
+  "failures": [
+    "officer Cantonese repeated 10-grams 10.2% > 8.0%",
+    "client English-model repeated 8-grams 8.02% > 8.0%"
+  ]
+}

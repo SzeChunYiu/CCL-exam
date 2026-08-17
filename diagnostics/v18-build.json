@@ -1,0 +1,10 @@
+{
+  "dialogues": 500,
+  "segments": 6000,
+  "mean_words": 202.8,
+  "min_words": 159,
+  "max_words": 269,
+  "max_segment": 31,
+  "local_errors": [],
+  "output": "build/v18-dialogues.json"
+}

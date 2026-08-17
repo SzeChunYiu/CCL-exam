@@ -1,0 +1,72 @@
+name: Native 500 Text Promotion
+
+on:
+  push:
+    branches: [release/native-500-final2]
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  promote:
+    if: ${{ contains(github.event.head_commit.message || '', '[promote native500]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Promote exact v18 builder output
+        run: |
+          set -euo pipefail
+          python3 scripts/build_native_500_release_v18.py --promote | tee promote-build.json
+      - name: Re-run every text release gate on tracked production bank
+        run: |
+          set -euo pipefail
+          python3 scripts/verify_final4_bank.py data/dialogues.json --json | tee promote-verify.json
+          python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json | tee promote-native.json
+          python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json | tee promote-lexical.json
+          python3 scripts/qa_cantonese.py data/dialogues.json --json | tee promote-corpus.json
+          python3 scripts/audit_whole_dialogue_naturalness.py data/dialogues.json --json | tee promote-whole.json
+      - name: Regenerate materials and static support
+        run: |
+          set -euo pipefail
+          python3 scripts/export_final_materials.py
+          cp build/release-samples.md materials/RELEASE_SAMPLES.md
+          python3 scripts/build_terms.py
+          node --check app.js
+          node --check questions-page.js
+          node --check neural-audio.js
+      - name: Record frozen text hash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          p = Path('data/dialogues.json')
+          raw = p.read_bytes()
+          bank = json.loads(raw)
+          out = {
+              'bankSha256': hashlib.sha256(raw).hexdigest(),
+              'dialogues': len(bank),
+              'segments': sum(len(d['segments']) for d in bank),
+              'builder': 'scripts/build_native_500_release_v18.py',
+              'sourceCommit': '${{ github.sha }}',
+          }
+          Path('data/native500_text_release.json').write_text(
+              json.dumps(out, indent=2) + '\n', encoding='utf-8'
+          )
+          print(json.dumps(out, indent=2))
+          PY
+      - name: Commit frozen 500-dialogue text release
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/dialogues.json data/config.json data/site_summary.json data/repetition_qa.json data/terms.json data/native500_text_release.json
+          git add practice_pack materials/SOURCE_SCRIPTS.md materials/MODEL_ANSWERS.md materials/RELEASE_SAMPLES.md
+          git commit -m 'Promote native500 v18 text bank [skip audio] [skip release gate]'
+          git push origin HEAD:release/native-500-final2

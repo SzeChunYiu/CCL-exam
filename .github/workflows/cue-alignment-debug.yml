@@ -1,0 +1,48 @@
+name: Cue Alignment Debug
+on:
+  push:
+    branches: [release/native-500-final2]
+permissions:
+  contents: write
+defaults:
+  run:
+    shell: bash
+jobs:
+  debug:
+    if: ${{ contains(github.event.head_commit.message || '', '[cue debug]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect paired cues
+        run: |
+          set -euo pipefail
+          python3 - <<'PY' > cue-debug.txt
+          import sys
+          sys.path.insert(0,'scripts')
+          import build_native_500_release_v16 as v16
+          import build_native_500_release_v7 as v7
+          raw=v16.base.load_seeds()
+          for n in (1,31,37,38):
+              s=v16.f2.clean_seed(raw[n-1])
+              print('\n###',n,s['title'])
+              for field in ('issue','term','fact','evidence'):
+                  print(field,'EN=',s[field+'_en'])
+                  print(field,'YU=',s[field+'_yue'])
+                  if field!='term':
+                      print(' enparts=',v7.en_components(s[field+'_en']))
+                  print(' yuparts=',v16.f2.components(s[field+'_yue']))
+              for variant in range(5):
+                  for action in range(6):
+                      c=v16.v11.cue_set(s,variant,action)
+                      print('v/a',variant,action,'e=',c['e'],'ec=',c['ec'],'f=',c['f'],'fc=',c['fc'],'t=',c['t'],'tc=',c['tc'])
+          PY
+          cat cue-debug.txt
+      - name: Persist debug
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          mkdir -p diagnostics
+          cp cue-debug.txt diagnostics/cue-debug.txt
+          git add diagnostics/cue-debug.txt
+          git commit -m 'Record bilingual cue debug [skip release gate] [skip audio]'
+          git push origin HEAD:release/native-500-final2

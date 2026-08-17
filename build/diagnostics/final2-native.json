@@ -1,0 +1,1488 @@
+{
+  "dialogues": 500,
+  "client_turns": 3000,
+  "client_sentences": 2500,
+  "failures": [
+    "28 repeated interactional skeletons span >=3 dialogues"
+  ],
+  "exact_reuse_count": 0,
+  "exact_reuse": [],
+  "near_duplicate_count": 2,
+  "near_duplicates": [
+    {
+      "ratio": 0.875,
+      "a": "D280 S8",
+      "b": "D281 S5",
+      "text_a": "租約未對清，加租通知可唔可以照行",
+      "text_b": "租約未對清，終止租約通知可唔可以照行"
+    },
+    {
+      "ratio": 0.875,
+      "a": "D381 S3",
+      "b": "D382 S6",
+      "text_a": "租約未齊，終止租約通知可唔可以後補",
+      "text_b": "租約未齊，提前終止租約可唔可以後補"
+    }
+  ],
+  "skeleton_repeat_count": 28,
+  "skeleton_repeats": [
+    {
+      "skeleton": "我|係|唔|係|喇",
+      "dialogues": [
+        "D407",
+        "D426",
+        "D432",
+        "D435",
+        "D440",
+        "D450",
+        "D456",
+        "D459",
+        "D460",
+        "D498",
+        "D500"
+      ],
+      "examples": [
+        "我係問出院摘要個決定，出院跟進指示唔係重開得喇",
+        "我係問噪音投訴個決定，鄰里噪音投訴唔係重開知道喇",
+        "我係問場地租用個決定，社區運動場預約唔係重開知道喇",
+        "我係問居民泊車許可證個決定，居民泊車許可證唔係重開清楚喇"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|呀",
+      "dialogues": [
+        "D408",
+        "D418",
+        "D445",
+        "D451",
+        "D454",
+        "D463",
+        "D476",
+        "D486",
+        "D499"
+      ],
+      "examples": [
+        "我係問事及行政審裁處個決定，新州租務爭議唔係重開可以呀",
+        "我係問入息稅評稅通知個決定，延遲退稅唔係重開好呀",
+        "我係問出席紀錄個決定，最近學校缺課唔係重開可以呀",
+        "我係問別時段附加工資個決定，週末更份薪酬唔係重開可以呀"
+      ]
+    },
+    {
+      "skeleton": "我|再|返|再|喇",
+      "dialogues": [
+        "D121",
+        "D147",
+        "D185",
+        "D191",
+        "D192"
+      ],
+      "examples": [
+        "我再睇返，今個星期缺席咗兩更；最近病假缺勤要再對清楚喇",
+        "我再睇返，估計損失大約三千七百澳元；居財物盜竊索償要再對得喇",
+        "我再睇返，全年保費由一千二百四十加到一千五百二十澳元；保險續保保費要再對明白喇",
+        "我再睇返，要求分攤二百三十澳元；分攤電費要再對啩清楚喇"
+      ]
+    },
+    {
+      "skeleton": "唔|係|我|我|住",
+      "dialogues": [
+        "D202",
+        "D227",
+        "D262",
+        "D294",
+        "D295"
+      ],
+      "examples": [
+        "唔係嗰份，我指加租通知，對租金援助我聽住",
+        "唔係嗰份，我指所報資料，對務求職者補助金我聽住",
+        "唔係嗰份，我指聯絡資料，對註冊商業名稱我聽住",
+        "唔係嗰份，我指預約對清，對家長教師面談我聽住"
+      ]
+    },
+    {
+      "skeleton": "唔|係|我|係|咩",
+      "dialogues": [
+        "D229",
+        "D231",
+        "D259",
+        "D270",
+        "D296"
+      ],
+      "examples": [
+        "唔係嗰份，我指化驗申請表，對自付費用係咩",
+        "唔係嗰份，我指國民醫療保險卡，對險緊急護理診所係咩",
+        "唔係嗰份，我指戶口結單，對自動扣賬係咩",
+        "唔係嗰份，我指日誌紀錄，對噪音投訴係咩"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|我|喇",
+      "dialogues": [
+        "D433",
+        "D444",
+        "D470",
+        "D481",
+        "D489"
+      ],
+      "examples": [
+        "我係問受保事件個決定，旅遊保險索償唔係重開我明喇",
+        "我係問學歷評估個決定，海外學歷查詢唔係重開我知喇",
+        "我係問差額自付費個決定，物理治療預約唔係重開我知喇",
+        "我係問終止租約通知個決定，終止租約通知唔係重開我知喇"
+      ]
+    },
+    {
+      "skeleton": "我|再|返|係|再|我|喇",
+      "dialogues": [
+        "D104",
+        "D114",
+        "D126",
+        "D166"
+      ],
+      "examples": [
+        "我再睇返，今個學期學生供款係四千三百澳元；大學學費安排要再對我知喇",
+        "我再睇返，報價九千五百澳元，但發票係一萬二千三百澳元；家居裝修賬單要再對我知喇",
+        "我再睇返，發票總額係一千六百五十澳元，已包括商品及服務稅；客戶發票問題要再對嘞我明喇",
+        "我再睇返，第一次出糧日期係八月二十八日；新工出糧文件要再對我明喇"
+      ]
+    },
+    {
+      "skeleton": "我|再|返|再|呀",
+      "dialogues": [
+        "D118",
+        "D172",
+        "D175",
+        "D194"
+      ],
+      "examples": [
+        "我再睇返，上一個出糧期做咗十四個週末鐘；週末更份薪酬要再對可以呀",
+        "我再睇返，今個報資料嗰期稅前收入六百二十澳元；嗰項服務報收入要再對得呀",
+        "我再睇返，困難可能維持大約三個月；貸款還款困難要再對好呀",
+        "我再睇返，月結單顯示四十八個七毫澳元利息；信用卡利息收費要再對得呀"
+      ]
+    },
+    {
+      "skeleton": "唔|係|我|我|喇",
+      "dialogues": [
+        "D215",
+        "D261",
+        "D283",
+        "D286"
+      ],
+      "examples": [
+        "唔係嗰份，我指小朋友資料，對本地收生區我明喇",
+        "唔係嗰份，我指情況報告，對按金申索我明喇",
+        "唔係嗰份，我指租約，對事及行政審裁處我明喇",
+        "唔係嗰份，我指預訂條款，對退款權益我知喇"
+      ]
+    },
+    {
+      "skeleton": "唔|係|我|咁|我",
+      "dialogues": [
+        "D216",
+        "D224",
+        "D280",
+        "D282"
+      ],
+      "examples": [
+        "唔係嗰份，我指加租通知，對加租通知咁我明",
+        "唔係嗰份，我指最新電錶相片，對電錶讀數咁我明",
+        "唔係嗰份，我指解僱信，對不公平解僱申請咁我明",
+        "唔係嗰份，我指預計搬走日期，對提前終止租約咁我明"
+      ]
+    },
+    {
+      "skeleton": "唔|係|我|係|喎",
+      "dialogues": [
+        "D220",
+        "D249",
+        "D273",
+        "D276"
+      ],
+      "examples": [
+        "唔係嗰份，我指按揭結單，對對沖戶口係喎",
+        "唔係嗰份，我指現時結餘，對年假結餘係喎",
+        "唔係嗰份，我指評稅通知，對入息稅評稅通知係喎",
+        "唔係嗰份，我指預約信，對家庭爭議解決係喎"
+      ]
+    },
+    {
+      "skeleton": "唔|係|我|原來|咁",
+      "dialogues": [
+        "D230",
+        "D235",
+        "D272",
+        "D298"
+      ],
+      "examples": [
+        "唔係嗰份，我指兩期月結單，對免息期原來咁",
+        "唔係嗰份，我指照顧資料，對照顧者補助金吖原來咁",
+        "唔係嗰份，我指藥物清單，對出院摘要添原來咁",
+        "唔係嗰份，我指處方，對藥物福利計劃原來咁"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|係",
+      "dialogues": [
+        "D410",
+        "D417",
+        "D442",
+        "D492"
+      ],
+      "examples": [
+        "我係問嚴重故障個決定，二手車商投訴唔係重開哦，係",
+        "我係問時僱員附加薪酬個決定，僱員工資率查詢唔係重開哦，係",
+        "我係問物品擁有證明個決定，居財物盜竊索償唔係重開哦，係",
+        "我係問身份證明文件個決定，入籍預約唔係重開哦，係"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|原來|咁",
+      "dialogues": [
+        "D414",
+        "D458",
+        "D483",
+        "D491"
+      ],
+      "examples": [
+        "我係問保費個決定，保險續保保費唔係重開原來咁",
+        "我係問兒童工作審查個決定，義工申請唔係重開原來咁",
+        "我係問按金申索個決定，按金退款爭議唔係重開原來咁",
+        "我係問書面報價個決定，家居裝修賬單唔係重開原來咁"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|我|住",
+      "dialogues": [
+        "D419",
+        "D472",
+        "D475",
+        "D485"
+      ],
+      "examples": [
+        "我係問免息期個決定，信用卡利息收費唔係重開我聽住",
+        "我係問用事業費用分攤個決定，分攤電費唔係重開我聽住",
+        "我係問財務困難援助個決定，貸款還款困難唔係重開我聽住",
+        "我係問酬規例職級分類個決定，職位分類唔係重開我聽住"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|先",
+      "dialogues": [
+        "D420",
+        "D424",
+        "D462",
+        "D465"
+      ],
+      "examples": [
+        "我係問不公平解僱申請個決定，最近被解僱唔係重開等陣先",
+        "我係問家長教師面談個決定，家長教師面談唔係重開等陣先",
+        "我係問年假結餘個決定，年假申請唔係重開等陣先",
+        "我係問職業教育及培訓個決定，育學院課程註冊唔係重開等陣先"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|咁|呀",
+      "dialogues": [
+        "D422",
+        "D428",
+        "D431",
+        "D497"
+      ],
+      "examples": [
+        "我係問專科轉介信個決定，專科轉介唔係重開咁點呀",
+        "我係問法定退休金供款個決定，欠交退休金供款唔係重開咁點呀",
+        "我係問育兒補助金個決定，嗰項服務查詢唔係重開咁點呀",
+        "我係問險緊急護理診所個決定，即日醫療選擇唔係重開咁點呀"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|係|呀",
+      "dialogues": [
+        "D423",
+        "D479",
+        "D482",
+        "D494"
+      ],
+      "examples": [
+        "我係問事故報告個決定，工傷唔係重開係呀",
+        "我係問務求職者補助金個決定，嗰項服務報收入唔係重開係呀",
+        "我係問提前終止租約個決定，早離開定期租約唔係重開係呀",
+        "我係問緊急維修個決定，緊急維修要求唔係重開係呀"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|係|喎",
+      "dialogues": [
+        "D430",
+        "D453",
+        "D464",
+        "D490"
+      ],
+      "examples": [
+        "我係問大型廢物收集個決定，型廢物收集預約唔係重開係喎",
+        "我係問托兒津貼個決定，托兒學位唔係重開係喎",
+        "我係問等候期個決定，人醫療保險保障唔係重開係喎",
+        "我係問藥物福利計劃個決定，昂貴處方藥唔係重開係喎"
+      ]
+    },
+    {
+      "skeleton": "我|再|返|係|再|呀",
+      "dialogues": [
+        "D103",
+        "D129",
+        "D187"
+      ],
+      "examples": [
+        "我再睇返，所列自付額係八百五十澳元；汽車保險索償要再對可以呀",
+        "我再睇返，預計全年營業額係七萬八千澳元；服務稅登記問題要再對可以呀",
+        "我再睇返，驗血預約係星期一朝早；病理化驗要求要再對可以呀"
+      ]
+    },
+    {
+      "skeleton": "我|再|返|再|咁",
+      "dialogues": [
+        "D108",
+        "D133",
+        "D163"
+      ],
+      "examples": [
+        "我再睇返，因病缺課三日；最近學校缺課要再對咁就好",
+        "我再睇返，每次治療報價一百一十澳元；物理治療預約要再對添咁就好",
+        "我再睇返，第一張訂單價值四千八百澳元；供應商戶口申請要再對咁就好"
+      ]
+    },
+    {
+      "skeleton": "我|再|返|再|我|住",
+      "dialogues": [
+        "D120",
+        "D154",
+        "D198"
+      ],
+      "examples": [
+        "我再睇返，今個星期六想借書；公共圖書館會籍要再對我聽住",
+        "我再睇返，工作減到每星期十二個鐘；照顧者補助查詢要再對我聽住",
+        "我再睇返，申請十月五日起放十日假；年假申請要再對嘞我聽住"
+      ]
+    },
+    {
+      "skeleton": "我|再|返|再|唔",
+      "dialogues": [
+        "D125",
+        "D151",
+        "D164"
+      ],
+      "examples": [
+        "我再睇返，三個星期後要上庭；法律援助查詢要再對啩唔該",
+        "我再睇返，九月七日起每星期需要四日托兒；托兒學位要再對唔該",
+        "我再睇返，申請每星期三日下晝四點收工；彈性工作申請要再對唔該"
+      ]
+    },
+    {
+      "skeleton": "我|再|返|係|再|喇",
+      "dialogues": [
+        "D128",
+        "D162",
+        "D176"
+      ],
+      "examples": [
+        "我再睇返，專科預約係十一月十八日；專科轉介要再對得喇",
+        "我再睇返，預約係下星期二下晝四點二十分；家長教師面談要再對明白喇",
+        "我再睇返，預計退稅係一千三百四十澳元；延遲退稅要再對明白喇"
+      ]
+    },
+    {
+      "skeleton": "我|再|返|喺|再|呀",
+      "dialogues": [
+        "D156",
+        "D168",
+        "D184"
+      ],
+      "examples": [
+        "我再睇返，檢查安排喺星期二朝早十點；例行租屋檢查要再對可以呀",
+        "我再睇返，舊許可證喺八月三十一日到期；居民泊車許可證要再對得呀",
+        "我再睇返，迎新安排喺九月十一日；培訓註冊要再對好呀"
+      ]
+    },
+    {
+      "skeleton": "唔|係|我|咁|呀",
+      "dialogues": [
+        "D208",
+        "D267",
+        "D292"
+      ],
+      "examples": [
+        "唔係嗰份，我指商業推薦資料，對十日商業付款期咁點呀",
+        "唔係嗰份，我指相片，對物品擁有證明咁點呀",
+        "唔係嗰份，我指註冊紀錄，對費用責任截止日咁點呀"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|啫",
+      "dialogues": [
+        "D409",
+        "D412",
+        "D477"
+      ],
+      "examples": [
+        "我係問取消條款個決定，身中心會籍取消唔係重開好彩啫",
+        "我係問消費者保障個決定，雪櫃故障投訴唔係重開好彩啫",
+        "我係問租屋申請個決定，租屋申請唔係重開好彩啫"
+      ]
+    },
+    {
+      "skeleton": "我|係|唔|係|唔",
+      "dialogues": [
+        "D429",
+        "D467",
+        "D480"
+      ],
+      "examples": [
+        "我係問加租通知個決定，加租通知唔係重開唔該",
+        "我係問自付費用個決定，病理化驗要求唔係重開唔該",
+        "我係問費用責任截止日個決定，退科問題唔係重開唔該"
+      ]
+    }
+  ],
+  "fingerprints": {
+    "term_gloss_lesson": 0,
+    "generic_case_effect_next": 0,
+    "noted_but_current": 0,
+    "generic_next_step": 0,
+    "upload_keep_reference": 0,
+    "wait_then_call": 0,
+    "all_docs_enough": 0,
+    "decision_reasons_review": 0
+  },
+  "top_openers": [
+    [
+      "好",
+      145
+    ],
+    [
+      "我再睇返",
+      100
+    ],
+    [
+      "今次對文",
+      100
+    ],
+    [
+      "唔係嗰份",
+      100
+    ],
+    [
+      "我係",
+      100
+    ],
+    [
+      "清楚喇",
+      67
+    ],
+    [
+      "我知喇",
+      62
+    ],
+    [
+      "得喇",
+      61
+    ],
+    [
+      "咁",
+      56
+    ],
+    [
+      "得我記住",
+      55
+    ],
+    [
+      "明白喇",
+      54
+    ],
+    [
+      "有相身份",
+      19
+    ],
+    [
+      "嗰項服務",
+      17
+    ],
+    [
+      "加租通知",
+      13
+    ],
+    [
+      "預約對清",
+      12
+    ]
+  ],
+  "top_endings": [
+    [
+      "<bare>",
+      1223
+    ],
+    [
+      "喇",
+      867
+    ],
+    [
+      "呀",
+      602
+    ],
+    [
+      "喎",
+      116
+    ],
+    [
+      "咩",
+      98
+    ],
+    [
+      "啫",
+      94
+    ]
+  ],
+  "swc_markers": {},
+  "repair_turns": 218,
+  "change_state_turns": 110,
+  "short_turns_le10": 500,
+  "long_turns_ge45": 0,
+  "bare_endings": 1223,
+  "client_char_range": [
+    2,
+    39
+  ],
+  "dialogue_review": {
+    "D002": [
+      "no repair/confirmation event"
+    ],
+    "D004": [
+      "no repair/confirmation event"
+    ],
+    "D005": [
+      "no repair/confirmation event"
+    ],
+    "D006": [
+      "no repair/confirmation event"
+    ],
+    "D007": [
+      "no repair/confirmation event"
+    ],
+    "D008": [
+      "no repair/confirmation event"
+    ],
+    "D009": [
+      "no repair/confirmation event"
+    ],
+    "D010": [
+      "no repair/confirmation event"
+    ],
+    "D012": [
+      "no repair/confirmation event"
+    ],
+    "D013": [
+      "no repair/confirmation event"
+    ],
+    "D014": [
+      "no repair/confirmation event"
+    ],
+    "D015": [
+      "no repair/confirmation event"
+    ],
+    "D016": [
+      "no repair/confirmation event"
+    ],
+    "D017": [
+      "no repair/confirmation event"
+    ],
+    "D018": [
+      "no repair/confirmation event"
+    ],
+    "D019": [
+      "no repair/confirmation event"
+    ],
+    "D021": [
+      "no repair/confirmation event"
+    ],
+    "D022": [
+      "no repair/confirmation event"
+    ],
+    "D023": [
+      "no repair/confirmation event"
+    ],
+    "D024": [
+      "no repair/confirmation event"
+    ],
+    "D026": [
+      "no repair/confirmation event"
+    ],
+    "D028": [
+      "no repair/confirmation event"
+    ],
+    "D029": [
+      "no repair/confirmation event"
+    ],
+    "D031": [
+      "no repair/confirmation event"
+    ],
+    "D032": [
+      "no repair/confirmation event"
+    ],
+    "D033": [
+      "no repair/confirmation event"
+    ],
+    "D034": [
+      "no repair/confirmation event"
+    ],
+    "D035": [
+      "no repair/confirmation event"
+    ],
+    "D036": [
+      "no repair/confirmation event"
+    ],
+    "D038": [
+      "no repair/confirmation event"
+    ],
+    "D039": [
+      "no repair/confirmation event"
+    ],
+    "D042": [
+      "no repair/confirmation event"
+    ],
+    "D043": [
+      "no repair/confirmation event"
+    ],
+    "D044": [
+      "no repair/confirmation event"
+    ],
+    "D046": [
+      "no repair/confirmation event"
+    ],
+    "D047": [
+      "no repair/confirmation event"
+    ],
+    "D048": [
+      "no repair/confirmation event"
+    ],
+    "D049": [
+      "no repair/confirmation event"
+    ],
+    "D050": [
+      "no repair/confirmation event"
+    ],
+    "D051": [
+      "no repair/confirmation event"
+    ],
+    "D053": [
+      "no repair/confirmation event"
+    ],
+    "D054": [
+      "no repair/confirmation event"
+    ],
+    "D055": [
+      "no repair/confirmation event"
+    ],
+    "D056": [
+      "no repair/confirmation event"
+    ],
+    "D057": [
+      "no repair/confirmation event"
+    ],
+    "D058": [
+      "no repair/confirmation event"
+    ],
+    "D059": [
+      "no repair/confirmation event"
+    ],
+    "D060": [
+      "no repair/confirmation event"
+    ],
+    "D061": [
+      "no repair/confirmation event"
+    ],
+    "D062": [
+      "no repair/confirmation event"
+    ],
+    "D063": [
+      "no repair/confirmation event"
+    ],
+    "D064": [
+      "no repair/confirmation event"
+    ],
+    "D065": [
+      "no repair/confirmation event"
+    ],
+    "D066": [
+      "no repair/confirmation event"
+    ],
+    "D067": [
+      "no repair/confirmation event"
+    ],
+    "D068": [
+      "no repair/confirmation event"
+    ],
+    "D069": [
+      "no repair/confirmation event"
+    ],
+    "D071": [
+      "no repair/confirmation event"
+    ],
+    "D072": [
+      "no repair/confirmation event"
+    ],
+    "D074": [
+      "no repair/confirmation event"
+    ],
+    "D075": [
+      "no repair/confirmation event"
+    ],
+    "D076": [
+      "no repair/confirmation event"
+    ],
+    "D077": [
+      "no repair/confirmation event"
+    ],
+    "D078": [
+      "no repair/confirmation event"
+    ],
+    "D079": [
+      "no repair/confirmation event"
+    ],
+    "D080": [
+      "no repair/confirmation event"
+    ],
+    "D082": [
+      "no repair/confirmation event"
+    ],
+    "D084": [
+      "no repair/confirmation event"
+    ],
+    "D085": [
+      "no repair/confirmation event"
+    ],
+    "D086": [
+      "no repair/confirmation event"
+    ],
+    "D087": [
+      "no repair/confirmation event"
+    ],
+    "D089": [
+      "no repair/confirmation event"
+    ],
+    "D090": [
+      "no repair/confirmation event"
+    ],
+    "D091": [
+      "no repair/confirmation event"
+    ],
+    "D093": [
+      "no repair/confirmation event"
+    ],
+    "D094": [
+      "no repair/confirmation event"
+    ],
+    "D095": [
+      "no repair/confirmation event"
+    ],
+    "D096": [
+      "no repair/confirmation event"
+    ],
+    "D098": [
+      "no repair/confirmation event"
+    ],
+    "D100": [
+      "no repair/confirmation event"
+    ],
+    "D101": [
+      "no repair/confirmation event"
+    ],
+    "D102": [
+      "no repair/confirmation event"
+    ],
+    "D103": [
+      "no repair/confirmation event"
+    ],
+    "D104": [
+      "no repair/confirmation event"
+    ],
+    "D107": [
+      "no repair/confirmation event"
+    ],
+    "D108": [
+      "no repair/confirmation event"
+    ],
+    "D109": [
+      "no repair/confirmation event"
+    ],
+    "D112": [
+      "no repair/confirmation event"
+    ],
+    "D113": [
+      "no repair/confirmation event"
+    ],
+    "D115": [
+      "no repair/confirmation event"
+    ],
+    "D116": [
+      "no repair/confirmation event"
+    ],
+    "D117": [
+      "no repair/confirmation event"
+    ],
+    "D118": [
+      "no repair/confirmation event"
+    ],
+    "D119": [
+      "no repair/confirmation event"
+    ],
+    "D120": [
+      "no repair/confirmation event"
+    ],
+    "D122": [
+      "no repair/confirmation event"
+    ],
+    "D123": [
+      "no repair/confirmation event"
+    ],
+    "D125": [
+      "no repair/confirmation event"
+    ],
+    "D126": [
+      "no repair/confirmation event"
+    ],
+    "D128": [
+      "no repair/confirmation event"
+    ],
+    "D129": [
+      "no repair/confirmation event"
+    ],
+    "D130": [
+      "no repair/confirmation event"
+    ],
+    "D131": [
+      "no repair/confirmation event"
+    ],
+    "D133": [
+      "no repair/confirmation event"
+    ],
+    "D135": [
+      "no repair/confirmation event"
+    ],
+    "D137": [
+      "no repair/confirmation event"
+    ],
+    "D138": [
+      "no repair/confirmation event"
+    ],
+    "D141": [
+      "no repair/confirmation event"
+    ],
+    "D142": [
+      "no repair/confirmation event"
+    ],
+    "D143": [
+      "no repair/confirmation event"
+    ],
+    "D144": [
+      "no repair/confirmation event"
+    ],
+    "D145": [
+      "no repair/confirmation event"
+    ],
+    "D146": [
+      "no repair/confirmation event"
+    ],
+    "D147": [
+      "no repair/confirmation event"
+    ],
+    "D148": [
+      "no repair/confirmation event"
+    ],
+    "D149": [
+      "no repair/confirmation event"
+    ],
+    "D150": [
+      "no repair/confirmation event"
+    ],
+    "D151": [
+      "no repair/confirmation event"
+    ],
+    "D152": [
+      "no repair/confirmation event"
+    ],
+    "D153": [
+      "no repair/confirmation event"
+    ],
+    "D155": [
+      "no repair/confirmation event"
+    ],
+    "D156": [
+      "no repair/confirmation event"
+    ],
+    "D157": [
+      "no repair/confirmation event"
+    ],
+    "D158": [
+      "no repair/confirmation event"
+    ],
+    "D159": [
+      "no repair/confirmation event"
+    ],
+    "D160": [
+      "no repair/confirmation event"
+    ],
+    "D162": [
+      "no repair/confirmation event"
+    ],
+    "D163": [
+      "no repair/confirmation event"
+    ],
+    "D164": [
+      "no repair/confirmation event"
+    ],
+    "D167": [
+      "no repair/confirmation event"
+    ],
+    "D168": [
+      "no repair/confirmation event"
+    ],
+    "D169": [
+      "no repair/confirmation event"
+    ],
+    "D170": [
+      "no repair/confirmation event"
+    ],
+    "D171": [
+      "no repair/confirmation event"
+    ],
+    "D172": [
+      "no repair/confirmation event"
+    ],
+    "D173": [
+      "no repair/confirmation event"
+    ],
+    "D174": [
+      "no repair/confirmation event"
+    ],
+    "D175": [
+      "no repair/confirmation event"
+    ],
+    "D176": [
+      "no repair/confirmation event"
+    ],
+    "D177": [
+      "no repair/confirmation event"
+    ],
+    "D178": [
+      "no repair/confirmation event"
+    ],
+    "D180": [
+      "no repair/confirmation event"
+    ],
+    "D181": [
+      "no repair/confirmation event"
+    ],
+    "D182": [
+      "no repair/confirmation event"
+    ],
+    "D183": [
+      "no repair/confirmation event"
+    ],
+    "D184": [
+      "no repair/confirmation event"
+    ],
+    "D185": [
+      "no repair/confirmation event"
+    ],
+    "D187": [
+      "no repair/confirmation event"
+    ],
+    "D188": [
+      "no repair/confirmation event"
+    ],
+    "D189": [
+      "no repair/confirmation event"
+    ],
+    "D190": [
+      "no repair/confirmation event"
+    ],
+    "D192": [
+      "no repair/confirmation event"
+    ],
+    "D193": [
+      "no repair/confirmation event"
+    ],
+    "D194": [
+      "no repair/confirmation event"
+    ],
+    "D195": [
+      "no repair/confirmation event"
+    ],
+    "D196": [
+      "no repair/confirmation event"
+    ],
+    "D197": [
+      "no repair/confirmation event"
+    ],
+    "D198": [
+      "no repair/confirmation event"
+    ],
+    "D199": [
+      "no repair/confirmation event"
+    ],
+    "D200": [
+      "no repair/confirmation event"
+    ],
+    "D201": [
+      "no repair/confirmation event"
+    ],
+    "D203": [
+      "no repair/confirmation event"
+    ],
+    "D204": [
+      "no repair/confirmation event"
+    ],
+    "D206": [
+      "no repair/confirmation event"
+    ],
+    "D207": [
+      "no repair/confirmation event"
+    ],
+    "D208": [
+      "no repair/confirmation event"
+    ],
+    "D209": [
+      "no repair/confirmation event"
+    ],
+    "D210": [
+      "no repair/confirmation event"
+    ],
+    "D211": [
+      "no repair/confirmation event"
+    ],
+    "D213": [
+      "no repair/confirmation event"
+    ],
+    "D214": [
+      "no repair/confirmation event"
+    ],
+    "D215": [
+      "no repair/confirmation event"
+    ],
+    "D216": [
+      "no repair/confirmation event"
+    ],
+    "D217": [
+      "no repair/confirmation event"
+    ],
+    "D218": [
+      "no repair/confirmation event"
+    ],
+    "D221": [
+      "no repair/confirmation event"
+    ],
+    "D222": [
+      "no repair/confirmation event"
+    ],
+    "D223": [
+      "no repair/confirmation event"
+    ],
+    "D224": [
+      "no repair/confirmation event"
+    ],
+    "D225": [
+      "no repair/confirmation event"
+    ],
+    "D226": [
+      "no repair/confirmation event"
+    ],
+    "D227": [
+      "no repair/confirmation event"
+    ],
+    "D228": [
+      "no repair/confirmation event"
+    ],
+    "D229": [
+      "no repair/confirmation event"
+    ],
+    "D231": [
+      "no repair/confirmation event"
+    ],
+    "D233": [
+      "no repair/confirmation event"
+    ],
+    "D234": [
+      "no repair/confirmation event"
+    ],
+    "D235": [
+      "no repair/confirmation event"
+    ],
+    "D236": [
+      "no repair/confirmation event"
+    ],
+    "D238": [
+      "no repair/confirmation event"
+    ],
+    "D239": [
+      "no repair/confirmation event"
+    ],
+    "D240": [
+      "no repair/confirmation event"
+    ],
+    "D244": [
+      "no repair/confirmation event"
+    ],
+    "D245": [
+      "no repair/confirmation event"
+    ],
+    "D246": [
+      "no repair/confirmation event"
+    ],
+    "D248": [
+      "no repair/confirmation event"
+    ],
+    "D249": [
+      "no repair/confirmation event"
+    ],
+    "D250": [
+      "no repair/confirmation event"
+    ],
+    "D252": [
+      "no repair/confirmation event"
+    ],
+    "D253": [
+      "no repair/confirmation event"
+    ],
+    "D254": [
+      "no repair/confirmation event"
+    ],
+    "D255": [
+      "no repair/confirmation event"
+    ],
+    "D257": [
+      "no repair/confirmation event"
+    ],
+    "D259": [
+      "no repair/confirmation event"
+    ],
+    "D260": [
+      "no repair/confirmation event"
+    ],
+    "D261": [
+      "no repair/confirmation event"
+    ],
+    "D262": [
+      "no repair/confirmation event"
+    ],
+    "D263": [
+      "no repair/confirmation event"
+    ],
+    "D264": [
+      "no repair/confirmation event"
+    ],
+    "D266": [
+      "no repair/confirmation event"
+    ],
+    "D268": [
+      "no repair/confirmation event"
+    ],
+    "D269": [
+      "no repair/confirmation event"
+    ],
+    "D272": [
+      "no repair/confirmation event"
+    ],
+    "D273": [
+      "no repair/confirmation event"
+    ],
+    "D275": [
+      "no repair/confirmation event"
+    ],
+    "D276": [
+      "no repair/confirmation event"
+    ],
+    "D277": [
+      "no repair/confirmation event"
+    ],
+    "D278": [
+      "no repair/confirmation event"
+    ],
+    "D279": [
+      "no repair/confirmation event"
+    ],
+    "D282": [
+      "no repair/confirmation event"
+    ],
+    "D283": [
+      "no repair/confirmation event"
+    ],
+    "D284": [
+      "no repair/confirmation event"
+    ],
+    "D285": [
+      "no repair/confirmation event"
+    ],
+    "D286": [
+      "no repair/confirmation event"
+    ],
+    "D287": [
+      "no repair/confirmation event"
+    ],
+    "D288": [
+      "no repair/confirmation event"
+    ],
+    "D289": [
+      "no repair/confirmation event"
+    ],
+    "D291": [
+      "no repair/confirmation event"
+    ],
+    "D292": [
+      "no repair/confirmation event"
+    ],
+    "D294": [
+      "no repair/confirmation event"
+    ],
+    "D296": [
+      "no repair/confirmation event"
+    ],
+    "D297": [
+      "no repair/confirmation event"
+    ],
+    "D298": [
+      "no repair/confirmation event"
+    ],
+    "D299": [
+      "no repair/confirmation event"
+    ],
+    "D402": [
+      "no repair/confirmation event"
+    ],
+    "D404": [
+      "no repair/confirmation event"
+    ],
+    "D406": [
+      "no repair/confirmation event"
+    ],
+    "D407": [
+      "no repair/confirmation event"
+    ],
+    "D409": [
+      "no repair/confirmation event"
+    ],
+    "D410": [
+      "no repair/confirmation event"
+    ],
+    "D411": [
+      "no repair/confirmation event"
+    ],
+    "D413": [
+      "no repair/confirmation event"
+    ],
+    "D414": [
+      "no repair/confirmation event"
+    ],
+    "D415": [
+      "no repair/confirmation event"
+    ],
+    "D416": [
+      "no repair/confirmation event"
+    ],
+    "D417": [
+      "no repair/confirmation event"
+    ],
+    "D418": [
+      "no repair/confirmation event"
+    ],
+    "D419": [
+      "no repair/confirmation event"
+    ],
+    "D421": [
+      "no repair/confirmation event"
+    ],
+    "D422": [
+      "no repair/confirmation event"
+    ],
+    "D425": [
+      "no repair/confirmation event"
+    ],
+    "D427": [
+      "no repair/confirmation event"
+    ],
+    "D428": [
+      "no repair/confirmation event"
+    ],
+    "D430": [
+      "no repair/confirmation event"
+    ],
+    "D431": [
+      "no repair/confirmation event"
+    ],
+    "D432": [
+      "no repair/confirmation event"
+    ],
+    "D433": [
+      "no repair/confirmation event"
+    ],
+    "D434": [
+      "no repair/confirmation event"
+    ],
+    "D435": [
+      "no repair/confirmation event"
+    ],
+    "D437": [
+      "no repair/confirmation event"
+    ],
+    "D438": [
+      "no repair/confirmation event"
+    ],
+    "D440": [
+      "no repair/confirmation event"
+    ],
+    "D441": [
+      "no repair/confirmation event"
+    ],
+    "D442": [
+      "no repair/confirmation event"
+    ],
+    "D443": [
+      "no repair/confirmation event"
+    ],
+    "D445": [
+      "no repair/confirmation event"
+    ],
+    "D446": [
+      "no repair/confirmation event"
+    ],
+    "D447": [
+      "no repair/confirmation event"
+    ],
+    "D448": [
+      "no repair/confirmation event"
+    ],
+    "D450": [
+      "no repair/confirmation event"
+    ],
+    "D452": [
+      "no repair/confirmation event"
+    ],
+    "D453": [
+      "no repair/confirmation event"
+    ],
+    "D454": [
+      "no repair/confirmation event"
+    ],
+    "D455": [
+      "no repair/confirmation event"
+    ],
+    "D456": [
+      "no repair/confirmation event"
+    ],
+    "D457": [
+      "no repair/confirmation event"
+    ],
+    "D459": [
+      "no repair/confirmation event"
+    ],
+    "D460": [
+      "no repair/confirmation event"
+    ],
+    "D461": [
+      "no repair/confirmation event"
+    ],
+    "D463": [
+      "no repair/confirmation event"
+    ],
+    "D464": [
+      "no repair/confirmation event"
+    ],
+    "D466": [
+      "no repair/confirmation event"
+    ],
+    "D467": [
+      "no repair/confirmation event"
+    ],
+    "D469": [
+      "no repair/confirmation event"
+    ],
+    "D470": [
+      "no repair/confirmation event"
+    ],
+    "D472": [
+      "no repair/confirmation event"
+    ],
+    "D473": [
+      "no repair/confirmation event"
+    ],
+    "D474": [
+      "no repair/confirmation event"
+    ],
+    "D475": [
+      "no repair/confirmation event"
+    ],
+    "D476": [
+      "no repair/confirmation event"
+    ],
+    "D477": [
+      "no repair/confirmation event"
+    ],
+    "D478": [
+      "no repair/confirmation event"
+    ],
+    "D479": [
+      "no repair/confirmation event"
+    ],
+    "D480": [
+      "no repair/confirmation event"
+    ],
+    "D481": [
+      "no repair/confirmation event"
+    ],
+    "D482": [
+      "no repair/confirmation event"
+    ],
+    "D483": [
+      "no repair/confirmation event"
+    ],
+    "D484": [
+      "no repair/confirmation event"
+    ],
+    "D486": [
+      "no repair/confirmation event"
+    ],
+    "D487": [
+      "no repair/confirmation event"
+    ],
+    "D488": [
+      "no repair/confirmation event"
+    ],
+    "D489": [
+      "no repair/confirmation event"
+    ],
+    "D490": [
+      "no repair/confirmation event"
+    ],
+    "D491": [
+      "no repair/confirmation event"
+    ],
+    "D493": [
+      "no repair/confirmation event"
+    ],
+    "D494": [
+      "no repair/confirmation event"
+    ],
+    "D495": [
+      "no repair/confirmation event"
+    ],
+    "D496": [
+      "no repair/confirmation event"
+    ],
+    "D499": [
+      "no repair/confirmation event"
+    ],
+    "D500": [
+      "no repair/confirmation event"
+    ]
+  }
+}

@@ -1,0 +1,1774 @@
+{
+  "dialogues": 500,
+  "client_turns": 3000,
+  "client_sentences": 2500,
+  "failures": [
+    "1 exact Cantonese sentences reused across dialogues",
+    "96 near-duplicate cross-dialogue sentence pairs >= 0.86",
+    "21 repeated interactional skeletons span >=3 dialogues"
+  ],
+  "exact_reuse_count": 1,
+  "exact_reuse": [
+    {
+      "text": "結果嗰度更正返，我問托兒津貼，即係相關英文項目個決定，唔係重開申請",
+      "dialogues": [
+        "D464",
+        "D496"
+      ],
+      "occurrences": 2
+    }
+  ],
+  "near_duplicate_count": 96,
+  "near_duplicates": [
+    {
+      "ratio": 0.983,
+      "a": "D438 S9",
+      "b": "D439 S10",
+      "text_a": "結果嗰度更正返，我問相關英文項目類過橋簽證個決定，唔係重開申請㗎",
+      "text_b": "結果嗰度更正返，我問相關英文項目類過橋簽證個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.958,
+      "a": "D438 S7",
+      "b": "D439 S8",
+      "text_a": "相關英文項目類過橋簽證原決定唔變，簽證程序跟住點喎",
+      "text_b": "相關英文項目類過橋簽證原決定唔變，簽證程序跟住點喇"
+    },
+    {
+      "ratio": 0.926,
+      "a": "D101 S5",
+      "b": "D158 S3",
+      "text_a": "今次再睇，計劃九月一日開始營業；同上次講法唔同",
+      "text_b": "今次再睇，個計劃喺九月十九日開始；同上次講法唔同"
+    },
+    {
+      "ratio": 0.926,
+      "a": "D149 S3",
+      "b": "D168 S5",
+      "text_a": "今次再睇，調解安排喺十月六日；同上次講法唔同呀",
+      "text_b": "今次再睇，迎新安排喺九月十一日；同上次講法唔同呀"
+    },
+    {
+      "ratio": 0.913,
+      "a": "D429 S9",
+      "b": "D433 S9",
+      "text_a": "結果嗰度更正返，我問自付費用個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問差額自付費個決定，唔係重開申請呢"
+    },
+    {
+      "ratio": 0.912,
+      "a": "D228 S6",
+      "b": "D290 S3",
+      "text_a": "文件寫專科預約係十一月十八日，我想對清係咪呢個先啱呀",
+      "text_b": "文件寫手術預約係十一月四日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.912,
+      "a": "D401 S3",
+      "b": "D458 S1",
+      "text_a": "結果同計劃九月一日開始營業對唔上；我想知用邊份添",
+      "text_b": "結果同個計劃喺九月十九日開始對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.909,
+      "a": "D480 S10",
+      "b": "D484 S10",
+      "text_a": "結果嗰度更正返，我問加租通知個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問入屋通知個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.909,
+      "a": "D428 S1",
+      "b": "D490 S3",
+      "text_a": "結果同專科預約係十一月十八日對唔上；我想知用邊份嘛",
+      "text_b": "結果同手術預約係十一月四日對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.909,
+      "a": "D458 S1",
+      "b": "D465 S6",
+      "text_a": "結果同個計劃喺九月十九日開始對唔上；我想知用邊份",
+      "text_b": "結果同課堂喺十月六日開始對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.906,
+      "a": "D128 S5",
+      "b": "D190 S3",
+      "text_a": "今次再睇，專科預約係十一月十八日；同上次講法唔同喇",
+      "text_b": "今次再睇，手術預約係十一月四日；同上次講法唔同"
+    },
+    {
+      "ratio": 0.903,
+      "a": "D291 S4",
+      "b": "D295 S3",
+      "text_a": "文件寫全年保費由一千二百四十加到一千五百二十澳元，我想對清係咪呢個先啱",
+      "text_b": "文件寫週租由四百七十加到五百一十澳元，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.9,
+      "a": "D201 S6",
+      "b": "D258 S6",
+      "text_a": "文件寫計劃九月一日開始營業，我想對清係咪呢個先啱呢",
+      "text_b": "文件寫個計劃喺九月十九日開始，我想對清係咪呢個先啱喇"
+    },
+    {
+      "ratio": 0.9,
+      "a": "D491 S3",
+      "b": "D495 S6",
+      "text_a": "結果同全年保費由一千二百四十加到一千五百二十澳元對唔上；我想知用邊份",
+      "text_b": "結果同週租由四百七十加到五百一十澳元對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.898,
+      "a": "D432 S9",
+      "b": "D434 S8",
+      "text_a": "結果嗰度更正返，我問治療計劃個決定，唔係重開申請喇",
+      "text_b": "結果嗰度更正返，我問心理健康治療計劃個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.898,
+      "a": "D481 S9",
+      "b": "D482 S10",
+      "text_a": "結果嗰度更正返，我問終止租約通知個決定，唔係重開申請嘛",
+      "text_b": "結果嗰度更正返，我問提前終止租約個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.897,
+      "a": "D253 S6",
+      "b": "D290 S3",
+      "text_a": "文件寫預約收集日期係九月十四日，我想對清係咪呢個先啱",
+      "text_b": "文件寫手術預約係十一月四日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.897,
+      "a": "D253 S6",
+      "b": "D297 S3",
+      "text_a": "文件寫預約收集日期係九月十四日，我想對清係咪呢個先啱",
+      "text_b": "文件寫分居日期係八月二日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.897,
+      "a": "D153 S5",
+      "b": "D181 S6",
+      "text_a": "今次再睇，預約收集日期係九月十四日；同上次講法唔同喇",
+      "text_b": "今次再睇，預計搬走日期係九月三十日；同上次講法唔同喇"
+    },
+    {
+      "ratio": 0.897,
+      "a": "D249 S6",
+      "b": "D268 S3",
+      "text_a": "文件寫調解安排喺十月六日，我想對清係咪呢個先啱呢",
+      "text_b": "文件寫迎新安排喺九月十一日，我想對清係咪呢個先啱啫"
+    },
+    {
+      "ratio": 0.896,
+      "a": "D207 S4",
+      "b": "D226 S6",
+      "text_a": "文件寫第一個市集係九月十二日，我想對清係咪呢個先啱",
+      "text_b": "文件寫第一次出糧日期係八月二十八日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.896,
+      "a": "D207 S4",
+      "b": "D236 S1",
+      "text_a": "文件寫第一個市集係九月十二日，我想對清係咪呢個先啱",
+      "text_b": "文件寫第一次醫院預約係九月二十二日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.895,
+      "a": "D387 S10",
+      "b": "D389 S9",
+      "text_a": "限期嗰度我講錯；汽車保險索償要先問實日子",
+      "text_b": "限期嗰度我講錯；旅遊保險索償要先問實日子"
+    },
+    {
+      "ratio": 0.894,
+      "a": "D480 S10",
+      "b": "D481 S9",
+      "text_a": "結果嗰度更正返，我問加租通知個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問終止租約通知個決定，唔係重開申請嘛"
+    },
+    {
+      "ratio": 0.894,
+      "a": "D476 S9",
+      "b": "D484 S10",
+      "text_a": "結果嗰度更正返，我問入息稅評稅通知個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問入屋通知個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.893,
+      "a": "D128 S5",
+      "b": "D153 S5",
+      "text_a": "今次再睇，專科預約係十一月十八日；同上次講法唔同喇",
+      "text_b": "今次再睇，預約收集日期係九月十四日；同上次講法唔同喇"
+    },
+    {
+      "ratio": 0.893,
+      "a": "D252 S4",
+      "b": "D297 S3",
+      "text_a": "文件寫聆訊排期係九月三日，我想對清係咪呢個先啱",
+      "text_b": "文件寫分居日期係八月二日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.893,
+      "a": "D449 S3",
+      "b": "D468 S6",
+      "text_a": "結果同調解安排喺十月六日對唔上；我想知用邊份喇",
+      "text_b": "結果同迎新安排喺九月十一日對唔上；我想知用邊份囉"
+    },
+    {
+      "ratio": 0.889,
+      "a": "D107 S2",
+      "b": "D136 S6",
+      "text_a": "今次再睇，第一個市集係九月十二日；同上次講法唔同",
+      "text_b": "今次再睇，第一次醫院預約係九月二十二日；同上次講法唔同"
+    },
+    {
+      "ratio": 0.889,
+      "a": "D426 S5",
+      "b": "D446 S6",
+      "text_a": "結果同第一次出糧日期係八月二十八日對唔上；我想知用邊份㗎",
+      "text_b": "結果同下一次地方法院日期係九月二十一日對唔上；我想知用邊份㗎"
+    },
+    {
+      "ratio": 0.889,
+      "a": "D158 S3",
+      "b": "D165 S4",
+      "text_a": "今次再睇，個計劃喺九月十九日開始；同上次講法唔同",
+      "text_b": "今次再睇，課堂喺十月六日開始；同上次講法唔同喇"
+    },
+    {
+      "ratio": 0.886,
+      "a": "D226 S6",
+      "b": "D236 S1",
+      "text_a": "文件寫第一次出糧日期係八月二十八日，我想對清係咪呢個先啱",
+      "text_b": "文件寫第一次醫院預約係九月二十二日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.885,
+      "a": "D253 S6",
+      "b": "D281 S3",
+      "text_a": "文件寫預約收集日期係九月十四日，我想對清係咪呢個先啱",
+      "text_b": "文件寫預計搬走日期係九月三十日，我想對清係咪呢個先啱呀"
+    },
+    {
+      "ratio": 0.884,
+      "a": "D028 S7",
+      "b": "D090 S10",
+      "text_a": "我更正返，專科預約係十一月十八日先啱啩",
+      "text_b": "我更正返，手術預約係十一月四日先啱"
+    },
+    {
+      "ratio": 0.884,
+      "a": "D049 S10",
+      "b": "D068 S10",
+      "text_a": "我更正返，調解安排喺十月六日先啱呀",
+      "text_b": "我更正返，迎新安排喺九月十一日先啱"
+    },
+    {
+      "ratio": 0.884,
+      "a": "D414 S8",
+      "b": "D454 S9",
+      "text_a": "結果嗰度更正返，我問書面報價個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問圖書證個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.884,
+      "a": "D429 S9",
+      "b": "D491 S9",
+      "text_a": "結果嗰度更正返，我問自付費用個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問保費個決定，唔係重開申請囉"
+    },
+    {
+      "ratio": 0.884,
+      "a": "D448 S10",
+      "b": "D454 S9",
+      "text_a": "結果嗰度更正返，我問證人供詞個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問圖書證個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.884,
+      "a": "D455 S7",
+      "b": "D491 S9",
+      "text_a": "結果嗰度更正返，我問優惠收費個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問保費個決定，唔係重開申請囉"
+    },
+    {
+      "ratio": 0.882,
+      "a": "D380 S5",
+      "b": "D381 S7",
+      "text_a": "加租通知遲咗先搞掂，租務安排會點呀",
+      "text_b": "終止租約通知遲咗先搞掂，租務安排會點呀"
+    },
+    {
+      "ratio": 0.881,
+      "a": "D191 S3",
+      "b": "D195 S3",
+      "text_a": "今次再睇，全年保費由一千二百四十加到一千五百二十澳元；同上次講法唔同",
+      "text_b": "今次再睇，週租由四百七十加到五百一十澳元；同上次講法唔同呀"
+    },
+    {
+      "ratio": 0.881,
+      "a": "D258 S6",
+      "b": "D265 S3",
+      "text_a": "文件寫個計劃喺九月十九日開始，我想對清係咪呢個先啱喇",
+      "text_b": "文件寫課堂喺十月六日開始，我想對清係咪呢個先啱㗎"
+    },
+    {
+      "ratio": 0.881,
+      "a": "D281 S3",
+      "b": "D297 S3",
+      "text_a": "文件寫預計搬走日期係九月三十日，我想對清係咪呢個先啱呀",
+      "text_b": "文件寫分居日期係八月二日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.881,
+      "a": "D228 S6",
+      "b": "D253 S6",
+      "text_a": "文件寫專科預約係十一月十八日，我想對清係咪呢個先啱呀",
+      "text_b": "文件寫預約收集日期係九月十四日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.88,
+      "a": "D450 S1",
+      "b": "D474 S6",
+      "text_a": "結果同爭議金額係三千二百澳元對唔上；我想知用邊份",
+      "text_b": "結果同想提取嘅金額係六千澳元對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.879,
+      "a": "D407 S4",
+      "b": "D436 S5",
+      "text_a": "結果同第一個市集係九月十二日對唔上；我想知用邊份喇",
+      "text_b": "結果同第一次醫院預約係九月二十二日對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.878,
+      "a": "D217 S7",
+      "b": "D218 S8",
+      "text_a": "更表、合約同糧單未對清，僱傭待遇可唔可以照行",
+      "text_b": "工時表、更表同糧單未對清，僱傭待遇可唔可以照行"
+    },
+    {
+      "ratio": 0.877,
+      "a": "D226 S6",
+      "b": "D246 S3",
+      "text_a": "文件寫第一次出糧日期係八月二十八日，我想對清係咪呢個先啱",
+      "text_b": "文件寫下一次地方法院日期係九月二十一日，我想對清係咪呢個先啱添"
+    },
+    {
+      "ratio": 0.877,
+      "a": "D453 S6",
+      "b": "D490 S3",
+      "text_a": "結果同預約收集日期係九月十四日對唔上；我想知用邊份喎",
+      "text_b": "結果同手術預約係十一月四日對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.877,
+      "a": "D453 S6",
+      "b": "D497 S1",
+      "text_a": "結果同預約收集日期係九月十四日對唔上；我想知用邊份喎",
+      "text_b": "結果同分居日期係八月二日對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.877,
+      "a": "D481 S3",
+      "b": "D497 S1",
+      "text_a": "結果同預計搬走日期係九月三十日對唔上；我想知用邊份㗎",
+      "text_b": "結果同分居日期係八月二日對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.875,
+      "a": "D107 S2",
+      "b": "D126 S2",
+      "text_a": "今次再睇，第一個市集係九月十二日；同上次講法唔同",
+      "text_b": "今次再睇，第一次出糧日期係八月二十八日；同上次講法唔同喇"
+    },
+    {
+      "ratio": 0.875,
+      "a": "D091 S10",
+      "b": "D095 S10",
+      "text_a": "我更正返，全年保費由一千二百四十加到一千五百二十澳元先啱",
+      "text_b": "我更正返，週租由四百七十加到五百一十澳元先啱"
+    },
+    {
+      "ratio": 0.875,
+      "a": "D497 S7",
+      "b": "D498 S8",
+      "text_a": "結果嗰度更正返，我問育兒補助金個決定，唔係重開申請啫",
+      "text_b": "結果嗰度更正返，我問照顧者補助金個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.875,
+      "a": "D180 S9",
+      "b": "D195 S9",
+      "text_a": "上次漏咗租約同加租通知，今次補返",
+      "text_b": "上次漏咗新租約或者加租通知，今次補返"
+    },
+    {
+      "ratio": 0.875,
+      "a": "D487 S2",
+      "b": "D489 S4",
+      "text_a": "睇咗結果，汽車保險索償個理由仲唔明",
+      "text_b": "睇咗結果，旅遊保險索償個理由仲唔明"
+    },
+    {
+      "ratio": 0.873,
+      "a": "D153 S5",
+      "b": "D190 S3",
+      "text_a": "今次再睇，預約收集日期係九月十四日；同上次講法唔同喇",
+      "text_b": "今次再睇，手術預約係十一月四日；同上次講法唔同"
+    },
+    {
+      "ratio": 0.873,
+      "a": "D439 S2",
+      "b": "D458 S1",
+      "text_a": "結果同計劃十月份出境十日對唔上；我想知用邊份",
+      "text_b": "結果同個計劃喺九月十九日開始對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.873,
+      "a": "D452 S5",
+      "b": "D497 S1",
+      "text_a": "結果同聆訊排期係九月三日對唔上；我想知用邊份呀",
+      "text_b": "結果同分居日期係八月二日對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.872,
+      "a": "D480 S6",
+      "b": "D495 S4",
+      "text_a": "租約同加租通知我有留底；個決定有冇計埋",
+      "text_b": "新租約或者加租通知我有留底；個決定有冇計埋呀"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D126 S2",
+      "b": "D146 S1",
+      "text_a": "今次再睇，第一次出糧日期係八月二十八日；同上次講法唔同喇",
+      "text_b": "今次再睇，下一次地方法院日期係九月二十一日；同上次講法唔同"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D426 S5",
+      "b": "D436 S5",
+      "text_a": "結果同第一次出糧日期係八月二十八日對唔上；我想知用邊份㗎",
+      "text_b": "結果同第一次醫院預約係九月二十二日對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D001 S7",
+      "b": "D058 S10",
+      "text_a": "我更正返，計劃九月一日開始營業先啱咩",
+      "text_b": "我更正返，個計劃喺九月十九日開始先啱喎"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D237 S8",
+      "b": "D239 S8",
+      "text_a": "護照同簽證批准通知未對清，簽證程序可唔可以照行",
+      "text_b": "旅行日期、護照同簽證通知未對清，簽證程序可唔可以照行"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D401 S7",
+      "b": "D500 S6",
+      "text_a": "有相身份證明同稅務資料我有留底；個決定有冇計埋嘛",
+      "text_b": "有相身份證同現時財務資料我有留底；個決定有冇計埋"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D429 S9",
+      "b": "D487 S10",
+      "text_a": "結果嗰度更正返，我問自付費用個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問保單自付額個決定，唔係重開申請喇"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D432 S9",
+      "b": "D499 S7",
+      "text_a": "結果嗰度更正返，我問治療計劃個決定，唔係重開申請喇",
+      "text_b": "結果嗰度更正返，我問計劃管理人個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D440 S8",
+      "b": "D447 S10",
+      "text_a": "結果嗰度更正返，我問簽證條件個決定，唔係重開申請咋",
+      "text_b": "結果嗰度更正返，我問保釋條件個決定，唔係重開申請啩"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D447 S10",
+      "b": "D489 S8",
+      "text_a": "結果嗰度更正返，我問保釋條件個決定，唔係重開申請啩",
+      "text_b": "結果嗰度更正返，我問受保事件個決定，唔係重開申請添"
+    },
+    {
+      "ratio": 0.87,
+      "a": "D451 S10",
+      "b": "D495 S10",
+      "text_a": "結果嗰度更正返，我問法律援助個決定，唔係重開申請㗎",
+      "text_b": "結果嗰度更正返，我問租金援助個決定，唔係重開申請呢"
+    },
+    {
+      "ratio": 0.868,
+      "a": "D007 S7",
+      "b": "D026 S9",
+      "text_a": "我更正返，第一個市集係九月十二日先啱",
+      "text_b": "我更正返，第一次出糧日期係八月二十八日先啱"
+    },
+    {
+      "ratio": 0.868,
+      "a": "D152 S6",
+      "b": "D197 S3",
+      "text_a": "今次再睇，聆訊排期係九月三日；同上次講法唔同",
+      "text_b": "今次再睇，分居日期係八月二日；同上次講法唔同呀"
+    },
+    {
+      "ratio": 0.868,
+      "a": "D203 S3",
+      "b": "D276 S3",
+      "text_a": "文件寫預計全年營業額係七萬八千澳元，我想對清係咪呢個先啱",
+      "text_b": "文件寫預計退稅係一千三百四十澳元，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.867,
+      "a": "D453 S6",
+      "b": "D481 S3",
+      "text_a": "結果同預約收集日期係九月十四日對唔上；我想知用邊份喎",
+      "text_b": "結果同預計搬走日期係九月三十日對唔上；我想知用邊份㗎"
+    },
+    {
+      "ratio": 0.867,
+      "a": "D228 S6",
+      "b": "D281 S3",
+      "text_a": "文件寫專科預約係十一月十八日，我想對清係咪呢個先啱呀",
+      "text_b": "文件寫預計搬走日期係九月三十日，我想對清係咪呢個先啱呀"
+    },
+    {
+      "ratio": 0.866,
+      "a": "D126 S2",
+      "b": "D136 S6",
+      "text_a": "今次再睇，第一次出糧日期係八月二十八日；同上次講法唔同喇",
+      "text_b": "今次再睇，第一次醫院預約係九月二十二日；同上次講法唔同"
+    },
+    {
+      "ratio": 0.866,
+      "a": "D407 S4",
+      "b": "D426 S5",
+      "text_a": "結果同第一個市集係九月十二日對唔上；我想知用邊份喇",
+      "text_b": "結果同第一次出糧日期係八月二十八日對唔上；我想知用邊份㗎"
+    },
+    {
+      "ratio": 0.865,
+      "a": "D494 S1",
+      "b": "D497 S3",
+      "text_a": "睇咗結果，相關英文項目報收入個理由仲唔明",
+      "text_b": "睇咗結果，相關英文項目查詢個理由仲唔明"
+    },
+    {
+      "ratio": 0.865,
+      "a": "D037 S7",
+      "b": "D038 S9",
+      "text_a": "簽證情況查核未搞掂，簽證程序會唔會變",
+      "text_b": "過橋簽證情況查詢未搞掂，簽證程序會唔會變呀"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D411 S8",
+      "b": "D454 S9",
+      "text_a": "結果嗰度更正返，我問購買證明個決定，唔係重開申請喇",
+      "text_b": "結果嗰度更正返，我問圖書證個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D420 S7",
+      "b": "D491 S9",
+      "text_a": "結果嗰度更正返，我問年假結餘個決定，唔係重開申請囉",
+      "text_b": "結果嗰度更正返，我問保費個決定，唔係重開申請囉"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D429 S9",
+      "b": "D455 S7",
+      "text_a": "結果嗰度更正返，我問自付費用個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問優惠收費個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D429 S9",
+      "b": "D460 S10",
+      "text_a": "結果嗰度更正返，我問自付費用個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問場地租用個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D440 S8",
+      "b": "D454 S9",
+      "text_a": "結果嗰度更正返，我問簽證條件個決定，唔係重開申請咋",
+      "text_b": "結果嗰度更正返，我問圖書證個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D447 S10",
+      "b": "D491 S9",
+      "text_a": "結果嗰度更正返，我問保釋條件個決定，唔係重開申請啩",
+      "text_b": "結果嗰度更正返，我問保費個決定，唔係重開申請囉"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D450 S7",
+      "b": "D483 S8",
+      "text_a": "結果嗰度更正返，我問民事索償個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問按金申索個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D460 S10",
+      "b": "D477 S10",
+      "text_a": "結果嗰度更正返，我問場地租用個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問租屋申請個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D460 S10",
+      "b": "D480 S10",
+      "text_a": "結果嗰度更正返，我問場地租用個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問加租通知個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D472 S9",
+      "b": "D490 S9",
+      "text_a": "結果嗰度更正返，我問免息期個決定，唔係重開申請添",
+      "text_b": "結果嗰度更正返，我問等候期個決定，唔係重開申請喎"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D477 S10",
+      "b": "D480 S10",
+      "text_a": "結果嗰度更正返，我問租屋申請個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問加租通知個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D477 S10",
+      "b": "D483 S8",
+      "text_a": "結果嗰度更正返，我問租屋申請個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問按金申索個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D477 S10",
+      "b": "D484 S10",
+      "text_a": "結果嗰度更正返，我問租屋申請個決定，唔係重開申請",
+      "text_b": "結果嗰度更正返，我問入屋通知個決定，唔係重開申請"
+    },
+    {
+      "ratio": 0.864,
+      "a": "D489 S8",
+      "b": "D491 S9",
+      "text_a": "結果嗰度更正返，我問受保事件個決定，唔係重開申請添",
+      "text_b": "結果嗰度更正返，我問保費個決定，唔係重開申請囉"
+    },
+    {
+      "ratio": 0.863,
+      "a": "D413 S4",
+      "b": "D450 S1",
+      "text_a": "結果同今個月爭議收費係六十五澳元對唔上；我想知用邊份",
+      "text_b": "結果同爭議金額係三千二百澳元對唔上；我想知用邊份"
+    },
+    {
+      "ratio": 0.862,
+      "a": "D252 S4",
+      "b": "D253 S6",
+      "text_a": "文件寫聆訊排期係九月三日，我想對清係咪呢個先啱",
+      "text_b": "文件寫預約收集日期係九月十四日，我想對清係咪呢個先啱"
+    },
+    {
+      "ratio": 0.862,
+      "a": "D428 S1",
+      "b": "D453 S6",
+      "text_a": "結果同專科預約係十一月十八日對唔上；我想知用邊份嘛",
+      "text_b": "結果同預約收集日期係九月十四日對唔上；我想知用邊份喎"
+    }
+  ],
+  "skeleton_repeat_count": 21,
+  "skeleton_repeats": [
+    {
+      "skeleton": "係|我|係咪|呢個|先",
+      "dialogues": [
+        "D202",
+        "D203",
+        "D204",
+        "D207",
+        "D214",
+        "D216",
+        "D226",
+        "D229",
+        "D234",
+        "D235",
+        "D236",
+        "D242",
+        "D246",
+        "D252",
+        "D253",
+        "D267",
+        "D276",
+        "D283",
+        "D286",
+        "D290",
+        "D297",
+        "D299"
+      ],
+      "examples": [
+        "文件寫下一次地方法院日期係九月二十一日，我想對清係咪呢個先啱添",
+        "文件寫今季賬單係七百四十澳元，我想對清係咪呢個先啱",
+        "文件寫分居日期係八月二日，我想對清係咪呢個先啱",
+        "文件寫報價九千五百澳元，但發票係一萬二千三百澳元，我想對清係咪呢個先啱嘞"
+      ]
+    },
+    {
+      "skeleton": "返|我|即係|唔|係",
+      "dialogues": [
+        "D401",
+        "D430",
+        "D437",
+        "D443",
+        "D464",
+        "D465",
+        "D467",
+        "D486",
+        "D496"
+      ],
+      "examples": [
+        "結果嗰度更正返，我問學籍及費用責任截止日，即係相關英文項目個決定，唔係重開申請",
+        "結果嗰度更正返，我問成人移民英語計劃，即係相關英文項目個決定，唔係重開申請添",
+        "結果嗰度更正返，我問托兒津貼，即係相關英文項目個決定，唔係重開申請",
+        "結果嗰度更正返，我問新州民事及行政審裁處，即係新州民事及行政審裁處個決定，唔係重開申請"
+      ]
+    },
+    {
+      "skeleton": "返|我|唔|係|呀",
+      "dialogues": [
+        "D408",
+        "D415",
+        "D417",
+        "D423",
+        "D426",
+        "D452",
+        "D470",
+        "D479"
+      ],
+      "examples": [
+        "結果嗰度更正返，我問三十日商業付款期個決定，唔係重開申請呀",
+        "結果嗰度更正返，我問事故報告個決定，唔係重開申請呀",
+        "結果嗰度更正返，我問押後聆訊個決定，唔係重開申請呀",
+        "結果嗰度更正返，我問稅務檔案號碼報稅資料個決定，唔係重開申請呀"
+      ]
+    },
+    {
+      "skeleton": "返|我|唔|係|㗎",
+      "dialogues": [
+        "D409",
+        "D431",
+        "D436",
+        "D438",
+        "D451",
+        "D453",
+        "D469",
+        "D478"
+      ],
+      "examples": [
+        "結果嗰度更正返，我問國民醫療保險緊急護理診所個決定，唔係重開申請㗎",
+        "結果嗰度更正返，我問大型廢物收集個決定，唔係重開申請㗎",
+        "結果嗰度更正返，我問未經授權交易個決定，唔係重開申請㗎",
+        "結果嗰度更正返，我問法律援助個決定，唔係重開申請㗎"
+      ]
+    },
+    {
+      "skeleton": "返|我|唔|係|喇",
+      "dialogues": [
+        "D410",
+        "D411",
+        "D413",
+        "D432",
+        "D449",
+        "D463",
+        "D471",
+        "D487"
+      ],
+      "examples": [
+        "結果嗰度更正返，我問保單自付額個決定，唔係重開申請喇",
+        "結果嗰度更正返，我問出席紀錄個決定，唔係重開申請喇",
+        "結果嗰度更正返，我問分項賬單個決定，唔係重開申請喇",
+        "結果嗰度更正返，我問嚴重故障個決定，唔係重開申請喇"
+      ]
+    },
+    {
+      "skeleton": "我|係咪|呢個|先|呀",
+      "dialogues": [
+        "D215",
+        "D247",
+        "D254",
+        "D271",
+        "D272",
+        "D285"
+      ],
+      "examples": [
+        "文件寫今個星期六想借書，我想對清係咪呢個先啱呀",
+        "文件寫已付一千二百澳元訂金，我想對清係咪呢個先啱呀",
+        "文件寫月結單顯示四十八個七毫澳元利息，我想對清係咪呢個先啱呀",
+        "文件寫琴日下午付款五百一十澳元，我想對清係咪呢個先啱呀"
+      ]
+    },
+    {
+      "skeleton": "我|返|係|先|喇",
+      "dialogues": [
+        "D014",
+        "D036",
+        "D046",
+        "D087",
+        "D097"
+      ],
+      "examples": [
+        "我更正返，下一次地方法院日期係九月二十一日先啱喇",
+        "我更正返，分居日期係八月二日先啱喇",
+        "我更正返，報價九千五百澳元，但發票係一萬二千三百澳元先啱喇",
+        "我更正返，所列自付額係八百五十澳元先啱喇"
+      ]
+    },
+    {
+      "skeleton": "喺|我|係咪|呢個|先",
+      "dialogues": [
+        "D205",
+        "D248",
+        "D256",
+        "D284",
+        "D293"
+      ],
+      "examples": [
+        "文件寫最終回覆信喺八月八日收到，我想對清係咪呢個先啱嘞",
+        "文件寫會面安排喺星期四下晝，我想對清係咪呢個先啱",
+        "文件寫檢查安排喺星期二朝早十點，我想對清係咪呢個先啱",
+        "文件寫舊許可證喺八月三十一日到期，我想對清係咪呢個先啱"
+      ]
+    },
+    {
+      "skeleton": "我|係咪|呢個|先|喇",
+      "dialogues": [
+        "D208",
+        "D237",
+        "D264",
+        "D280",
+        "D294"
+      ],
+      "examples": [
+        "文件寫上個月換咗新護照，我想對清係咪呢個先啱喇",
+        "文件寫九月七日起每星期需要四日托兒，我想對清係咪呢個先啱喇",
+        "文件寫今個報資料嗰期稅前收入六百二十澳元，我想對清係咪呢個先啱喇",
+        "文件寫十月二十日起週租可能由五百四十加到六百一十澳元，我想對清係咪呢個先啱喇"
+      ]
+    },
+    {
+      "skeleton": "返|我|唔|係|呢",
+      "dialogues": [
+        "D416",
+        "D418",
+        "D424",
+        "D433",
+        "D495"
+      ],
+      "examples": [
+        "結果嗰度更正返，我問不公平解僱申請個決定，唔係重開申請呢",
+        "結果嗰度更正返，我問差額自付費個決定，唔係重開申請呢",
+        "結果嗰度更正返，我問特別時段附加工資個決定，唔係重開申請呢",
+        "結果嗰度更正返，我問租金援助個決定，唔係重開申請呢"
+      ]
+    },
+    {
+      "skeleton": "返|我|唔|係|啫",
+      "dialogues": [
+        "D427",
+        "D428",
+        "D457",
+        "D494",
+        "D497"
+      ],
+      "examples": [
+        "結果嗰度更正返，我問寵物登記個決定，唔係重開申請啫",
+        "結果嗰度更正返，我問專科轉介信個決定，唔係重開申請啫",
+        "結果嗰度更正返，我問直接向國民醫療保險收費個決定，唔係重開申請啫",
+        "結果嗰度更正返，我問相關英文項目求職者補助金個決定，唔係重開申請啫"
+      ]
+    },
+    {
+      "skeleton": "我|返|係|先|㗎",
+      "dialogues": [
+        "D016",
+        "D029",
+        "D034",
+        "D099"
+      ],
+      "examples": [
+        "我更正返，今季賬單係七百四十澳元先啱㗎",
+        "我更正返，家庭醫生預約係下星期三先啱㗎",
+        "我更正返，治療發票係二百四十五澳元先啱㗎",
+        "我更正返，驗血預約係星期一朝早先啱㗎"
+      ]
+    },
+    {
+      "skeleton": "我|係咪|呢個|先|呢",
+      "dialogues": [
+        "D201",
+        "D243",
+        "D273",
+        "D298"
+      ],
+      "examples": [
+        "文件寫對沖戶口大約有三萬五千澳元，我想對清係咪呢個先啱呢",
+        "文件寫工作減到每星期十二個鐘，我想對清係咪呢個先啱呢",
+        "文件寫星期二同星期四夜晚有時間，我想對清係咪呢個先啱呢",
+        "文件寫計劃九月一日開始營業，我想對清係咪呢個先啱呢"
+      ]
+    },
+    {
+      "skeleton": "返|我|即係|唔|係|㗎",
+      "dialogues": [
+        "D403",
+        "D406",
+        "D446",
+        "D458"
+      ],
+      "examples": [
+        "結果嗰度更正返，我問兒童工作審查，即係相關英文項目個決定，唔係重開申請㗎",
+        "結果嗰度更正返，我問商品及服務稅，即係商品及服務稅個決定，唔係重開申請㗎",
+        "結果嗰度更正返，我問暴力禁制令，即係相關英文項目個決定，唔係重開申請㗎",
+        "結果嗰度更正返，我問私人有限公司，即係私人有限公司個決定，唔係重開申請㗎"
+      ]
+    },
+    {
+      "skeleton": "返|我|唔|係|喎",
+      "dialogues": [
+        "D419",
+        "D444",
+        "D473",
+        "D490"
+      ],
+      "examples": [
+        "結果嗰度更正返，我問學歷評估個決定，唔係重開申請喎",
+        "結果嗰度更正返，我問對沖戶口個決定，唔係重開申請喎",
+        "結果嗰度更正返，我問現代行業薪酬規例職級分類個決定，唔係重開申請喎",
+        "結果嗰度更正返，我問等候期個決定，唔係重開申請喎"
+      ]
+    },
+    {
+      "skeleton": "返|我|唔|係|嘛",
+      "dialogues": [
+        "D421",
+        "D425",
+        "D445",
+        "D481"
+      ],
+      "examples": [
+        "結果嗰度更正返，我問個人假或者病假個決定，唔係重開申請嘛",
+        "結果嗰度更正返，我問彈性工作安排個決定，唔係重開申請嘛",
+        "結果嗰度更正返，我問終止租約通知個決定，唔係重開申請嘛",
+        "結果嗰度更正返，我問違規罰款通知個決定，唔係重開申請嘛"
+      ]
+    },
+    {
+      "skeleton": "我|返|係|先|啫",
+      "dialogues": [
+        "D060",
+        "D076",
+        "D086"
+      ],
+      "examples": [
+        "我更正返，活動係九月二十六日，大約四十人先啱啫",
+        "我更正返，第一次維修要求係六星期前發出先啱啫",
+        "我更正返，預計退稅係一千三百四十澳元先啱啫"
+      ]
+    },
+    {
+      "skeleton": "又|仲|我|即係|呢",
+      "dialogues": [
+        "D137",
+        "D168",
+        "D196"
+      ],
+      "examples": [
+        "又有回覆，培訓註冊仲未清；我想查唯一學生識別號碼，即係相關英文項目呢",
+        "又有回覆，托兒使用情況變更仲未清；幫我睇托兒津貼，即係相關英文項目呢",
+        "又有回覆，簽證情況查核仲未清；我想對網上簽證權益查核系統，即係網上簽證查核服務呢"
+      ]
+    },
+    {
+      "skeleton": "唔|係|即係|我|呀",
+      "dialogues": [
+        "D206",
+        "D258",
+        "D293"
+      ],
+      "examples": [
+        "唔係講兒童工作審查，即係相關英文項目嗰張，我講緊身份證明同義工資料呀",
+        "唔係講澳洲金融投訴局，即係金融投訴機構嗰張，我講緊最終回覆、保單同索償文件呀",
+        "唔係講私人有限公司，即係私人有限公司嗰張，我講緊公司註冊同銀行資料呀"
+      ]
+    },
+    {
+      "skeleton": "係|我|係咪|呢個|先|呀",
+      "dialogues": [
+        "D228",
+        "D262",
+        "D281"
+      ],
+      "examples": [
+        "文件寫專科預約係十一月十八日，我想對清係咪呢個先啱呀",
+        "文件寫預約係下星期二下晝四點二十分，我想對清係咪呢個先啱呀",
+        "文件寫預計搬走日期係九月三十日，我想對清係咪呢個先啱呀"
+      ]
+    },
+    {
+      "skeleton": "喺|我|係咪|呢個|先|喇",
+      "dialogues": [
+        "D238",
+        "D244",
+        "D258"
+      ],
+      "examples": [
+        "文件寫二零二二年喺香港完成學位，我想對清係咪呢個先啱喇",
+        "文件寫個計劃喺九月十九日開始，我想對清係咪呢個先啱喇",
+        "文件寫現有實質簽證喺九月三十日到期，我想對清係咪呢個先啱喇"
+      ]
+    }
+  ],
+  "fingerprints": {
+    "term_gloss_lesson": 0,
+    "generic_case_effect_next": 0,
+    "noted_but_current": 0,
+    "generic_next_step": 0,
+    "upload_keep_reference": 0,
+    "wait_then_call": 0,
+    "all_docs_enough": 0,
+    "decision_reasons_review": 0
+  },
+  "top_openers": [
+    [
+      "好",
+      145
+    ],
+    [
+      "我更正返",
+      100
+    ],
+    [
+      "又有回覆",
+      100
+    ],
+    [
+      "上次嗰份",
+      100
+    ],
+    [
+      "今次再睇",
+      100
+    ],
+    [
+      "上次漏咗",
+      100
+    ],
+    [
+      "限期嗰度",
+      100
+    ],
+    [
+      "睇咗結果",
+      100
+    ],
+    [
+      "結果嗰度",
+      100
+    ],
+    [
+      "我想",
+      76
+    ],
+    [
+      "清楚喇",
+      67
+    ],
+    [
+      "我知喇",
+      62
+    ],
+    [
+      "得喇",
+      61
+    ],
+    [
+      "咁",
+      56
+    ],
+    [
+      "得我記住",
+      55
+    ]
+  ],
+  "top_endings": [
+    [
+      "<bare>",
+      1632
+    ],
+    [
+      "喇",
+      485
+    ],
+    [
+      "呀",
+      478
+    ],
+    [
+      "喎",
+      140
+    ],
+    [
+      "啫",
+      134
+    ],
+    [
+      "咩",
+      131
+    ]
+  ],
+  "swc_markers": {},
+  "repair_turns": 388,
+  "change_state_turns": 110,
+  "short_turns_le10": 500,
+  "long_turns_ge45": 6,
+  "bare_endings": 1632,
+  "client_char_range": [
+    2,
+    51
+  ],
+  "dialogue_review": {
+    "D004": [
+      "no repair/confirmation event"
+    ],
+    "D006": [
+      "no repair/confirmation event"
+    ],
+    "D009": [
+      "no repair/confirmation event"
+    ],
+    "D010": [
+      "no repair/confirmation event"
+    ],
+    "D011": [
+      "no repair/confirmation event"
+    ],
+    "D012": [
+      "no repair/confirmation event"
+    ],
+    "D014": [
+      "no repair/confirmation event"
+    ],
+    "D019": [
+      "no repair/confirmation event"
+    ],
+    "D020": [
+      "no repair/confirmation event"
+    ],
+    "D028": [
+      "no repair/confirmation event"
+    ],
+    "D031": [
+      "no repair/confirmation event"
+    ],
+    "D033": [
+      "no repair/confirmation event"
+    ],
+    "D034": [
+      "no repair/confirmation event"
+    ],
+    "D036": [
+      "no repair/confirmation event"
+    ],
+    "D037": [
+      "no repair/confirmation event"
+    ],
+    "D039": [
+      "no repair/confirmation event"
+    ],
+    "D041": [
+      "no repair/confirmation event"
+    ],
+    "D043": [
+      "no repair/confirmation event"
+    ],
+    "D044": [
+      "no repair/confirmation event"
+    ],
+    "D046": [
+      "no repair/confirmation event"
+    ],
+    "D049": [
+      "no repair/confirmation event"
+    ],
+    "D050": [
+      "no repair/confirmation event"
+    ],
+    "D052": [
+      "no repair/confirmation event"
+    ],
+    "D053": [
+      "no repair/confirmation event"
+    ],
+    "D055": [
+      "no repair/confirmation event"
+    ],
+    "D056": [
+      "no repair/confirmation event"
+    ],
+    "D057": [
+      "no repair/confirmation event"
+    ],
+    "D065": [
+      "no repair/confirmation event"
+    ],
+    "D066": [
+      "no repair/confirmation event"
+    ],
+    "D067": [
+      "no repair/confirmation event"
+    ],
+    "D068": [
+      "no repair/confirmation event"
+    ],
+    "D069": [
+      "no repair/confirmation event"
+    ],
+    "D071": [
+      "no repair/confirmation event"
+    ],
+    "D072": [
+      "no repair/confirmation event"
+    ],
+    "D073": [
+      "no repair/confirmation event"
+    ],
+    "D075": [
+      "no repair/confirmation event"
+    ],
+    "D077": [
+      "no repair/confirmation event"
+    ],
+    "D080": [
+      "no repair/confirmation event"
+    ],
+    "D081": [
+      "no repair/confirmation event"
+    ],
+    "D083": [
+      "no repair/confirmation event"
+    ],
+    "D084": [
+      "no repair/confirmation event"
+    ],
+    "D086": [
+      "no repair/confirmation event"
+    ],
+    "D088": [
+      "no repair/confirmation event"
+    ],
+    "D092": [
+      "no repair/confirmation event"
+    ],
+    "D094": [
+      "no repair/confirmation event"
+    ],
+    "D095": [
+      "no repair/confirmation event"
+    ],
+    "D096": [
+      "no repair/confirmation event"
+    ],
+    "D099": [
+      "no repair/confirmation event"
+    ],
+    "D100": [
+      "no repair/confirmation event"
+    ],
+    "D107": [
+      "no repair/confirmation event"
+    ],
+    "D108": [
+      "no repair/confirmation event"
+    ],
+    "D110": [
+      "no repair/confirmation event"
+    ],
+    "D112": [
+      "no repair/confirmation event"
+    ],
+    "D117": [
+      "no repair/confirmation event"
+    ],
+    "D118": [
+      "no repair/confirmation event"
+    ],
+    "D120": [
+      "no repair/confirmation event"
+    ],
+    "D124": [
+      "no repair/confirmation event"
+    ],
+    "D126": [
+      "no repair/confirmation event"
+    ],
+    "D127": [
+      "no repair/confirmation event"
+    ],
+    "D132": [
+      "no repair/confirmation event"
+    ],
+    "D133": [
+      "no repair/confirmation event"
+    ],
+    "D138": [
+      "no repair/confirmation event"
+    ],
+    "D139": [
+      "no repair/confirmation event"
+    ],
+    "D140": [
+      "no repair/confirmation event"
+    ],
+    "D142": [
+      "no repair/confirmation event"
+    ],
+    "D144": [
+      "no repair/confirmation event"
+    ],
+    "D145": [
+      "no repair/confirmation event"
+    ],
+    "D147": [
+      "no repair/confirmation event"
+    ],
+    "D149": [
+      "no repair/confirmation event"
+    ],
+    "D151": [
+      "no repair/confirmation event"
+    ],
+    "D154": [
+      "no repair/confirmation event"
+    ],
+    "D155": [
+      "no repair/confirmation event"
+    ],
+    "D159": [
+      "no repair/confirmation event"
+    ],
+    "D160": [
+      "no repair/confirmation event"
+    ],
+    "D162": [
+      "no repair/confirmation event"
+    ],
+    "D163": [
+      "no repair/confirmation event"
+    ],
+    "D166": [
+      "no repair/confirmation event"
+    ],
+    "D169": [
+      "no repair/confirmation event"
+    ],
+    "D170": [
+      "no repair/confirmation event"
+    ],
+    "D171": [
+      "no repair/confirmation event"
+    ],
+    "D173": [
+      "no repair/confirmation event"
+    ],
+    "D174": [
+      "no repair/confirmation event"
+    ],
+    "D176": [
+      "no repair/confirmation event"
+    ],
+    "D177": [
+      "no repair/confirmation event"
+    ],
+    "D180": [
+      "no repair/confirmation event"
+    ],
+    "D181": [
+      "no repair/confirmation event"
+    ],
+    "D183": [
+      "no repair/confirmation event"
+    ],
+    "D184": [
+      "no repair/confirmation event"
+    ],
+    "D186": [
+      "no repair/confirmation event"
+    ],
+    "D189": [
+      "no repair/confirmation event"
+    ],
+    "D190": [
+      "no repair/confirmation event"
+    ],
+    "D192": [
+      "no repair/confirmation event"
+    ],
+    "D194": [
+      "no repair/confirmation event"
+    ],
+    "D195": [
+      "no repair/confirmation event"
+    ],
+    "D196": [
+      "no repair/confirmation event"
+    ],
+    "D200": [
+      "no repair/confirmation event"
+    ],
+    "D204": [
+      "no repair/confirmation event"
+    ],
+    "D205": [
+      "no repair/confirmation event"
+    ],
+    "D220": [
+      "no repair/confirmation event"
+    ],
+    "D223": [
+      "no repair/confirmation event"
+    ],
+    "D224": [
+      "no repair/confirmation event"
+    ],
+    "D226": [
+      "no repair/confirmation event"
+    ],
+    "D228": [
+      "no repair/confirmation event"
+    ],
+    "D230": [
+      "no repair/confirmation event"
+    ],
+    "D237": [
+      "no repair/confirmation event"
+    ],
+    "D239": [
+      "no repair/confirmation event"
+    ],
+    "D241": [
+      "no repair/confirmation event"
+    ],
+    "D242": [
+      "no repair/confirmation event"
+    ],
+    "D244": [
+      "no repair/confirmation event"
+    ],
+    "D249": [
+      "no repair/confirmation event"
+    ],
+    "D256": [
+      "no repair/confirmation event"
+    ],
+    "D263": [
+      "no repair/confirmation event"
+    ],
+    "D267": [
+      "no repair/confirmation event"
+    ],
+    "D268": [
+      "no repair/confirmation event"
+    ],
+    "D279": [
+      "no repair/confirmation event"
+    ],
+    "D281": [
+      "no repair/confirmation event"
+    ],
+    "D282": [
+      "no repair/confirmation event"
+    ],
+    "D293": [
+      "no repair/confirmation event"
+    ],
+    "D297": [
+      "no repair/confirmation event"
+    ],
+    "D301": [
+      "no repair/confirmation event"
+    ],
+    "D305": [
+      "no repair/confirmation event"
+    ],
+    "D306": [
+      "no repair/confirmation event"
+    ],
+    "D310": [
+      "no repair/confirmation event"
+    ],
+    "D314": [
+      "no repair/confirmation event"
+    ],
+    "D319": [
+      "no repair/confirmation event"
+    ],
+    "D321": [
+      "no repair/confirmation event"
+    ],
+    "D322": [
+      "no repair/confirmation event"
+    ],
+    "D323": [
+      "no repair/confirmation event"
+    ],
+    "D328": [
+      "no repair/confirmation event"
+    ],
+    "D329": [
+      "no repair/confirmation event"
+    ],
+    "D340": [
+      "no repair/confirmation event"
+    ],
+    "D343": [
+      "no repair/confirmation event"
+    ],
+    "D345": [
+      "no repair/confirmation event"
+    ],
+    "D346": [
+      "no repair/confirmation event"
+    ],
+    "D349": [
+      "no repair/confirmation event"
+    ],
+    "D350": [
+      "no repair/confirmation event"
+    ],
+    "D351": [
+      "no repair/confirmation event"
+    ],
+    "D352": [
+      "no repair/confirmation event"
+    ],
+    "D353": [
+      "no repair/confirmation event"
+    ],
+    "D355": [
+      "no repair/confirmation event"
+    ],
+    "D357": [
+      "no repair/confirmation event"
+    ],
+    "D359": [
+      "no repair/confirmation event"
+    ],
+    "D360": [
+      "no repair/confirmation event"
+    ],
+    "D362": [
+      "no repair/confirmation event"
+    ],
+    "D363": [
+      "no repair/confirmation event"
+    ],
+    "D366": [
+      "no repair/confirmation event"
+    ],
+    "D367": [
+      "no repair/confirmation event"
+    ],
+    "D368": [
+      "no repair/confirmation event"
+    ],
+    "D370": [
+      "no repair/confirmation event"
+    ],
+    "D371": [
+      "no repair/confirmation event"
+    ],
+    "D376": [
+      "no repair/confirmation event"
+    ],
+    "D377": [
+      "no repair/confirmation event"
+    ],
+    "D378": [
+      "no repair/confirmation event"
+    ],
+    "D381": [
+      "no repair/confirmation event"
+    ],
+    "D382": [
+      "no repair/confirmation event"
+    ],
+    "D383": [
+      "no repair/confirmation event"
+    ],
+    "D384": [
+      "no repair/confirmation event"
+    ],
+    "D386": [
+      "no repair/confirmation event"
+    ],
+    "D387": [
+      "no repair/confirmation event"
+    ],
+    "D390": [
+      "no repair/confirmation event"
+    ],
+    "D391": [
+      "no repair/confirmation event"
+    ],
+    "D395": [
+      "no repair/confirmation event"
+    ],
+    "D396": [
+      "no repair/confirmation event"
+    ],
+    "D397": [
+      "no repair/confirmation event"
+    ],
+    "D398": [
+      "no repair/confirmation event"
+    ],
+    "D402": [
+      "no repair/confirmation event"
+    ],
+    "D407": [
+      "no repair/confirmation event"
+    ],
+    "D409": [
+      "no repair/confirmation event"
+    ],
+    "D413": [
+      "no repair/confirmation event"
+    ],
+    "D414": [
+      "no repair/confirmation event"
+    ],
+    "D417": [
+      "no repair/confirmation event"
+    ],
+    "D420": [
+      "no repair/confirmation event"
+    ],
+    "D421": [
+      "no repair/confirmation event"
+    ],
+    "D423": [
+      "no repair/confirmation event"
+    ],
+    "D428": [
+      "no repair/confirmation event"
+    ],
+    "D429": [
+      "no repair/confirmation event"
+    ],
+    "D432": [
+      "no repair/confirmation event"
+    ],
+    "D434": [
+      "no repair/confirmation event"
+    ],
+    "D437": [
+      "no repair/confirmation event"
+    ],
+    "D438": [
+      "no repair/confirmation event"
+    ],
+    "D439": [
+      "no repair/confirmation event"
+    ],
+    "D443": [
+      "no repair/confirmation event"
+    ],
+    "D444": [
+      "no repair/confirmation event"
+    ],
+    "D448": [
+      "no repair/confirmation event"
+    ],
+    "D449": [
+      "no repair/confirmation event"
+    ],
+    "D450": [
+      "no repair/confirmation event"
+    ],
+    "D451": [
+      "no repair/confirmation event"
+    ],
+    "D452": [
+      "no repair/confirmation event"
+    ],
+    "D455": [
+      "no repair/confirmation event"
+    ],
+    "D456": [
+      "no repair/confirmation event"
+    ],
+    "D457": [
+      "no repair/confirmation event"
+    ],
+    "D460": [
+      "no repair/confirmation event"
+    ],
+    "D462": [
+      "no repair/confirmation event"
+    ],
+    "D465": [
+      "no repair/confirmation event"
+    ],
+    "D466": [
+      "no repair/confirmation event"
+    ],
+    "D467": [
+      "no repair/confirmation event"
+    ],
+    "D473": [
+      "no repair/confirmation event"
+    ],
+    "D476": [
+      "no repair/confirmation event"
+    ],
+    "D479": [
+      "no repair/confirmation event"
+    ],
+    "D485": [
+      "no repair/confirmation event"
+    ],
+    "D490": [
+      "no repair/confirmation event"
+    ],
+    "D491": [
+      "no repair/confirmation event"
+    ],
+    "D492": [
+      "no repair/confirmation event"
+    ],
+    "D495": [
+      "no repair/confirmation event"
+    ],
+    "D498": [
+      "no repair/confirmation event"
+    ],
+    "D499": [
+      "no repair/confirmation event"
+    ]
+  }
+}

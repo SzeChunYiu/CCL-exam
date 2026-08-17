@@ -1,0 +1,8 @@
+{
+  "dialogues": 500,
+  "segments": 6000,
+  "source_material": "materials/SOURCE_SCRIPTS.md",
+  "model_material": "materials/MODEL_ANSWERS.md",
+  "sample_file": "build/release-samples.md",
+  "sample_dialogues": 37
+}

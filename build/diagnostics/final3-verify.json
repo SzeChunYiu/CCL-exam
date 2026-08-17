@@ -1,0 +1,29 @@
+{
+  "dialogues": 500,
+  "failures": [
+    "D042 seg6: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])",
+    "D142 seg1: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])",
+    "D142 seg2: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])",
+    "D242 seg3: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])",
+    "D342 seg3: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])",
+    "D442 seg3: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])",
+    "sentence reused across D138 and D139: 護照交過，嗰項服務類過橋簽證收咗未",
+    "D037 seg1: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D037 seg5: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D037 seg7: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D037 seg9: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D137 seg2: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D137 seg6: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D137 seg10: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D237 seg4: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D237 seg6: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D237 seg10: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D337 seg3: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D337 seg7: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D337 seg9: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D437 seg1: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D437 seg3: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D437 seg5: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])",
+    "D437 seg9: entity 'VEVO' lost in Cantonese (expected Latin form or one of ['網上簽證查核服務', '簽證查核服務'])"
+  ]
+}

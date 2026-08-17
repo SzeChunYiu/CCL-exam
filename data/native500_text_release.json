@@ -1,0 +1,7 @@
+{
+  "bankSha256": "fc50dedc153b595c5923269865c29446f18ec73b2c2918d9b74ffe500f8d08e9",
+  "dialogues": 500,
+  "segments": 6000,
+  "builder": "scripts/build_native_500_release_v18.py",
+  "sourceCommit": "8ba4ae06759852fef39cc89eda030ef024cc666a"
+}

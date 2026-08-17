@@ -1,0 +1,10 @@
+{
+  "dialogues": 500,
+  "segments": 6000,
+  "mean_words": 199.3,
+  "min_words": 169,
+  "max_words": 251,
+  "max_segment": 33,
+  "local_errors": [],
+  "output": "build/candidate/dialogues.json"
+}

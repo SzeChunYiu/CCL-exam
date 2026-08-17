@@ -1,0 +1,11 @@
+{
+  "dialogues": 500,
+  "segments": 6000,
+  "mean_words": 234.4,
+  "min_words": 212,
+  "max_words": 289,
+  "max_segment": 33,
+  "local_errors": [
+    "exact D138/D139: 護照交過，嗰項服務類過橋簽證收咗未"
+  ]
+}

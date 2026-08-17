@@ -1,0 +1,281 @@
+  FAIL D001 seg2: proper noun 'ABN' in English but not in Cantonese
+  FAIL D001 seg5: proper noun 'ABN' in English but not in Cantonese
+  FAIL D001 seg9: proper noun 'ABN' in English but not in Cantonese
+  FAIL D001 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D002 seg7: proper noun 'ABN' in English but not in Cantonese
+  FAIL D002 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D004 seg4: proper noun 'ABN' in English but not in Cantonese
+  FAIL D004 seg10: proper noun 'ABN' in English but not in Cantonese
+  FAIL D026 seg5: proper noun 'TFN' in English but not in Cantonese
+  FAIL D026 seg11: proper noun 'TFN' in English but not in Cantonese
+  FAIL D027 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D027 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D027 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D029 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D029 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D030 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D030 seg3: proper noun 'PBS' in English but not in Cantonese
+  FAIL D030 seg4: proper noun 'PBS' in English but not in Cantonese
+  FAIL D030 seg5: proper noun 'PBS' in English but not in Cantonese
+  FAIL D030 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D030 seg11: proper noun 'PBS' in English but not in Cantonese
+  FAIL D031 seg1: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D031 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D031 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D031 seg12: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D034 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D034 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D036 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D036 seg12: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D037 seg1: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D037 seg2: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D037 seg8: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D037 seg10: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D041 seg3: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D041 seg4: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D041 seg5: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D041 seg11: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D042 seg4: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D099 seg1: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg2: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg4: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg8: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg10: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg12: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D101 seg3: proper noun 'ABN' in English but not in Cantonese
+  FAIL D101 seg4: proper noun 'ABN' in English but not in Cantonese
+  FAIL D101 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D101 seg7: proper noun 'ABN' in English but not in Cantonese
+  FAIL D101 seg12: proper noun 'ABN' in English but not in Cantonese
+  FAIL D102 seg3: proper noun 'ABN' in English but not in Cantonese
+  FAIL D102 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D104 seg5: proper noun 'ABN' in English but not in Cantonese
+  FAIL D104 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D126 seg7: proper noun 'TFN' in English but not in Cantonese
+  FAIL D126 seg11: proper noun 'TFN' in English but not in Cantonese
+  FAIL D127 seg2: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D127 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D127 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D127 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D129 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D129 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D130 seg3: proper noun 'PBS' in English but not in Cantonese
+  FAIL D130 seg4: proper noun 'PBS' in English but not in Cantonese
+  FAIL D130 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D130 seg7: proper noun 'PBS' in English but not in Cantonese
+  FAIL D130 seg8: proper noun 'PBS' in English but not in Cantonese
+  FAIL D130 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D130 seg11: proper noun 'PBS' in English but not in Cantonese
+  FAIL D131 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D131 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D131 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D131 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D131 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D134 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D134 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D136 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D136 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D137 seg3: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D137 seg4: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D137 seg7: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D137 seg8: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D137 seg11: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D141 seg3: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D141 seg4: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D141 seg7: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D141 seg8: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D141 seg11: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D142 seg2: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D142 seg5: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D199 seg1: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D199 seg3: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D199 seg7: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D199 seg9: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D199 seg11: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D201 seg2: proper noun 'ABN' in English but not in Cantonese
+  FAIL D201 seg3: proper noun 'ABN' in English but not in Cantonese
+  FAIL D201 seg5: proper noun 'ABN' in English but not in Cantonese
+  FAIL D201 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D202 seg1: proper noun 'ABN' in English but not in Cantonese
+  FAIL D202 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D202 seg12: proper noun 'ABN' in English but not in Cantonese
+  FAIL D204 seg1: proper noun 'ABN' in English but not in Cantonese
+  FAIL D204 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D204 seg12: proper noun 'ABN' in English but not in Cantonese
+  FAIL D206 seg2: scoreable '2,016' lost in the Cantonese (expected one of ['2016', '二千零一十六', '二零一六'])
+  FAIL D217 seg6: scoreable '3,919' lost in the Cantonese (expected one of ['3919', '三千九百一十九'])
+  FAIL D221 seg4: scoreable '4,611' lost in the Cantonese (expected one of ['4611', '四千六百一十一'])
+  FAIL D226 seg3: proper noun 'TFN' in English but not in Cantonese
+  FAIL D226 seg4: proper noun 'TFN' in English but not in Cantonese
+  FAIL D226 seg11: proper noun 'TFN' in English but not in Cantonese
+  FAIL D227 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D227 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D227 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D227 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D229 seg1: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D229 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D229 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D230 seg1: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D230 seg3: proper noun 'PBS' in English but not in Cantonese
+  FAIL D230 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D230 seg4: proper noun 'PBS' in English but not in Cantonese
+  FAIL D230 seg6: proper noun 'PBS' in English but not in Cantonese
+  FAIL D230 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D230 seg10: proper noun 'PBS' in English but not in Cantonese
+  FAIL D231 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D231 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D231 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D231 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D231 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D232 seg3: scoreable '6,514' lost in the Cantonese (expected one of ['6514', '六千五百一十四'])
+  FAIL D234 seg2: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D234 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D234 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D236 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D236 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D236 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D237 seg2: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D237 seg3: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D237 seg5: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D237 seg11: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D241 seg5: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D241 seg6: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D241 seg8: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D241 seg12: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D242 seg5: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D243 seg1: scoreable '8,417' lost in the Cantonese (expected one of ['8417', '八千四百一十七'])
+  FAIL D258 seg3: scoreable '1,712' lost in the Cantonese (expected one of ['1712', '一千七百一十二'])
+  FAIL D269 seg1: scoreable '3,615' lost in the Cantonese (expected one of ['3615', '三千六百一十五'])
+  FAIL D280 seg3: scoreable '5,518' lost in the Cantonese (expected one of ['5518', '五千五百一十八'])
+  FAIL D284 seg3: scoreable '6,210' lost in the Cantonese (expected one of ['6210', '六千二百一十'])
+  FAIL D295 seg5: scoreable '8,113' lost in the Cantonese (expected one of ['8113', '八千一百一十三'])
+  FAIL D299 seg1: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg4: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg5: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg7: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg9: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg11: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D301 seg1: proper noun 'ABN' in English but not in Cantonese
+  FAIL D301 seg4: proper noun 'ABN' in English but not in Cantonese
+  FAIL D301 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D301 seg9: proper noun 'ABN' in English but not in Cantonese
+  FAIL D301 seg10: proper noun 'ABN' in English but not in Cantonese
+  FAIL D302 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D302 seg12: proper noun 'ABN' in English but not in Cantonese
+  FAIL D304 seg9: proper noun 'ABN' in English but not in Cantonese
+  FAIL D304 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D326 seg6: proper noun 'TFN' in English but not in Cantonese
+  FAIL D326 seg12: proper noun 'TFN' in English but not in Cantonese
+  FAIL D327 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D327 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D327 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D329 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D329 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D330 seg1: proper noun 'PBS' in English but not in Cantonese
+  FAIL D330 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D330 seg4: proper noun 'PBS' in English but not in Cantonese
+  FAIL D330 seg6: proper noun 'PBS' in English but not in Cantonese
+  FAIL D330 seg9: proper noun 'PBS' in English but not in Cantonese
+  FAIL D330 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D330 seg10: proper noun 'PBS' in English but not in Cantonese
+  FAIL D331 seg1: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D331 seg2: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D331 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D331 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D331 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D334 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D334 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D336 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D336 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D337 seg1: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D337 seg2: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D337 seg8: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D337 seg9: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D337 seg10: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D341 seg3: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D341 seg4: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D341 seg5: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D341 seg8: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D341 seg11: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D342 seg5: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D399 seg4: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D399 seg6: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D399 seg8: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D399 seg10: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D399 seg12: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D401 seg3: proper noun 'ABN' in English but not in Cantonese
+  FAIL D401 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D401 seg7: proper noun 'ABN' in English but not in Cantonese
+  FAIL D401 seg10: proper noun 'ABN' in English but not in Cantonese
+  FAIL D401 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D402 seg5: proper noun 'ABN' in English but not in Cantonese
+  FAIL D402 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D404 seg7: proper noun 'ABN' in English but not in Cantonese
+  FAIL D404 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D411 seg4: scoreable '3,719' lost in the Cantonese (expected one of ['3719', '三千七百一十九'])
+  FAIL D415 seg1: scoreable '4,411' lost in the Cantonese (expected one of ['4411', '四千四百一十一'])
+  FAIL D426 seg1: scoreable '6,314' lost in the Cantonese (expected one of ['6314', '六千三百一十四'])
+  FAIL D426 seg4: proper noun 'TFN' in English but not in Cantonese
+  FAIL D426 seg10: proper noun 'TFN' in English but not in Cantonese
+  FAIL D427 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D427 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D427 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D429 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D429 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D430 seg2: proper noun 'PBS' in English but not in Cantonese
+  FAIL D430 seg7: proper noun 'PBS' in English but not in Cantonese
+  FAIL D430 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D430 seg8: proper noun 'PBS' in English but not in Cantonese
+  FAIL D430 seg9: proper noun 'PBS' in English but not in Cantonese
+  FAIL D430 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D430 seg10: proper noun 'PBS' in English but not in Cantonese
+  FAIL D431 seg2: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D431 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D431 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D431 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D431 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D434 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D434 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D436 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D436 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D437 seg1: scoreable '8,217' lost in the Cantonese (expected one of ['8217', '八千二百一十七'])
+  FAIL D437 seg4: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D437 seg5: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D437 seg6: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D437 seg9: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D437 seg12: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D441 seg3: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D441 seg5: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D441 seg6: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D441 seg10: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D441 seg11: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D442 seg4: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D452 seg1: scoreable '1,512' lost in the Cantonese (expected one of ['1512', '一千五百一十二'])
+  FAIL D463 seg2: scoreable '3,415' lost in the Cantonese (expected one of ['3415', '三千四百一十五'])
+  FAIL D474 seg4: scoreable '5,318' lost in the Cantonese (expected one of ['5318', '五千三百一十八'])
+  FAIL D478 seg1: scoreable '6,010' lost in the Cantonese (expected one of ['6010', '六千零一十'])
+  FAIL D489 seg3: scoreable '7,913' lost in the Cantonese (expected one of ['7913', '七千九百一十三'])
+  FAIL D499 seg1: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D499 seg3: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D499 seg7: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D499 seg9: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D499 seg11: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D500 seg3: scoreable '516' lost in the Cantonese (expected one of ['516', '五百一十六'])
+  FAIL sentence reused across D410 and D411: 未決定覆核住，我想知補救跟住要點安排
+  FAIL sentence reused across D411 and D412: 未決定覆核住，我想知補救跟住要點安排
+  FAIL sentence reused across D412 and D413: 未決定覆核住，我想知補救跟住要點安排
+  FAIL sentence reused across D418 and D419: 未決定覆核住，我想知僱傭待遇跟住要點安排
+  FAIL sentence reused across D419 and D421: 未決定覆核住，我想知僱傭待遇跟住要點安排
+  FAIL sentence reused across D424 and D426: 所以，未決定覆核住，我想知僱傭待遇跟住要點安排
+  FAIL sentence reused across D446 and D452: 未決定覆核住，我想知法律限期跟住要點安排呀
+  FAIL sentence reused across D453 and D460: 未決定覆核住，我想知預約跟住要點安排呀
+  FAIL sentence reused across D465 and D467: 我更正返，今次係問相關英文項目個決定，唔係重開一宗
+  FAIL sentence reused across D467 and D468: 未決定覆核住，我想知修讀安排跟住要點安排
+  FAIL sentence reused across D469 and D472: 未決定覆核住，我想知戶口安排跟住要點安排
+  FAIL sentence reused across D470 and D473: 未決定覆核住，我想知戶口安排跟住要點安排呢
+  FAIL sentence reused across D490 and D491: 未決定覆核住，我想知索償跟住要點安排
+  FAIL sentence reused across D491 and D492: 未決定覆核住，我想知索償跟住要點安排
+  FAIL sentence reused across D492 and D493: 未決定覆核住，我想知索償跟住要點安排
+  FAIL sentence reused across D464 and D496: 我更正返，今次係問托兒津貼個決定，唔係重開一宗
+
+VERIFY: FAIL (279 violation(s)) -- 500 dialogues, 6000 segments  [frozen-field comparison SKIPPED]

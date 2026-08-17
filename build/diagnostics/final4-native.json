@@ -1,0 +1,1333 @@
+{
+  "dialogues": 500,
+  "client_turns": 3000,
+  "client_sentences": 2500,
+  "failures": [
+    "1 exact Cantonese sentences reused across dialogues"
+  ],
+  "exact_reuse_count": 1,
+  "exact_reuse": [
+    {
+      "text": "托兒津貼嗰日我記歪；用個日子再核",
+      "dialogues": [
+        "D364",
+        "D396"
+      ],
+      "occurrences": 2
+    }
+  ],
+  "near_duplicate_count": 8,
+  "near_duplicates": [
+    {
+      "ratio": 0.97,
+      "a": "D327 S2",
+      "b": "D331 S3",
+      "text_a": "醫療保險未齊，醫療保險可唔可以後補嘞",
+      "text_b": "醫療保險未齊，醫療保險可唔可以後補"
+    },
+    {
+      "ratio": 0.923,
+      "a": "D138 S5",
+      "b": "D139 S7",
+      "text_a": "護照交過，甲類過橋簽證收咗未",
+      "text_b": "護照交過，乙類過橋簽證收咗未"
+    },
+    {
+      "ratio": 0.905,
+      "a": "D238 S5",
+      "b": "D239 S6",
+      "text_a": "簽證批准通知有兩份，甲類過橋簽證交邊份",
+      "text_b": "簽證通知有兩份，乙類過橋簽證交邊份"
+    },
+    {
+      "ratio": 0.9,
+      "a": "D137 S8",
+      "b": "D138 S7",
+      "text_a": "上次漏咗簽證批准通知，簽證情況查核今次補",
+      "text_b": "上次漏咗簽證批准通知，過橋簽證情況查詢今次補"
+    },
+    {
+      "ratio": 0.889,
+      "a": "D237 S8",
+      "b": "D238 S9",
+      "text_a": "護照未對清，簽證情況查核可唔可以照行",
+      "text_b": "護照未對清，過橋簽證情況查詢可唔可以照行"
+    },
+    {
+      "ratio": 0.889,
+      "a": "D264 S6",
+      "b": "D296 S5",
+      "text_a": "家庭資料有兩份，托兒津貼交邊份",
+      "text_b": "活動資料有兩份，托兒津貼交邊份"
+    },
+    {
+      "ratio": 0.882,
+      "a": "D437 S7",
+      "b": "D438 S3",
+      "text_a": "護照之前交過，簽證情況查核有冇睇到",
+      "text_b": "護照之前交過，過橋簽證情況查詢有冇睇到"
+    },
+    {
+      "ratio": 0.882,
+      "a": "D464 S2",
+      "b": "D496 S6",
+      "text_a": "個時間同結果唔同，托兒津貼用咗咩資料",
+      "text_b": "個日子同結果唔同，托兒津貼用咗咩資料"
+    }
+  ],
+  "skeleton_repeat_count": 0,
+  "skeleton_repeats": [],
+  "fingerprints": {
+    "term_gloss_lesson": 0,
+    "generic_case_effect_next": 0,
+    "noted_but_current": 0,
+    "generic_next_step": 0,
+    "upload_keep_reference": 0,
+    "wait_then_call": 0,
+    "all_docs_enough": 0,
+    "decision_reasons_review": 0
+  },
+  "top_openers": [
+    [
+      "好",
+      145
+    ],
+    [
+      "今次對文",
+      100
+    ],
+    [
+      "清楚喇",
+      67
+    ],
+    [
+      "嗰個日期",
+      63
+    ],
+    [
+      "我知喇",
+      62
+    ],
+    [
+      "得喇",
+      61
+    ],
+    [
+      "咁",
+      56
+    ],
+    [
+      "得我記住",
+      55
+    ],
+    [
+      "明白喇",
+      54
+    ],
+    [
+      "個時間同",
+      47
+    ],
+    [
+      "個日子同",
+      37
+    ],
+    [
+      "我更正返",
+      33
+    ],
+    [
+      "醫療保險",
+      31
+    ],
+    [
+      "講清楚先",
+      29
+    ],
+    [
+      "頭先撈亂",
+      27
+    ]
+  ],
+  "top_endings": [
+    [
+      "<bare>",
+      1255
+    ],
+    [
+      "喇",
+      857
+    ],
+    [
+      "呀",
+      586
+    ],
+    [
+      "喎",
+      106
+    ],
+    [
+      "咩",
+      100
+    ],
+    [
+      "啫",
+      96
+    ]
+  ],
+  "swc_markers": {},
+  "repair_turns": 134,
+  "change_state_turns": 110,
+  "short_turns_le10": 500,
+  "long_turns_ge45": 0,
+  "bare_endings": 1255,
+  "client_char_range": [
+    2,
+    41
+  ],
+  "dialogue_review": {
+    "D002": [
+      "no repair/confirmation event"
+    ],
+    "D004": [
+      "no repair/confirmation event"
+    ],
+    "D005": [
+      "no repair/confirmation event"
+    ],
+    "D006": [
+      "no repair/confirmation event"
+    ],
+    "D007": [
+      "no repair/confirmation event"
+    ],
+    "D008": [
+      "no repair/confirmation event"
+    ],
+    "D009": [
+      "no repair/confirmation event"
+    ],
+    "D010": [
+      "no repair/confirmation event"
+    ],
+    "D011": [
+      "no repair/confirmation event"
+    ],
+    "D012": [
+      "no repair/confirmation event"
+    ],
+    "D014": [
+      "no repair/confirmation event"
+    ],
+    "D015": [
+      "no repair/confirmation event"
+    ],
+    "D016": [
+      "no repair/confirmation event"
+    ],
+    "D017": [
+      "no repair/confirmation event"
+    ],
+    "D018": [
+      "no repair/confirmation event"
+    ],
+    "D019": [
+      "no repair/confirmation event"
+    ],
+    "D021": [
+      "no repair/confirmation event"
+    ],
+    "D022": [
+      "no repair/confirmation event"
+    ],
+    "D023": [
+      "no repair/confirmation event"
+    ],
+    "D024": [
+      "no repair/confirmation event"
+    ],
+    "D026": [
+      "no repair/confirmation event"
+    ],
+    "D028": [
+      "no repair/confirmation event"
+    ],
+    "D029": [
+      "no repair/confirmation event"
+    ],
+    "D031": [
+      "no repair/confirmation event"
+    ],
+    "D032": [
+      "no repair/confirmation event"
+    ],
+    "D033": [
+      "no repair/confirmation event"
+    ],
+    "D034": [
+      "no repair/confirmation event"
+    ],
+    "D035": [
+      "no repair/confirmation event"
+    ],
+    "D036": [
+      "no repair/confirmation event"
+    ],
+    "D039": [
+      "no repair/confirmation event"
+    ],
+    "D040": [
+      "no repair/confirmation event"
+    ],
+    "D044": [
+      "no repair/confirmation event"
+    ],
+    "D046": [
+      "no repair/confirmation event"
+    ],
+    "D047": [
+      "no repair/confirmation event"
+    ],
+    "D048": [
+      "no repair/confirmation event"
+    ],
+    "D049": [
+      "no repair/confirmation event"
+    ],
+    "D050": [
+      "no repair/confirmation event"
+    ],
+    "D051": [
+      "no repair/confirmation event"
+    ],
+    "D054": [
+      "no repair/confirmation event"
+    ],
+    "D056": [
+      "no repair/confirmation event"
+    ],
+    "D058": [
+      "no repair/confirmation event"
+    ],
+    "D059": [
+      "no repair/confirmation event"
+    ],
+    "D060": [
+      "no repair/confirmation event"
+    ],
+    "D061": [
+      "no repair/confirmation event"
+    ],
+    "D062": [
+      "no repair/confirmation event"
+    ],
+    "D063": [
+      "no repair/confirmation event"
+    ],
+    "D064": [
+      "no repair/confirmation event"
+    ],
+    "D066": [
+      "no repair/confirmation event"
+    ],
+    "D067": [
+      "no repair/confirmation event"
+    ],
+    "D068": [
+      "no repair/confirmation event"
+    ],
+    "D069": [
+      "no repair/confirmation event"
+    ],
+    "D071": [
+      "no repair/confirmation event"
+    ],
+    "D072": [
+      "no repair/confirmation event"
+    ],
+    "D074": [
+      "no repair/confirmation event"
+    ],
+    "D075": [
+      "no repair/confirmation event"
+    ],
+    "D077": [
+      "no repair/confirmation event"
+    ],
+    "D078": [
+      "no repair/confirmation event"
+    ],
+    "D079": [
+      "no repair/confirmation event"
+    ],
+    "D082": [
+      "no repair/confirmation event"
+    ],
+    "D089": [
+      "no repair/confirmation event"
+    ],
+    "D090": [
+      "no repair/confirmation event"
+    ],
+    "D091": [
+      "no repair/confirmation event"
+    ],
+    "D092": [
+      "no repair/confirmation event"
+    ],
+    "D093": [
+      "no repair/confirmation event"
+    ],
+    "D094": [
+      "no repair/confirmation event"
+    ],
+    "D095": [
+      "no repair/confirmation event"
+    ],
+    "D100": [
+      "no repair/confirmation event"
+    ],
+    "D101": [
+      "no repair/confirmation event"
+    ],
+    "D102": [
+      "no repair/confirmation event"
+    ],
+    "D103": [
+      "no repair/confirmation event"
+    ],
+    "D104": [
+      "no repair/confirmation event"
+    ],
+    "D107": [
+      "no repair/confirmation event"
+    ],
+    "D108": [
+      "no repair/confirmation event"
+    ],
+    "D109": [
+      "no repair/confirmation event"
+    ],
+    "D112": [
+      "no repair/confirmation event"
+    ],
+    "D113": [
+      "no repair/confirmation event"
+    ],
+    "D114": [
+      "no repair/confirmation event"
+    ],
+    "D115": [
+      "no repair/confirmation event"
+    ],
+    "D116": [
+      "no repair/confirmation event"
+    ],
+    "D117": [
+      "no repair/confirmation event"
+    ],
+    "D118": [
+      "no repair/confirmation event"
+    ],
+    "D120": [
+      "no repair/confirmation event"
+    ],
+    "D122": [
+      "no repair/confirmation event"
+    ],
+    "D123": [
+      "no repair/confirmation event"
+    ],
+    "D125": [
+      "no repair/confirmation event"
+    ],
+    "D126": [
+      "no repair/confirmation event"
+    ],
+    "D128": [
+      "no repair/confirmation event"
+    ],
+    "D129": [
+      "no repair/confirmation event"
+    ],
+    "D130": [
+      "no repair/confirmation event"
+    ],
+    "D131": [
+      "no repair/confirmation event"
+    ],
+    "D133": [
+      "no repair/confirmation event"
+    ],
+    "D135": [
+      "no repair/confirmation event"
+    ],
+    "D137": [
+      "no repair/confirmation event"
+    ],
+    "D138": [
+      "no repair/confirmation event"
+    ],
+    "D141": [
+      "no repair/confirmation event"
+    ],
+    "D142": [
+      "no repair/confirmation event"
+    ],
+    "D144": [
+      "no repair/confirmation event"
+    ],
+    "D145": [
+      "no repair/confirmation event"
+    ],
+    "D146": [
+      "no repair/confirmation event"
+    ],
+    "D147": [
+      "no repair/confirmation event"
+    ],
+    "D148": [
+      "no repair/confirmation event"
+    ],
+    "D149": [
+      "no repair/confirmation event"
+    ],
+    "D150": [
+      "no repair/confirmation event"
+    ],
+    "D151": [
+      "no repair/confirmation event"
+    ],
+    "D153": [
+      "no repair/confirmation event"
+    ],
+    "D155": [
+      "no repair/confirmation event"
+    ],
+    "D156": [
+      "no repair/confirmation event"
+    ],
+    "D157": [
+      "no repair/confirmation event"
+    ],
+    "D158": [
+      "no repair/confirmation event"
+    ],
+    "D159": [
+      "no repair/confirmation event"
+    ],
+    "D160": [
+      "no repair/confirmation event"
+    ],
+    "D162": [
+      "no repair/confirmation event"
+    ],
+    "D163": [
+      "no repair/confirmation event"
+    ],
+    "D164": [
+      "no repair/confirmation event"
+    ],
+    "D167": [
+      "no repair/confirmation event"
+    ],
+    "D168": [
+      "no repair/confirmation event"
+    ],
+    "D169": [
+      "no repair/confirmation event"
+    ],
+    "D170": [
+      "no repair/confirmation event"
+    ],
+    "D171": [
+      "no repair/confirmation event"
+    ],
+    "D172": [
+      "no repair/confirmation event"
+    ],
+    "D173": [
+      "no repair/confirmation event"
+    ],
+    "D175": [
+      "no repair/confirmation event"
+    ],
+    "D176": [
+      "no repair/confirmation event"
+    ],
+    "D177": [
+      "no repair/confirmation event"
+    ],
+    "D178": [
+      "no repair/confirmation event"
+    ],
+    "D180": [
+      "no repair/confirmation event"
+    ],
+    "D181": [
+      "no repair/confirmation event"
+    ],
+    "D182": [
+      "no repair/confirmation event"
+    ],
+    "D183": [
+      "no repair/confirmation event"
+    ],
+    "D184": [
+      "no repair/confirmation event"
+    ],
+    "D185": [
+      "no repair/confirmation event"
+    ],
+    "D187": [
+      "no repair/confirmation event"
+    ],
+    "D188": [
+      "no repair/confirmation event"
+    ],
+    "D189": [
+      "no repair/confirmation event"
+    ],
+    "D190": [
+      "no repair/confirmation event"
+    ],
+    "D192": [
+      "no repair/confirmation event"
+    ],
+    "D193": [
+      "no repair/confirmation event"
+    ],
+    "D194": [
+      "no repair/confirmation event"
+    ],
+    "D195": [
+      "no repair/confirmation event"
+    ],
+    "D196": [
+      "no repair/confirmation event"
+    ],
+    "D197": [
+      "no repair/confirmation event"
+    ],
+    "D198": [
+      "no repair/confirmation event"
+    ],
+    "D199": [
+      "no repair/confirmation event"
+    ],
+    "D201": [
+      "no repair/confirmation event"
+    ],
+    "D203": [
+      "no repair/confirmation event"
+    ],
+    "D204": [
+      "no repair/confirmation event"
+    ],
+    "D206": [
+      "no repair/confirmation event"
+    ],
+    "D207": [
+      "no repair/confirmation event"
+    ],
+    "D208": [
+      "no repair/confirmation event"
+    ],
+    "D209": [
+      "no repair/confirmation event"
+    ],
+    "D210": [
+      "no repair/confirmation event"
+    ],
+    "D211": [
+      "no repair/confirmation event"
+    ],
+    "D213": [
+      "no repair/confirmation event"
+    ],
+    "D214": [
+      "no repair/confirmation event"
+    ],
+    "D215": [
+      "no repair/confirmation event"
+    ],
+    "D216": [
+      "no repair/confirmation event"
+    ],
+    "D217": [
+      "no repair/confirmation event"
+    ],
+    "D218": [
+      "no repair/confirmation event"
+    ],
+    "D219": [
+      "no repair/confirmation event"
+    ],
+    "D221": [
+      "no repair/confirmation event"
+    ],
+    "D222": [
+      "no repair/confirmation event"
+    ],
+    "D223": [
+      "no repair/confirmation event"
+    ],
+    "D224": [
+      "no repair/confirmation event"
+    ],
+    "D225": [
+      "no repair/confirmation event"
+    ],
+    "D226": [
+      "no repair/confirmation event"
+    ],
+    "D227": [
+      "no repair/confirmation event"
+    ],
+    "D228": [
+      "no repair/confirmation event"
+    ],
+    "D229": [
+      "no repair/confirmation event"
+    ],
+    "D231": [
+      "no repair/confirmation event"
+    ],
+    "D232": [
+      "no repair/confirmation event"
+    ],
+    "D233": [
+      "no repair/confirmation event"
+    ],
+    "D234": [
+      "no repair/confirmation event"
+    ],
+    "D235": [
+      "no repair/confirmation event"
+    ],
+    "D236": [
+      "no repair/confirmation event"
+    ],
+    "D238": [
+      "no repair/confirmation event"
+    ],
+    "D239": [
+      "no repair/confirmation event"
+    ],
+    "D240": [
+      "no repair/confirmation event"
+    ],
+    "D241": [
+      "no repair/confirmation event"
+    ],
+    "D242": [
+      "no repair/confirmation event"
+    ],
+    "D243": [
+      "no repair/confirmation event"
+    ],
+    "D244": [
+      "no repair/confirmation event"
+    ],
+    "D245": [
+      "no repair/confirmation event"
+    ],
+    "D248": [
+      "no repair/confirmation event"
+    ],
+    "D249": [
+      "no repair/confirmation event"
+    ],
+    "D250": [
+      "no repair/confirmation event"
+    ],
+    "D252": [
+      "no repair/confirmation event"
+    ],
+    "D253": [
+      "no repair/confirmation event"
+    ],
+    "D254": [
+      "no repair/confirmation event"
+    ],
+    "D255": [
+      "no repair/confirmation event"
+    ],
+    "D257": [
+      "no repair/confirmation event"
+    ],
+    "D259": [
+      "no repair/confirmation event"
+    ],
+    "D260": [
+      "no repair/confirmation event"
+    ],
+    "D261": [
+      "no repair/confirmation event"
+    ],
+    "D262": [
+      "no repair/confirmation event"
+    ],
+    "D263": [
+      "no repair/confirmation event"
+    ],
+    "D264": [
+      "no repair/confirmation event"
+    ],
+    "D266": [
+      "no repair/confirmation event"
+    ],
+    "D268": [
+      "no repair/confirmation event"
+    ],
+    "D269": [
+      "no repair/confirmation event"
+    ],
+    "D272": [
+      "no repair/confirmation event"
+    ],
+    "D273": [
+      "no repair/confirmation event"
+    ],
+    "D275": [
+      "no repair/confirmation event"
+    ],
+    "D276": [
+      "no repair/confirmation event"
+    ],
+    "D277": [
+      "no repair/confirmation event"
+    ],
+    "D278": [
+      "no repair/confirmation event"
+    ],
+    "D279": [
+      "no repair/confirmation event"
+    ],
+    "D282": [
+      "no repair/confirmation event"
+    ],
+    "D284": [
+      "no repair/confirmation event"
+    ],
+    "D285": [
+      "no repair/confirmation event"
+    ],
+    "D286": [
+      "no repair/confirmation event"
+    ],
+    "D287": [
+      "no repair/confirmation event"
+    ],
+    "D288": [
+      "no repair/confirmation event"
+    ],
+    "D289": [
+      "no repair/confirmation event"
+    ],
+    "D291": [
+      "no repair/confirmation event"
+    ],
+    "D292": [
+      "no repair/confirmation event"
+    ],
+    "D294": [
+      "no repair/confirmation event"
+    ],
+    "D296": [
+      "no repair/confirmation event"
+    ],
+    "D297": [
+      "no repair/confirmation event"
+    ],
+    "D298": [
+      "no repair/confirmation event"
+    ],
+    "D299": [
+      "no repair/confirmation event"
+    ],
+    "D301": [
+      "no repair/confirmation event"
+    ],
+    "D303": [
+      "no repair/confirmation event"
+    ],
+    "D305": [
+      "no repair/confirmation event"
+    ],
+    "D306": [
+      "no repair/confirmation event"
+    ],
+    "D307": [
+      "no repair/confirmation event"
+    ],
+    "D308": [
+      "no repair/confirmation event"
+    ],
+    "D309": [
+      "no repair/confirmation event"
+    ],
+    "D310": [
+      "no repair/confirmation event"
+    ],
+    "D312": [
+      "no repair/confirmation event"
+    ],
+    "D313": [
+      "no repair/confirmation event"
+    ],
+    "D314": [
+      "no repair/confirmation event"
+    ],
+    "D315": [
+      "no repair/confirmation event"
+    ],
+    "D318": [
+      "no repair/confirmation event"
+    ],
+    "D319": [
+      "no repair/confirmation event"
+    ],
+    "D320": [
+      "no repair/confirmation event"
+    ],
+    "D322": [
+      "no repair/confirmation event"
+    ],
+    "D323": [
+      "no repair/confirmation event"
+    ],
+    "D324": [
+      "no repair/confirmation event"
+    ],
+    "D325": [
+      "no repair/confirmation event"
+    ],
+    "D326": [
+      "no repair/confirmation event"
+    ],
+    "D327": [
+      "no repair/confirmation event"
+    ],
+    "D328": [
+      "no repair/confirmation event"
+    ],
+    "D331": [
+      "no repair/confirmation event"
+    ],
+    "D332": [
+      "no repair/confirmation event"
+    ],
+    "D333": [
+      "no repair/confirmation event"
+    ],
+    "D334": [
+      "no repair/confirmation event"
+    ],
+    "D337": [
+      "no repair/confirmation event"
+    ],
+    "D338": [
+      "no repair/confirmation event"
+    ],
+    "D339": [
+      "no repair/confirmation event"
+    ],
+    "D340": [
+      "no repair/confirmation event"
+    ],
+    "D341": [
+      "no repair/confirmation event"
+    ],
+    "D343": [
+      "no repair/confirmation event"
+    ],
+    "D344": [
+      "no repair/confirmation event"
+    ],
+    "D345": [
+      "no repair/confirmation event"
+    ],
+    "D346": [
+      "no repair/confirmation event"
+    ],
+    "D347": [
+      "no repair/confirmation event"
+    ],
+    "D348": [
+      "no repair/confirmation event"
+    ],
+    "D349": [
+      "no repair/confirmation event"
+    ],
+    "D350": [
+      "no repair/confirmation event"
+    ],
+    "D351": [
+      "no repair/confirmation event"
+    ],
+    "D353": [
+      "no repair/confirmation event"
+    ],
+    "D354": [
+      "no repair/confirmation event"
+    ],
+    "D355": [
+      "no repair/confirmation event"
+    ],
+    "D357": [
+      "no repair/confirmation event"
+    ],
+    "D358": [
+      "no repair/confirmation event"
+    ],
+    "D359": [
+      "no repair/confirmation event"
+    ],
+    "D360": [
+      "no repair/confirmation event"
+    ],
+    "D361": [
+      "no repair/confirmation event"
+    ],
+    "D362": [
+      "no repair/confirmation event"
+    ],
+    "D364": [
+      "no repair/confirmation event"
+    ],
+    "D365": [
+      "no repair/confirmation event"
+    ],
+    "D366": [
+      "no repair/confirmation event"
+    ],
+    "D367": [
+      "no repair/confirmation event"
+    ],
+    "D368": [
+      "no repair/confirmation event"
+    ],
+    "D370": [
+      "no repair/confirmation event"
+    ],
+    "D371": [
+      "no repair/confirmation event"
+    ],
+    "D372": [
+      "no repair/confirmation event"
+    ],
+    "D373": [
+      "no repair/confirmation event"
+    ],
+    "D374": [
+      "no repair/confirmation event"
+    ],
+    "D375": [
+      "no repair/confirmation event"
+    ],
+    "D376": [
+      "no repair/confirmation event"
+    ],
+    "D377": [
+      "no repair/confirmation event"
+    ],
+    "D378": [
+      "no repair/confirmation event"
+    ],
+    "D380": [
+      "no repair/confirmation event"
+    ],
+    "D381": [
+      "no repair/confirmation event"
+    ],
+    "D382": [
+      "no repair/confirmation event"
+    ],
+    "D383": [
+      "no repair/confirmation event"
+    ],
+    "D384": [
+      "no repair/confirmation event"
+    ],
+    "D386": [
+      "no repair/confirmation event"
+    ],
+    "D387": [
+      "no repair/confirmation event"
+    ],
+    "D388": [
+      "no repair/confirmation event"
+    ],
+    "D389": [
+      "no repair/confirmation event"
+    ],
+    "D390": [
+      "no repair/confirmation event"
+    ],
+    "D391": [
+      "no repair/confirmation event"
+    ],
+    "D392": [
+      "no repair/confirmation event"
+    ],
+    "D393": [
+      "no repair/confirmation event"
+    ],
+    "D394": [
+      "no repair/confirmation event"
+    ],
+    "D395": [
+      "no repair/confirmation event"
+    ],
+    "D396": [
+      "no repair/confirmation event"
+    ],
+    "D397": [
+      "no repair/confirmation event"
+    ],
+    "D398": [
+      "no repair/confirmation event"
+    ],
+    "D399": [
+      "no repair/confirmation event"
+    ],
+    "D400": [
+      "no repair/confirmation event"
+    ],
+    "D402": [
+      "no repair/confirmation event"
+    ],
+    "D404": [
+      "no repair/confirmation event"
+    ],
+    "D405": [
+      "no repair/confirmation event"
+    ],
+    "D406": [
+      "no repair/confirmation event"
+    ],
+    "D409": [
+      "no repair/confirmation event"
+    ],
+    "D411": [
+      "no repair/confirmation event"
+    ],
+    "D413": [
+      "no repair/confirmation event"
+    ],
+    "D414": [
+      "no repair/confirmation event"
+    ],
+    "D415": [
+      "no repair/confirmation event"
+    ],
+    "D416": [
+      "no repair/confirmation event"
+    ],
+    "D417": [
+      "no repair/confirmation event"
+    ],
+    "D418": [
+      "no repair/confirmation event"
+    ],
+    "D419": [
+      "no repair/confirmation event"
+    ],
+    "D420": [
+      "no repair/confirmation event"
+    ],
+    "D421": [
+      "no repair/confirmation event"
+    ],
+    "D422": [
+      "no repair/confirmation event"
+    ],
+    "D424": [
+      "no repair/confirmation event"
+    ],
+    "D425": [
+      "no repair/confirmation event"
+    ],
+    "D427": [
+      "no repair/confirmation event"
+    ],
+    "D428": [
+      "no repair/confirmation event"
+    ],
+    "D430": [
+      "no repair/confirmation event"
+    ],
+    "D431": [
+      "no repair/confirmation event"
+    ],
+    "D432": [
+      "no repair/confirmation event"
+    ],
+    "D433": [
+      "no repair/confirmation event"
+    ],
+    "D434": [
+      "no repair/confirmation event"
+    ],
+    "D435": [
+      "no repair/confirmation event"
+    ],
+    "D437": [
+      "no repair/confirmation event"
+    ],
+    "D438": [
+      "no repair/confirmation event"
+    ],
+    "D440": [
+      "no repair/confirmation event"
+    ],
+    "D441": [
+      "no repair/confirmation event"
+    ],
+    "D442": [
+      "no repair/confirmation event"
+    ],
+    "D443": [
+      "no repair/confirmation event"
+    ],
+    "D445": [
+      "no repair/confirmation event"
+    ],
+    "D446": [
+      "no repair/confirmation event"
+    ],
+    "D447": [
+      "no repair/confirmation event"
+    ],
+    "D448": [
+      "no repair/confirmation event"
+    ],
+    "D450": [
+      "no repair/confirmation event"
+    ],
+    "D452": [
+      "no repair/confirmation event"
+    ],
+    "D453": [
+      "no repair/confirmation event"
+    ],
+    "D454": [
+      "no repair/confirmation event"
+    ],
+    "D455": [
+      "no repair/confirmation event"
+    ],
+    "D456": [
+      "no repair/confirmation event"
+    ],
+    "D457": [
+      "no repair/confirmation event"
+    ],
+    "D459": [
+      "no repair/confirmation event"
+    ],
+    "D460": [
+      "no repair/confirmation event"
+    ],
+    "D461": [
+      "no repair/confirmation event"
+    ],
+    "D462": [
+      "no repair/confirmation event"
+    ],
+    "D463": [
+      "no repair/confirmation event"
+    ],
+    "D464": [
+      "no repair/confirmation event"
+    ],
+    "D465": [
+      "no repair/confirmation event"
+    ],
+    "D466": [
+      "no repair/confirmation event"
+    ],
+    "D467": [
+      "no repair/confirmation event"
+    ],
+    "D469": [
+      "no repair/confirmation event"
+    ],
+    "D471": [
+      "no repair/confirmation event"
+    ],
+    "D472": [
+      "no repair/confirmation event"
+    ],
+    "D473": [
+      "no repair/confirmation event"
+    ],
+    "D474": [
+      "no repair/confirmation event"
+    ],
+    "D475": [
+      "no repair/confirmation event"
+    ],
+    "D476": [
+      "no repair/confirmation event"
+    ],
+    "D477": [
+      "no repair/confirmation event"
+    ],
+    "D478": [
+      "no repair/confirmation event"
+    ],
+    "D480": [
+      "no repair/confirmation event"
+    ],
+    "D481": [
+      "no repair/confirmation event"
+    ],
+    "D482": [
+      "no repair/confirmation event"
+    ],
+    "D483": [
+      "no repair/confirmation event"
+    ],
+    "D484": [
+      "no repair/confirmation event"
+    ],
+    "D486": [
+      "no repair/confirmation event"
+    ],
+    "D487": [
+      "no repair/confirmation event"
+    ],
+    "D488": [
+      "no repair/confirmation event"
+    ],
+    "D489": [
+      "no repair/confirmation event"
+    ],
+    "D490": [
+      "no repair/confirmation event"
+    ],
+    "D491": [
+      "no repair/confirmation event"
+    ],
+    "D493": [
+      "no repair/confirmation event"
+    ],
+    "D494": [
+      "no repair/confirmation event"
+    ],
+    "D495": [
+      "no repair/confirmation event"
+    ],
+    "D496": [
+      "no repair/confirmation event"
+    ],
+    "D499": [
+      "no repair/confirmation event"
+    ],
+    "D500": [
+      "no repair/confirmation event"
+    ]
+  }
+}

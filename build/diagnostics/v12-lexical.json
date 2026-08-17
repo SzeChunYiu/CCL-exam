@@ -1,0 +1,34 @@
+{
+  "dialogues": 500,
+  "violating_segments": 2,
+  "latin_tokens": 2,
+  "unique_tokens": 1,
+  "top_tokens": [
+    [
+      "A",
+      2
+    ]
+  ],
+  "violations": [
+    {
+      "dialogue": "D338",
+      "segment": 1,
+      "title": "Bridging Visa A — Deadline and consequence",
+      "tokens": [
+        "A"
+      ],
+      "source": "其實，我想趕喺八月二十號前搞掂A類過橋簽證喎。我記低。",
+      "suggestions": {}
+    },
+    {
+      "dialogue": "D339",
+      "segment": 1,
+      "title": "Bridging Visa B travel — Deadline and consequence",
+      "tokens": [
+        "A"
+      ],
+      "source": "我想趕喺一月二號前搞掂A類過橋簽證喇。好彩啫。",
+      "suggestions": {}
+    }
+  ]
+}
