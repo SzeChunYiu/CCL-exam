@@ -1,0 +1,37 @@
+{
+ "_note": "Aggregate measurements derived from the six official NAATI CCL Cantonese practice recordings and their transcripts. Source material is third-party and is not redistributed here; only these statistics are.",
+ "english": {
+  "wpm_median": 168.0,
+  "n": 42,
+  "p25": 147.5,
+  "p75": 189.9
+ },
+ "cantonese": {
+  "chars_per_sec_median": 4.07,
+  "n": 38,
+  "p25": 3.75,
+  "p75": 4.24
+ },
+ "register": {
+  "particle_per100": 6.06,
+  "particle_types": 14,
+  "top4_share_pct": 69.9,
+  "median_sentence_han": 12,
+  "median_clause_han": 9,
+  "sentences_per_turn": 2.26,
+  "spoken_connective_per100": 1.4,
+  "calque_per100": 0.17,
+  "repeated_10gram_pct": 0.0,
+  "duplicate_sentence_pct": 0.0,
+  "corpus_turns": 39,
+  "corpus_han_chars": 1204
+ },
+ "hkcancor_control": {
+  "_note": "Independent check against HKCanCor, 16,091 utterances of spontaneous HK Cantonese.",
+  "particle_per100": 6.13,
+  "particle_types": 14,
+  "top4_share_pct": 75.5,
+  "spoken_connective_per100": 3.24,
+  "han_chars": 157896
+ }
+}
