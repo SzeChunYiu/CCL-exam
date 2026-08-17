@@ -23,6 +23,7 @@ jobs:
           python3 -m py_compile scripts/build_native_500_v2.py
           python3 -m py_compile scripts/build_native_500_v3.py
           python3 -m py_compile scripts/build_native_500_v4.py
+          python3 -m py_compile scripts/build_native_500_v5.py
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
@@ -31,7 +32,7 @@ jobs:
           python3 -m py_compile scripts/upload_v4_segments.py
 
       - name: Build all 500 dialogues from scenario blueprints
-        run: python3 scripts/build_native_500_v4.py
+        run: python3 scripts/build_native_500_v5.py
 
       - name: Remove artificial Cantonese pitch cycling and stale 100-bank UI copy
         run: |
