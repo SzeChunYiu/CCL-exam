@@ -22,17 +22,18 @@ jobs:
           python3 -m py_compile scripts/build_native_500_v10.py
           python3 -m py_compile scripts/build_native_500_v11.py
           python3 -m py_compile scripts/build_native_500_v12.py
+          python3 -m py_compile scripts/run_native_v12_fixed.py
           python3 -m py_compile scripts/postprocess_native_v12.py
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
           python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
 
-      - name: Build candidate and apply two reviewed implementation fixes
+      - name: Build candidate and apply reviewed implementation fixes
         run: |
           mkdir -p build/diagnostics
           set +e
-          python3 scripts/build_native_500_v12.py > build/diagnostics/v12-build.log 2>&1
+          python3 scripts/run_native_v12_fixed.py > build/diagnostics/v12-build.log 2>&1
           echo $? > build/diagnostics/v12-build-exit.txt
           set -e
           cat build/diagnostics/v12-build.log
@@ -75,5 +76,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add build/diagnostics/v12-*
-          git commit -m 'Record v12 native-bank diagnostics [skip ci]'
+          git commit -m 'Record corrected v12 native-bank diagnostics [skip ci]'
           git push
