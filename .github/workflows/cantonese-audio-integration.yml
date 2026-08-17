@@ -19,10 +19,10 @@ jobs:
 
       - name: Python syntax
         run: |
-          for f in scripts/build_native_500.py scripts/build_native_500_v2.py scripts/build_native_500_v3.py scripts/build_native_500_v4.py scripts/build_native_500_v5.py scripts/build_native_500_v6.py scripts/build_native_500_v7.py scripts/build_native_500_v8.py scripts/qa_cantonese.py scripts/verify_rewrite.py scripts/audit_native_cantonese_v2.py scripts/audit_cantonese_lexical_transfer.py scripts/generate_v4_audio.py scripts/upload_v4_segments.py; do python3 -m py_compile "$f"; done
+          for f in scripts/build_native_500.py scripts/build_native_500_v2.py scripts/build_native_500_v3.py scripts/build_native_500_v4.py scripts/build_native_500_v5.py scripts/build_native_500_v6.py scripts/build_native_500_v7.py scripts/build_native_500_v8.py scripts/build_native_500_v9.py scripts/qa_cantonese.py scripts/verify_rewrite.py scripts/audit_native_cantonese_v2.py scripts/audit_cantonese_lexical_transfer.py scripts/generate_v4_audio.py scripts/upload_v4_segments.py; do python3 -m py_compile "$f"; done
 
       - name: Build all 500 dialogues from scenario blueprints
-        run: python3 scripts/build_native_500_v8.py
+        run: python3 scripts/build_native_500_v9.py
 
       - name: Remove artificial Cantonese pitch cycling and stale 100-bank UI copy
         run: |
