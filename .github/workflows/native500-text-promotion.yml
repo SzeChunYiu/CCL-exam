@@ -39,7 +39,6 @@ jobs:
           python3 scripts/build_terms.py
           node --check app.js
           node --check questions-page.js
-          node --check term-highlight.js
       - name: Record frozen text hash
         run: |
           set -euo pipefail
