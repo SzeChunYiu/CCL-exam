@@ -20,6 +20,7 @@ jobs:
       - name: Python syntax
         run: |
           python3 -m py_compile scripts/build_native_500.py
+          python3 -m py_compile scripts/build_native_500_v2.py
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
@@ -28,7 +29,7 @@ jobs:
           python3 -m py_compile scripts/upload_v4_segments.py
 
       - name: Build all 500 dialogues from scenario blueprints
-        run: python3 scripts/build_native_500.py --write
+        run: python3 scripts/build_native_500_v2.py
 
       - name: Remove artificial Cantonese pitch cycling and stale 100-bank UI copy
         run: |
@@ -55,14 +56,23 @@ jobs:
       - name: Cantonese-only lexical-transfer gate
         run: python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > /tmp/lexical.json
 
-      - name: Inspect hard corpus metrics
+      - name: Inspect full metrics
         if: always()
         run: |
           python3 scripts/qa_cantonese.py data/dialogues.json --json > /tmp/cantonese-hard.json || true
           python3 - <<'PY'
-          import json
+          import json, pathlib
           x=json.load(open('/tmp/cantonese-hard.json'))
           print(json.dumps({'metrics':x.get('metrics'),'failures':x.get('failures')},ensure_ascii=False,indent=2))
+          p=pathlib.Path('/tmp/native-v2.json')
+          if p.exists():
+            n=json.loads(p.read_text())
+            keys=['dialogues','client_turns','client_sentences','exact_reuse_count','near_duplicate_count','skeleton_repeat_count','repair_turns','change_state_turns','short_turns_le10','long_turns_ge45','bare_endings','failures']
+            print(json.dumps({k:n.get(k) for k in keys},ensure_ascii=False,indent=2))
+          p=pathlib.Path('/tmp/lexical.json')
+          if p.exists():
+            q=json.loads(p.read_text())
+            print(json.dumps({k:q.get(k) for k in ['dialogues','violating_segments','latin_tokens','unique_tokens']},ensure_ascii=False,indent=2))
           PY
 
       - name: Commit generated bank after every gate passes
