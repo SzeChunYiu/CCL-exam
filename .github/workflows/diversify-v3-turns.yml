@@ -1,0 +1,34 @@
+name: Diversify v3 repeated turns
+
+on:
+  push:
+    branches: [final-ccl-v3]
+    paths:
+      - 'scripts/diversify_repeated_turns.py'
+      - '.github/workflows/diversify-v3-turns.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diversify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Diversify repeated turns
+        run: python3 scripts/diversify_repeated_turns.py
+      - name: Commit QA-passing bank
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/dialogues.json data/site_summary.json data/repetition_qa.json practice_pack/dialogues_metadata.json materials/SOURCE_SCRIPTS.md materials/MODEL_ANSWERS.md practice_pack/SOURCE_SCRIPTS.md practice_pack/MODEL_ANSWERS.md
+          if git diff --cached --quiet; then
+            echo 'No diversification changes'
+          else
+            git commit -m 'Diversify repeated CCL dialogue turns [skip ci]'
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
