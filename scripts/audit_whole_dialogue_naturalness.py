@@ -30,8 +30,6 @@ WORD = re.compile(r"[A-Za-z]+(?:['’-][A-Za-z]+)?|\d+(?:[.:,/\-]\d+)*")
 EN_SENT = re.compile(r"(?<=[.!?])\s+")
 Y_SENT = re.compile(r"[。！？]+")
 
-# The professional layer should sound like a person speaking to a caller, not an
-# authoring system narrating which generated encounter state it is in.
 STAGE_LABELS = re.compile(
     r"\b(?:initial enquiry|document check|deadline check|outcome review)\b",
     re.I,
@@ -44,9 +42,6 @@ MALFORMED_EN = [
 ]
 WRITTEN_YUE = ["因此", "然而", "此外", "予以", "該項", "此項", "上述", "下列", "倘若", "務必"]
 
-# Fixed release thresholds.  Exact substantive reuse is never accepted.  Near
-# pairs permit a small number of genuine service-language coincidences at 500
-# dialogues but reject a shared sentence shell architecture.
 LIMITS = {
     "officer_en_near": 25,
     "officer_yue_near": 25,
@@ -93,33 +88,56 @@ def exact_reuse(records, sentence_fn):
     return dup
 
 
+def _multiset_match_upper(a_count: Counter, b_count: Counter) -> int:
+    """Maximum possible number of character matches for any alignment.
+
+    SequenceMatcher's ratio is 2*M/(len(a)+len(b)), where M is the total length
+    of its non-overlapping matching blocks. M can never exceed the multiset
+    intersection of the two strings. Therefore this bound can safely discard a
+    pair only when even a perfect ordering of all shared characters cannot reach
+    the release threshold. It changes runtime, not the logical audit result.
+    """
+    # Iterate over the smaller alphabet for speed.
+    if len(a_count) > len(b_count):
+        a_count, b_count = b_count, a_count
+    return sum(min(n, b_count.get(ch, 0)) for ch, n in a_count.items())
+
+
 def near_pairs(records, sentence_fn, norm_fn, threshold: float, max_examples: int = 30):
     items = []
     for tag, text in records:
         for s in sentence_fn(text):
             n = norm_fn(s)
             if len(n) >= 12:
-                items.append((tag, s, n))
+                items.append((tag, s, n, Counter(n)))
     hits = []
     count = 0
-    # Length bucketing avoids comparing sentences that cannot plausibly reach the
-    # threshold and keeps the 500-bank audit practical in CI.
+    compared = 0
+    pruned = 0
     for i in range(len(items)):
-        ta, sa, a = items[i]
+        ta, sa, a, ca = items[i]
         la = len(a)
         for j in range(i + 1, len(items)):
-            tb, sb, b = items[j]
+            tb, sb, b, cb = items[j]
             if ta == tb:
                 continue
             lb = len(b)
-            if min(la, lb) / max(la, lb) < threshold - 0.03:
+            # Exact SequenceMatcher ratio can never exceed this simple length
+            # bound, so this is also lossless.
+            if (2.0 * min(la, lb) / (la + lb)) < threshold:
+                pruned += 1
                 continue
+            max_m = _multiset_match_upper(ca, cb)
+            if (2.0 * max_m / (la + lb)) < threshold:
+                pruned += 1
+                continue
+            compared += 1
             r = SequenceMatcher(None, a, b, autojunk=False).ratio()
             if r >= threshold:
                 count += 1
                 if len(hits) < max_examples:
                     hits.append({"a": ta, "b": tb, "ratio": round(r, 3), "sentence_a": sa, "sentence_b": sb})
-    return count, hits
+    return count, hits, {"sentences": len(items), "sequence_matcher_pairs": compared, "safely_pruned_pairs": pruned}
 
 
 def repeated_word_ngram(records, n: int):
@@ -191,9 +209,9 @@ def main() -> int:
     exact_off_y = exact_reuse(officer_yue, y_sentences)
     exact_cli_en = exact_reuse(client_en, en_sentences)
 
-    near_off_en, ex_near_off_en = near_pairs(officer_en, en_sentences, norm_en, 0.88)
-    near_off_y, ex_near_off_y = near_pairs(officer_yue, y_sentences, norm_y, 0.84)
-    near_cli_en, ex_near_cli_en = near_pairs(client_en, en_sentences, norm_en, 0.88)
+    near_off_en, ex_near_off_en, perf_off_en = near_pairs(officer_en, en_sentences, norm_en, 0.88)
+    near_off_y, ex_near_off_y, perf_off_y = near_pairs(officer_yue, y_sentences, norm_y, 0.84)
+    near_cli_en, ex_near_cli_en, perf_cli_en = near_pairs(client_en, en_sentences, norm_en, 0.88)
 
     en8, top_en8 = repeated_word_ngram(officer_en, 8)
     y10, top_y10 = repeated_han_ngram(officer_yue, 10)
@@ -232,6 +250,11 @@ def main() -> int:
             "officer_yue_written_per1000": written_rate,
             "malformed_english": len(malformed),
             "stage_label_hits": len(stage_hits),
+        },
+        "audit_performance": {
+            "officer_en": perf_off_en,
+            "officer_yue": perf_off_y,
+            "client_en": perf_cli_en,
         },
         "examples": {
             "officer_en_exact": exact_off_en[:20],
