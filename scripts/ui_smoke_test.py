@@ -50,8 +50,6 @@ html_and_templates='\n'.join(p.read_text() for p in routes.values())+'\n'+js_tex
 attrs=re.findall(r'on(?:click|change|input)="([^"]+)"',html_and_templates)
 called=set()
 for attr in attrs:
-    # Only bare/global calls. Method calls such as array.forEach(...) are not
-    # expected to have a global function definition.
     called.update(re.findall(r'(?<![.\w$])([A-Za-z_$][\w$]*)\s*\(',attr))
 known={'if','for','while','switch','Math','Number','String','Object','Array','Date','JSON','Promise','setTimeout','clearTimeout','setInterval','clearInterval','confirm','alert'}
 called-=known
@@ -60,8 +58,8 @@ def global_def(name):
     patterns=[
         rf'\bfunction\s+{re.escape(name)}\s*\(',
         rf'\bwindow\.{re.escape(name)}\s*=',
-        rf'(^|\n)\s*{re.escape(name)}\s*=\s*function\b',
-        rf'(^|\n)\s*(?:const|let|var)\s+{re.escape(name)}\s*=\s*(?:async\s*)?(?:function|\([^\n]*?\)\s*=>|[A-Za-z_$][\w$]*\s*=>)',
+        rf'(?:^|[;\n])\s*{re.escape(name)}\s*=\s*function\b',
+        rf'(?:^|[;\n])\s*(?:const|let|var)\s+{re.escape(name)}\s*=\s*(?:async\s*)?(?:function|\([^\n]*?\)\s*=>|[A-Za-z_$][\w$]*\s*=>)',
     ]
     return any(re.search(p,js_text,re.M) for p in patterns)
 
