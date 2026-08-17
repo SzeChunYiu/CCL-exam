@@ -1,8 +1,6 @@
 name: Native 500 Immutable Release Gate
 
 on:
-  push:
-    branches: [release/native-500-final2]
   workflow_dispatch:
 
 permissions:
