@@ -30,8 +30,6 @@ def accurate_term_yue(seed,variant,action,fallback):
 def cue_set17(seed,variant,action):
     c=dict(v11.cue_set(seed,variant,action)); e,ec=paired_evidence(seed,variant,action)
     c['e'],c['ec']=e,ec; c['tc']=accurate_term_yue(seed,variant,action,c['tc'])
-    if action==1:
-        c['f']=str(seed['fact_en']).strip(); c['fc']=f2.atom(seed['fact_yue'])
     return c
 
 def english_officer(seed,variant,action,c):
@@ -53,7 +51,6 @@ def low_yue(seed,variant,action,c):
 def officer(seed,variant,action):
     c=cue_set17(seed,variant,action); en=english_officer(seed,variant,action,c); y=low_yue(seed,variant,action,c)
     if action!=1 and c['ec'] not in y: raise SystemExit(f"evidence pair lost: {seed['title']} v{variant} a{action}: {en} || {y}")
-    if action==1 and c['fc'] not in y: raise SystemExit(f"fact pair lost: {seed['title']} v{variant}: {en} || {y}")
     return en,y
 r.client_model=lambda seed,variant,action:v11.client_model(seed,variant,action,r._ORIG_CLIENT(seed,variant,action)[1])
 r.client_turn=v11.client_turn; r.repair_turn=v11.repair_turn; r.officer=officer
