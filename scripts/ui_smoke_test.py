@@ -10,8 +10,8 @@ routes={
     'study':ROOT/'study/index.html',
     'progress':ROOT/'progress/index.html',
 }
-required_scripts=['/app.js','/neural-audio.js','/simple-ui.js','/questions-page.js','/ux-v2.js','/practice-player-v3.js','/route-pages.js','/ux-v4.js']
-required_css=['/styles.css','/simple.css','/questions.css','/ux-v2.css','/practice-player-v3.css','/ux-v4.css']
+required_scripts=['/app.js','/neural-audio.js','/simple-ui.js','/questions-page.js','/ux-v2.js','/practice-player-v3.js','/route-pages.js','/ux-v4.js','/practice-studio-v5.js','/ux-v5.js']
+required_css=['/styles.css','/simple.css','/questions.css','/ux-v2.css','/practice-player-v3.css','/ux-v4.css','/practice-studio-v5.css','/ux-v5.css']
 
 for name,path in routes.items():
     assert path.exists(), f'missing route page: {path}'
@@ -45,8 +45,24 @@ for token in ['Officer · English','Client · Cantonese','Next segment','Shuffle
     assert token in v4, f'missing v4 UX token: {token}'
 assert "e.code==='Space'" in v4 and "e.key.toLowerCase()==='r'" in v4 and "e.key==='Enter'" in v4
 
-css=(ROOT/'practice-player-v3.css').read_text()+(ROOT/'ux-v4.css').read_text()
-for selector in ['.question-player-v3','.question-dialogue.active-dialogue','.q-player-main','.ux-nav a','.v4-mock-row','.v4-form-card','.v4-study-content','.v4-progress-hero']:
+practice=(ROOT/'practice-studio-v5.js').read_text()
+for fn in ['setPracticeDefaultV5','resumePracticeV5','updatePracticeMatchV5','startGuidedPracticeV5','surprisePracticeV5','previousPracticeV5','jumpPracticeV5','rateFocusedV5','tagFocusedV5','togglePracticeWeakV5','togglePracticeFavoriteV5','startWeakReviewV5','revealDrillV5','previousDrillV5']:
+    assert re.search(rf'window\.{fn}\s*=',practice), f'missing Practice Studio control {fn}'
+for token in ['Practice studio','Guided dialogue','Weak review','Hands-free player','practiceResume','Auto-play next','Advance after rating','5</option><option selected>10</option><option>20','Officer · English','Client · Cantonese']:
+    assert token in practice, f'missing Practice Studio UX token: {token}'
+assert "e.code==='Space'" in practice
+assert "e.key==='ArrowLeft'" in practice and "e.key==='ArrowRight'" in practice
+assert "['1','2','3'].includes(e.key)" in practice and "e.key.toLowerCase()==='w'" in practice
+assert '/practice/?dialogue=' in practice and '/practice/?mode=weak' in practice
+
+v5=(ROOT/'ux-v5.js').read_text()
+for fn in ['testPracticeAudioV5','randomVisibleQuestionV5']:
+    assert re.search(rf'window\.{fn}\s*=',v5), f'missing UX v5 control {fn}'
+for token in ['Resume guided practice','Test audio + chime','Random question','Turn progress into the next rep','Study tools']:
+    assert token in v5, f'missing UX v5 token: {token}'
+
+css=(ROOT/'practice-player-v3.css').read_text()+(ROOT/'ux-v4.css').read_text()+(ROOT/'practice-studio-v5.css').read_text()+(ROOT/'ux-v5.css').read_text()
+for selector in ['.question-player-v3','.question-dialogue.active-dialogue','.q-player-main','.ux-nav a','.v4-mock-row','.v4-form-card','.v4-study-content','.v4-progress-hero','.ps-mode-card','.ps-focus-card','.ps-stepper','.ps-play-big','.ps-rating','.v5-preflight','.v5-progress-actions']:
     assert selector in css, f'missing CSS selector {selector}'
 
 # Catch the most common broken-button regression: an inline handler references a
@@ -73,4 +89,4 @@ def global_def(name):
 missing=sorted(name for name in called if not global_def(name))
 assert not missing, f'inline UI handlers reference missing globals: {missing}'
 
-print(f'UI v4 route/player smoke checks passed; {len(called)} inline handler functions resolved')
+print(f'UI v5 route/player/practice smoke checks passed; {len(called)} inline handler functions resolved')
