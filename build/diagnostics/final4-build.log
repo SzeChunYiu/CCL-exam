@@ -1,0 +1,11 @@
+{
+  "dialogues": 500,
+  "segments": 6000,
+  "mean_words": 234.4,
+  "min_words": 212,
+  "max_words": 289,
+  "max_segment": 33,
+  "local_errors": [
+    "exact D364/D396: 托兒津貼嗰日我記歪；用個日子再核"
+  ]
+}
