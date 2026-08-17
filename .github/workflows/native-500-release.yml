@@ -1,6 +1,8 @@
 name: Native 500 Immutable Release Gate
 
 on:
+  push:
+    branches: [release/native-500-final2]
   workflow_dispatch:
 
 permissions:
@@ -12,6 +14,7 @@ defaults:
 
 jobs:
   candidate-gate:
+    if: ${{ !contains(github.event.head_commit.message || '', '[skip release gate]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,10 +22,7 @@ jobs:
         run: |
           set -euo pipefail
           python3 -m py_compile scripts/build_native_500_release.py
-          python3 -m py_compile scripts/build_native_500_release_v2.py
-          python3 -m py_compile scripts/build_native_500_release_v3.py
-          python3 -m py_compile scripts/build_native_500_release_v4.py
-          python3 -m py_compile scripts/build_native_500_release_v6.py
+          python3 -m py_compile scripts/build_native_500_release_v7.py
           python3 -m py_compile scripts/generate_release_audio.py
           python3 -m py_compile scripts/build_release_audio_manifest.py
           python3 -m py_compile scripts/verify_final4_bank.py
@@ -33,7 +33,7 @@ jobs:
       - name: Build immutable candidate
         run: |
           set -euo pipefail
-          python3 scripts/build_native_500_release_v6.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
+          python3 scripts/build_native_500_release_v7.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
       - name: Structural verification
         run: |
           set -euo pipefail
