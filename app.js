@@ -1,11 +1,11 @@
 const $=(s,r=document)=>r.querySelector(s); const $$=(s,r=document)=>[...r.querySelectorAll(s)];
 const esc=(s='')=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORE='cclExamLabV2';
-const RAW_MAIN='https://raw.githubusercontent.com/SzeChunYiu/CCL-exam/main/';
 const localHost=()=>['localhost','127.0.0.1'].includes(location.hostname);
-const asset=(path)=>localHost()?`/${path}`:`${RAW_MAIN}${path}`;
+// Vercel serves the checked-out branch assets directly. This also makes preview deployments self-contained.
+const asset=(path)=>`/${String(path).replace(/^\//,'')}`;
 const getJSON=(path)=>fetch(asset(path),{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error(`${path} failed (${r.status})`);return r.json()});
-const state={dialogues:[],byId:{},glossary:[],studyIndex:[],summary:null,audioManifest:null,config:null,user:null,view:'dashboard',session:null,timer:null,voices:[],media:null,recorder:null,chunks:[],recordings:{},audioEngine:null,speechDelay:null};
+const state={dialogues:[],byId:{},glossary:[],studyIndex:[],summary:null,audioManifest:null,remoteAudio:null,config:null,user:null,view:'dashboard',session:null,timer:null,voices:[],media:null,recorder:null,chunks:[],recordings:{},audioEngine:null,speechDelay:null};
 const ERROR_TAGS=['Omission','Addition','Distortion','Number/date','Name/detail','Terminology','English delivery','Cantonese delivery','Register'];
 
 function loadUser(){
@@ -27,7 +27,7 @@ function toggleWeak(id,n,on){const k=`${id}-${n}`,has=state.user.weak.includes(k
 
 function nav(active='dashboard'){
  const items=[['dashboard','Dashboard'],['library','Library'],['vocabulary','Vocabulary'],['study','Study'],['history','Results']];
- return `<header class="topbar"><div class="brand" onclick="go('dashboard')" style="cursor:pointer"><div class="mark">CCL</div><div>CCL Exam Lab<div class="kicker">English ⇄ Cantonese</div></div></div><nav class="nav">${items.map(([v,l])=>`<button class="${active===v?'active':''}" onclick="go('${v}')">${l}</button>`).join('')}</nav><span class="pill ${state.audioManifest?'ok':'warn'}">${state.audioManifest?'Calibrated MP3 ready':'Speech fallback'}</span></header>`
+ const audioLabel=state.remoteAudio?'Supabase MP3':(state.audioManifest?'Bundled MP3 ready':'Speech fallback'); return `<header class="topbar"><div class="brand" onclick="go('dashboard')" style="cursor:pointer"><div class="mark">CCL</div><div>CCL Exam Lab<div class="kicker">English ⇄ Cantonese</div></div></div><nav class="nav">${items.map(([v,l])=>`<button class="${active===v?'active':''}" onclick="go('${v}')">${l}</button>`).join('')}</nav><span class="pill ${state.audioManifest?'ok':'warn'}">${audioLabel}</span></header>`
 }
 function page(inner,active='dashboard'){return `<main class="shell">${nav(active)}${inner}<div class="footer">Original English–Cantonese CCL-style training material. Practice scores are study feedback, not official NAATI results.</div></main>`}
 function go(v){stopAll();state.view=v;state.session=null;window.scrollTo(0,0);({dashboard:renderDashboard,library:renderLibrary,vocabulary:renderVocabulary,study:renderStudy,history:renderHistory}[v]||renderDashboard)()}
@@ -42,7 +42,8 @@ async function boot(){
   let am=null;
   if(cfg.audioManifestUrl){am=await fetch(cfg.audioManifestUrl,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null)}
   if(!am){am=await getJSON('data/audio_manifest.json').catch(()=>null)}
-  state.dialogues=d;state.byId=Object.fromEntries(d.map(x=>[x.id,x]));state.glossary=g;state.studyIndex=si;state.summary=sm;state.config=cfg;state.audioManifest=am;state.audioEngine=new AudioEngine();renderDashboard();
+  const remote=await getJSON('data/audio_remote.json').catch(()=>null);
+  state.dialogues=d;state.byId=Object.fromEntries(d.map(x=>[x.id,x]));state.glossary=g;state.studyIndex=si;state.summary=sm;state.config=cfg;state.audioManifest=am;state.remoteAudio=remote?.baseUrl?remote:null;state.audioEngine=new AudioEngine();renderDashboard();
  }catch(e){$('#app').innerHTML=page(`<div class="card"><h2>Could not load the practice bank</h2><p class="muted">${esc(e.message)}</p></div>`)}
 }
 
@@ -145,7 +146,7 @@ function reviewItem(d,seg){const k=sessionKey(d.id,seg.n),m=state.session.marks[
 
 class AudioEngine{
  constructor(){this.audio=new Audio();this.cache=new Map();this.stopToken=0}
- base(){if(['localhost','127.0.0.1'].includes(location.hostname))return'/assets/audio-bundles/';return state.config?.audioBase||'/assets/audio-bundles/'}
+ base(){return state.remoteAudio?.baseUrl||state.config?.audioBase||'/assets/audio-bundles/'}
  async dialogueURL(id){if(this.cache.has(id))return this.cache.get(id);const info=state.audioManifest?.dialogues?.[id];if(!info)throw new Error('Audio manifest unavailable');const url=this.base()+info.bundle;const r=await fetch(url,{headers:{Range:`bytes=${info.offset}-${info.offset+info.length-1}`}});if(!r.ok)throw new Error(`MP3 fetch failed (${r.status})`);let ab=await r.arrayBuffer();if(r.status!==206&&ab.byteLength!==info.length){if(ab.byteLength<info.offset+info.length)throw new Error('Audio bundle is incomplete');ab=ab.slice(info.offset,info.offset+info.length)}const blobURL=URL.createObjectURL(new Blob([ab],{type:'audio/mpeg'}));this.cache.set(id,blobURL);return blobURL}
  async play(id,segIndex,rate=1,onDone){const info=state.audioManifest?.dialogues?.[id];if(!info)throw new Error('No bundled audio');const t=info.segments[segIndex];if(!t)throw new Error('Segment audio missing');const url=await this.dialogueURL(id);const token=++this.stopToken;this.audio.pause();if(this.audio.src!==url){this.audio.src=url;this.audio.load();await new Promise((res,rej)=>{if(this.audio.readyState>=1)return res();const ok=()=>{cleanup();res()},bad=()=>{cleanup();rej(new Error('Audio metadata failed'))},cleanup=()=>{this.audio.removeEventListener('loadedmetadata',ok);this.audio.removeEventListener('error',bad)};this.audio.addEventListener('loadedmetadata',ok,{once:true});this.audio.addEventListener('error',bad,{once:true})})}this.audio.playbackRate=rate;this.audio.currentTime=Math.max(0,t.start-.015);await this.audio.play();const monitor=()=>{if(token!==this.stopToken)return;if(this.audio.currentTime>=t.end-.012||this.audio.ended){this.audio.pause();if(onDone)onDone();return}requestAnimationFrame(monitor)};requestAnimationFrame(monitor)}
  stop(){this.stopToken++;this.audio.pause()}

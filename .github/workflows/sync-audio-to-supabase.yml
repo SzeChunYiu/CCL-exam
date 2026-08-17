@@ -1,0 +1,41 @@
+name: Sync calibrated audio to Supabase
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Validate required credentials
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          test -n "$SUPABASE_URL" || (echo "Missing SUPABASE_URL secret" && exit 2)
+          test -n "$SUPABASE_SERVICE_ROLE_KEY" || (echo "Missing SUPABASE_SERVICE_ROLE_KEY secret" && exit 2)
+      - name: Create bucket, upload bundles and verify public ranges
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_AUDIO_BUCKET: ccl-audio
+          SUPABASE_AUDIO_PREFIX: v1
+        run: python3 scripts/upload_audio_to_supabase.py
+      - name: Commit public audio location
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/audio_remote.json
+          if git diff --cached --quiet; then
+            echo "Remote audio configuration unchanged"
+          else
+            git commit -m "Point exam audio to Supabase Storage [skip ci]"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
