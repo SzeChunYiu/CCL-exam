@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0
 
       - name: Python syntax
         run: |
@@ -38,61 +38,74 @@ jobs:
         continue-on-error: true
         run: |
           mkdir -p build/diagnostics
+          set +e
           python3 scripts/build_native_500_final6.py > build/diagnostics/final6-build.log 2>&1
+          code=$?
           cat build/diagnostics/final6-build.log
+          exit $code
 
       - name: Final structural verification
         id: verify
         continue-on-error: true
         run: |
-          python3 scripts/verify_final4_bank.py data/dialogues.json --json > build/diagnostics/final6-verify.json
+          set +e
+          python3 scripts/verify_final4_bank.py data/dialogues.json --json > build/diagnostics/final6-verify.json 2>&1
+          code=$?
           cat build/diagnostics/final6-verify.json
+          exit $code
 
       - name: Cantonese client template-distance gate
         id: native
         continue-on-error: true
         run: |
-          python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > build/diagnostics/final6-native.json
+          set +e
+          python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > build/diagnostics/final6-native.json 2>&1
+          code=$?
           cat build/diagnostics/final6-native.json
+          exit $code
 
       - name: Cantonese lexical-transfer gate
         id: lexical
         continue-on-error: true
         run: |
-          python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > build/diagnostics/final6-lexical.json
+          set +e
+          python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > build/diagnostics/final6-lexical.json 2>&1
+          code=$?
           cat build/diagnostics/final6-lexical.json
+          exit $code
 
       - name: Cantonese client corpus hard gate
         id: corpus
         continue-on-error: true
         run: |
-          python3 scripts/qa_cantonese.py data/dialogues.json --json > build/diagnostics/final6-corpus.json
+          set +e
+          python3 scripts/qa_cantonese.py data/dialogues.json --json > build/diagnostics/final6-corpus.json 2>&1
+          code=$?
           cat build/diagnostics/final6-corpus.json
+          exit $code
 
       - name: Whole-dialogue naturalness and anti-template gate
         id: whole
         continue-on-error: true
         run: |
-          python3 scripts/audit_whole_dialogue_naturalness.py data/dialogues.json --json > build/diagnostics/final6-whole.json
+          set +e
+          python3 scripts/audit_whole_dialogue_naturalness.py data/dialogues.json --json > build/diagnostics/final6-whole.json 2>&1
+          code=$?
           cat build/diagnostics/final6-whole.json
+          exit $code
 
       - name: Export study materials from exact candidate JSON
         id: export
         continue-on-error: true
         run: |
-          python3 scripts/export_final_materials.py > build/diagnostics/final6-export.json
+          set +e
+          python3 scripts/export_final_materials.py > build/diagnostics/final6-export.json 2>&1
+          code=$?
           cat build/diagnostics/final6-export.json
-
-      - name: Persist final6 diagnostic evidence
-        if: always()
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add build/diagnostics/final6-*
-          git commit -m 'Record final6 whole-dialogue gate evidence [skip ci]' || true
-          git push
+          exit $code
 
       - name: Enforce every release gate
+        id: enforce
         if: always()
         env:
           BUILD: ${{ steps.build.outcome }}
@@ -112,10 +125,18 @@ jobs:
           test "$WHOLE" = success
           test "$EXPORT" = success
 
-      - name: Commit final6 bank and matching materials only after all gates pass
+      - name: Persist final6 diagnostics and gated bank
+        if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/dialogues.json data/config.json data/site_summary.json data/repetition_qa.json practice_pack materials/SOURCE_SCRIPTS.md materials/MODEL_ANSWERS.md build/release-samples.md || true
-          git commit -m 'Finalize whole-dialogue native Cantonese CCL 500 bank [skip ci]' || true
-          git push
+          git add build/diagnostics/final6-* || true
+          if [ "${{ steps.enforce.outcome }}" = "success" ]; then
+            git add data/dialogues.json data/config.json data/site_summary.json data/repetition_qa.json practice_pack materials/SOURCE_SCRIPTS.md materials/MODEL_ANSWERS.md build/release-samples.md || true
+          fi
+          git commit -m 'Record final6 gated release evidence [skip ci]' || exit 0
+          # The branch may have received a harmless skip-ci tooling commit while
+          # this run was active. Rebase the evidence commit before pushing rather
+          # than turning a successful quality run into a false release failure.
+          git pull --rebase origin cantonese-script-audio-v4-integration
+          git push origin HEAD:cantonese-script-audio-v4-integration
