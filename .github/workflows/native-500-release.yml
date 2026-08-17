@@ -17,11 +17,11 @@ jobs:
       - name: Syntax
         run: |
           set -euo pipefail
-          python3 -m py_compile scripts/build_native_500_release_v17.py scripts/generate_release_audio.py scripts/build_release_audio_manifest.py scripts/verify_final4_bank.py scripts/audit_native_cantonese_v2.py scripts/audit_cantonese_lexical_transfer.py scripts/qa_cantonese.py scripts/audit_whole_dialogue_naturalness.py
+          python3 -m py_compile scripts/build_native_500_release_v18.py scripts/generate_release_audio.py scripts/build_release_audio_manifest.py scripts/verify_final4_bank.py scripts/audit_native_cantonese_v2.py scripts/audit_cantonese_lexical_transfer.py scripts/qa_cantonese.py scripts/audit_whole_dialogue_naturalness.py
       - name: Build immutable candidate
         run: |
           set -euo pipefail
-          python3 scripts/build_native_500_release_v17.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
+          python3 scripts/build_native_500_release_v18.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
       - name: Structural verification
         run: |
           set -euo pipefail
