@@ -20,30 +20,39 @@ jobs:
           python3 -m py_compile scripts/audit_cantonese_naturalness.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
           python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
+          python3 -m py_compile scripts/apply_native_patch_batches.py
           python3 -m py_compile scripts/generate_v4_audio.py
           python3 -m py_compile scripts/upload_v4_segments.py
-      - name: Current-bank structural baseline
+      - name: Build progressive rewrite candidate
+        run: python3 scripts/apply_native_patch_batches.py
+      - name: Candidate structural verification
         run: |
-          python3 scripts/verify_rewrite.py data/dialogues.json --baseline data/dialogues.json > /tmp/structural.txt 2>&1 || true
-          tail -n 80 /tmp/structural.txt
-      - name: Corpus-calibrated Cantonese baseline
+          python3 scripts/verify_rewrite.py build/rewrite/dialogues.native.candidate.json --baseline data/dialogues.json > /tmp/structural.txt 2>&1 || true
+          tail -n 100 /tmp/structural.txt
+      - name: Candidate corpus-calibrated Cantonese metrics
         run: |
-          python3 scripts/qa_cantonese.py data/dialogues.json --json > /tmp/cantonese-hard.json || true
-          cat /tmp/cantonese-hard.json
-      - name: Interactional naturalness baseline
-        run: |
-          python3 scripts/audit_cantonese_naturalness.py --json > /tmp/cantonese-soft.json
+          python3 scripts/qa_cantonese.py build/rewrite/dialogues.native.candidate.json --json > /tmp/cantonese-hard.json || true
           python3 - <<'PY'
           import json
+          x=json.load(open('/tmp/cantonese-hard.json'))
+          print(json.dumps({'metrics':x['metrics'],'failures':x['failures'],'detail':x['detail']},ensure_ascii=False,indent=2))
+          PY
+      - name: Candidate interactional naturalness
+        run: |
+          cp build/rewrite/dialogues.native.candidate.json data/dialogues.audit.json
+          python3 - <<'PY'
+          import json, pathlib, subprocess, sys
+          # The soft auditor is hard-wired to data/dialogues.json; invoke an isolated copy by substitution.
+          src=pathlib.Path('scripts/audit_cantonese_naturalness.py').read_text()
+          src=src.replace('BANK = ROOT / "data" / "dialogues.json"','BANK = ROOT / "data" / "dialogues.audit.json"')
+          pathlib.Path('/tmp/audit_soft.py').write_text(src)
+          subprocess.run([sys.executable,'/tmp/audit_soft.py','--json'],check=True,stdout=open('/tmp/cantonese-soft.json','w'))
           x=json.load(open('/tmp/cantonese-soft.json'))
           print(json.dumps({k:x[k] for k in ['dialogues','client_turns','dialogues_with_warnings','total_warnings','role_language_policy_errors']},ensure_ascii=False,indent=2))
-          for r in x['results']:
-              if r['warnings']:
-                  print(r['id'], ' | '.join(r['warnings']))
           PY
-      - name: Native Cantonese template-distance baseline
+      - name: Candidate native Cantonese template distance
         run: |
-          python3 scripts/audit_native_cantonese_v2.py --json > /tmp/native-v2.json || true
+          python3 scripts/audit_native_cantonese_v2.py build/rewrite/dialogues.native.candidate.json --json > /tmp/native-v2.json || true
           python3 - <<'PY'
           import json
           x=json.load(open('/tmp/native-v2.json'))
@@ -51,12 +60,10 @@ jobs:
           print(json.dumps({k:x[k] for k in keys},ensure_ascii=False,indent=2))
           print('\nWorst near duplicates:')
           for y in x['near_duplicates'][:20]: print(y['ratio'],y['a'],y['b'],y['text_a'],'<>',y['text_b'])
-          print('\nWorst skeletons:')
-          for y in x['skeleton_repeats'][:15]: print(len(y['dialogues']),y['skeleton'],y['examples'][:2])
           PY
-      - name: Cantonese-only lexical-transfer baseline
+      - name: Candidate Cantonese-only lexical transfer
         run: |
-          python3 scripts/audit_cantonese_lexical_transfer.py --json > /tmp/lexical.json || true
+          python3 scripts/audit_cantonese_lexical_transfer.py build/rewrite/dialogues.native.candidate.json --json > /tmp/lexical.json || true
           python3 - <<'PY'
           import json
           x=json.load(open('/tmp/lexical.json'))
