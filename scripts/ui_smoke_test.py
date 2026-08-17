@@ -21,6 +21,7 @@ for name,path in routes.items():
         assert f'src="{asset}"' in text, f'{name}: missing script {asset}'
     for asset in required_css:
         assert f'href="{asset}"' in text, f'{name}: missing stylesheet {asset}'
+assert 'src="/practice-runtime-v5.js"' in routes['practice'].read_text(), 'practice: missing runtime guards'
 
 route_js=(ROOT/'route-pages.js').read_text()
 for url in ['/mock/','/questions/','/practice/','/study/','/progress/']:
@@ -55,6 +56,11 @@ assert "e.key==='ArrowLeft'" in practice and "e.key==='ArrowRight'" in practice
 assert "['1','2','3'].includes(e.key)" in practice and "e.key.toLowerCase()==='w'" in practice
 assert '/practice/?dialogue=' in practice and '/practice/?mode=weak' in practice
 
+runtime=(ROOT/'practice-runtime-v5.js').read_text()
+assert "mode==='topic'" in runtime and 'renderPracticeSetup()' in runtime
+assert "mode==='drill'" in runtime and 'renderDrillSetup()' in runtime
+assert 'finally' in runtime and 'practicePlayBtn' in runtime
+
 v5=(ROOT/'ux-v5.js').read_text()
 for fn in ['testPracticeAudioV5','randomVisibleQuestionV5']:
     assert re.search(rf'window\.{fn}\s*=',v5), f'missing UX v5 control {fn}'
@@ -67,7 +73,7 @@ for selector in ['.question-player-v3','.question-dialogue.active-dialogue','.q-
 
 # Catch the most common broken-button regression: an inline handler references a
 # function that is not globally defined by any classic script loaded by the site.
-js_files=[ROOT/p.lstrip('/') for p in required_scripts]
+js_files=[ROOT/p.lstrip('/') for p in required_scripts]+[ROOT/'practice-runtime-v5.js']
 js_text='\n'.join(p.read_text() for p in js_files)
 html_and_templates='\n'.join(p.read_text() for p in routes.values())+'\n'+js_text
 attrs=re.findall(r'on(?:click|change|input)="([^"]+)"',html_and_templates)
