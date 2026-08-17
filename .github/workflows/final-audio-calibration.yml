@@ -1,0 +1,85 @@
+name: Final-bank Audio Calibration
+
+on:
+  push:
+    branches: [release/native-500-final2]
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  calibrate:
+    if: ${{ contains(github.event.head_commit.message || '', '[audio calibrate]') }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        include:
+          - profile: nosplit-current
+            split: '0'
+            william: '+0%'
+            natasha: '+22%'
+            wanlung: '+13%'
+            hiumaan: '+12%'
+          - profile: nosplit-tuned
+            split: '0'
+            william: '+7%'
+            natasha: '+29%'
+            wanlung: '+25%'
+            hiumaan: '+25%'
+          - profile: split-direct-solve
+            split: '1'
+            william: '+7%'
+            natasha: '+29%'
+            wanlung: '+37%'
+            hiumaan: '+39%'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install TTS measurement runtime
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg >/dev/null
+          python3 -m pip install --disable-pip-version-check 'edge-tts==7.2.8' >/dev/null
+      - name: Measure representative final-bank sample
+        env:
+          CCL_SPLIT_FOR_SPEECH: ${{ matrix.split }}
+          CCL_RATE_WILLIAM: ${{ matrix.william }}
+          CCL_RATE_NATASHA: ${{ matrix.natasha }}
+          CCL_RATE_WANLUNG: ${{ matrix.wanlung }}
+          CCL_RATE_HIUMAAN: ${{ matrix.hiumaan }}
+          CCL_PITCH_CYCLE: '+0Hz'
+        run: |
+          set -euo pipefail
+          IDS=$(python3 - <<'PY'
+          print(','.join(f'D{i:03d}' for i in range(1, 477, 25)))
+          PY
+          )
+          set +e
+          python3 scripts/generate_release_audio.py \
+            --dialogues data/dialogues.json \
+            --only "$IDS" \
+            --out "build/cal-${{ matrix.profile }}" \
+            --concurrency 2
+          rc=$?
+          set -e
+          echo "generator_exit=$rc"
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          p=Path('build/cal-${{ matrix.profile }}/_generation_report.json')
+          d=json.loads(p.read_text())
+          print(json.dumps({
+            'profile':'${{ matrix.profile }}',
+            'split':'${{ matrix.split }}',
+            'rates':{
+              'William':'${{ matrix.william }}','Natasha':'${{ matrix.natasha }}',
+              'WanLung':'${{ matrix.wanlung }}','HiuMaan':'${{ matrix.hiumaan }}'},
+            'summary':d['summary']
+          }, indent=2, ensure_ascii=False))
+          PY
