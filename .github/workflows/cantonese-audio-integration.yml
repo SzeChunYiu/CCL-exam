@@ -35,95 +35,101 @@ jobs:
 
       - name: Build final6 500-dialogue candidate
         id: build
-        continue-on-error: true
         run: |
           mkdir -p build/diagnostics
           set +e
           python3 scripts/build_native_500_final6.py > build/diagnostics/final6-build.log 2>&1
           code=$?
+          set -e
           cat build/diagnostics/final6-build.log
-          exit $code
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Final structural verification
         id: verify
-        continue-on-error: true
         run: |
           set +e
           python3 scripts/verify_final4_bank.py data/dialogues.json --json > build/diagnostics/final6-verify.json 2>&1
           code=$?
+          set -e
           cat build/diagnostics/final6-verify.json
-          exit $code
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Cantonese client template-distance gate
         id: native
-        continue-on-error: true
         run: |
           set +e
           python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > build/diagnostics/final6-native.json 2>&1
           code=$?
+          set -e
           cat build/diagnostics/final6-native.json
-          exit $code
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Cantonese lexical-transfer gate
         id: lexical
-        continue-on-error: true
         run: |
           set +e
           python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > build/diagnostics/final6-lexical.json 2>&1
           code=$?
+          set -e
           cat build/diagnostics/final6-lexical.json
-          exit $code
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Cantonese client corpus hard gate
         id: corpus
-        continue-on-error: true
         run: |
           set +e
           python3 scripts/qa_cantonese.py data/dialogues.json --json > build/diagnostics/final6-corpus.json 2>&1
           code=$?
+          set -e
           cat build/diagnostics/final6-corpus.json
-          exit $code
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Whole-dialogue naturalness and anti-template gate
         id: whole
-        continue-on-error: true
         run: |
           set +e
           python3 scripts/audit_whole_dialogue_naturalness.py data/dialogues.json --json > build/diagnostics/final6-whole.json 2>&1
           code=$?
+          set -e
           cat build/diagnostics/final6-whole.json
-          exit $code
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Export study materials from exact candidate JSON
         id: export
-        continue-on-error: true
         run: |
           set +e
           python3 scripts/export_final_materials.py > build/diagnostics/final6-export.json 2>&1
           code=$?
+          set -e
           cat build/diagnostics/final6-export.json
-          exit $code
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
 
       - name: Enforce every release gate
         id: enforce
-        if: always()
         env:
-          BUILD: ${{ steps.build.outcome }}
-          VERIFY: ${{ steps.verify.outcome }}
-          NATIVE: ${{ steps.native.outcome }}
-          LEXICAL: ${{ steps.lexical.outcome }}
-          CORPUS: ${{ steps.corpus.outcome }}
-          WHOLE: ${{ steps.whole.outcome }}
-          EXPORT: ${{ steps.export.outcome }}
+          BUILD: ${{ steps.build.outputs.code }}
+          VERIFY: ${{ steps.verify.outputs.code }}
+          NATIVE: ${{ steps.native.outputs.code }}
+          LEXICAL: ${{ steps.lexical.outputs.code }}
+          CORPUS: ${{ steps.corpus.outputs.code }}
+          WHOLE: ${{ steps.whole.outputs.code }}
+          EXPORT: ${{ steps.export.outputs.code }}
         run: |
           printf 'build=%s verify=%s native=%s lexical=%s corpus=%s whole=%s export=%s\n' "$BUILD" "$VERIFY" "$NATIVE" "$LEXICAL" "$CORPUS" "$WHOLE" "$EXPORT"
-          test "$BUILD" = success
-          test "$VERIFY" = success
-          test "$NATIVE" = success
-          test "$LEXICAL" = success
-          test "$CORPUS" = success
-          test "$WHOLE" = success
-          test "$EXPORT" = success
+          test "$BUILD" = 0
+          test "$VERIFY" = 0
+          test "$NATIVE" = 0
+          test "$LEXICAL" = 0
+          test "$CORPUS" = 0
+          test "$WHOLE" = 0
+          test "$EXPORT" = 0
 
       - name: Persist final6 diagnostics and gated bank
         if: always()
@@ -135,8 +141,5 @@ jobs:
             git add data/dialogues.json data/config.json data/site_summary.json data/repetition_qa.json practice_pack materials/SOURCE_SCRIPTS.md materials/MODEL_ANSWERS.md build/release-samples.md || true
           fi
           git commit -m 'Record final6 gated release evidence [skip ci]' || exit 0
-          # The branch may have received a harmless skip-ci tooling commit while
-          # this run was active. Rebase the evidence commit before pushing rather
-          # than turning a successful quality run into a false release failure.
           git pull --rebase origin cantonese-script-audio-v4-integration
           git push origin HEAD:cantonese-script-audio-v4-integration
