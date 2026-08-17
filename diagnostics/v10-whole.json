@@ -1,0 +1,1207 @@
+{
+  "dialogues": 500,
+  "officer_turns": 3000,
+  "client_english_model_turns": 3000,
+  "thresholds": {
+    "officer_en_near": 25,
+    "officer_yue_near": 25,
+    "client_en_near": 25,
+    "officer_en_repeated_8gram_pct": 8.0,
+    "officer_yue_repeated_10gram_pct": 8.0,
+    "client_en_repeated_8gram_pct": 8.0,
+    "officer_yue_written_per1000": 2.0
+  },
+  "metrics": {
+    "officer_en_exact": 115,
+    "officer_yue_exact": 0,
+    "client_en_exact": 8,
+    "officer_en_near": 6697,
+    "officer_yue_near": 355,
+    "client_en_near": 67,
+    "officer_en_repeated_8gram_pct": 22.83,
+    "officer_yue_repeated_10gram_pct": 35.35,
+    "client_en_repeated_8gram_pct": 12.83,
+    "officer_yue_written_per1000": 0.0,
+    "malformed_english": 0,
+    "stage_label_hits": 0
+  },
+  "audit_performance": {
+    "officer_en": {
+      "sentences": 4399,
+      "sequence_matcher_pairs": 29466,
+      "safely_pruned_pairs": 9642489
+    },
+    "officer_yue": {
+      "sentences": 3582,
+      "sequence_matcher_pairs": 402,
+      "safely_pruned_pairs": 6412587
+    },
+    "client_en": {
+      "sentences": 2331,
+      "sequence_matcher_pairs": 1792,
+      "safely_pruned_pairs": 2713716
+    }
+  },
+  "examples": {
+    "officer_en_exact": [
+      {
+        "a": "D064:S5",
+        "b": "D096:S4",
+        "sentence": "Then I can answer your question about Child Care Subsidy, or CCS."
+      },
+      {
+        "a": "D064:S3",
+        "b": "D096:S8",
+        "sentence": "I’ll use it to check Child Care Subsidy, or CCS."
+      },
+      {
+        "a": "D064:S7",
+        "b": "D096:S10",
+        "sentence": "Then I’ll recheck Child Care Subsidy, or CCS."
+      },
+      {
+        "a": "D164:S3",
+        "b": "D196:S5",
+        "sentence": "I’ll compare it with the earlier Child Care Subsidy, or CCS answer."
+      },
+      {
+        "a": "D164:S9",
+        "b": "D196:S7",
+        "sentence": "I’ll recheck Child Care Subsidy, or CCS afterward."
+      },
+      {
+        "a": "D164:S11",
+        "b": "D196:S11",
+        "sentence": "It will show how Child Care Subsidy, or CCS was answered."
+      },
+      {
+        "a": "D264:S1",
+        "b": "D296:S2",
+        "sentence": "I want to see where they differ before deciding Child Care Subsidy, or CCS."
+      },
+      {
+        "a": "D264:S7",
+        "b": "D296:S4",
+        "sentence": "I’ll compare them before deciding what to use for Child Care Subsidy, or CCS."
+      },
+      {
+        "a": "D264:S3",
+        "b": "D296:S8",
+        "sentence": "Then we can identify the correct version for Child Care Subsidy, or CCS."
+      },
+      {
+        "a": "D364:S1",
+        "b": "D396:S1",
+        "sentence": "Let’s confirm the deadline for Child Care Subsidy, or CCS."
+      },
+      {
+        "a": "D364:S5",
+        "b": "D396:S3",
+        "sentence": "I’ll use that to calculate the Child Care Subsidy, or CCS deadline."
+      },
+      {
+        "a": "D364:S3",
+        "b": "D396:S7",
+        "sentence": "I’ll check whether Child Care Subsidy, or CCS allows a later submission."
+      },
+      {
+        "a": "D401:S4",
+        "b": "D402:S1",
+        "sentence": "Tell me which part of the reasons you do not understand."
+      },
+      {
+        "a": "D401:S4",
+        "b": "D403:S4",
+        "sentence": "Tell me which part of the reasons you do not understand."
+      },
+      {
+        "a": "D401:S4",
+        "b": "D404:S1",
+        "sentence": "Tell me which part of the reasons you do not understand."
+      },
+      {
+        "a": "D401:S4",
+        "b": "D405:S1",
+        "sentence": "Tell me which part of the reasons you do not understand."
+      },
+      {
+        "a": "D401:S4",
+        "b": "D406:S2",
+        "sentence": "Tell me which part of the reasons you do not understand."
+      },
+      {
+        "a": "D401:S4",
+        "b": "D407:S1",
+        "sentence": "Tell me which part of the reasons you do not understand."
+      },
+      {
+        "a": "D401:S4",
+        "b": "D408:S2",
+        "sentence": "Tell me which part of the reasons you do not understand."
+      },
+      {
+        "a": "D401:S4",
+        "b": "D409:S1",
+        "sentence": "Tell me which part of the reasons you do not understand."
+      }
+    ],
+    "officer_yue_exact": [],
+    "client_en_exact": [
+      {
+        "a": "D064:S2",
+        "b": "D096:S1",
+        "sentence": "Could you explain how Child Care Subsidy, or CCS applies?"
+      },
+      {
+        "a": "D164:S6",
+        "b": "D196:S4",
+        "sentence": "Has it been received for Child Care Subsidy, or CCS?"
+      },
+      {
+        "a": "D164:S2",
+        "b": "D196:S6",
+        "sentence": "What does that mean for Child Care Subsidy, or CCS?"
+      },
+      {
+        "a": "D264:S2",
+        "b": "D296:S1",
+        "sentence": "Which version should count for Child Care Subsidy, or CCS?"
+      },
+      {
+        "a": "D264:S6",
+        "b": "D296:S5",
+        "sentence": "Which one should I use for Child Care Subsidy, or CCS?"
+      },
+      {
+        "a": "D364:S4",
+        "b": "D396:S6",
+        "sentence": "Can I submit it later for Child Care Subsidy, or CCS?"
+      },
+      {
+        "a": "D364:S10",
+        "b": "D396:S10",
+        "sentence": "Please check Child Care Subsidy, or CCS against the date."
+      },
+      {
+        "a": "D464:S2",
+        "b": "D496:S6",
+        "sentence": "What information was used for Child Care Subsidy, or CCS?"
+      }
+    ],
+    "officer_en_near": [
+      {
+        "a": "D001:S2",
+        "b": "D001:S6",
+        "ratio": 0.937,
+        "sentence_a": "I’ll check Australian Business Number, or ABN using photo ID and tax details.",
+        "sentence_b": "I’ll check Australian Business Number, or ABN against photo ID and tax details."
+      },
+      {
+        "a": "D001:S2",
+        "b": "D101:S4",
+        "ratio": 0.961,
+        "sentence_a": "I’ll check Australian Business Number, or ABN using photo ID and tax details.",
+        "sentence_b": "I’ll check Australian Business Number, or ABN using photo ID and tax details first."
+      },
+      {
+        "a": "D001:S6",
+        "b": "D101:S4",
+        "ratio": 0.901,
+        "sentence_a": "I’ll check Australian Business Number, or ABN against photo ID and tax details.",
+        "sentence_b": "I’ll check Australian Business Number, or ABN using photo ID and tax details first."
+      },
+      {
+        "a": "D001:S8",
+        "b": "D201:S5",
+        "ratio": 0.941,
+        "sentence_a": "I need to confirm trading is planned to start on 1 September.",
+        "sentence_b": "First I need to confirm trading is planned to start on 1 September."
+      },
+      {
+        "a": "D001:S10",
+        "b": "D068:S9",
+        "ratio": 0.909,
+        "sentence_a": "If there is an error in photo ID and tax details, correct the existing record.",
+        "sentence_b": "If there is an error in photo ID and existing USI details, correct the existing record."
+      },
+      {
+        "a": "D002:S2",
+        "b": "D202:S8",
+        "ratio": 0.951,
+        "sentence_a": "I need to confirm the proposed name is Harbour Home Repairs.",
+        "sentence_b": "First I need to confirm the proposed name is Harbour Home Repairs."
+      },
+      {
+        "a": "D002:S4",
+        "b": "D002:S8",
+        "ratio": 0.94,
+        "sentence_a": "I’ll check registered business name using ABN details and contact information.",
+        "sentence_b": "I’ll check registered business name against ABN details and contact information."
+      },
+      {
+        "a": "D002:S4",
+        "b": "D102:S9",
+        "ratio": 0.964,
+        "sentence_a": "I’ll check registered business name using ABN details and contact information.",
+        "sentence_b": "I’ll check registered business name using ABN details and contact information first."
+      },
+      {
+        "a": "D002:S8",
+        "b": "D102:S9",
+        "ratio": 0.906,
+        "sentence_a": "I’ll check registered business name against ABN details and contact information.",
+        "sentence_b": "I’ll check registered business name using ABN details and contact information first."
+      },
+      {
+        "a": "D003:S1",
+        "b": "D003:S7",
+        "ratio": 0.942,
+        "sentence_a": "I’ll check Goods and Services Tax, or GST using sales records and current forecasts.",
+        "sentence_b": "I’ll check Goods and Services Tax, or GST against sales records and current forecasts."
+      },
+      {
+        "a": "D003:S1",
+        "b": "D103:S3",
+        "ratio": 0.965,
+        "sentence_a": "I’ll check Goods and Services Tax, or GST using sales records and current forecasts.",
+        "sentence_b": "I’ll check Goods and Services Tax, or GST using sales records and current forecasts first."
+      },
+      {
+        "a": "D003:S3",
+        "b": "D203:S4",
+        "ratio": 0.941,
+        "sentence_a": "I need to confirm projected annual turnover is $78,000.",
+        "sentence_b": "First I need to confirm projected annual turnover is $78,000."
+      },
+      {
+        "a": "D003:S7",
+        "b": "D103:S3",
+        "ratio": 0.909,
+        "sentence_a": "I’ll check Goods and Services Tax, or GST against sales records and current forecasts.",
+        "sentence_b": "I’ll check Goods and Services Tax, or GST using sales records and current forecasts first."
+      },
+      {
+        "a": "D004:S2",
+        "b": "D004:S6",
+        "ratio": 0.915,
+        "sentence_a": "I’ll check tax invoice using sale record and ABN details.",
+        "sentence_b": "I’ll check tax invoice against sale record and ABN details."
+      },
+      {
+        "a": "D004:S2",
+        "b": "D104:S6",
+        "ratio": 0.948,
+        "sentence_a": "I’ll check tax invoice using sale record and ABN details.",
+        "sentence_b": "I’ll check tax invoice using sale record and ABN details first."
+      },
+      {
+        "a": "D004:S4",
+        "b": "D204:S5",
+        "ratio": 0.946,
+        "sentence_a": "I need to confirm the invoice total is $1,650 including GST.",
+        "sentence_b": "First I need to confirm the invoice total is $1,650 including GST."
+      },
+      {
+        "a": "D004:S4",
+        "b": "D084:S5",
+        "ratio": 0.892,
+        "sentence_a": "Then I can answer your question about tax invoice.",
+        "sentence_b": "Then I can answer your question about entry notice."
+      },
+      {
+        "a": "D005:S1",
+        "b": "D005:S5",
+        "ratio": 0.942,
+        "sentence_a": "I’ll check Business Activity Statement, or BAS using sales, GST and expense records.",
+        "sentence_b": "I’ll check Business Activity Statement, or BAS against sales, GST and expense records."
+      },
+      {
+        "a": "D005:S1",
+        "b": "D105:S6",
+        "ratio": 0.965,
+        "sentence_a": "I’ll check Business Activity Statement, or BAS using sales, GST and expense records.",
+        "sentence_b": "I’ll check Business Activity Statement, or BAS using sales, GST and expense records first."
+      },
+      {
+        "a": "D005:S3",
+        "b": "D205:S5",
+        "ratio": 0.928,
+        "sentence_a": "I need to confirm the quarter ended on 30 June.",
+        "sentence_b": "First I need to confirm the quarter ended on 30 June."
+      },
+      {
+        "a": "D005:S5",
+        "b": "D105:S6",
+        "ratio": 0.909,
+        "sentence_a": "I’ll check Business Activity Statement, or BAS against sales, GST and expense records.",
+        "sentence_b": "I’ll check Business Activity Statement, or BAS using sales, GST and expense records first."
+      },
+      {
+        "a": "D006:S2",
+        "b": "D206:S5",
+        "ratio": 0.94,
+        "sentence_a": "I need to confirm the company is due to start on 1 October.",
+        "sentence_b": "First I need to confirm the company is due to start on 1 October."
+      },
+      {
+        "a": "D006:S4",
+        "b": "D006:S8",
+        "ratio": 0.952,
+        "sentence_a": "I’ll check proprietary limited company, or Pty Ltd using company registration and banking details.",
+        "sentence_b": "I’ll check proprietary limited company, or Pty Ltd against company registration and banking details."
+      },
+      {
+        "a": "D006:S4",
+        "b": "D106:S6",
+        "ratio": 0.97,
+        "sentence_a": "I’ll check proprietary limited company, or Pty Ltd using company registration and banking details.",
+        "sentence_b": "I’ll check proprietary limited company, or Pty Ltd using company registration and banking details first."
+      },
+      {
+        "a": "D006:S6",
+        "b": "D006:S12",
+        "ratio": 0.884,
+        "sentence_a": "I’ll use it to check proprietary limited company, or Pty Ltd.",
+        "sentence_b": "Then I’ll recheck proprietary limited company, or Pty Ltd."
+      },
+      {
+        "a": "D006:S8",
+        "b": "D106:S6",
+        "ratio": 0.924,
+        "sentence_a": "I’ll check proprietary limited company, or Pty Ltd against company registration and banking details.",
+        "sentence_b": "I’ll check proprietary limited company, or Pty Ltd using company registration and banking details first."
+      },
+      {
+        "a": "D007:S2",
+        "b": "D007:S6",
+        "ratio": 0.945,
+        "sentence_a": "I’ll check temporary food stall permit using public-liability and food-safety details.",
+        "sentence_b": "I’ll check temporary food stall permit against public-liability and food-safety details."
+      },
+      {
+        "a": "D007:S2",
+        "b": "D107:S5",
+        "ratio": 0.966,
+        "sentence_a": "I’ll check temporary food stall permit using public-liability and food-safety details.",
+        "sentence_b": "I’ll check temporary food stall permit using public-liability and food-safety details first."
+      },
+      {
+        "a": "D007:S6",
+        "b": "D107:S5",
+        "ratio": 0.914,
+        "sentence_a": "I’ll check temporary food stall permit against public-liability and food-safety details.",
+        "sentence_b": "I’ll check temporary food stall permit using public-liability and food-safety details first."
+      },
+      {
+        "a": "D007:S8",
+        "b": "D207:S3",
+        "ratio": 0.93,
+        "sentence_a": "I need to confirm the first market is on 12 September.",
+        "sentence_b": "First I need to confirm the first market is on 12 September."
+      }
+    ],
+    "officer_yue_near": [
+      {
+        "a": "D001:S2",
+        "b": "D001:S6",
+        "ratio": 0.955,
+        "sentence_a": "我會用有相身份證明同稅務資料查清澳洲商業號碼",
+        "sentence_b": "我會用有相身份證明同稅務資料對清澳洲商業號碼"
+      },
+      {
+        "a": "D001:S2",
+        "b": "D101:S4",
+        "ratio": 0.909,
+        "sentence_a": "我會用有相身份證明同稅務資料查清澳洲商業號碼",
+        "sentence_b": "我先用有相身份證明同稅務資料對清澳洲商業號碼"
+      },
+      {
+        "a": "D001:S6",
+        "b": "D101:S4",
+        "ratio": 0.955,
+        "sentence_a": "我會用有相身份證明同稅務資料對清澳洲商業號碼",
+        "sentence_b": "我先用有相身份證明同稅務資料對清澳洲商業號碼"
+      },
+      {
+        "a": "D002:S4",
+        "b": "D002:S8",
+        "ratio": 0.958,
+        "sentence_a": "我會用澳洲商業號碼資料同聯絡資料查清註冊商業名稱",
+        "sentence_b": "我會用澳洲商業號碼資料同聯絡資料對清註冊商業名稱"
+      },
+      {
+        "a": "D002:S4",
+        "b": "D102:S9",
+        "ratio": 0.917,
+        "sentence_a": "我會用澳洲商業號碼資料同聯絡資料查清註冊商業名稱",
+        "sentence_b": "我先用澳洲商業號碼資料同聯絡資料對清註冊商業名稱"
+      },
+      {
+        "a": "D002:S8",
+        "b": "D102:S9",
+        "ratio": 0.958,
+        "sentence_a": "我會用澳洲商業號碼資料同聯絡資料對清註冊商業名稱",
+        "sentence_b": "我先用澳洲商業號碼資料同聯絡資料對清註冊商業名稱"
+      },
+      {
+        "a": "D003:S1",
+        "b": "D003:S7",
+        "ratio": 0.95,
+        "sentence_a": "我會用銷售紀錄同現時預測查清商品及服務稅",
+        "sentence_b": "我會用銷售紀錄同現時預測對清商品及服務稅"
+      },
+      {
+        "a": "D003:S1",
+        "b": "D103:S3",
+        "ratio": 0.9,
+        "sentence_a": "我會用銷售紀錄同現時預測查清商品及服務稅",
+        "sentence_b": "我先用銷售紀錄同現時預測對清商品及服務稅"
+      },
+      {
+        "a": "D003:S7",
+        "b": "D103:S3",
+        "ratio": 0.95,
+        "sentence_a": "我會用銷售紀錄同現時預測對清商品及服務稅",
+        "sentence_b": "我先用銷售紀錄同現時預測對清商品及服務稅"
+      },
+      {
+        "a": "D004:S2",
+        "b": "D004:S6",
+        "ratio": 0.955,
+        "sentence_a": "我會用銷售紀錄同澳洲商業號碼資料查清稅務發票",
+        "sentence_b": "我會用銷售紀錄同澳洲商業號碼資料對清稅務發票"
+      },
+      {
+        "a": "D004:S2",
+        "b": "D104:S6",
+        "ratio": 0.909,
+        "sentence_a": "我會用銷售紀錄同澳洲商業號碼資料查清稅務發票",
+        "sentence_b": "我先用銷售紀錄同澳洲商業號碼資料對清稅務發票"
+      },
+      {
+        "a": "D004:S6",
+        "b": "D104:S6",
+        "ratio": 0.955,
+        "sentence_a": "我會用銷售紀錄同澳洲商業號碼資料對清稅務發票",
+        "sentence_b": "我先用銷售紀錄同澳洲商業號碼資料對清稅務發票"
+      },
+      {
+        "a": "D005:S1",
+        "b": "D005:S5",
+        "ratio": 0.969,
+        "sentence_a": "我會用銷售、商品及服務稅同開支紀錄查清業務活動報表，即係商業活動報表",
+        "sentence_b": "我會用銷售、商品及服務稅同開支紀錄對清業務活動報表，即係商業活動報表"
+      },
+      {
+        "a": "D005:S1",
+        "b": "D105:S6",
+        "ratio": 0.938,
+        "sentence_a": "我會用銷售、商品及服務稅同開支紀錄查清業務活動報表，即係商業活動報表",
+        "sentence_b": "我先用銷售、商品及服務稅同開支紀錄對清業務活動報表，即係商業活動報表"
+      },
+      {
+        "a": "D005:S5",
+        "b": "D105:S6",
+        "ratio": 0.969,
+        "sentence_a": "我會用銷售、商品及服務稅同開支紀錄對清業務活動報表，即係商業活動報表",
+        "sentence_b": "我先用銷售、商品及服務稅同開支紀錄對清業務活動報表，即係商業活動報表"
+      },
+      {
+        "a": "D006:S4",
+        "b": "D006:S8",
+        "ratio": 0.964,
+        "sentence_a": "我會用公司註冊同銀行資料查清私人有限公司，即係私人有限公司",
+        "sentence_b": "我會用公司註冊同銀行資料對清私人有限公司，即係私人有限公司"
+      },
+      {
+        "a": "D006:S4",
+        "b": "D106:S6",
+        "ratio": 0.929,
+        "sentence_a": "我會用公司註冊同銀行資料查清私人有限公司，即係私人有限公司",
+        "sentence_b": "我先用公司註冊同銀行資料對清私人有限公司，即係私人有限公司"
+      },
+      {
+        "a": "D006:S8",
+        "b": "D106:S6",
+        "ratio": 0.964,
+        "sentence_a": "我會用公司註冊同銀行資料對清私人有限公司，即係私人有限公司",
+        "sentence_b": "我先用公司註冊同銀行資料對清私人有限公司，即係私人有限公司"
+      },
+      {
+        "a": "D007:S2",
+        "b": "D007:S6",
+        "ratio": 0.963,
+        "sentence_a": "我會用公眾責任保險同食品安全資料查清臨時食品攤位許可證",
+        "sentence_b": "我會用公眾責任保險同食品安全資料對清臨時食品攤位許可證"
+      },
+      {
+        "a": "D007:S2",
+        "b": "D107:S5",
+        "ratio": 0.926,
+        "sentence_a": "我會用公眾責任保險同食品安全資料查清臨時食品攤位許可證",
+        "sentence_b": "我先用公眾責任保險同食品安全資料對清臨時食品攤位許可證"
+      },
+      {
+        "a": "D007:S6",
+        "b": "D107:S5",
+        "ratio": 0.963,
+        "sentence_a": "我會用公眾責任保險同食品安全資料對清臨時食品攤位許可證",
+        "sentence_b": "我先用公眾責任保險同食品安全資料對清臨時食品攤位許可證"
+      },
+      {
+        "a": "D008:S1",
+        "b": "D008:S9",
+        "ratio": 0.957,
+        "sentence_a": "我會用商業推薦資料同銀行資料查清三十日商業付款期",
+        "sentence_b": "我會用商業推薦資料同銀行資料對清三十日商業付款期"
+      },
+      {
+        "a": "D008:S1",
+        "b": "D108:S9",
+        "ratio": 0.913,
+        "sentence_a": "我會用商業推薦資料同銀行資料查清三十日商業付款期",
+        "sentence_b": "我先用商業推薦資料同銀行資料對清三十日商業付款期"
+      },
+      {
+        "a": "D008:S9",
+        "b": "D108:S9",
+        "ratio": 0.957,
+        "sentence_a": "我會用商業推薦資料同銀行資料對清三十日商業付款期",
+        "sentence_b": "我先用商業推薦資料同銀行資料對清三十日商業付款期"
+      },
+      {
+        "a": "D009:S1",
+        "b": "D009:S9",
+        "ratio": 0.947,
+        "sentence_a": "我會用收據、相片同維修報告查清消費者保障",
+        "sentence_b": "我會用收據、相片同維修報告對清消費者保障"
+      },
+      {
+        "a": "D009:S1",
+        "b": "D109:S9",
+        "ratio": 0.895,
+        "sentence_a": "我會用收據、相片同維修報告查清消費者保障",
+        "sentence_b": "我先用收據、相片同維修報告對清消費者保障"
+      },
+      {
+        "a": "D009:S9",
+        "b": "D109:S9",
+        "ratio": 0.947,
+        "sentence_a": "我會用收據、相片同維修報告對清消費者保障",
+        "sentence_b": "我先用收據、相片同維修報告對清消費者保障"
+      },
+      {
+        "a": "D010:S2",
+        "b": "D010:S6",
+        "ratio": 0.944,
+        "sentence_a": "我會用買賣合約同維修發票查清嚴重故障",
+        "sentence_b": "我會用買賣合約同維修發票對清嚴重故障"
+      },
+      {
+        "a": "D010:S2",
+        "b": "D110:S9",
+        "ratio": 0.889,
+        "sentence_a": "我會用買賣合約同維修發票查清嚴重故障",
+        "sentence_b": "我先用買賣合約同維修發票對清嚴重故障"
+      },
+      {
+        "a": "D010:S6",
+        "b": "D110:S9",
+        "ratio": 0.944,
+        "sentence_a": "我會用買賣合約同維修發票對清嚴重故障",
+        "sentence_b": "我先用買賣合約同維修發票對清嚴重故障"
+      }
+    ],
+    "client_en_near": [
+      {
+        "a": "D021:S5",
+        "b": "D063:S3",
+        "ratio": 0.905,
+        "sentence_a": "Is there anything else I need for recent sick-leave absence?",
+        "sentence_b": "Is there anything else I need for recent school absence?"
+      },
+      {
+        "a": "D038:S3",
+        "b": "D039:S1",
+        "ratio": 0.974,
+        "sentence_a": "Could you explain how Bridging Visa A applies?",
+        "sentence_b": "Could you explain how Bridging Visa B applies?"
+      },
+      {
+        "a": "D064:S2",
+        "b": "D096:S1",
+        "ratio": 1.0,
+        "sentence_a": "Could you explain how Child Care Subsidy, or CCS applies?",
+        "sentence_b": "Could you explain how Child Care Subsidy, or CCS applies?"
+      },
+      {
+        "a": "D064:S6",
+        "b": "D096:S3",
+        "ratio": 0.912,
+        "sentence_a": "For childcare place, I need to know which part of Child Care Subsidy, or CCS matters here.",
+        "sentence_b": "For changed childcare use, I need to know which part of Child Care Subsidy, or CCS matters here."
+      },
+      {
+        "a": "D064:S8",
+        "b": "D096:S7",
+        "ratio": 0.902,
+        "sentence_a": "If Child Care Subsidy, or CCS is still unclear, could it hold up childcare place?",
+        "sentence_b": "If Child Care Subsidy, or CCS is still unclear, could it hold up changed childcare use?"
+      },
+      {
+        "a": "D087:S4",
+        "b": "D089:S5",
+        "ratio": 0.925,
+        "sentence_a": "Is there anything else I need for motor-insurance claim?",
+        "sentence_b": "Is there anything else I need for travel-insurance claim?"
+      },
+      {
+        "a": "D097:S3",
+        "b": "D098:S5",
+        "ratio": 0.917,
+        "sentence_a": "Is there anything else I need for Parenting Payment enquiry?",
+        "sentence_b": "Is there anything else I need for carer-payment enquiry?"
+      },
+      {
+        "a": "D097:S5",
+        "b": "D098:S1",
+        "ratio": 0.887,
+        "sentence_a": "For Parenting Payment enquiry, I need to know which part of Parenting Payment matters here.",
+        "sentence_b": "For carer-payment enquiry, I need to know which part of Carer Payment matters here."
+      },
+      {
+        "a": "D121:S3",
+        "b": "D163:S3",
+        "ratio": 0.903,
+        "sentence_a": "The information on recent sick-leave absence has changed.",
+        "sentence_b": "The information on recent school absence has changed."
+      },
+      {
+        "a": "D134:S2",
+        "b": "D162:S4",
+        "ratio": 0.916,
+        "sentence_a": "The current detail is the GP appointment is next Wednesday.",
+        "sentence_b": "The current detail is the appointment is at 4:20 pm next Tuesday."
+      },
+      {
+        "a": "D138:S1",
+        "b": "D139:S3",
+        "ratio": 0.969,
+        "sentence_a": "What does that mean for Bridging Visa A?",
+        "sentence_b": "What does that mean for Bridging Visa B?"
+      },
+      {
+        "a": "D138:S5",
+        "b": "D139:S7",
+        "ratio": 0.97,
+        "sentence_a": "Has it been received for Bridging Visa A?",
+        "sentence_b": "Has it been received for Bridging Visa B?"
+      },
+      {
+        "a": "D142:S1",
+        "b": "D162:S4",
+        "ratio": 0.918,
+        "sentence_a": "The current detail is the appointment is at 9:30 am on 15 October.",
+        "sentence_b": "The current detail is the appointment is at 4:20 pm next Tuesday."
+      },
+      {
+        "a": "D164:S2",
+        "b": "D196:S6",
+        "ratio": 1.0,
+        "sentence_a": "What does that mean for Child Care Subsidy, or CCS?",
+        "sentence_b": "What does that mean for Child Care Subsidy, or CCS?"
+      },
+      {
+        "a": "D164:S6",
+        "b": "D196:S4",
+        "ratio": 1.0,
+        "sentence_a": "Has it been received for Child Care Subsidy, or CCS?",
+        "sentence_b": "Has it been received for Child Care Subsidy, or CCS?"
+      },
+      {
+        "a": "D164:S8",
+        "b": "D196:S8",
+        "ratio": 0.925,
+        "sentence_a": "While childcare place is still pending, should the position on Child Care Subsidy, or CCS stay the same?",
+        "sentence_b": "While changed childcare use is still pending, should the position on Child Care Subsidy, or CCS stay the same?"
+      },
+      {
+        "a": "D180:S1",
+        "b": "D195:S1",
+        "ratio": 0.884,
+        "sentence_a": "The current detail is rent may rise from $540 to $610 a week on 20 October.",
+        "sentence_b": "The current detail is rent increased from $470 to $510 a week."
+      },
+      {
+        "a": "D187:S9",
+        "b": "D189:S10",
+        "ratio": 0.896,
+        "sentence_a": "I need to add it to motor-insurance claim.",
+        "sentence_b": "I need to add it to travel-insurance claim."
+      },
+      {
+        "a": "D197:S5",
+        "b": "D198:S5",
+        "ratio": 0.905,
+        "sentence_a": "While Parenting Payment enquiry is still pending, should the position on Parenting Payment stay the same?",
+        "sentence_b": "While carer-payment enquiry is still pending, should the position on Carer Payment stay the same?"
+      },
+      {
+        "a": "D197:S9",
+        "b": "D198:S9",
+        "ratio": 0.886,
+        "sentence_a": "I need to add it to Parenting Payment enquiry.",
+        "sentence_b": "I need to add it to carer-payment enquiry."
+      },
+      {
+        "a": "D206:S2",
+        "b": "D206:S6",
+        "ratio": 0.885,
+        "sentence_a": "Which one should I use for proprietary limited company, or Pty Ltd?",
+        "sentence_b": "Which version should count for proprietary limited company, or Pty Ltd?"
+      },
+      {
+        "a": "D221:S5",
+        "b": "D263:S6",
+        "ratio": 0.913,
+        "sentence_a": "The detail for recent sick-leave absence does not match the date.",
+        "sentence_b": "The detail for recent school absence does not match the date."
+      },
+      {
+        "a": "D222:S2",
+        "b": "D222:S6",
+        "ratio": 0.889,
+        "sentence_a": "Which one should I use for superannuation guarantee contribution?",
+        "sentence_b": "Which version should count for superannuation guarantee contribution?"
+      },
+      {
+        "a": "D230:S3",
+        "b": "D230:S7",
+        "ratio": 0.885,
+        "sentence_a": "Which version should count for Pharmaceutical Benefits Scheme, or PBS?",
+        "sentence_b": "Which one should I use for Pharmaceutical Benefits Scheme, or PBS?"
+      },
+      {
+        "a": "D233:S5",
+        "b": "D298:S5",
+        "ratio": 0.906,
+        "sentence_a": "Which one should I use for gap payment?",
+        "sentence_b": "Which one should I use for Carer Payment?"
+      },
+      {
+        "a": "D237:S4",
+        "b": "D237:S6",
+        "ratio": 0.896,
+        "sentence_a": "Which version should count for Visa Entitlement Verification Online, or VEVO?",
+        "sentence_b": "Which one should I use for Visa Entitlement Verification Online, or VEVO?"
+      },
+      {
+        "a": "D237:S6",
+        "b": "D238:S5",
+        "ratio": 0.985,
+        "sentence_a": "I have two versions of visa grant notice.",
+        "sentence_b": "I have two versions of visa grant notices."
+      },
+      {
+        "a": "D238:S1",
+        "b": "D239:S4",
+        "ratio": 0.974,
+        "sentence_a": "Which version should count for Bridging Visa A?",
+        "sentence_b": "Which version should count for Bridging Visa B?"
+      },
+      {
+        "a": "D238:S5",
+        "b": "D239:S6",
+        "ratio": 0.971,
+        "sentence_a": "Which one should I use for Bridging Visa A?",
+        "sentence_b": "Which one should I use for Bridging Visa B?"
+      },
+      {
+        "a": "D238:S7",
+        "b": "D239:S10",
+        "ratio": 0.922,
+        "sentence_a": "Sorry, I meant visa grant notices, not the Bridging Visa A document.",
+        "sentence_b": "Sorry, I meant visa notice, not the Bridging Visa B document."
+      }
+    ],
+    "malformed": [],
+    "stage_labels": [],
+    "written_yue": [],
+    "officer_en_top_8grams": [
+      [
+        "i’ll check whether it is already on the",
+        100
+      ],
+      [
+        "check whether it is already on the record",
+        100
+      ],
+      [
+        "i want to see where they differ before",
+        100
+      ],
+      [
+        "want to see where they differ before deciding",
+        100
+      ],
+      [
+        "i’ll compare them before deciding what to use",
+        100
+      ],
+      [
+        "compare them before deciding what to use for",
+        100
+      ],
+      [
+        "then we can identify the correct version for",
+        100
+      ],
+      [
+        "is wrong correct that copy and keep the",
+        100
+      ],
+      [
+        "wrong correct that copy and keep the earlier",
+        100
+      ],
+      [
+        "correct that copy and keep the earlier version",
+        100
+      ],
+      [
+        "with the written note showing which one was",
+        100
+      ],
+      [
+        "the written note showing which one was used",
+        100
+      ],
+      [
+        "written note showing which one was used for",
+        100
+      ],
+      [
+        "if the deadline is missed do not assume",
+        100
+      ],
+      [
+        "is automatically lost i’ll check the actual consequence",
+        100
+      ],
+      [
+        "and the receipt showing when it was sent",
+        100
+      ],
+      [
+        "the receipt showing when it was sent the",
+        100
+      ],
+      [
+        "receipt showing when it was sent the submission",
+        100
+      ],
+      [
+        "showing when it was sent the submission time",
+        100
+      ],
+      [
+        "when it was sent the submission time may",
+        100
+      ],
+      [
+        "it was sent the submission time may affect",
+        100
+      ],
+      [
+        "was sent the submission time may affect the",
+        100
+      ],
+      [
+        "sent the submission time may affect the deadline",
+        100
+      ],
+      [
+        "once the date is confirmed keep the written",
+        100
+      ],
+      [
+        "outcome tell me which part of the reasons",
+        100
+      ],
+      [
+        "tell me which part of the reasons you",
+        100
+      ],
+      [
+        "me which part of the reasons you do",
+        100
+      ],
+      [
+        "which part of the reasons you do not",
+        100
+      ],
+      [
+        "part of the reasons you do not understand",
+        100
+      ],
+      [
+        "if you want a review use the review",
+        100
+      ]
+    ],
+    "officer_yue_top_10grams": [
+      [
+        "而家先維持原本安排我",
+        100
+      ],
+      [
+        "家先維持原本安排我會",
+        100
+      ],
+      [
+        "先維持原本安排我會用",
+        100
+      ],
+      [
+        "有資料錯就喺原本紀錄",
+        100
+      ],
+      [
+        "資料錯就喺原本紀錄改",
+        100
+      ],
+      [
+        "料錯就喺原本紀錄改返",
+        100
+      ],
+      [
+        "錯就喺原本紀錄改返之",
+        100
+      ],
+      [
+        "就喺原本紀錄改返之後",
+        100
+      ],
+      [
+        "喺原本紀錄改返之後我",
+        100
+      ],
+      [
+        "原本紀錄改返之後我再",
+        100
+      ],
+      [
+        "本紀錄改返之後我再查",
+        100
+      ],
+      [
+        "一齊留底之後要追返會",
+        100
+      ],
+      [
+        "齊留底之後要追返會清",
+        100
+      ],
+      [
+        "留底之後要追返會清楚",
+        100
+      ],
+      [
+        "之前我先查舊紀錄有冇",
+        100
+      ],
+      [
+        "前我先查舊紀錄有冇收",
+        100
+      ],
+      [
+        "我先查舊紀錄有冇收到",
+        100
+      ],
+      [
+        "嘅更正加返落原本紀錄",
+        100
+      ],
+      [
+        "更正加返落原本紀錄就",
+        100
+      ],
+      [
+        "正加返落原本紀錄就得",
+        100
+      ],
+      [
+        "加返落原本紀錄就得唔",
+        100
+      ],
+      [
+        "返落原本紀錄就得唔使",
+        100
+      ],
+      [
+        "落原本紀錄就得唔使另",
+        100
+      ],
+      [
+        "原本紀錄就得唔使另開",
+        100
+      ],
+      [
+        "本紀錄就得唔使另開我",
+        100
+      ],
+      [
+        "紀錄就得唔使另開我之",
+        100
+      ],
+      [
+        "錄就得唔使另開我之後",
+        100
+      ],
+      [
+        "就得唔使另開我之後再",
+        100
+      ],
+      [
+        "得唔使另開我之後再查",
+        100
+      ],
+      [
+        "兩個版本都留返我比較",
+        100
+      ]
+    ],
+    "client_en_top_8grams": [
+      [
+        "last time i need to add it to",
+        100
+      ],
+      [
+        "is still missing can i submit it later",
+        100
+      ],
+      [
+        "still missing can i submit it later for",
+        100
+      ],
+      [
+        "decision stays the same what happens next with",
+        100
+      ],
+      [
+        "depends on the date how should i count",
+        43
+      ],
+      [
+        "on the date how should i count it",
+        43
+      ],
+      [
+        "the result does not match the date what",
+        42
+      ],
+      [
+        "result does not match the date what information",
+        42
+      ],
+      [
+        "does not match the date what information was",
+        42
+      ],
+      [
+        "not match the date what information was used",
+        42
+      ],
+      [
+        "match the date what information was used for",
+        42
+      ],
+      [
+        "does not match the date which version should",
+        39
+      ],
+      [
+        "not match the date which version should count",
+        39
+      ],
+      [
+        "match the date which version should count for",
+        39
+      ],
+      [
+        "does not match the time which version should",
+        25
+      ],
+      [
+        "not match the time which version should count",
+        25
+      ],
+      [
+        "match the time which version should count for",
+        25
+      ],
+      [
+        "the result does not match the time what",
+        22
+      ],
+      [
+        "result does not match the time what information",
+        22
+      ],
+      [
+        "does not match the time what information was",
+        22
+      ],
+      [
+        "not match the time what information was used",
+        22
+      ],
+      [
+        "match the time what information was used for",
+        22
+      ],
+      [
+        "depends on the time how should i count",
+        21
+      ],
+      [
+        "on the time how should i count it",
+        21
+      ],
+      [
+        "does not match the amount which version should",
+        15
+      ],
+      [
+        "not match the amount which version should count",
+        15
+      ],
+      [
+        "match the amount which version should count for",
+        15
+      ],
+      [
+        "depends on the amount how should i count",
+        15
+      ],
+      [
+        "on the amount how should i count it",
+        15
+      ],
+      [
+        "the result does not match the amount what",
+        15
+      ]
+    ]
+  },
+  "failures": [
+    "officer English exact substantive reuse: 115",
+    "client English-model exact substantive reuse: 8",
+    "officer English near pairs 6697 > 25",
+    "officer Cantonese near pairs 355 > 25",
+    "client English-model near pairs 67 > 25",
+    "officer English repeated 8-grams 22.83% > 8.0%",
+    "officer Cantonese repeated 10-grams 35.35% > 8.0%",
+    "client English-model repeated 8-grams 12.83% > 8.0%"
+  ]
+}
