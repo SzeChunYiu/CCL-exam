@@ -58,14 +58,21 @@ jobs:
           python3 - <<'PY'
           import json, pathlib, re
           from collections import Counter
+          native=None
           for name in ['cantonese-hard','native-v2','lexical']:
             p=pathlib.Path('/tmp/'+name+'.json')
             if p.exists():
               try:
                 x=json.loads(p.read_text())
-                keys=['metrics','failures','dialogues','client_turns','client_sentences','exact_reuse_count','near_duplicate_count','skeleton_repeat_count','repair_turns','change_state_turns','short_turns_le10','long_turns_ge45','bare_endings','violating_segments','latin_tokens','unique_tokens']
+                if name=='native-v2': native=x
+                keys=['metrics','failures','dialogues','client_turns','client_sentences','exact_reuse_count','near_duplicate_count','skeleton_repeat_count','repair_turns','change_state_turns','short_turns_le10','long_turns_ge45','bare_endings','violating_segments','latin_tokens','unique_tokens','fingerprints','top_openers','top_endings']
                 print(name, json.dumps({k:x.get(k) for k in keys if k in x},ensure_ascii=False,indent=2))
               except Exception as e: print(name,'parse error',e,p.read_text()[:4000])
+          if native:
+            print('TOP_NEAR_DUPLICATE_PAIRS')
+            print(json.dumps(native.get('near_duplicates',[])[:40],ensure_ascii=False,indent=2))
+            print('SKELETON_REPEATS')
+            print(json.dumps(native.get('skeleton_repeats',[])[:20],ensure_ascii=False,indent=2))
           data=json.load(open('data/dialogues.json')); H=re.compile(r'[㐀-鿿]'); grams=Counter()
           for d in data:
             for s in d['segments']:
