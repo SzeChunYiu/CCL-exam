@@ -9,6 +9,7 @@ import build_native_500_release_v9 as v9
 r = v9.r
 v7 = v9.v8.v7
 f2 = v9.f2
+_ORIG_FACT_CUE = v7.fact_cue
 
 ENTITY = {
     "Centrelink": ("政府福利服務", "澳洲政府服務機構"),
@@ -48,7 +49,6 @@ def strip_unspoken_entities(en: str, ycue: str) -> str:
         if name.lower() in out.lower() and not any(a in ycue for a in aliases):
             out = re.sub(rf"\b{re.escape(name)}\b", " ", out, flags=re.I)
     out = re.sub(r"\s+", " ", out).strip(" ,-/")
-    # Remove a connector left behind by entity deletion.
     out = re.sub(r"^(?:or|and)\s+", "", out, flags=re.I)
     out = re.sub(r"\s+(?:or|and)$", "", out, flags=re.I)
     return out.strip() or "that requirement"
@@ -71,11 +71,8 @@ def evidence_cue(seed, variant, action):
 
 def fact_cue(seed, variant, action):
     _ic, _tc, fc, _ec = f2.anchors(seed, variant, action)
-    raw = strip_unspoken_entities(v7.fact_cue(seed, variant, action), fc)
+    raw = strip_unspoken_entities(_ORIG_FACT_CUE(seed, variant, action), fc)
     has_scoreable_en = bool(NUMBER.search(raw) or MONTH.search(raw) or CARDINAL_TIME.search(raw))
-    # If the Cantonese cue contains no numeral at all, an English date/amount/
-    # duration would add information that was not spoken. Use the same generic
-    # category the Cantonese cue carries instead.
     if has_scoreable_en and not HAN_NUM.search(fc):
         if any(x in fc for x in ("日期", "日子")):
             return "the date"
@@ -87,7 +84,6 @@ def fact_cue(seed, variant, action):
     return raw
 
 
-# v7 client_model/repair resolve these global cue functions at runtime.
 v7.issue_cue = issue_cue
 v7.term_cue = term_cue
 v7.evidence_cue = evidence_cue
@@ -101,8 +97,6 @@ def officer(seed: dict, variant: int, action: int):
         if name in en and not any(a in y for a in aliases):
             missing.append(aliases[0])
     if missing:
-        # Keep the entity translation inside the existing substantive sentence so
-        # it cannot become a bank-wide duplicate sentence of its own.
         y = y.rstrip("。！？") + "，呢度講緊" + "同".join(missing) + "。"
     return en, f2.clean_yue(y)
 
