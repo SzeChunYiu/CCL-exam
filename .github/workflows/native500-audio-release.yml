@@ -26,8 +26,8 @@ jobs:
         run: |
           set -euo pipefail
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends ffmpeg
-          python3 -m pip install --disable-pip-version-check 'edge-tts==7.2.8'
+          sudo apt-get install -y --no-install-recommends ffmpeg >/dev/null
+          python3 -m pip install --disable-pip-version-check 'edge-tts==7.2.8' >/dev/null
           ffprobe -version | head -1
       - name: Generate 100-dialogue audio batch
         id: meta
@@ -39,6 +39,7 @@ jobs:
           IDS=$(python3 -c "print(','.join(f'D{i:03d}' for i in range($START, $END + 1)))")
           HASH=$(sha256sum data/dialogues.json | awk '{print substr($1,1,12)}')
           PREFIX="native500-$HASH"
+          test "$PREFIX" = 'native500-fc50dedc153b'
           echo "prefix=$PREFIX" >> "$GITHUB_OUTPUT"
           echo "batch=$BATCH" >> "$GITHUB_OUTPUT"
           python3 scripts/generate_release_audio.py \
@@ -51,25 +52,29 @@ jobs:
             --prefix "$PREFIX" \
             --out "build/manifest-b${BATCH}.json" \
             --expected 1200
-      - name: Upload batch to isolated Supabase prefix
+      - name: Preserve calibrated batch before network publication
+        uses: actions/upload-artifact@v4
+        with:
+          name: native500-batch-${{ matrix.batch }}
+          path: |
+            build/manifest-b${{ matrix.batch }}.json
+            build/audio
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 7
+      - name: Upload create-only batch through release-scoped Storage RLS
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_URL: https://dmoputkgxuaeoypmdfhm.supabase.co
+          SUPABASE_PUBLIC_UPLOAD_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtb3B1dGtneHVhZW95cG1kZmhtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY5NTMwMjcsImV4cCI6MjEwMjUyOTAyN30._k6mlaDbk5hJlNIsK7WZqO80E7oHKkQi1vNUKZ-ajeI
           SUPABASE_AUDIO_PREFIX: ${{ steps.meta.outputs.prefix }}
         run: |
           set -euo pipefail
-          python3 scripts/upload_v4_segments.py \
+          python3 scripts/upload_native500_public_batch.py \
             --src build/audio \
             --workers 6 \
-            --no-config
-      - uses: actions/upload-artifact@v4
-        with:
-          name: native500-manifest-${{ matrix.batch }}
-          path: build/manifest-b${{ matrix.batch }}.json
-          if-no-files-found: error
-          retention-days: 7
+            --expected 1200
 
-  publish:
+  verify-storage:
     if: ${{ contains(github.event.head_commit.message || '', '[audio release]') }}
     needs: audio-batch
     runs-on: ubuntu-latest
@@ -79,27 +84,63 @@ jobs:
           fetch-depth: 0
       - uses: actions/download-artifact@v4
         with:
-          pattern: native500-manifest-*
-          path: build/manifests
-          merge-multiple: true
-      - name: Validate all 6000 objects and atomically publish Supabase metadata
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          pattern: native500-batch-*
+          path: build/batches
+      - name: Full manifest coverage and public SHA-256 read-back
         run: |
           set -euo pipefail
-          HASH=$(sha256sum data/dialogues.json | awk '{print substr($1,1,12)}')
-          PREFIX="native500-$HASH"
-          python3 scripts/publish_native500_release.py \
-            --dialogues data/dialogues.json \
-            --manifests 'build/manifests/manifest-b*.json' \
-            --prefix "$PREFIX" \
-            --public-workers 32
-      - name: Commit public audio switch only after production read-back
+          python3 - <<'PY'
+          import glob, hashlib, json, urllib.parse, urllib.request
+          from concurrent.futures import ThreadPoolExecutor
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          bank = Path('data/dialogues.json').read_bytes()
+          bank_sha = hashlib.sha256(bank).hexdigest()
+          prefix = f'native500-{bank_sha[:12]}'
+          if prefix != 'native500-fc50dedc153b':
+              raise SystemExit(f'unexpected prefix {prefix}')
+          paths = sorted(Path(p) for p in glob.glob('build/batches/native500-batch-*/manifest-b*.json'))
+          if len(paths) != 5:
+              raise SystemExit(f'expected five manifests, found {len(paths)}')
+          assets=[]; calibration=[]
+          for p in paths:
+              d=json.loads(p.read_text())
+              if d.get('prefix') != prefix or d.get('count') != 1200:
+                  raise SystemExit(f'bad manifest {p}')
+              assets.extend(d['assets']); calibration.append(d.get('generation_summary',{}))
+          expected={(f'D{i:03d}',n) for i in range(1,501) for n in range(1,13)}
+          got={(a['dialogue_id'],int(a['segment_no'])) for a in assets}
+          if len(assets)!=6000 or len(got)!=6000 or got!=expected:
+              raise SystemExit('manifest coverage is not exactly D001..D500/S01..S12')
+          base=f'https://dmoputkgxuaeoypmdfhm.supabase.co/storage/v1/object/public/ccl-audio/{prefix}'
+          def verify(a):
+              rel=f"{a['dialogue_id']}/S{int(a['segment_no']):02d}.mp3"
+              url=base+'/'+urllib.parse.quote(rel,safe='/')
+              req=urllib.request.Request(url,headers={'Cache-Control':'no-cache'})
+              with urllib.request.urlopen(req,timeout=120) as r:
+                  b=r.read()
+              if len(b)!=int(a['bytes']) or hashlib.sha256(b).hexdigest()!=a['sha256']:
+                  raise RuntimeError(f'hash mismatch {rel}')
+          with ThreadPoolExecutor(max_workers=24) as ex:
+              for i,_ in enumerate(ex.map(verify,assets),1):
+                  if i%500==0: print(f'public SHA verified {i}/6000')
+          out={
+              'bankSha256':bank_sha,'prefix':prefix,'dialogues':500,'segments':6000,
+              'storageVerified':True,'verifiedAt':datetime.now(timezone.utc).isoformat(),
+              'rates':{
+                  'en-AU-WilliamNeural':'+7%','en-AU-NatashaNeural':'+29%',
+                  'zh-HK-WanLungNeural':'+37%','zh-HK-HiuMaanNeural':'+39%'},
+              'pitch':'+0Hz','batchCalibration':calibration,
+          }
+          Path('data/audio_release_candidate.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps({k:out[k] for k in ('bankSha256','prefix','dialogues','segments','storageVerified')},indent=2))
+          PY
+      - name: Persist storage-verified release candidate
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/audio_remote.json data/audio_release_summary.json
-          git commit -m 'Publish native500 neural audio [skip audio]'
+          git add data/audio_release_candidate.json
+          git commit -m 'Verify native500 audio storage candidate [skip audio] [skip release gate]'
           git push origin HEAD:release/native-500-final2
