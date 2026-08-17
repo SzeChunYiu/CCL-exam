@@ -1,29 +1,52 @@
-# Supabase audio storage
+# Supabase neural audio storage
 
-The exam player can serve the calibrated MP3 bundles from Supabase Storage while keeping the checked-in bundles as a fallback.
+V3 serves each CCL source segment as an individual public MP3 from Supabase Storage. Vercel serves the application; Supabase serves the audio.
+
+## Project layout
+
+- Supabase project: `ccl-exam` (`dmoputkgxuaeoypmdfhm`, EU North / Stockholm)
+- Public bucket: `ccl-audio`
+- V3 object path: `v3/<dialogue-id>/S<segment>.mp3`, for example `v3/D001/S01.mp3`
+- Public browser base URL is stored in `data/audio_remote.json`
+- `public.ccl_dialogues` stores the dialogue payload used during generation
+- `public.ccl_audio_assets` stores one metadata/status row per generated segment
+
+## Voices and pace
+
+Role-based neural voices:
+
+- English provider: `en-AU-WilliamNeural`
+- English client: `en-AU-NatashaNeural`
+- Cantonese provider: `zh-HK-WanLungNeural`
+- Cantonese client: `zh-HK-HiuGaaiNeural`
+
+English uses normal neural rate. Cantonese uses a small `+5%` synthesis adjustment. This was chosen after benchmarking the supplied practice samples at about 160 English words/minute and roughly 4.0 Cantonese characters/second.
+
+The MP3 contains only source speech. The web player generates the two-tone interpretation cue immediately after the segment, then starts the practice countdown.
 
 ## Security model
 
-The audio bucket is public because the practice audio itself is public study content. Uploads use the **service-role key only inside GitHub Actions**. The key is never committed or sent to the browser.
+The bucket is public because the practice MP3s are public study assets. The browser receives **no service-role key** and performs no writes. Database tables use RLS with public-read policies only.
 
-## Required GitHub Actions secrets
+Audio was generated server-side by temporary Supabase Edge Functions. Those functions are locked after migration completes. The site needs only the public object base URL.
 
-In **Settings → Secrets and variables → Actions**, add:
+## Fallback order
 
-- `SUPABASE_URL` — your project URL, for example `https://<project-ref>.supabase.co`
-- `SUPABASE_SERVICE_ROLE_KEY` — the project's service-role key; never use the anon key for this uploader
+1. V3 Supabase neural segment MP3
+2. checked-in legacy bundled MP3
+3. an eligible Australian-English or Hong Kong Cantonese device speech voice
 
-Then run **Actions → Sync calibrated audio to Supabase → Run workflow** on the branch you want to publish.
+The player does not intentionally substitute a Mandarin voice for Cantonese.
 
-The workflow will:
+## Verification
 
-1. create or reuse a public bucket named `ccl-audio`;
-2. upload the four calibrated bundle files under `v1/`;
-3. upload `audio_manifest.json` beside them;
-4. verify each public object can be fetched with an HTTP Range request;
-5. write `data/audio_remote.json` containing only the public Storage location; and
-6. commit that public configuration to the branch.
+Release QA requires:
 
-The website reads `data/audio_remote.json` when present. If the file is missing or Supabase is unavailable, it falls back to `/assets/audio-bundles/`, then to device speech synthesis only if MP3 playback itself fails.
+- exactly **1,412** `ready` rows in `public.ccl_audio_assets`;
+- **0** `error` rows;
+- 100 dialogue payloads;
+- all four neural voices represented;
+- Storage objects with non-zero byte sizes;
+- Supabase security/performance advisor checks clean.
 
-This design keeps the exact sample-calibrated pace unchanged: moving files to Supabase changes delivery, not synthesis or playback rate.
+The neural audio is synthetic practice material, not official NAATI audio or human voice acting.
