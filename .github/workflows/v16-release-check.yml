@@ -1,4 +1,4 @@
-name: V17 Bilingual Pairing Release Check
+name: V18 Final Language Check
 on:
   push:
     branches: [release/native-500-final2]
@@ -9,7 +9,7 @@ defaults:
     shell: bash
 jobs:
   check:
-    if: ${{ contains(github.event.head_commit.message || '', '[diag v17]') }}
+    if: ${{ contains(github.event.head_commit.message || '', '[diag v18]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -17,30 +17,30 @@ jobs:
       - name: Build candidate
         run: |
           set -euo pipefail
-          python3 scripts/build_native_500_release_v17.py --out "$GITHUB_WORKSPACE/build/v17-dialogues.json" | tee v17-build.json
+          python3 scripts/build_native_500_release_v18.py --out "$GITHUB_WORKSPACE/build/v18-dialogues.json" | tee v18-build.json
       - name: Full release gates
         run: |
           set -euo pipefail
-          python3 scripts/verify_final4_bank.py build/v17-dialogues.json --json | tee v17-verify.json
-          python3 scripts/audit_native_cantonese_v2.py build/v17-dialogues.json --json | tee v17-native.json
-          python3 scripts/audit_cantonese_lexical_transfer.py build/v17-dialogues.json --json | tee v17-lexical.json
-          python3 scripts/qa_cantonese.py build/v17-dialogues.json --json | tee v17-corpus.json
-          python3 scripts/audit_whole_dialogue_naturalness.py build/v17-dialogues.json --json | tee v17-whole.json
+          python3 scripts/verify_final4_bank.py build/v18-dialogues.json --json | tee v18-verify.json
+          python3 scripts/audit_native_cantonese_v2.py build/v18-dialogues.json --json | tee v18-native.json
+          python3 scripts/audit_cantonese_lexical_transfer.py build/v18-dialogues.json --json | tee v18-lexical.json
+          python3 scripts/qa_cantonese.py build/v18-dialogues.json --json | tee v18-corpus.json
+          python3 scripts/audit_whole_dialogue_naturalness.py build/v18-dialogues.json --json | tee v18-whole.json
       - name: Generate review slice
         run: |
           set -euo pipefail
-          cp data/dialogues.json data/dialogues.before-v17.json
-          cp build/v17-dialogues.json data/dialogues.json
+          cp data/dialogues.json data/dialogues.before-v18.json
+          cp build/v18-dialogues.json data/dialogues.json
           python3 scripts/export_final_materials.py
           mkdir -p diagnostics
-          cp build/release-samples.md diagnostics/v17-samples.md
-          mv data/dialogues.before-v17.json data/dialogues.json
-          cp v17-build.json v17-verify.json v17-native.json v17-lexical.json v17-corpus.json v17-whole.json diagnostics/
+          cp build/release-samples.md diagnostics/v18-samples.md
+          mv data/dialogues.before-v18.json data/dialogues.json
+          cp v18-build.json v18-verify.json v18-native.json v18-lexical.json v18-corpus.json v18-whole.json diagnostics/
       - name: Persist reports only
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add diagnostics/v17-*.json diagnostics/v17-samples.md
-          git commit -m 'Record v17 bilingual pairing check [skip release gate] [skip audio]'
+          git add diagnostics/v18-*.json diagnostics/v18-samples.md
+          git commit -m 'Record v18 final language check [skip release gate] [skip audio]'
           git push origin HEAD:release/native-500-final2
