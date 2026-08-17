@@ -24,6 +24,7 @@ jobs:
           node --check ux-v2.js
           node --check practice-player-v3.js
           node --check route-pages.js
+          node --check ux-v4.js
       - name: UI route and player smoke checks
         run: python3 scripts/ui_smoke_test.py
       - name: Dialogue bank invariants
