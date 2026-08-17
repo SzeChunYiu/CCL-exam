@@ -10,14 +10,14 @@
     12,
     12
   ],
-  "maxWords": 33,
-  "max_segment_words": 33,
-  "meanDialogueWords": 234.4,
-  "minDialogueWords": 212,
-  "maxDialogueWords": 289,
+  "maxWords": 28,
+  "max_segment_words": 28,
+  "meanDialogueWords": 204.0,
+  "minDialogueWords": 174,
+  "maxDialogueWords": 242,
   "word_range": [
-    212,
-    289
+    174,
+    242
   ],
   "maxExactRepeat": 1,
   "diversifiedTurns": 6000,
