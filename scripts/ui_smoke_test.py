@@ -50,7 +50,9 @@ html_and_templates='\n'.join(p.read_text() for p in routes.values())+'\n'+js_tex
 attrs=re.findall(r'on(?:click|change|input)="([^"]+)"',html_and_templates)
 called=set()
 for attr in attrs:
-    called.update(re.findall(r'\b([A-Za-z_$][\w$]*)\s*\(',attr))
+    # Only bare/global calls. Method calls such as array.forEach(...) are not
+    # expected to have a global function definition.
+    called.update(re.findall(r'(?<![.\w$])([A-Za-z_$][\w$]*)\s*\(',attr))
 known={'if','for','while','switch','Math','Number','String','Object','Array','Date','JSON','Promise','setTimeout','clearTimeout','setInterval','clearInterval','confirm','alert'}
 called-=known
 
