@@ -10,8 +10,8 @@ routes={
     'study':ROOT/'study/index.html',
     'progress':ROOT/'progress/index.html',
 }
-required_scripts=['/app.js','/neural-audio.js','/simple-ui.js','/questions-page.js','/ux-v2.js','/practice-player-v3.js','/route-pages.js']
-required_css=['/styles.css','/simple.css','/questions.css','/ux-v2.css','/practice-player-v3.css']
+required_scripts=['/app.js','/neural-audio.js','/simple-ui.js','/questions-page.js','/ux-v2.js','/practice-player-v3.js','/route-pages.js','/ux-v4.js']
+required_css=['/styles.css','/simple.css','/questions.css','/ux-v2.css','/practice-player-v3.css','/ux-v4.css']
 
 for name,path in routes.items():
     assert path.exists(), f'missing route page: {path}'
@@ -38,8 +38,15 @@ assert "e.code==='Space'" in player
 assert "e.key==='ArrowLeft'" in player and "e.key==='ArrowRight'" in player
 assert 'data-dialogue-id' in player and 'active-dialogue' in player
 
-css=(ROOT/'practice-player-v3.css').read_text()
-for selector in ['.question-player-v3','.question-dialogue.active-dialogue','.q-player-main','.ux-nav a']:
+v4=(ROOT/'ux-v4.js').read_text()
+for fn in ['filterMockList','collapseAllQuestions','expandAllQuestions','resetQuestionFilters']:
+    assert re.search(rf'window\.{fn}\s*=',v4), f'missing v4 control {fn}'
+for token in ['Officer · English','Client · Cantonese','Next segment','Shuffle me a mock','Shorter sessions']:
+    assert token in v4, f'missing v4 UX token: {token}'
+assert "e.code==='Space'" in v4 and "e.key.toLowerCase()==='r'" in v4 and "e.key==='Enter'" in v4
+
+css=(ROOT/'practice-player-v3.css').read_text()+(ROOT/'ux-v4.css').read_text()
+for selector in ['.question-player-v3','.question-dialogue.active-dialogue','.q-player-main','.ux-nav a','.v4-mock-row','.v4-form-card','.v4-study-content','.v4-progress-hero']:
     assert selector in css, f'missing CSS selector {selector}'
 
 # Catch the most common broken-button regression: an inline handler references a
@@ -66,4 +73,4 @@ def global_def(name):
 missing=sorted(name for name in called if not global_def(name))
 assert not missing, f'inline UI handlers reference missing globals: {missing}'
 
-print(f'UI route/player smoke checks passed; {len(called)} inline handler functions resolved')
+print(f'UI v4 route/player smoke checks passed; {len(called)} inline handler functions resolved')
