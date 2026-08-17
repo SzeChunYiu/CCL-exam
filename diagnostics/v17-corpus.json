@@ -1,0 +1,53 @@
+{
+ "metrics": {
+  "segments": 3000,
+  "chars": 55949,
+  "particle_per100": 5.18,
+  "particle_variety": 16,
+  "top4_share": 80.9,
+  "median_sentence": 3.0,
+  "sentences_per_seg": 2.01,
+  "boilerplate_pct": 1.7,
+  "dup_sentence_pct": 0.0,
+  "written_chinese_per100": 0.032,
+  "written_connective_per100": 0.0,
+  "literary": 0,
+  "dropped_glyphs": 0,
+  "calque_per100": 0.0,
+  "connective_per100": 1.8,
+  "connective_variety": 5,
+  "a_not_a_per100": 0.71
+ },
+ "failures": [],
+ "detail": {
+  "written_chinese": {
+   "不": 18
+  },
+  "written_connectives": {},
+  "literary": {},
+  "dropped_glyphs": {},
+  "calques": {},
+  "risky_to_official": {
+   "咩": 337,
+   "喎": 164
+  },
+  "particles": {
+   "喇": 1067,
+   "呀": 776,
+   "咩": 337,
+   "呢": 166,
+   "喎": 164,
+   "啫": 157,
+   "㗎": 94,
+   "囉": 27,
+   "嘞": 25,
+   "嘅": 21,
+   "嘛": 20,
+   "啩": 14,
+   "添": 13,
+   "咋": 12,
+   "吖": 5,
+   "架": 1
+  }
+ }
+}
