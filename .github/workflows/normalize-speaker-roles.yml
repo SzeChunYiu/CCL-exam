@@ -1,0 +1,44 @@
+name: Normalize CCL speaker roles
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/normalize_immigrant_speaker_roles.py'
+      - '.github/workflows/normalize-speaker-roles.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Normalize officer/client language orientation
+        run: python3 scripts/normalize_immigrant_speaker_roles.py
+      - name: Verify policy
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('data/dialogues.json'))
+          assert len(d)==100
+          assert sum(len(x['segments']) for x in d)==1412
+          assert all(s['source_lang']==('en' if s['role']=='P' else 'yue') for x in d for s in x['segments'])
+          print('speaker-role policy OK')
+          PY
+      - name: Commit normalized bank
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/dialogues.json data/site_summary.json practice_pack/dialogues_metadata.json materials/SOURCE_SCRIPTS.md materials/MODEL_ANSWERS.md practice_pack/SOURCE_SCRIPTS.md practice_pack/MODEL_ANSWERS.md
+          if git diff --cached --quiet; then
+            echo 'No changes'
+          else
+            git commit -m 'Normalize officer English and immigrant Cantonese turns [skip ci]'
+            git push origin HEAD:main
+          fi
