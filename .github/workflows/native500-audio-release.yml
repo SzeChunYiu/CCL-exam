@@ -1,0 +1,103 @@
+name: Native 500 Audio Release
+
+on:
+  push:
+    branches: [release/native-500-final2]
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  audio-batch:
+    if: ${{ contains(github.event.head_commit.message || '', '[audio release]') }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        batch: [0, 1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install calibrated TTS runtime
+        run: |
+          set -euo pipefail
+          python3 -m pip install --disable-pip-version-check 'edge-tts==7.2.8'
+          ffprobe -version | head -1
+      - name: Generate 100-dialogue audio batch
+        id: meta
+        run: |
+          set -euo pipefail
+          BATCH='${{ matrix.batch }}'
+          START=$((BATCH * 100 + 1))
+          END=$((START + 99))
+          IDS=$(python3 -c "print(','.join(f'D{i:03d}' for i in range($START, $END + 1)))")
+          HASH=$(sha256sum data/dialogues.json | awk '{print substr($1,1,12)}')
+          PREFIX="native500-$HASH"
+          echo "prefix=$PREFIX" >> "$GITHUB_OUTPUT"
+          echo "batch=$BATCH" >> "$GITHUB_OUTPUT"
+          python3 scripts/generate_release_audio.py \
+            --dialogues data/dialogues.json \
+            --only "$IDS" \
+            --out build/audio \
+            --concurrency 2
+          python3 scripts/build_release_audio_manifest.py \
+            --src build/audio \
+            --prefix "$PREFIX" \
+            --out "build/manifest-b${BATCH}.json" \
+            --expected 1200
+      - name: Upload batch to isolated Supabase prefix
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_AUDIO_PREFIX: ${{ steps.meta.outputs.prefix }}
+        run: |
+          set -euo pipefail
+          python3 scripts/upload_v4_segments.py \
+            --src build/audio \
+            --workers 6 \
+            --no-config
+      - uses: actions/upload-artifact@v4
+        with:
+          name: native500-manifest-${{ matrix.batch }}
+          path: build/manifest-b${{ matrix.batch }}.json
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    if: ${{ contains(github.event.head_commit.message || '', '[audio release]') }}
+    needs: audio-batch
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: native500-manifest-*
+          path: build/manifests
+          merge-multiple: true
+      - name: Validate all 6000 objects and atomically publish Supabase metadata
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          set -euo pipefail
+          HASH=$(sha256sum data/dialogues.json | awk '{print substr($1,1,12)}')
+          PREFIX="native500-$HASH"
+          python3 scripts/publish_native500_release.py \
+            --dialogues data/dialogues.json \
+            --manifests 'build/manifests/manifest-b*.json' \
+            --prefix "$PREFIX" \
+            --public-workers 32
+      - name: Commit public audio switch only after production read-back
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/audio_remote.json data/audio_release_summary.json
+          git commit -m 'Publish native500 neural audio [skip audio]'
+          git push origin HEAD:release/native-500-final2
