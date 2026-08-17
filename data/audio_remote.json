@@ -2,6 +2,7 @@
   "provider": "supabase",
   "mode": "segments",
   "version": "v3-neural",
+  "cacheVersion": "speaker-policy-20260817-r2",
   "baseUrl": "https://dmoputkgxuaeoypmdfhm.supabase.co/storage/v1/object/public/ccl-audio/v3",
   "voices": {
     "en-P": "en-AU-WilliamNeural",
