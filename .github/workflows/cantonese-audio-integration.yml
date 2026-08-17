@@ -22,6 +22,7 @@ jobs:
           python3 -m py_compile scripts/build_native_500.py
           python3 -m py_compile scripts/build_native_500_v2.py
           python3 -m py_compile scripts/build_native_500_v3.py
+          python3 -m py_compile scripts/build_native_500_v4.py
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
@@ -30,7 +31,7 @@ jobs:
           python3 -m py_compile scripts/upload_v4_segments.py
 
       - name: Build all 500 dialogues from scenario blueprints
-        run: python3 scripts/build_native_500_v3.py
+        run: python3 scripts/build_native_500_v4.py
 
       - name: Remove artificial Cantonese pitch cycling and stale 100-bank UI copy
         run: |
@@ -67,8 +68,7 @@ jobs:
           x=json.load(open('/tmp/cantonese-hard.json'))
           print(json.dumps({'metrics':x.get('metrics'),'failures':x.get('failures')},ensure_ascii=False,indent=2))
           data=json.load(open('data/dialogues.json'))
-          H=re.compile(r'[㐀-鿿]')
-          grams=Counter()
+          H=re.compile(r'[㐀-鿿]'); grams=Counter()
           for d in data:
             for s in d['segments']:
               if s.get('source_lang')!='yue': continue
