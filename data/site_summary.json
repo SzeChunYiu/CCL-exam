@@ -4,13 +4,14 @@
   "minSegments": 12,
   "maxSegments": 16,
   "maxWords": 35,
-  "meanDialogueWords": 293.5,
-  "minDialogueWords": 270,
-  "maxDialogueWords": 321,
-  "maxExactRepeat": 51,
+  "meanDialogueWords": 294.9,
+  "minDialogueWords": 272,
+  "maxDialogueWords": 324,
+  "maxExactRepeat": 4,
   "audioTarget": {
     "englishWpm": 160,
     "cantoneseCharsPerSecond": 4.0
   },
-  "version": "v3-neural"
+  "version": "v3-neural",
+  "diversifiedTurns": 120
 }

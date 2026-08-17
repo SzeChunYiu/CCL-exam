@@ -151,9 +151,9 @@
 
 **S10 · Cantonese → English:** 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
-**S11 · English → Cantonese:** If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
+**S11 · English → Cantonese:** Okay, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
 
-**S12 · Cantonese → English:** 如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
+**S12 · Cantonese → English:** 好，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
 
 **S13 · English → Cantonese:** One more thing: should I keep the confirmation number with the original documents?
 
@@ -180,9 +180,9 @@
 
 **S9 · Cantonese → English:** 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
-**S10 · English → Cantonese:** If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
+**S10 · English → Cantonese:** Right, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
 
-**S11 · Cantonese → English:** 如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
+**S11 · Cantonese → English:** 明白，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
 
 **S12 · English → Cantonese:** Thanks for explaining it. I’ll wait for the update and keep the records together.
 
@@ -215,9 +215,9 @@
 
 **S12 · Cantonese → English:** 如果個申請畀人拒絕，我可唔可以先攞書面理由，再諗下一步？
 
-**S13 · English → Cantonese:** If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
+**S13 · English → Cantonese:** Sure, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
 
-**S14 · Cantonese → English:** 如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
+**S14 · Cantonese → English:** 可以，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
 
 ## D008 — Supplier credit terms
 **Topic:** Business
@@ -259,7 +259,7 @@
 
 **S2 · Cantonese → English:** 係。我見到一千八百九十九澳元嘅雪櫃用咗六星期就壞，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Okay, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺下星期五之前處理。否則，我擔心可能會有金錢損失，或者錯過要求補救嘅機會。
 
@@ -267,7 +267,7 @@
 
 **S6 · Cantonese → English:** 我收到最新嘅紀錄就係呢份。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** Right, Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有收據、相片同維修報告，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
@@ -414,7 +414,7 @@
 
 **S2 · English → Cantonese:** Yes. I can see that the quote was $9,500 but the invoice is $12,300, but I don’t understand how that affects what I should do next.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I need to deal with it before the end of this month. Otherwise, What worries me is that I could lose money or miss the chance to obtain a remedy.
 
@@ -422,7 +422,7 @@
 
 **S6 · English → Cantonese:** That’s right. I don’t have anything more recent.
 
-**S7 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S7 · Cantonese → English:** 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · English → Cantonese:** I have quote, invoice and messages, but one date differs from an older record. Should I explain that difference when I submit the documents?
 
@@ -540,7 +540,7 @@
 
 **S2 · English → Cantonese:** Thanks. The detail I was given is that fourteen weekend hours were worked last pay period. My concern is that my pay or employment entitlements may be recorded incorrectly.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** If the end of this month arrives and this is still unresolved, what should I expect?
 
@@ -573,7 +573,7 @@
 
 **S2 · Cantonese → English:** 係。我見到已經做咗三個月主管職務，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Certainly. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺通知所列日期之前處理。否則，我擔心工資或者僱傭待遇可能記錄錯。
 
@@ -581,7 +581,7 @@
 
 **S6 · Cantonese → English:** 係呀，我啲文件而家都仲係咁寫。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** Thanks. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有職位說明同最近更表，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
@@ -728,7 +728,7 @@
 
 **S2 · English → Cantonese:** Yes. I can see that employment ended on 7 August, but I don’t understand how that affects what I should do next.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I need to deal with it before the next scheduled appointment or payment. Otherwise, I’m worried that my pay or employment entitlements may be recorded incorrectly.
 
@@ -736,7 +736,7 @@
 
 **S6 · English → Cantonese:** Correct. I haven’t received a newer update.
 
-**S7 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S7 · Cantonese → English:** 係。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · English → Cantonese:** I have termination letter and employment contract, but one date differs from an older record. Should I explain that difference when I submit the documents?
 
@@ -883,7 +883,7 @@
 
 **S2 · Cantonese → English:** 係。我見到驗血預約係星期一朝早，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Alright, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺下星期五之前處理。否則，我擔心治療可能延誤，或者我要支付預料之外嘅費用。
 
@@ -891,7 +891,7 @@
 
 **S6 · Cantonese → English:** 啱呀，如果有改我會再話你知。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** I see. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有化驗申請表同 Medicare 卡，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
@@ -903,9 +903,9 @@
 
 **S12 · Cantonese → English:** 件事仲處理緊嗰陣，有冇額外費用或者其他風險要預先預算？
 
-**S13 · English → Cantonese:** I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+**S13 · English → Cantonese:** Okay, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
-**S14 · Cantonese → English:** 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+**S14 · Cantonese → English:** 好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S15 · English → Cantonese:** Keep the written decision and your evidence in date order. Then ask the practice manager or relevant health service to review the administrative issue.
 
@@ -930,9 +930,9 @@
 
 **S8 · English → Cantonese:** After the upload is complete, when should I check the progress without chasing them too early?
 
-**S9 · Cantonese → English:** 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+**S9 · Cantonese → English:** 好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
-**S10 · English → Cantonese:** Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+**S10 · English → Cantonese:** Okay, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S11 · Cantonese → English:** 重要資料有變要盡快更新，並保留證明。如果對最終決定有爭議，要求診所經理或者相關醫療服務覆核行政問題。
 
@@ -1005,7 +1005,7 @@
 
 **S2 · Cantonese → English:** 多謝。我收到嘅資料係每次治療報價一百一十澳元。我擔心治療可能延誤，或者我要支付預料之外嘅費用。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** That helps. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 如果我喺下星期五之前處理唔到，實際會有咩後果？
 
@@ -1021,9 +1021,9 @@
 
 **S10 · Cantonese → English:** 我點樣先知佢哋真係收到啲文件，我想有個編號，之後跟進都有嘢可以講。
 
-**S11 · English → Cantonese:** I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+**S11 · English → Cantonese:** Right, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
-**S12 · Cantonese → English:** 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+**S12 · Cantonese → English:** 明白，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S13 · English → Cantonese:** Ask for a status update rather than duplicate the request. If you later dispute the outcome, ask the practice manager or relevant health service to review the administrative issue.
 
@@ -1038,7 +1038,7 @@
 
 **S2 · English → Cantonese:** Yes. I can see that the GP appointment is next Wednesday, but I don’t understand how that affects what I should do next.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I need to deal with it before the end of this month. Otherwise, I’m worried that treatment may be delayed or I may face an unexpected cost.
 
@@ -1046,7 +1046,7 @@
 
 **S6 · English → Cantonese:** Correct; that’s the current amount on my side.
 
-**S7 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S7 · Cantonese → English:** 好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · English → Cantonese:** I have Medicare card and referral letters, but one date differs from an older record. Should I explain that difference when I submit the documents?
 
@@ -1110,9 +1110,9 @@
 
 **S7 · Cantonese → English:** 除非通知另有指示，否則用診所病人網上平台。上載轉介信、Medicare 卡同超聲波報告，之後保存收據或者參考編號。
 
-**S8 · English → Cantonese:** If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+**S8 · English → Cantonese:** Right, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
-**S9 · Cantonese → English:** 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+**S9 · Cantonese → English:** 明白，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S10 · English → Cantonese:** If I still think the decision is wrong, is there a formal review process I can use?
 
@@ -1176,15 +1176,15 @@
 
 **S10 · English → Cantonese:** Will I get anything showing the upload went through, That date could matter if there’s a dispute later.
 
-**S11 · Cantonese → English:** 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+**S11 · Cantonese → English:** 可以，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
-**S12 · English → Cantonese:** Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+**S12 · English → Cantonese:** Sure, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S13 · Cantonese → English:** 應該查詢進度，而唔係重複提交。如果之後對結果有爭議，按正式通知所列嘅聯絡或者覆核途徑處理。
 
 **S14 · English → Cantonese:** Understood. I’ll keep the reference and remember Bridging Visa A. That should help me explain the issue clearly.
 
-**S15 · Cantonese → English:** 好，我今日就處理，啲文件亦會放埋一齊。
+**S15 · Cantonese → English:** 好，好，我今日就處理，啲文件亦會放埋一齊。
 
 ## D039 — Bridging Visa B travel
 **Topic:** Immigration and settlement
@@ -1193,7 +1193,7 @@
 
 **S2 · Cantonese → English:** 係。我見到計劃十月份出境十日，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** All right. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺通知所列日期之前處理。否則，我擔心可能誤解現有簽證權利或者條件。
 
@@ -1201,7 +1201,7 @@
 
 **S6 · Cantonese → English:** 啱，我今朝都再對過一次。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** That’s clear. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有旅行日期、護照同簽證通知，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
@@ -1269,9 +1269,9 @@
 
 **S7 · English → Cantonese:** Unless your notice says otherwise, use your ImmiAccount. Upload new passport biodata page, then save the receipt or reference.
 
-**S8 · Cantonese → English:** 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+**S8 · Cantonese → English:** 可以，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
-**S9 · English → Cantonese:** Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+**S9 · English → Cantonese:** Sure, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S10 · Cantonese → English:** 我哋預計大約四十人去個會堂。如果人數再多啲，係咪要更新個預約？
 
@@ -1319,7 +1319,7 @@
 
 **S2 · Cantonese → English:** 多謝。我收到嘅資料係星期二同星期四夜晚有時間。我擔心可能錯過註冊程序或者合適課程選擇。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** No problem. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 去到通知所列日期件事仲未解決，我應該預咩情況？
 
@@ -1352,7 +1352,7 @@
 
 **S2 · English → Cantonese:** Yes. I can see that the degree was completed in Hong Kong in 2022, but I don’t understand how that affects what I should do next.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I need to deal with it before I submit my next employment or study application. Otherwise, I’m anxious that I may follow the wrong recognition pathway for work or study.
 
@@ -1360,7 +1360,7 @@
 
 **S6 · English → Cantonese:** Yes, I’m still working from that figure.
 
-**S7 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S7 · Cantonese → English:** 唔該，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · English → Cantonese:** I have a degree certificate and academic transcript, but one date differs from an older record. Should I explain that difference when I submit the documents?
 
@@ -1399,9 +1399,9 @@
 
 **S8 · Cantonese → English:** 上載完成之後，大概幾時再問吓會比較合理？
 
-**S9 · English → Cantonese:** I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+**S9 · English → Cantonese:** Understood. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
-**S10 · Cantonese → English:** 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+**S10 · Cantonese → English:** 明白。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S11 · English → Cantonese:** Update any material change promptly and keep proof. If the final decision is disputed, get legal advice about the available review, legal-aid or court step.
 
@@ -1511,7 +1511,7 @@
 
 **S2 · Cantonese → English:** 係。我見到調解安排喺十月六日，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Okay. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺下星期五之前處理。否則，我擔心可能錯過限期，或者無意中違反正式指示。
 
@@ -1519,7 +1519,7 @@
 
 **S6 · Cantonese → English:** 我收到最新嘅紀錄就係呢份。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** Okay, Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有預約信同育兒安排建議，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
@@ -1558,9 +1558,9 @@
 
 **S8 · English → Cantonese:** After I submit it, when should I check the progress without chasing them too early?
 
-**S9 · Cantonese → English:** 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+**S9 · Cantonese → English:** 明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
-**S10 · English → Cantonese:** Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+**S10 · English → Cantonese:** Understood. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S11 · Cantonese → English:** 重要資料有變要盡快更新，並保留證明。如果對最終決定有爭議，就可用嘅覆核、法律援助或者法院程序取得法律意見。
 
@@ -1587,9 +1587,9 @@
 
 **S7 · English → Cantonese:** Unless your notice says otherwise, use the court or service online portal. Upload income evidence and court documents, then save the receipt or reference.
 
-**S8 · Cantonese → English:** 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+**S8 · Cantonese → English:** 好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
-**S9 · English → Cantonese:** Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+**S9 · English → Cantonese:** Good, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S10 · Cantonese → English:** 假如我覺得個決定有問題，我可唔可以先要求覆核，再決定使唔使投訴呀？
 
@@ -1614,7 +1614,7 @@
 
 **S6 · English → Cantonese:** I’ve gathered court notice and medical evidence. Which parts should I send, and can I submit them online rather than bring paper copies?
 
-**S7 · Cantonese → English:** 你可唔可以而家用電話開返啲文件？
+**S7 · Cantonese → English:** 好，你可唔可以而家用電話開返啲文件？
 
 **S8 · English → Cantonese:** I have the main ones. One file is on my home computer.
 
@@ -1653,9 +1653,9 @@
 
 **S10 · Cantonese → English:** 我正式提交之後，點知系統已經有紀錄，如果之後有爭議，嗰個日期可能好重要㗎。
 
-**S11 · English → Cantonese:** I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+**S11 · English → Cantonese:** Certainly. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
-**S12 · Cantonese → English:** 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+**S12 · Cantonese → English:** 可以。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S13 · English → Cantonese:** Ask for a status update rather than duplicate the request. If you later dispute the outcome, use the council complaint or written-review process.
 
@@ -1670,7 +1670,7 @@
 
 **S2 · English → Cantonese:** Yes. I can see that books are needed this Saturday, but I don’t understand how that affects what I should do next.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I need to deal with it before the end of this month. Otherwise, My worry is that I might miss the booking or lose access to the service.
 
@@ -1678,7 +1678,7 @@
 
 **S6 · English → Cantonese:** That’s still the current information.
 
-**S7 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S7 · Cantonese → English:** 可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · English → Cantonese:** I have photo ID and digital proof of address, but one date differs from an older record. Should I explain that difference when I submit the documents?
 
@@ -1690,9 +1690,9 @@
 
 **S12 · English → Cantonese:** Before they finish reviewing the record, is there a cost or practical consequence I should know about?
 
-**S13 · Cantonese → English:** 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+**S13 · Cantonese → English:** 好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
-**S14 · English → Cantonese:** Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+**S14 · English → Cantonese:** Good, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S15 · Cantonese → English:** 將書面決定同證據按日期整理好。之後，使用市議會投訴或者書面覆核程序。
 
@@ -1746,9 +1746,9 @@
 
 **S7 · Cantonese → English:** 除非通知另有指示，否則用市議會網上服務平台。上載駕駛執照、租約同車輛登記資料，之後保存收據或者參考編號。
 
-**S8 · English → Cantonese:** If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+**S8 · English → Cantonese:** Certainly. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
-**S9 · Cantonese → English:** 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+**S9 · Cantonese → English:** 可以。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S10 · English → Cantonese:** If I believe the service has made a mistake, who do I ask to look at the decision again?
 
@@ -1796,7 +1796,7 @@
 
 **S2 · English → Cantonese:** Thanks. The detail I was given is that the program begins on 19 September. The thing I’m worried about is that I may miss the booking or lose access to the service.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I may not get this done by the end of this month. Will that cause a problem?
 
@@ -1827,7 +1827,7 @@
 
 **S2 · Cantonese → English:** 係。我見到滋擾通常夜晚十一點後開始，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Good, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺通知所列日期之前處理。否則，我擔心可能錯過預約或者用唔到服務。
 
@@ -1835,7 +1835,7 @@
 
 **S6 · Cantonese → English:** 係，之後冇再收到另一封通知。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** Certainly. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有日期、時間同日誌紀錄，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
@@ -1911,7 +1911,7 @@
 
 **S11 · English → Cantonese:** Ask for written reasons and keep a dated record. After that, ask the school to explain the enrolment decision or the relevant education-department pathway.
 
-**S12 · Cantonese → English:** 好，我今日就處理，啲文件亦會放埋一齊。
+**S12 · Cantonese → English:** 明白，好，我今日就處理，啲文件亦會放埋一齊。
 
 **S13 · English → Cantonese:** Good, I’ll do that. If anything changes, I’ll let the service know straight away.
 
@@ -1953,7 +1953,7 @@
 
 **S2 · Cantonese → English:** 多謝。我收到嘅資料係因病缺課三日。我擔心可能錯過註冊，或者要承擔本來可以避免嘅費用。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Thanks. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 去到通知所列日期件事仲未解決，我應該預咩情況？
 
@@ -1963,7 +1963,7 @@
 
 **S7 · English → Cantonese:** Can you access those records right now?
 
-**S8 · Cantonese → English:** 主要紀錄有齊，仲有一份文件要下載返。
+**S8 · Cantonese → English:** 好，主要紀錄有齊，仲有一份文件要下載返。
 
 **S9 · English → Cantonese:** Start with the requested material through the school parent portal. An officer can ask for more information if something relevant is missing.
 
@@ -1986,7 +1986,7 @@
 
 **S2 · English → Cantonese:** Yes. I can see that care is needed from 7 September, four days a week, but I don’t understand how that affects what I should do next.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I need to deal with it before the next scheduled appointment or payment. Otherwise, I’m anxious that I may miss enrolment or become liable for an avoidable fee.
 
@@ -1994,7 +1994,7 @@
 
 **S6 · English → Cantonese:** Yes, that’s the latest one I have.
 
-**S7 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S7 · Cantonese → English:** 係。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · English → Cantonese:** I have enrolment form and family details, but one date differs from an older record. Should I explain that difference when I submit the documents?
 
@@ -2029,9 +2029,9 @@
 
 **S8 · Cantonese → English:** 我交咗之後，我幾時問進度先唔算太早？
 
-**S9 · English → Cantonese:** I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+**S9 · English → Cantonese:** Thanks. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
-**S10 · Cantonese → English:** 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+**S10 · Cantonese → English:** 唔該。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S11 · English → Cantonese:** Update any material change promptly and keep proof. If the final decision is disputed, use the education provider’s formal review or complaint process.
 
@@ -2054,9 +2054,9 @@
 
 **S7 · Cantonese → English:** 除非通知另有指示，否則用學生網上平台。上載取錄信同學費結單，之後保存收據或者參考編號。
 
-**S8 · English → Cantonese:** If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+**S8 · English → Cantonese:** Thanks. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
-**S9 · Cantonese → English:** 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+**S9 · Cantonese → English:** 唔該。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S10 · English → Cantonese:** Suppose the decision doesn’t seem right, who do I ask to look at the decision again?
 
@@ -2081,7 +2081,7 @@
 
 **S6 · Cantonese → English:** 我已經準備咗註冊紀錄同退科申請。我要交邊部分？可唔可以網上提交，而唔使帶紙本？
 
-**S7 · English → Cantonese:** Have you got the relevant paperwork there now?
+**S7 · English → Cantonese:** Okay, Have you got the relevant paperwork there now?
 
 **S8 · Cantonese → English:** 你頭先講嗰啲差唔多有齊，淨係仲有一份喺屋企。
 
@@ -2104,7 +2104,7 @@
 
 **S2 · English → Cantonese:** Thanks. The detail I was given is that orientation is on 11 September. My main worry is that I could miss enrolment or become liable for an avoidable fee.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** What are the consequences if I can’t resolve this by the next scheduled appointment or payment?
 
@@ -2137,7 +2137,7 @@
 
 **S2 · Cantonese → English:** 係。我見到琴晚有一筆二百八十六個四毫澳元收費，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** I see. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺下星期五之前處理。否則，我擔心可能有金錢損失，或者要畀額外費用同利息。
 
@@ -2145,7 +2145,7 @@
 
 **S6 · Cantonese → English:** 係呀，我嚟之前都有再確認。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** That helps. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有月結單同交易截圖，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
@@ -2157,9 +2157,9 @@
 
 **S12 · Cantonese → English:** 佢哋未核對完份紀錄之前，有冇額外費用或者其他風險要預先預算？
 
-**S13 · English → Cantonese:** I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+**S13 · English → Cantonese:** Great, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
-**S14 · Cantonese → English:** 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+**S14 · Cantonese → English:** 好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S15 · English → Cantonese:** Keep the written decision and your evidence in date order. Then use the bank’s internal dispute process, then AFCA if the matter is eligible.
 
@@ -2213,9 +2213,9 @@
 
 **S7 · English → Cantonese:** Unless your notice says otherwise, use secure online banking. Upload payment receipt and bill, then save the receipt or reference.
 
-**S8 · Cantonese → English:** 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+**S8 · Cantonese → English:** 係。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
-**S9 · English → Cantonese:** Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+**S9 · English → Cantonese:** Exactly. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S10 · Cantonese → English:** 嗰筆卡交易仲顯示 pending。我應該而家提出爭議，定係等佢正式過數先？
 
@@ -2263,7 +2263,7 @@
 
 **S2 · Cantonese → English:** 多謝。我收到嘅資料係對沖戶口大約有三萬五千澳元。我擔心可能有金錢損失，或者要畀額外費用同利息。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Got it. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我可能趕唔切下星期五之前搞掂，咁會唔會有問題？
 
@@ -2296,7 +2296,7 @@
 
 **S2 · English → Cantonese:** Yes. I can see that the requested redraw amount is $6,000, but I don’t understand how that affects what I should do next.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I need to deal with it before the end of this month. Otherwise, I’m worried that money may be lost or extra fees or interest may apply.
 
@@ -2304,7 +2304,7 @@
 
 **S6 · English → Cantonese:** Yes. The information is still current.
 
-**S7 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S7 · Cantonese → English:** 好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · English → Cantonese:** I have loan account and redraw conditions, but one date differs from an older record. Should I explain that difference when I submit the documents?
 
@@ -2316,9 +2316,9 @@
 
 **S12 · English → Cantonese:** Until they make a decision, is there a cost or practical consequence I should know about?
 
-**S13 · Cantonese → English:** 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+**S13 · Cantonese → English:** 好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
-**S14 · English → Cantonese:** Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+**S14 · English → Cantonese:** Great, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S15 · Cantonese → English:** 將書面決定同證據按日期整理好。之後，先用銀行內部爭議程序，如個案合資格再向 AFCA 跟進。
 
@@ -2395,7 +2395,7 @@
 
 **S6 · Cantonese → English:** 我已經準備咗工作證明同租屋推薦資料。我要交邊部分？可唔可以網上提交，而唔使帶紙本？
 
-**S7 · English → Cantonese:** Can you pull up those documents on your phone?
+**S7 · English → Cantonese:** Right, Can you pull up those documents on your phone?
 
 **S8 · Cantonese → English:** 有，大部分都喺度，仲要攞多一份文件。
 
@@ -2434,15 +2434,15 @@
 
 **S10 · English → Cantonese:** Once I lodge it, how will I know it’s on their system, That date could matter if there’s a dispute later.
 
-**S11 · Cantonese → English:** 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+**S11 · Cantonese → English:** 係。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
-**S12 · English → Cantonese:** Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+**S12 · English → Cantonese:** Exactly. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S13 · Cantonese → English:** 應該查詢進度，而唔係重複提交。如果之後對結果有爭議，有需要時使用所在州嘅租務服務或者審裁程序。
 
 **S14 · English → Cantonese:** Understood. I’ll keep the reference and remember condition report. That should help me explain the issue clearly.
 
-**S15 · Cantonese → English:** 好，而家我知點做喇。我交出去嘅資料都會留返副本。
+**S15 · Cantonese → English:** 好，好，而家我知點做喇。我交出去嘅資料都會留返副本。
 
 ## D079 — Urgent repairs
 **Topic:** Housing
@@ -2451,7 +2451,7 @@
 
 **S2 · Cantonese → English:** 係。我見到由琴晚開始一直冇熱水，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** That’s clear. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺通知所列日期之前處理。否則，我擔心可能要多交租，或者錯過重要租務限期。
 
@@ -2459,7 +2459,7 @@
 
 **S6 · Cantonese → English:** 係呀，之後一直冇改過。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** No problem. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有相片同書面維修要求，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
@@ -2523,9 +2523,9 @@
 
 **S7 · English → Cantonese:** Unless your notice says otherwise, use the tenancy online portal. Upload lease and proposed written notice, then save the receipt or reference.
 
-**S8 · Cantonese → English:** 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+**S8 · Cantonese → English:** 好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
-**S9 · English → Cantonese:** Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+**S9 · English → Cantonese:** Alright, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S10 · Cantonese → English:** 如果個結果我點睇都覺得唔對路，我應該搵邊個再睇一次個決定？
 
@@ -2533,7 +2533,7 @@
 
 **S12 · Cantonese → English:** 明白。我會留返確認紀錄，有需要先再跟進。
 
-**S13 · English → Cantonese:** Good, I’ll do that. If anything changes, I’ll let the service know straight away.
+**S13 · English → Cantonese:** Okay, Good, I’ll do that. If anything changes, I’ll let the service know straight away.
 
 ## D082 — Breaking a fixed-term lease
 **Topic:** Housing
@@ -2604,7 +2604,7 @@
 
 **S2 · English → Cantonese:** Yes. I can see that the inspection is booked for Tuesday at 10 am, but I don’t understand how that affects what I should do next.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I need to deal with it before the next scheduled appointment or payment. Otherwise, I’m a bit worried I’ll pay extra rent or miss an important tenancy deadline.
 
@@ -2612,7 +2612,7 @@
 
 **S6 · English → Cantonese:** That’s still the current information.
 
-**S7 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S7 · Cantonese → English:** 唔該，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · English → Cantonese:** I have inspection notice and work roster, but one date differs from an older record. Should I explain that difference when I submit the documents?
 
@@ -2680,15 +2680,15 @@
 
 **S7 · Cantonese → English:** 除非通知另有指示，否則用相關新州租務或者審裁網上服務。上載租約、維修要求同相片，之後保存收據或者參考編號。
 
-**S8 · English → Cantonese:** If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+**S8 · English → Cantonese:** Alright, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
-**S9 · Cantonese → English:** 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+**S9 · Cantonese → English:** 好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S10 · English → Cantonese:** Suppose the decision doesn’t seem right, can I ask for a review before making a complaint?
 
 **S11 · Cantonese → English:** 要求書面理由，並保留有日期嘅紀錄。之後，向相關租務服務查詢下一步，包括適用時嘅 NCAT 程序。
 
-**S12 · English → Cantonese:** Okay, I’ll deal with that today and keep the paperwork together.
+**S12 · English → Cantonese:** Sure, Okay, I’ll deal with that today and keep the paperwork together.
 
 **S13 · Cantonese → English:** 唔該你解釋。我會等更新，同時將啲紀錄整理好。
 
@@ -2707,7 +2707,7 @@
 
 **S6 · Cantonese → English:** 我已經準備咗保單資料表同索償通知。我要交邊部分？可唔可以網上提交，而唔使帶紙本？
 
-**S7 · English → Cantonese:** Have you got the relevant paperwork there now?
+**S7 · English → Cantonese:** Right, Have you got the relevant paperwork there now?
 
 **S8 · Cantonese → English:** 有呀，不過今朝有一樣點都搵唔到。
 
@@ -2761,7 +2761,7 @@
 
 **S2 · Cantonese → English:** 係。我見到額外住宿費係六百八十澳元，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Okay. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺下星期五之前處理。否則，我擔心索償可能延誤，或者部分損失唔獲賠償。
 
@@ -2769,7 +2769,7 @@
 
 **S6 · Cantonese → English:** 呢個而家仲係最新資料。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** Okay, Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有航空公司通知、收據同行程表，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
@@ -2781,9 +2781,9 @@
 
 **S12 · Cantonese → English:** 佢哋未核對完份紀錄之前，有冇額外費用或者其他風險要預先預算？
 
-**S13 · English → Cantonese:** I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+**S13 · English → Cantonese:** I see. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
-**S14 · Cantonese → English:** 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+**S14 · Cantonese → English:** 明白。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S15 · English → Cantonese:** Keep the written decision and your evidence in date order. Then use internal dispute resolution, then AFCA if the complaint is eligible.
 
@@ -2808,9 +2808,9 @@
 
 **S8 · English → Cantonese:** After I submit it, what’s a sensible time to ask for an update?
 
-**S9 · Cantonese → English:** 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+**S9 · Cantonese → English:** 明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
-**S10 · English → Cantonese:** Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+**S10 · English → Cantonese:** I see. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S11 · Cantonese → English:** 重要資料有變要盡快更新，並保留證明。如果對最終決定有爭議，先用保險公司投訴程序，如未解決再查詢合適外部投訴機構。
 
@@ -2860,7 +2860,7 @@
 
 **S6 · English → Cantonese:** I’ve gathered police event number, photos and bank records. Which parts should I send, and can I submit them online rather than bring paper copies?
 
-**S7 · Cantonese → English:** 你今日可唔可以畀我睇吓啲證明資料？
+**S7 · Cantonese → English:** 好，你今日可唔可以畀我睇吓啲證明資料？
 
 **S8 · English → Cantonese:** I brought most of it, but one page is at home.
 
@@ -2883,7 +2883,7 @@
 
 **S2 · Cantonese → English:** 多謝。我收到嘅資料係最終回覆信喺八月八日收到。我擔心索償可能延誤，或者部分損失唔獲賠償。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Right, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 如果到下星期五都未搞掂，會點㗎？我驚會錯過下一步。
 
@@ -2891,17 +2891,17 @@
 
 **S6 · Cantonese → English:** 我有最終回覆、保單同索償文件。呢啲夠唔夠開始處理，定係要等齊所有可能嘅證明先交？
 
-**S7 · English → Cantonese:** Have you brought the records we just discussed?
+**S7 · English → Cantonese:** Okay, Have you brought the records we just discussed?
 
-**S8 · Cantonese → English:** 主要紀錄有齊，仲有一份文件要下載返。
+**S8 · Cantonese → English:** 明白，主要紀錄有齊，仲有一份文件要下載返。
 
 **S9 · English → Cantonese:** Start with the requested material through the AFCA online complaint service. An officer can ask for more information if something relevant is missing.
 
 **S10 · Cantonese → English:** 我點樣先知佢哋真係收到啲文件，我想有個編號，之後跟進都有嘢可以講。
 
-**S11 · English → Cantonese:** I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+**S11 · English → Cantonese:** That helps. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
-**S12 · Cantonese → English:** 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+**S12 · Cantonese → English:** 咁就清楚喇。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S13 · English → Cantonese:** Ask for a status update rather than duplicate the request. If you later dispute the outcome, follow the complaint steps and information requested through the AFCA process.
 
@@ -2914,7 +2914,7 @@
 
 **S2 · English → Cantonese:** Yes. I can see that earnings were $620 before tax this reporting period, but I don’t understand how that affects what I should do next.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** I need to deal with it before the end of this month. Otherwise, I’m worried that my payment or support may be delayed or calculated incorrectly.
 
@@ -2922,11 +2922,11 @@
 
 **S6 · English → Cantonese:** Yes, that’s definitely the latest detail I have.
 
-**S7 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S7 · Cantonese → English:** 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · English → Cantonese:** I have pay slip and reporting details, but one date differs from an older record. Should I explain that difference when I submit the documents?
 
-**S9 · Cantonese → English:** 相關文件而家喺唔喺你度？
+**S9 · Cantonese → English:** 可以，相關文件而家喺唔喺你度？
 
 **S10 · English → Cantonese:** Nearly all. I can get the missing one this evening.
 
@@ -2986,9 +2986,9 @@
 
 **S7 · Cantonese → English:** 除非通知另有指示，否則用你已連結嘅 myGov 服務。上載托兒註冊同活動資料，之後保存收據或者參考編號。
 
-**S8 · English → Cantonese:** If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+**S8 · English → Cantonese:** That helps. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
-**S9 · Cantonese → English:** 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+**S9 · Cantonese → English:** 咁就清楚喇。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S10 · English → Cantonese:** If the result still looks wrong to me, is there a formal review process I can use?
 
@@ -2996,7 +2996,7 @@
 
 **S12 · English → Cantonese:** Thanks for your help. I’ll follow those steps and check the next notice carefully.
 
-**S13 · Cantonese → English:** 唔該。我會保存收據，同埋留返啲文件副本。
+**S13 · Cantonese → English:** 好，唔該。我會保存收據，同埋留返啲文件副本。
 
 ## D097 — Parenting Payment enquiry
 **Topic:** Social services
@@ -3015,7 +3015,7 @@
 
 **S7 · English → Cantonese:** Can you access those records right now?
 
-**S8 · Cantonese → English:** 大部分有呀，不過仲有一份喺屋企。
+**S8 · Cantonese → English:** 好，大部分有呀，不過仲有一份喺屋企。
 
 **S9 · English → Cantonese:** Use your linked myGov service unless your notice gives another method. Upload readable copies and keep the submission reference.
 
@@ -3036,7 +3036,7 @@
 
 **S2 · English → Cantonese:** Thanks. The detail I was given is that work has reduced to twelve hours a week. My concern is that my payment or support may be delayed or calculated incorrectly.
 
-**S3 · Cantonese → English:** 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+**S3 · Cantonese → English:** 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · English → Cantonese:** What are the consequences if I can’t resolve this by the end of this month?
 
@@ -3044,7 +3044,7 @@
 
 **S6 · English → Cantonese:** Will care details, income records and medical forms be enough to start, or should I wait until I have every possible supporting document?
 
-**S7 · Cantonese → English:** 相關文件而家喺唔喺你度？
+**S7 · Cantonese → English:** 明白。相關文件而家喺唔喺你度？
 
 **S8 · English → Cantonese:** I have the main ones. One file is on my home computer.
 
@@ -3052,9 +3052,9 @@
 
 **S10 · English → Cantonese:** Once I lodge it, how will I know it’s on their system, That date could matter if there’s a dispute later.
 
-**S11 · Cantonese → English:** 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+**S11 · Cantonese → English:** 明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
-**S12 · English → Cantonese:** Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+**S12 · English → Cantonese:** Got it. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S13 · Cantonese → English:** 應該查詢進度，而唔係重複提交。如果之後對結果有爭議，經相關服務要求解釋或者正式覆核。
 
@@ -3069,7 +3069,7 @@
 
 **S2 · Cantonese → English:** 係。我見到治療發票係二百四十五澳元，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
-**S3 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S3 · English → Cantonese:** Certainly. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · Cantonese → English:** 我需要喺通知所列日期之前處理。否則，我擔心款項或者支援可能延誤，或者計算錯。
 
@@ -3077,7 +3077,7 @@
 
 **S6 · Cantonese → English:** 係，最新訊息都係咁講。
 
-**S7 · English → Cantonese:** Could you explain what that means for my case, and what I need to do next?
+**S7 · English → Cantonese:** Thanks. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · Cantonese → English:** 我有NDIS 計劃、服務協議同發票，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 

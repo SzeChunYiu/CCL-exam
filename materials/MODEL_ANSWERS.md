@@ -285,12 +285,12 @@ Source: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件
 Model: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S11 · English → Cantonese**
-Source: If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
-Model: 如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？
+Source: Okay, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
+Model: 好，如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？
 
 **S12 · Cantonese → English**
-Source: 如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
-Model: If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.
+Source: 好，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
+Model: Okay, If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.
 
 **S13 · English → Cantonese**
 Source: One more thing: should I keep the confirmation number with the original documents?
@@ -339,12 +339,12 @@ Source: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確
 Model: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S10 · English → Cantonese**
-Source: If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
-Model: 如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？
+Source: Right, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
+Model: 明白，如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？
 
 **S11 · Cantonese → English**
-Source: 如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
-Model: If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.
+Source: 明白，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
+Model: Right, If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.
 
 **S12 · English → Cantonese**
 Source: Thanks for explaining it. I’ll wait for the update and keep the records together.
@@ -405,12 +405,12 @@ Source: 如果個申請畀人拒絕，我可唔可以先攞書面理由，再諗
 Model: If the application is refused, can I get the reasons in writing before I decide what to do next?
 
 **S13 · English → Cantonese**
-Source: If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
-Model: 如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？
+Source: Sure, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?
+Model: 可以，如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？
 
 **S14 · Cantonese → English**
-Source: 如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
-Model: If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.
+Source: 可以，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。
+Model: Sure, If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.
 
 ## D008 — Supplier credit terms
 
@@ -485,8 +485,8 @@ Source: 係。我見到一千八百九十九澳元嘅雪櫃用咗六星期就壞
 Model: Yes. I can see that the $1,899 refrigerator failed after six weeks, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Okay, Could you explain what that means for my case, and what I need to do next?
+Model: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺下星期五之前處理。否則，我擔心可能會有金錢損失，或者錯過要求補救嘅機會。
@@ -501,8 +501,8 @@ Source: 我收到最新嘅紀錄就係呢份。
 Model: That’s the newest record I’ve received.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Right, Could you explain what that means for my case, and what I need to do next?
+Model: 明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有收據、相片同維修報告，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
@@ -775,8 +775,8 @@ Source: Yes. I can see that the quote was $9,500 but the invoice is $12,300, but
 Model: 係。我見到報價九千五百澳元，但發票係一萬二千三百澳元，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Sure, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I need to deal with it before the end of this month. Otherwise, What worries me is that I could lose money or miss the chance to obtain a remedy.
@@ -791,8 +791,8 @@ Source: That’s right. I don’t have anything more recent.
 Model: 啱，我手上冇再新啲嘅資料。
 
 **S7 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Understood. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · English → Cantonese**
 Source: I have quote, invoice and messages, but one date differs from an older record. Should I explain that difference when I submit the documents?
@@ -1011,8 +1011,8 @@ Source: Thanks. The detail I was given is that fourteen weekend hours were worke
 Model: 多謝。我收到嘅資料係上一個出糧期做咗十四個週末鐘。我擔心工資或者僱傭待遇可能記錄錯。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Good, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: If the end of this month arrives and this is still unresolved, what should I expect?
@@ -1073,8 +1073,8 @@ Source: 係。我見到已經做咗三個月主管職務，但唔明呢個細節
 Model: Yes. I can see that supervisor duties have been done for three months, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Certainly. Could you explain what that means for my case, and what I need to do next?
+Model: 可以。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺通知所列日期之前處理。否則，我擔心工資或者僱傭待遇可能記錄錯。
@@ -1089,8 +1089,8 @@ Source: 係呀，我啲文件而家都仲係咁寫。
 Model: Yes, that’s still what my paperwork shows.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Thanks. Could you explain what that means for my case, and what I need to do next?
+Model: 唔該。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有職位說明同最近更表，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
@@ -1363,8 +1363,8 @@ Source: Yes. I can see that employment ended on 7 August, but I don’t understa
 Model: 係。我見到僱傭關係喺八月七日終止，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Great, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I need to deal with it before the next scheduled appointment or payment. Otherwise, I’m worried that my pay or employment entitlements may be recorded incorrectly.
@@ -1379,8 +1379,8 @@ Source: Correct. I haven’t received a newer update.
 Model: 啱，我冇再收到更新資料。
 
 **S7 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 係。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Exactly. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · English → Cantonese**
 Source: I have termination letter and employment contract, but one date differs from an older record. Should I explain that difference when I submit the documents?
@@ -1653,8 +1653,8 @@ Source: 係。我見到驗血預約係星期一朝早，但唔明呢個細節會
 Model: Yes. I can see that the blood test is booked for Monday morning, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Alright, Could you explain what that means for my case, and what I need to do next?
+Model: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺下星期五之前處理。否則，我擔心治療可能延誤，或者我要支付預料之外嘅費用。
@@ -1669,8 +1669,8 @@ Source: 啱呀，如果有改我會再話你知。
 Model: That’s right. I’ll let you know if it changes.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: I see. Could you explain what that means for my case, and what I need to do next?
+Model: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有化驗申請表同 Medicare 卡，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
@@ -1693,12 +1693,12 @@ Source: 件事仲處理緊嗰陣，有冇額外費用或者其他風險要預先
 Model: While this is still being sorted out, is there any extra fee or other risk I should budget for?
 
 **S13 · English → Cantonese**
-Source: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
-Model: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Source: Okay, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Model: 好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
 **S14 · Cantonese → English**
-Source: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
-Model: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Source: 好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Model: Okay, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S15 · English → Cantonese**
 Source: Keep the written decision and your evidence in date order. Then ask the practice manager or relevant health service to review the administrative issue.
@@ -1743,12 +1743,12 @@ Source: After the upload is complete, when should I check the progress without c
 Model: 上載完成之後，我幾時問進度先唔算太早？
 
 **S9 · Cantonese → English**
-Source: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
-Model: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Source: 好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Model: Okay, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
 **S10 · English → Cantonese**
-Source: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
-Model: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Source: Okay, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Model: 好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S11 · Cantonese → English**
 Source: 重要資料有變要盡快更新，並保留證明。如果對最終決定有爭議，要求診所經理或者相關醫療服務覆核行政問題。
@@ -1881,8 +1881,8 @@ Source: 多謝。我收到嘅資料係每次治療報價一百一十澳元。我
 Model: Thanks. The detail I was given is that each session is quoted at $110. My concern is that treatment may be delayed or I may face an unexpected cost.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: That helps. Could you explain what that means for my case, and what I need to do next?
+Model: 咁就清楚喇。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 如果我喺下星期五之前處理唔到，實際會有咩後果？
@@ -1913,12 +1913,12 @@ Source: 我點樣先知佢哋真係收到啲文件，我想有個編號，之後
 Model: How can I tell they’ve actually received the documents, I want something I can refer to if I need to follow it up.
 
 **S11 · English → Cantonese**
-Source: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
-Model: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Source: Right, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Model: 明白，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
 **S12 · Cantonese → English**
-Source: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
-Model: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Source: 明白，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Model: Right, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S13 · English → Cantonese**
 Source: Ask for a status update rather than duplicate the request. If you later dispute the outcome, ask the practice manager or relevant health service to review the administrative issue.
@@ -1943,8 +1943,8 @@ Source: Yes. I can see that the GP appointment is next Wednesday, but I don’t 
 Model: 係。我見到家庭醫生預約係下星期三，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Got it. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I need to deal with it before the end of this month. Otherwise, I’m worried that treatment may be delayed or I may face an unexpected cost.
@@ -1959,8 +1959,8 @@ Source: Correct; that’s the current amount on my side.
 Model: 啱，我呢邊而家都仲係嗰個金額。
 
 **S7 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Sounds good. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · English → Cantonese**
 Source: I have Medicare card and referral letters, but one date differs from an older record. Should I explain that difference when I submit the documents?
@@ -2079,12 +2079,12 @@ Source: 除非通知另有指示，否則用診所病人網上平台。上載轉
 Model: Unless your notice says otherwise, use the clinic patient portal. Upload referral, Medicare card and scan reports, then save the receipt or reference.
 
 **S8 · English → Cantonese**
-Source: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
-Model: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Source: Right, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Model: 明白，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
 **S9 · Cantonese → English**
-Source: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
-Model: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Source: 明白，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Model: Right, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S10 · English → Cantonese**
 Source: If I still think the decision is wrong, is there a formal review process I can use?
@@ -2203,12 +2203,12 @@ Source: Will I get anything showing the upload went through, That date could mat
 Model: 我上載完會唔會有嘢證明成功咗，如果之後有爭議，嗰個日期可能好重要㗎。
 
 **S11 · Cantonese → English**
-Source: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
-Model: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Source: 可以，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Model: Sure, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
 **S12 · English → Cantonese**
-Source: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
-Model: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Source: Sure, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Model: 可以，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S13 · Cantonese → English**
 Source: 應該查詢進度，而唔係重複提交。如果之後對結果有爭議，按正式通知所列嘅聯絡或者覆核途徑處理。
@@ -2219,8 +2219,8 @@ Source: Understood. I’ll keep the reference and remember Bridging Visa A. That
 Model: 好，明白喇。我會保留參考編號，亦會記住A 類過橋簽證。咁下次可以清楚解釋件事。
 
 **S15 · Cantonese → English**
-Source: 好，我今日就處理，啲文件亦會放埋一齊。
-Model: Okay, I’ll deal with that today and keep the paperwork together.
+Source: 好，好，我今日就處理，啲文件亦會放埋一齊。
+Model: Okay, Okay, I’ll deal with that today and keep the paperwork together.
 
 ## D039 — Bridging Visa B travel
 
@@ -2233,8 +2233,8 @@ Source: 係。我見到計劃十月份出境十日，但唔明呢個細節會點
 Model: Yes. I can see that travel is planned for ten days in October, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: All right. Could you explain what that means for my case, and what I need to do next?
+Model: 好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺通知所列日期之前處理。否則，我擔心可能誤解現有簽證權利或者條件。
@@ -2249,8 +2249,8 @@ Source: 啱，我今朝都再對過一次。
 Model: Correct. I checked it again this morning.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: That’s clear. Could you explain what that means for my case, and what I need to do next?
+Model: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有旅行日期、護照同簽證通知，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
@@ -2377,12 +2377,12 @@ Source: Unless your notice says otherwise, use your ImmiAccount. Upload new pass
 Model: 除非通知另有指示，否則用你嘅 ImmiAccount。上載新護照個人資料頁，之後保存收據或者參考編號。
 
 **S8 · Cantonese → English**
-Source: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
-Model: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Source: 可以，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Model: Sure, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
 **S9 · English → Cantonese**
-Source: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
-Model: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Source: Sure, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Model: 可以，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S10 · Cantonese → English**
 Source: 我哋預計大約四十人去個會堂。如果人數再多啲，係咪要更新個預約？
@@ -2469,8 +2469,8 @@ Source: 多謝。我收到嘅資料係星期二同星期四夜晚有時間。我
 Model: Thanks. The detail I was given is that Tuesday and Thursday evenings are available. I’m concerned I might miss an enrolment step or a suitable class option.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: No problem. Could you explain what that means for my case, and what I need to do next?
+Model: 冇問題。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 去到通知所列日期件事仲未解決，我應該預咩情況？
@@ -2531,8 +2531,8 @@ Source: Yes. I can see that the degree was completed in Hong Kong in 2022, but I
 Model: 係。我見到二零二二年喺香港完成學位，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Fair enough. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I need to deal with it before I submit my next employment or study application. Otherwise, I’m anxious that I may follow the wrong recognition pathway for work or study.
@@ -2547,8 +2547,8 @@ Source: Yes, I’m still working from that figure.
 Model: 啱呀，我而家都仲係按呢個數字。
 
 **S7 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 唔該，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Thanks, Could you explain what that means for my case, and what I need to do next?
 
 **S8 · English → Cantonese**
 Source: I have a degree certificate and academic transcript, but one date differs from an older record. Should I explain that difference when I submit the documents?
@@ -2621,12 +2621,12 @@ Source: 上載完成之後，大概幾時再問吓會比較合理？
 Model: After the upload is complete, what’s a sensible time to ask for an update?
 
 **S9 · English → Cantonese**
-Source: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
-Model: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Source: Understood. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Model: 明白。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
 **S10 · Cantonese → English**
-Source: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
-Model: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Source: 明白。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Model: Understood. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S11 · English → Cantonese**
 Source: Update any material change promptly and keep proof. If the final decision is disputed, get legal advice about the available review, legal-aid or court step.
@@ -2829,8 +2829,8 @@ Source: 係。我見到調解安排喺十月六日，但唔明呢個細節會點
 Model: Yes. I can see that the mediation is scheduled for 6 October, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Okay. Could you explain what that means for my case, and what I need to do next?
+Model: 好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺下星期五之前處理。否則，我擔心可能錯過限期，或者無意中違反正式指示。
@@ -2845,8 +2845,8 @@ Source: 我收到最新嘅紀錄就係呢份。
 Model: That’s the newest record I’ve received.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Okay, Could you explain what that means for my case, and what I need to do next?
+Model: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有預約信同育兒安排建議，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
@@ -2919,12 +2919,12 @@ Source: After I submit it, when should I check the progress without chasing them
 Model: 我交咗之後，我幾時問進度先唔算太早？
 
 **S9 · Cantonese → English**
-Source: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
-Model: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Source: 明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Model: Understood. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
 **S10 · English → Cantonese**
-Source: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
-Model: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Source: Understood. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Model: 明白。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S11 · Cantonese → English**
 Source: 重要資料有變要盡快更新，並保留證明。如果對最終決定有爭議，就可用嘅覆核、法律援助或者法院程序取得法律意見。
@@ -2973,12 +2973,12 @@ Source: Unless your notice says otherwise, use the court or service online porta
 Model: 除非通知另有指示，否則用法院或者服務機構網上平台。上載收入證明同法院文件，之後保存收據或者參考編號。
 
 **S8 · Cantonese → English**
-Source: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
-Model: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Source: 好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Model: Good, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
 **S9 · English → Cantonese**
-Source: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
-Model: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Source: Good, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Model: 好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S10 · Cantonese → English**
 Source: 假如我覺得個決定有問題，我可唔可以先要求覆核，再決定使唔使投訴呀？
@@ -3023,8 +3023,8 @@ Source: I’ve gathered court notice and medical evidence. Which parts should I 
 Model: 我已經準備咗法院通知同醫療證明。我要交邊部分？可唔可以網上提交，而唔使帶紙本？
 
 **S7 · Cantonese → English**
-Source: 你可唔可以而家用電話開返啲文件？
-Model: Can you pull up those documents on your phone?
+Source: 好，你可唔可以而家用電話開返啲文件？
+Model: Okay, Can you pull up those documents on your phone?
 
 **S8 · English → Cantonese**
 Source: I have the main ones. One file is on my home computer.
@@ -3097,12 +3097,12 @@ Source: 我正式提交之後，點知系統已經有紀錄，如果之後有爭
 Model: Once I lodge it, how will I know it’s on their system, That date could matter if there’s a dispute later.
 
 **S11 · English → Cantonese**
-Source: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
-Model: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Source: Certainly. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Model: 可以。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
 **S12 · Cantonese → English**
-Source: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
-Model: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Source: 可以。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Model: Certainly. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S13 · English → Cantonese**
 Source: Ask for a status update rather than duplicate the request. If you later dispute the outcome, use the council complaint or written-review process.
@@ -3127,8 +3127,8 @@ Source: Yes. I can see that books are needed this Saturday, but I don’t unders
 Model: 係。我見到今個星期六想借書，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Right, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I need to deal with it before the end of this month. Otherwise, My worry is that I might miss the booking or lose access to the service.
@@ -3143,8 +3143,8 @@ Source: That’s still the current information.
 Model: 呢個而家仲係最新資料。
 
 **S7 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Sure, Could you explain what that means for my case, and what I need to do next?
 
 **S8 · English → Cantonese**
 Source: I have photo ID and digital proof of address, but one date differs from an older record. Should I explain that difference when I submit the documents?
@@ -3167,12 +3167,12 @@ Source: Before they finish reviewing the record, is there a cost or practical co
 Model: 佢哋未核對完份紀錄之前，有冇啲費用或者實際影響我應該知道？
 
 **S13 · Cantonese → English**
-Source: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
-Model: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Source: 好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Model: Good, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
 **S14 · English → Cantonese**
-Source: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
-Model: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Source: Good, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Model: 好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S15 · Cantonese → English**
 Source: 將書面決定同證據按日期整理好。之後，使用市議會投訴或者書面覆核程序。
@@ -3271,12 +3271,12 @@ Source: 除非通知另有指示，否則用市議會網上服務平台。上載
 Model: Unless your notice says otherwise, use the council online services portal. Upload licence, lease and vehicle registration, then save the receipt or reference.
 
 **S8 · English → Cantonese**
-Source: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
-Model: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Source: Certainly. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Model: 可以。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
 **S9 · Cantonese → English**
-Source: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
-Model: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Source: 可以。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Model: Certainly. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S10 · English → Cantonese**
 Source: If I believe the service has made a mistake, who do I ask to look at the decision again?
@@ -3363,8 +3363,8 @@ Source: Thanks. The detail I was given is that the program begins on 19 Septembe
 Model: 多謝。我收到嘅資料係個計劃喺九月十九日開始。我擔心可能錯過預約或者用唔到服務。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Understood. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I may not get this done by the end of this month. Will that cause a problem?
@@ -3421,8 +3421,8 @@ Source: 係。我見到滋擾通常夜晚十一點後開始，但唔明呢個細
 Model: Yes. I can see that the disturbance usually starts after 11 pm, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Good, Could you explain what that means for my case, and what I need to do next?
+Model: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺通知所列日期之前處理。否則，我擔心可能錯過預約或者用唔到服務。
@@ -3437,8 +3437,8 @@ Source: 係，之後冇再收到另一封通知。
 Model: Yes. There hasn’t been another notice.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Certainly. Could you explain what that means for my case, and what I need to do next?
+Model: 可以。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有日期、時間同日誌紀錄，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
@@ -3581,8 +3581,8 @@ Source: Ask for written reasons and keep a dated record. After that, ask the sch
 Model: 要求書面理由，並保留有日期嘅紀錄。之後，要求學校解釋入學決定或者相關教育部門途徑。
 
 **S12 · Cantonese → English**
-Source: 好，我今日就處理，啲文件亦會放埋一齊。
-Model: Okay, I’ll deal with that today and keep the paperwork together.
+Source: 明白，好，我今日就處理，啲文件亦會放埋一齊。
+Model: Right, Okay, I’ll deal with that today and keep the paperwork together.
 
 **S13 · English → Cantonese**
 Source: Good, I’ll do that. If anything changes, I’ll let the service know straight away.
@@ -3657,8 +3657,8 @@ Source: 多謝。我收到嘅資料係因病缺課三日。我擔心可能錯過
 Model: Thanks. The detail I was given is that three days were missed because of illness. I’m nervous that I might miss enrolment or become liable for an avoidable fee.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Thanks. Could you explain what that means for my case, and what I need to do next?
+Model: 唔該。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 去到通知所列日期件事仲未解決，我應該預咩情況？
@@ -3677,8 +3677,8 @@ Source: Can you access those records right now?
 Model: 你而家開唔開到嗰啲紀錄？
 
 **S8 · Cantonese → English**
-Source: 主要紀錄有齊，仲有一份文件要下載返。
-Model: I have the main records. One document still needs to be downloaded.
+Source: 好，主要紀錄有齊，仲有一份文件要下載返。
+Model: Okay, I have the main records. One document still needs to be downloaded.
 
 **S9 · English → Cantonese**
 Source: Start with the requested material through the school parent portal. An officer can ask for more information if something relevant is missing.
@@ -3719,8 +3719,8 @@ Source: Yes. I can see that care is needed from 7 September, four days a week, b
 Model: 係。我見到九月七日起每星期需要四日托兒，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Great, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I need to deal with it before the next scheduled appointment or payment. Otherwise, I’m anxious that I may miss enrolment or become liable for an avoidable fee.
@@ -3735,8 +3735,8 @@ Source: Yes, that’s the latest one I have.
 Model: 係呀，我手上最新就係呢份。
 
 **S7 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 係。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Exactly. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · English → Cantonese**
 Source: I have enrolment form and family details, but one date differs from an older record. Should I explain that difference when I submit the documents?
@@ -3801,12 +3801,12 @@ Source: 我交咗之後，我幾時問進度先唔算太早？
 Model: After I submit it, when should I check the progress without chasing them too early?
 
 **S9 · English → Cantonese**
-Source: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
-Model: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Source: Thanks. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Model: 唔該。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
 **S10 · Cantonese → English**
-Source: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
-Model: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Source: 唔該。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Model: Thanks. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S11 · English → Cantonese**
 Source: Update any material change promptly and keep proof. If the final decision is disputed, use the education provider’s formal review or complaint process.
@@ -3847,12 +3847,12 @@ Source: 除非通知另有指示，否則用學生網上平台。上載取錄信
 Model: Unless your notice says otherwise, use the student online portal. Upload offer letter and fee statement, then save the receipt or reference.
 
 **S8 · English → Cantonese**
-Source: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
-Model: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Source: Thanks. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Model: 唔該。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
 **S9 · Cantonese → English**
-Source: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
-Model: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Source: 唔該。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Model: Thanks. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S10 · English → Cantonese**
 Source: Suppose the decision doesn’t seem right, who do I ask to look at the decision again?
@@ -3897,8 +3897,8 @@ Source: 我已經準備咗註冊紀錄同退科申請。我要交邊部分？可
 Model: I’ve gathered enrolment record and withdrawal request. Which parts should I send, and can I submit them online rather than bring paper copies?
 
 **S7 · English → Cantonese**
-Source: Have you got the relevant paperwork there now?
-Model: 相關文件而家喺唔喺你度？
+Source: Okay, Have you got the relevant paperwork there now?
+Model: 好，相關文件而家喺唔喺你度？
 
 **S8 · Cantonese → English**
 Source: 你頭先講嗰啲差唔多有齊，淨係仲有一份喺屋企。
@@ -3939,8 +3939,8 @@ Source: Thanks. The detail I was given is that orientation is on 11 September. M
 Model: 多謝。我收到嘅資料係迎新安排喺九月十一日。我擔心可能錯過註冊，或者要承擔本來可以避免嘅費用。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Alright, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: What are the consequences if I can’t resolve this by the next scheduled appointment or payment?
@@ -4001,8 +4001,8 @@ Source: 係。我見到琴晚有一筆二百八十六個四毫澳元收費，但
 Model: Yes. I can see that the charge is $286.40 from last night, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: I see. Could you explain what that means for my case, and what I need to do next?
+Model: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺下星期五之前處理。否則，我擔心可能有金錢損失，或者要畀額外費用同利息。
@@ -4017,8 +4017,8 @@ Source: 係呀，我嚟之前都有再確認。
 Model: Yes. I checked before I came in.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: That helps. Could you explain what that means for my case, and what I need to do next?
+Model: 咁就清楚喇。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有月結單同交易截圖，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
@@ -4041,12 +4041,12 @@ Source: 佢哋未核對完份紀錄之前，有冇額外費用或者其他風險
 Model: Before they finish reviewing the record, is there any extra fee or other risk I should budget for?
 
 **S13 · English → Cantonese**
-Source: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
-Model: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Source: Great, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Model: 好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
 **S14 · Cantonese → English**
-Source: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
-Model: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Source: 好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Model: Great, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S15 · English → Cantonese**
 Source: Keep the written decision and your evidence in date order. Then use the bank’s internal dispute process, then AFCA if the matter is eligible.
@@ -4145,12 +4145,12 @@ Source: Unless your notice says otherwise, use secure online banking. Upload pay
 Model: 除非通知另有指示，否則用安全網上銀行。上載付款收據同賬單，之後保存收據或者參考編號。
 
 **S8 · Cantonese → English**
-Source: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
-Model: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Source: 係。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Model: Exactly. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
 **S9 · English → Cantonese**
-Source: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
-Model: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Source: Exactly. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Model: 係。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S10 · Cantonese → English**
 Source: 嗰筆卡交易仲顯示 pending。我應該而家提出爭議，定係等佢正式過數先？
@@ -4237,8 +4237,8 @@ Source: 多謝。我收到嘅資料係對沖戶口大約有三萬五千澳元。
 Model: Thanks. The detail I was given is that the offset balance is about $35,000. My concern is that money may be lost or extra fees or interest may apply.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Got it. Could you explain what that means for my case, and what I need to do next?
+Model: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我可能趕唔切下星期五之前搞掂，咁會唔會有問題？
@@ -4299,8 +4299,8 @@ Source: Yes. I can see that the requested redraw amount is $6,000, but I don’t
 Model: 係。我見到想提取嘅金額係六千澳元，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Sounds good. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I need to deal with it before the end of this month. Otherwise, I’m worried that money may be lost or extra fees or interest may apply.
@@ -4315,8 +4315,8 @@ Source: Yes. The information is still current.
 Model: 啱，呢個資料而家仲有效。
 
 **S7 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: All right. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · English → Cantonese**
 Source: I have loan account and redraw conditions, but one date differs from an older record. Should I explain that difference when I submit the documents?
@@ -4339,12 +4339,12 @@ Source: Until they make a decision, is there a cost or practical consequence I s
 Model: 等佢哋作決定之前，有冇啲費用或者實際影響我應該知道？
 
 **S13 · Cantonese → English**
-Source: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
-Model: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Source: 好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Model: Great, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
 **S14 · English → Cantonese**
-Source: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
-Model: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Source: Great, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Model: 好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S15 · Cantonese → English**
 Source: 將書面決定同證據按日期整理好。之後，先用銀行內部爭議程序，如個案合資格再向 AFCA 跟進。
@@ -4485,8 +4485,8 @@ Source: 我已經準備咗工作證明同租屋推薦資料。我要交邊部分
 Model: I’ve gathered employment evidence and rental references. Which parts should I send, and can I submit them online rather than bring paper copies?
 
 **S7 · English → Cantonese**
-Source: Can you pull up those documents on your phone?
-Model: 你可唔可以而家用電話開返啲文件？
+Source: Right, Can you pull up those documents on your phone?
+Model: 明白，你可唔可以而家用電話開返啲文件？
 
 **S8 · Cantonese → English**
 Source: 有，大部分都喺度，仲要攞多一份文件。
@@ -4559,12 +4559,12 @@ Source: Once I lodge it, how will I know it’s on their system, That date could
 Model: 我正式提交之後，點知系統已經有紀錄，如果之後有爭議，嗰個日期可能好重要㗎。
 
 **S11 · Cantonese → English**
-Source: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
-Model: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Source: 係。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Model: Exactly. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
 **S12 · English → Cantonese**
-Source: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
-Model: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Source: Exactly. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Model: 係。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S13 · Cantonese → English**
 Source: 應該查詢進度，而唔係重複提交。如果之後對結果有爭議，有需要時使用所在州嘅租務服務或者審裁程序。
@@ -4575,8 +4575,8 @@ Source: Understood. I’ll keep the reference and remember condition report. Tha
 Model: 好，明白喇。我會保留參考編號，亦會記住物業狀況報告。咁下次可以清楚解釋件事。
 
 **S15 · Cantonese → English**
-Source: 好，而家我知點做喇。我交出去嘅資料都會留返副本。
-Model: All right, I know what to do now. I’ll keep a copy of whatever I send.
+Source: 好，好，而家我知點做喇。我交出去嘅資料都會留返副本。
+Model: Okay, All right, I know what to do now. I’ll keep a copy of whatever I send.
 
 ## D079 — Urgent repairs
 
@@ -4589,8 +4589,8 @@ Source: 係。我見到由琴晚開始一直冇熱水，但唔明呢個細節會
 Model: Yes. I can see that there has been no hot water since last night, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: That’s clear. Could you explain what that means for my case, and what I need to do next?
+Model: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺通知所列日期之前處理。否則，我擔心可能要多交租，或者錯過重要租務限期。
@@ -4605,8 +4605,8 @@ Source: 係呀，之後一直冇改過。
 Model: That’s right; nothing has changed since then.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: No problem. Could you explain what that means for my case, and what I need to do next?
+Model: 冇問題。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有相片同書面維修要求，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
@@ -4725,12 +4725,12 @@ Source: Unless your notice says otherwise, use the tenancy online portal. Upload
 Model: 除非通知另有指示，否則用租務網上平台。上載租約同準備發出嘅書面通知，之後保存收據或者參考編號。
 
 **S8 · Cantonese → English**
-Source: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
-Model: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Source: 好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Model: Alright, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
 
 **S9 · English → Cantonese**
-Source: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
-Model: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Source: Alright, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Model: 好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
 
 **S10 · Cantonese → English**
 Source: 如果個結果我點睇都覺得唔對路，我應該搵邊個再睇一次個決定？
@@ -4745,8 +4745,8 @@ Source: 明白。我會留返確認紀錄，有需要先再跟進。
 Model: Understood. I’ll keep the confirmation and follow up only if I need to.
 
 **S13 · English → Cantonese**
-Source: Good, I’ll do that. If anything changes, I’ll let the service know straight away.
-Model: 好呀，我會照做。如果有任何改動，我會即刻通知返個機構。
+Source: Okay, Good, I’ll do that. If anything changes, I’ll let the service know straight away.
+Model: 好，好呀，我會照做。如果有任何改動，我會即刻通知返個機構。
 
 ## D082 — Breaking a fixed-term lease
 
@@ -4875,8 +4875,8 @@ Source: Yes. I can see that the inspection is booked for Tuesday at 10 am, but I
 Model: 係。我見到檢查安排喺星期二朝早十點，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Fair enough. Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I need to deal with it before the next scheduled appointment or payment. Otherwise, I’m a bit worried I’ll pay extra rent or miss an important tenancy deadline.
@@ -4891,8 +4891,8 @@ Source: That’s still the current information.
 Model: 呢個而家仲係最新資料。
 
 **S7 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 唔該，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Thanks, Could you explain what that means for my case, and what I need to do next?
 
 **S8 · English → Cantonese**
 Source: I have inspection notice and work roster, but one date differs from an older record. Should I explain that difference when I submit the documents?
@@ -5019,12 +5019,12 @@ Source: 除非通知另有指示，否則用相關新州租務或者審裁網上
 Model: Unless your notice says otherwise, use the relevant NSW tenancy or tribunal online service. Upload lease, repair requests and photos, then save the receipt or reference.
 
 **S8 · English → Cantonese**
-Source: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
-Model: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Source: Alright, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Model: 好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
 **S9 · Cantonese → English**
-Source: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
-Model: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Source: 好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Model: Alright, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S10 · English → Cantonese**
 Source: Suppose the decision doesn’t seem right, can I ask for a review before making a complaint?
@@ -5035,8 +5035,8 @@ Source: 要求書面理由，並保留有日期嘅紀錄。之後，向相關租
 Model: Ask for written reasons and keep a dated record. After that, ask the relevant tenancy service about the next step, including NCAT where appropriate.
 
 **S12 · English → Cantonese**
-Source: Okay, I’ll deal with that today and keep the paperwork together.
-Model: 好，我今日就處理，啲文件亦會放埋一齊。
+Source: Sure, Okay, I’ll deal with that today and keep the paperwork together.
+Model: 可以，好，我今日就處理，啲文件亦會放埋一齊。
 
 **S13 · Cantonese → English**
 Source: 唔該你解釋。我會等更新，同時將啲紀錄整理好。
@@ -5069,8 +5069,8 @@ Source: 我已經準備咗保單資料表同索償通知。我要交邊部分？
 Model: I’ve gathered policy schedule and claim notice. Which parts should I send, and can I submit them online rather than bring paper copies?
 
 **S7 · English → Cantonese**
-Source: Have you got the relevant paperwork there now?
-Model: 相關文件而家喺唔喺你度？
+Source: Right, Have you got the relevant paperwork there now?
+Model: 明白，相關文件而家喺唔喺你度？
 
 **S8 · Cantonese → English**
 Source: 有呀，不過今朝有一樣點都搵唔到。
@@ -5169,8 +5169,8 @@ Source: 係。我見到額外住宿費係六百八十澳元，但唔明呢個細
 Model: Yes. I can see that extra accommodation cost $680, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Okay. Could you explain what that means for my case, and what I need to do next?
+Model: 好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺下星期五之前處理。否則，我擔心索償可能延誤，或者部分損失唔獲賠償。
@@ -5185,8 +5185,8 @@ Source: 呢個而家仲係最新資料。
 Model: That’s still the current information.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Okay, Could you explain what that means for my case, and what I need to do next?
+Model: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有航空公司通知、收據同行程表，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
@@ -5209,12 +5209,12 @@ Source: 佢哋未核對完份紀錄之前，有冇額外費用或者其他風險
 Model: Before they finish reviewing the record, is there any extra fee or other risk I should budget for?
 
 **S13 · English → Cantonese**
-Source: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
-Model: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Source: I see. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Model: 明白。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
 **S14 · Cantonese → English**
-Source: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
-Model: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Source: 明白。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Model: I see. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S15 · English → Cantonese**
 Source: Keep the written decision and your evidence in date order. Then use internal dispute resolution, then AFCA if the complaint is eligible.
@@ -5259,12 +5259,12 @@ Source: After I submit it, what’s a sensible time to ask for an update?
 Model: 我交咗之後，大概幾時再問吓會比較合理？
 
 **S9 · Cantonese → English**
-Source: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
-Model: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Source: 明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Model: I see. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
 **S10 · English → Cantonese**
-Source: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
-Model: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Source: I see. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Model: 明白。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S11 · Cantonese → English**
 Source: 重要資料有變要盡快更新，並保留證明。如果對最終決定有爭議，先用保險公司投訴程序，如未解決再查詢合適外部投訴機構。
@@ -5355,8 +5355,8 @@ Source: I’ve gathered police event number, photos and bank records. Which part
 Model: 我已經準備咗警方事故編號、相片同銀行紀錄。我要交邊部分？可唔可以網上提交，而唔使帶紙本？
 
 **S7 · Cantonese → English**
-Source: 你今日可唔可以畀我睇吓啲證明資料？
-Model: Can you show me the supporting records today?
+Source: 好，你今日可唔可以畀我睇吓啲證明資料？
+Model: Okay, Can you show me the supporting records today?
 
 **S8 · English → Cantonese**
 Source: I brought most of it, but one page is at home.
@@ -5397,8 +5397,8 @@ Source: 多謝。我收到嘅資料係最終回覆信喺八月八日收到。我
 Model: Thanks. The detail I was given is that the final response letter arrived on 8 August. My concern is that the claim may be delayed or part of the loss may not be paid.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Right, Could you explain what that means for my case, and what I need to do next?
+Model: 明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 如果到下星期五都未搞掂，會點㗎？我驚會錯過下一步。
@@ -5413,12 +5413,12 @@ Source: 我有最終回覆、保單同索償文件。呢啲夠唔夠開始處理
 Model: Will final response, policy and claim documents be enough to start, or should I wait until I have every possible supporting document?
 
 **S7 · English → Cantonese**
-Source: Have you brought the records we just discussed?
-Model: 頭先講嗰啲紀錄你有冇帶嚟？
+Source: Okay, Have you brought the records we just discussed?
+Model: 好，頭先講嗰啲紀錄你有冇帶嚟？
 
 **S8 · Cantonese → English**
-Source: 主要紀錄有齊，仲有一份文件要下載返。
-Model: I have the main records. One document still needs to be downloaded.
+Source: 明白，主要紀錄有齊，仲有一份文件要下載返。
+Model: Right, I have the main records. One document still needs to be downloaded.
 
 **S9 · English → Cantonese**
 Source: Start with the requested material through the AFCA online complaint service. An officer can ask for more information if something relevant is missing.
@@ -5429,12 +5429,12 @@ Source: 我點樣先知佢哋真係收到啲文件，我想有個編號，之後
 Model: How can I tell they’ve actually received the documents, I want something I can refer to if I need to follow it up.
 
 **S11 · English → Cantonese**
-Source: I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
-Model: 我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
+Source: That helps. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?
+Model: 咁就清楚喇。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？
 
 **S12 · Cantonese → English**
-Source: 先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
-Model: Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
+Source: 咁就清楚喇。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。
+Model: That helps. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.
 
 **S13 · English → Cantonese**
 Source: Ask for a status update rather than duplicate the request. If you later dispute the outcome, follow the complaint steps and information requested through the AFCA process.
@@ -5455,8 +5455,8 @@ Source: Yes. I can see that earnings were $620 before tax this reporting period,
 Model: 係。我見到今個申報期稅前收入六百二十澳元，但唔明呢個細節會點影響我下一步要做嘅嘢。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Sure, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: I need to deal with it before the end of this month. Otherwise, I’m worried that my payment or support may be delayed or calculated incorrectly.
@@ -5471,16 +5471,16 @@ Source: Yes, that’s definitely the latest detail I have.
 Model: 係，呢個肯定係我手上最新嗰份資料。
 
 **S7 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Understood. Could you explain what that means for my case, and what I need to do next?
 
 **S8 · English → Cantonese**
 Source: I have pay slip and reporting details, but one date differs from an older record. Should I explain that difference when I submit the documents?
 Model: 我有糧單同申報資料，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？
 
 **S9 · Cantonese → English**
-Source: 相關文件而家喺唔喺你度？
-Model: Have you got the relevant paperwork there now?
+Source: 可以，相關文件而家喺唔喺你度？
+Model: Sure, Have you got the relevant paperwork there now?
 
 **S10 · English → Cantonese**
 Source: Nearly all. I can get the missing one this evening.
@@ -5591,12 +5591,12 @@ Source: 除非通知另有指示，否則用你已連結嘅 myGov 服務。上�
 Model: Unless your notice says otherwise, use your linked myGov service. Upload childcare enrolment and activity details, then save the receipt or reference.
 
 **S8 · English → Cantonese**
-Source: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
-Model: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Source: That helps. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Model: 咁就清楚喇。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
 
 **S9 · Cantonese → English**
-Source: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
-Model: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Source: 咁就清楚喇。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Model: That helps. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
 
 **S10 · English → Cantonese**
 Source: If the result still looks wrong to me, is there a formal review process I can use?
@@ -5611,8 +5611,8 @@ Source: Thanks for your help. I’ll follow those steps and check the next notic
 Model: 唔該晒。我會照住啲步驟做，之後收到新通知亦會睇清楚。
 
 **S13 · Cantonese → English**
-Source: 唔該。我會保存收據，同埋留返啲文件副本。
-Model: Thanks. I’ll make sure I keep the receipt and a copy of the documents.
+Source: 好，唔該。我會保存收據，同埋留返啲文件副本。
+Model: Okay, Thanks. I’ll make sure I keep the receipt and a copy of the documents.
 
 ## D097 — Parenting Payment enquiry
 
@@ -5645,8 +5645,8 @@ Source: Can you access those records right now?
 Model: 你而家開唔開到嗰啲紀錄？
 
 **S8 · Cantonese → English**
-Source: 大部分有呀，不過仲有一份喺屋企。
-Model: I have most of them; one is still at home.
+Source: 好，大部分有呀，不過仲有一份喺屋企。
+Model: Okay, I have most of them; one is still at home.
 
 **S9 · English → Cantonese**
 Source: Use your linked myGov service unless your notice gives another method. Upload readable copies and keep the submission reference.
@@ -5683,8 +5683,8 @@ Source: Thanks. The detail I was given is that work has reduced to twelve hours 
 Model: 多謝。我收到嘅資料係工作減到每星期十二個鐘。我擔心款項或者支援可能延誤，或者計算錯。
 
 **S3 · Cantonese → English**
-Source: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
-Model: Could you explain what that means for my case, and what I need to do next?
+Source: 好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Model: Good, Could you explain what that means for my case, and what I need to do next?
 
 **S4 · English → Cantonese**
 Source: What are the consequences if I can’t resolve this by the end of this month?
@@ -5699,8 +5699,8 @@ Source: Will care details, income records and medical forms be enough to start, 
 Model: 我有照顧資料、收入紀錄同醫療表格。呢啲夠唔夠開始處理，定係要等齊所有可能嘅證明先交？
 
 **S7 · Cantonese → English**
-Source: 相關文件而家喺唔喺你度？
-Model: Have you got the relevant paperwork there now?
+Source: 明白。相關文件而家喺唔喺你度？
+Model: Understood. Have you got the relevant paperwork there now?
 
 **S8 · English → Cantonese**
 Source: I have the main ones. One file is on my home computer.
@@ -5715,12 +5715,12 @@ Source: Once I lodge it, how will I know it’s on their system, That date could
 Model: 我正式提交之後，點知系統已經有紀錄，如果之後有爭議，嗰個日期可能好重要㗎。
 
 **S11 · Cantonese → English**
-Source: 如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
-Model: If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
+Source: 明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？
+Model: Got it. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?
 
 **S12 · English → Cantonese**
-Source: Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
-Model: 重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
+Source: Got it. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.
+Model: 明白。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。
 
 **S13 · Cantonese → English**
 Source: 應該查詢進度，而唔係重複提交。如果之後對結果有爭議，經相關服務要求解釋或者正式覆核。
@@ -5745,8 +5745,8 @@ Source: 係。我見到治療發票係二百四十五澳元，但唔明呢個細
 Model: Yes. I can see that the therapy invoice is $245, but I don’t understand how that affects what I should do next.
 
 **S3 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Certainly. Could you explain what that means for my case, and what I need to do next?
+Model: 可以。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S4 · Cantonese → English**
 Source: 我需要喺通知所列日期之前處理。否則，我擔心款項或者支援可能延誤，或者計算錯。
@@ -5761,8 +5761,8 @@ Source: 係，最新訊息都係咁講。
 Model: Yes, the latest message says the same thing.
 
 **S7 · English → Cantonese**
-Source: Could you explain what that means for my case, and what I need to do next?
-Model: 你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
+Source: Thanks. Could you explain what that means for my case, and what I need to do next?
+Model: 唔該。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？
 
 **S8 · Cantonese → English**
 Source: 我有NDIS 計劃、服務協議同發票，但其中一個日期同舊紀錄唔同。提交文件時應唔應該解釋呢個差異？

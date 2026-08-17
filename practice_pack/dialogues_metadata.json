@@ -738,21 +738,21 @@
         "n": 11,
         "role": "P",
         "source_lang": "en",
-        "source": "If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
-        "model": "如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
-        "en": "If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
-        "yue": "如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
-        "wc": 19
+        "source": "Okay, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
+        "model": "好，如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
+        "en": "Okay, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
+        "yue": "好，如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
+        "wc": 20
       },
       {
         "n": 12,
         "role": "C",
         "source_lang": "yue",
-        "source": "如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
-        "model": "If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
-        "en": "If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
-        "yue": "如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
-        "wc": 21
+        "source": "好，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
+        "model": "Okay, If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
+        "en": "Okay, If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
+        "yue": "好，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
+        "wc": 22
       },
       {
         "n": 13,
@@ -775,7 +775,7 @@
         "wc": 21
       }
     ],
-    "total": 295,
+    "total": 297,
     "maxseg": 33,
     "difficulty": "Easy"
   },
@@ -880,21 +880,21 @@
         "n": 10,
         "role": "C",
         "source_lang": "en",
-        "source": "If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
-        "model": "如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
-        "en": "If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
-        "yue": "如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
-        "wc": 19
+        "source": "Right, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
+        "model": "明白，如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
+        "en": "Right, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
+        "yue": "明白，如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
+        "wc": 20
       },
       {
         "n": 11,
         "role": "P",
         "source_lang": "yue",
-        "source": "如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
-        "model": "If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
-        "en": "If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
-        "yue": "如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
-        "wc": 21
+        "source": "明白，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
+        "model": "Right, If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
+        "en": "Right, If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
+        "yue": "明白，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
+        "wc": 22
       },
       {
         "n": 12,
@@ -917,7 +917,7 @@
         "n": 13
       }
     ],
-    "total": 291,
+    "total": 293,
     "maxseg": 35,
     "difficulty": "Hard"
   },
@@ -1052,24 +1052,24 @@
         "n": 13,
         "role": "P",
         "source_lang": "en",
-        "source": "If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
-        "model": "如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
-        "en": "If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
-        "yue": "如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
-        "wc": 19
+        "source": "Sure, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
+        "model": "可以，如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
+        "en": "Sure, If the ABN is approved after I send my first invoice, will I need to issue that invoice again?",
+        "yue": "可以，如果我開咗第一張單之後 ABN 先批落嚟，我係咪要重新開過張單？",
+        "wc": 20
       },
       {
         "n": 14,
         "role": "C",
         "source_lang": "yue",
-        "source": "如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
-        "model": "If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
-        "en": "If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
-        "yue": "如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
-        "wc": 21
+        "source": "可以，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
+        "model": "Sure, If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
+        "en": "Sure, If the tax details on the invoice change, update the customer in writing and keep the corrected record with your accounts.",
+        "yue": "可以，如果張單上面嘅稅務資料有改動，就書面通知客人，並將更正後嘅紀錄同帳目一齊保存。",
+        "wc": 22
       }
     ],
-    "total": 286,
+    "total": 288,
     "maxseg": 29,
     "difficulty": "Easy"
   },
@@ -1266,11 +1266,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Okay, Could you explain what that means for my case, and what I need to do next?",
+        "model": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Okay, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -1306,11 +1306,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Right, Could you explain what that means for my case, and what I need to do next?",
+        "model": "明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Right, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -1403,7 +1403,7 @@
         "wc": 18
       }
     ],
-    "total": 290,
+    "total": 292,
     "maxseg": 29,
     "difficulty": "Medium"
   },
@@ -2026,11 +2026,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Sure, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Sure, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -2066,11 +2066,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Understood. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Understood. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -2163,7 +2163,7 @@
         "wc": 18
       }
     ],
-    "total": 298,
+    "total": 300,
     "maxseg": 30,
     "difficulty": "Hard"
   },
@@ -2644,11 +2644,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Good, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Good, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -2771,7 +2771,7 @@
         "n": 15
       }
     ],
-    "total": 298,
+    "total": 299,
     "maxseg": 30,
     "difficulty": "Medium"
   },
@@ -2806,11 +2806,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Certainly. Could you explain what that means for my case, and what I need to do next?",
+        "model": "可以。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Certainly. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "可以。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -2846,11 +2846,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Thanks. Could you explain what that means for my case, and what I need to do next?",
+        "model": "唔該。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Thanks. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "唔該。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -2943,7 +2943,7 @@
         "wc": 19
       }
     ],
-    "total": 294,
+    "total": 296,
     "maxseg": 28,
     "difficulty": "Hard"
   },
@@ -3566,11 +3566,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Great, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Great, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -3606,11 +3606,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "係。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Exactly. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Exactly. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "係。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -3703,7 +3703,7 @@
         "wc": 19
       }
     ],
-    "total": 289,
+    "total": 291,
     "maxseg": 28,
     "difficulty": "Medium"
   },
@@ -4326,11 +4326,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Alright, Could you explain what that means for my case, and what I need to do next?",
+        "model": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Alright, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -4366,11 +4366,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "I see. Could you explain what that means for my case, and what I need to do next?",
+        "model": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "I see. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 8,
@@ -4426,21 +4426,21 @@
         "n": 13,
         "role": "P",
         "source_lang": "en",
-        "source": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "model": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "Okay, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "model": "好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "en": "Okay, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 14,
         "role": "C",
         "source_lang": "yue",
-        "source": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "model": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "model": "Okay, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "en": "Okay, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 15,
@@ -4463,7 +4463,7 @@
         "wc": 18
       }
     ],
-    "total": 296,
+    "total": 301,
     "maxseg": 29,
     "difficulty": "Hard"
   },
@@ -4558,21 +4558,21 @@
         "n": 9,
         "role": "P",
         "source_lang": "yue",
-        "source": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "model": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "model": "Okay, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "en": "Okay, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 10,
         "role": "C",
         "source_lang": "en",
-        "source": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "model": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "Okay, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "model": "好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "en": "Okay, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 11,
@@ -4595,7 +4595,7 @@
         "wc": 23
       }
     ],
-    "total": 275,
+    "total": 277,
     "maxseg": 32,
     "difficulty": "Easy"
   },
@@ -4924,11 +4924,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "That helps. Could you explain what that means for my case, and what I need to do next?",
+        "model": "咁就清楚喇。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "That helps. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "咁就清楚喇。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -5004,21 +5004,21 @@
         "n": 11,
         "role": "P",
         "source_lang": "en",
-        "source": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "model": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "Right, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "model": "明白，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "en": "Right, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "明白，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 12,
         "role": "C",
         "source_lang": "yue",
-        "source": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "model": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "明白，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "model": "Right, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "en": "Right, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "明白，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 13,
@@ -5051,7 +5051,7 @@
         "n": 15
       }
     ],
-    "total": 295,
+    "total": 299,
     "maxseg": 29,
     "difficulty": "Medium"
   },
@@ -5086,11 +5086,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Got it. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Got it. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -5126,11 +5126,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Sounds good. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Sounds good. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 8,
@@ -5223,7 +5223,7 @@
         "wc": 20
       }
     ],
-    "total": 296,
+    "total": 300,
     "maxseg": 29,
     "difficulty": "Hard"
   },
@@ -5440,21 +5440,21 @@
         "n": 8,
         "role": "C",
         "source_lang": "en",
-        "source": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "model": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "Right, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "model": "明白，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "en": "Right, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "明白，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 9,
         "role": "P",
         "source_lang": "yue",
-        "source": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "model": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "明白，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "model": "Right, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "en": "Right, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "明白，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 10,
@@ -5497,7 +5497,7 @@
         "n": 13
       }
     ],
-    "total": 292,
+    "total": 294,
     "maxseg": 31,
     "difficulty": "Medium"
   },
@@ -5764,21 +5764,21 @@
         "n": 11,
         "role": "P",
         "source_lang": "yue",
-        "source": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "model": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "可以，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "model": "Sure, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "en": "Sure, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "可以，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 12,
         "role": "C",
         "source_lang": "en",
-        "source": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "model": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "Sure, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "model": "可以，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "en": "Sure, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "可以，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 13,
@@ -5803,15 +5803,15 @@
       {
         "role": "P",
         "source_lang": "yue",
-        "en": "Okay, I’ll deal with that today and keep the paperwork together.",
-        "yue": "好，我今日就處理，啲文件亦會放埋一齊。",
-        "source": "好，我今日就處理，啲文件亦會放埋一齊。",
-        "model": "Okay, I’ll deal with that today and keep the paperwork together.",
-        "wc": 11,
+        "en": "Okay, Okay, I’ll deal with that today and keep the paperwork together.",
+        "yue": "好，好，我今日就處理，啲文件亦會放埋一齊。",
+        "source": "好，好，我今日就處理，啲文件亦會放埋一齊。",
+        "model": "Okay, Okay, I’ll deal with that today and keep the paperwork together.",
+        "wc": 12,
         "n": 15
       }
     ],
-    "total": 302,
+    "total": 305,
     "maxseg": 35,
     "difficulty": "Hard"
   },
@@ -5846,11 +5846,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "All right. Could you explain what that means for my case, and what I need to do next?",
+        "model": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "All right. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -5886,11 +5886,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "That’s clear. Could you explain what that means for my case, and what I need to do next?",
+        "model": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "That’s clear. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 8,
@@ -5983,7 +5983,7 @@
         "wc": 19
       }
     ],
-    "total": 295,
+    "total": 299,
     "maxseg": 28,
     "difficulty": "Hard"
   },
@@ -6220,21 +6220,21 @@
         "n": 8,
         "role": "C",
         "source_lang": "yue",
-        "source": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "model": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "可以，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "model": "Sure, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "en": "Sure, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "可以，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 9,
         "role": "P",
         "source_lang": "en",
-        "source": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "model": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "Sure, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "model": "可以，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "en": "Sure, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "可以，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 10,
@@ -6277,7 +6277,7 @@
         "n": 13
       }
     ],
-    "total": 275,
+    "total": 277,
     "maxseg": 34,
     "difficulty": "Medium"
   },
@@ -6464,11 +6464,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "No problem. Could you explain what that means for my case, and what I need to do next?",
+        "model": "冇問題。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "No problem. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "冇問題。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -6591,7 +6591,7 @@
         "n": 15
       }
     ],
-    "total": 296,
+    "total": 298,
     "maxseg": 31,
     "difficulty": "Hard"
   },
@@ -6626,11 +6626,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Fair enough. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Fair enough. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -6666,11 +6666,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "唔該，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Thanks, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Thanks, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "唔該，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -6763,7 +6763,7 @@
         "wc": 18
       }
     ],
-    "total": 301,
+    "total": 304,
     "maxseg": 30,
     "difficulty": "Hard"
   },
@@ -6858,21 +6858,21 @@
         "n": 9,
         "role": "P",
         "source_lang": "en",
-        "source": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "model": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "Understood. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "model": "明白。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "en": "Understood. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "明白。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 10,
         "role": "C",
         "source_lang": "yue",
-        "source": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "model": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "明白。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "model": "Understood. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "en": "Understood. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "明白。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 11,
@@ -6915,7 +6915,7 @@
         "wc": 18
       }
     ],
-    "total": 305,
+    "total": 307,
     "maxseg": 33,
     "difficulty": "Easy"
   },
@@ -7406,11 +7406,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Okay. Could you explain what that means for my case, and what I need to do next?",
+        "model": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Okay. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -7446,11 +7446,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Okay, Could you explain what that means for my case, and what I need to do next?",
+        "model": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Okay, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -7543,7 +7543,7 @@
         "wc": 19
       }
     ],
-    "total": 295,
+    "total": 297,
     "maxseg": 28,
     "difficulty": "Hard"
   },
@@ -7638,21 +7638,21 @@
         "n": 9,
         "role": "P",
         "source_lang": "yue",
-        "source": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "model": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "model": "Understood. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "en": "Understood. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 10,
         "role": "C",
         "source_lang": "en",
-        "source": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "model": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "Understood. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "model": "明白。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "en": "Understood. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "明白。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 11,
@@ -7695,7 +7695,7 @@
         "wc": 18
       }
     ],
-    "total": 305,
+    "total": 307,
     "maxseg": 29,
     "difficulty": "Easy"
   },
@@ -7780,21 +7780,21 @@
         "n": 8,
         "role": "C",
         "source_lang": "yue",
-        "source": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "model": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "model": "Good, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "en": "Good, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 9,
         "role": "P",
         "source_lang": "en",
-        "source": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "model": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "Good, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "model": "好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "en": "Good, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 10,
@@ -7837,7 +7837,7 @@
         "n": 13
       }
     ],
-    "total": 294,
+    "total": 296,
     "maxseg": 34,
     "difficulty": "Hard"
   },
@@ -7911,11 +7911,11 @@
       {
         "role": "P",
         "source_lang": "yue",
-        "en": "Can you pull up those documents on your phone?",
-        "yue": "你可唔可以而家用電話開返啲文件？",
-        "source": "你可唔可以而家用電話開返啲文件？",
-        "model": "Can you pull up those documents on your phone?",
-        "wc": 9,
+        "en": "Okay, Can you pull up those documents on your phone?",
+        "yue": "好，你可唔可以而家用電話開返啲文件？",
+        "source": "好，你可唔可以而家用電話開返啲文件？",
+        "model": "Okay, Can you pull up those documents on your phone?",
+        "wc": 10,
         "n": 7
       },
       {
@@ -7989,7 +7989,7 @@
         "wc": 16
       }
     ],
-    "total": 292,
+    "total": 293,
     "maxseg": 29,
     "difficulty": "Easy"
   },
@@ -8104,21 +8104,21 @@
         "n": 11,
         "role": "P",
         "source_lang": "en",
-        "source": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "model": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "Certainly. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "model": "可以。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "en": "Certainly. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "可以。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 12,
         "role": "C",
         "source_lang": "yue",
-        "source": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "model": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "可以。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "model": "Certainly. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "en": "Certainly. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "可以。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 13,
@@ -8151,7 +8151,7 @@
         "n": 15
       }
     ],
-    "total": 303,
+    "total": 305,
     "maxseg": 35,
     "difficulty": "Hard"
   },
@@ -8186,11 +8186,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Right, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Right, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -8226,11 +8226,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Sure, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Sure, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -8286,21 +8286,21 @@
         "n": 13,
         "role": "P",
         "source_lang": "yue",
-        "source": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "model": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "model": "Good, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "en": "Good, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 14,
         "role": "C",
         "source_lang": "en",
-        "source": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "model": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "Good, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "model": "好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "en": "Good, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 15,
@@ -8323,7 +8323,7 @@
         "wc": 18
       }
     ],
-    "total": 282,
+    "total": 286,
     "maxseg": 28,
     "difficulty": "Medium"
   },
@@ -8560,21 +8560,21 @@
         "n": 8,
         "role": "C",
         "source_lang": "en",
-        "source": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "model": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "Certainly. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "model": "可以。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "en": "Certainly. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "可以。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 9,
         "role": "P",
         "source_lang": "yue",
-        "source": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "model": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "可以。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "model": "Certainly. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "en": "Certainly. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "可以。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 10,
@@ -8617,7 +8617,7 @@
         "n": 13
       }
     ],
-    "total": 293,
+    "total": 295,
     "maxseg": 35,
     "difficulty": "Medium"
   },
@@ -8804,11 +8804,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Understood. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Understood. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -8921,7 +8921,7 @@
         "wc": 21
       }
     ],
-    "total": 300,
+    "total": 301,
     "maxseg": 34,
     "difficulty": "Hard"
   },
@@ -8956,11 +8956,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Good, Could you explain what that means for my case, and what I need to do next?",
+        "model": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Good, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -8996,11 +8996,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Certainly. Could you explain what that means for my case, and what I need to do next?",
+        "model": "可以。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Certainly. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "可以。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -9093,7 +9093,7 @@
         "wc": 18
       }
     ],
-    "total": 279,
+    "total": 281,
     "maxseg": 27,
     "difficulty": "Medium"
   },
@@ -9370,11 +9370,11 @@
         "n": 12,
         "role": "C",
         "source_lang": "yue",
-        "source": "好，我今日就處理，啲文件亦會放埋一齊。",
-        "model": "Okay, I’ll deal with that today and keep the paperwork together.",
-        "en": "Okay, I’ll deal with that today and keep the paperwork together.",
-        "yue": "好，我今日就處理，啲文件亦會放埋一齊。",
-        "wc": 11
+        "source": "明白，好，我今日就處理，啲文件亦會放埋一齊。",
+        "model": "Right, Okay, I’ll deal with that today and keep the paperwork together.",
+        "en": "Right, Okay, I’ll deal with that today and keep the paperwork together.",
+        "yue": "明白，好，我今日就處理，啲文件亦會放埋一齊。",
+        "wc": 12
       },
       {
         "role": "P",
@@ -9387,7 +9387,7 @@
         "n": 13
       }
     ],
-    "total": 305,
+    "total": 306,
     "maxseg": 31,
     "difficulty": "Medium"
   },
@@ -9574,11 +9574,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Thanks. Could you explain what that means for my case, and what I need to do next?",
+        "model": "唔該。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Thanks. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "唔該。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -9623,11 +9623,11 @@
       {
         "role": "C",
         "source_lang": "yue",
-        "en": "I have the main records. One document still needs to be downloaded.",
-        "yue": "主要紀錄有齊，仲有一份文件要下載返。",
-        "source": "主要紀錄有齊，仲有一份文件要下載返。",
-        "model": "I have the main records. One document still needs to be downloaded.",
-        "wc": 12,
+        "en": "Okay, I have the main records. One document still needs to be downloaded.",
+        "yue": "好，主要紀錄有齊，仲有一份文件要下載返。",
+        "source": "好，主要紀錄有齊，仲有一份文件要下載返。",
+        "model": "Okay, I have the main records. One document still needs to be downloaded.",
+        "wc": 13,
         "n": 8
       },
       {
@@ -9701,7 +9701,7 @@
         "n": 15
       }
     ],
-    "total": 297,
+    "total": 299,
     "maxseg": 29,
     "difficulty": "Medium"
   },
@@ -9736,11 +9736,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Great, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Great, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -9776,11 +9776,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "係。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Exactly. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Exactly. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "係。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -9853,7 +9853,7 @@
         "wc": 21
       }
     ],
-    "total": 287,
+    "total": 289,
     "maxseg": 29,
     "difficulty": "Hard"
   },
@@ -9948,21 +9948,21 @@
         "n": 9,
         "role": "P",
         "source_lang": "en",
-        "source": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "model": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "Thanks. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "model": "唔該。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "en": "Thanks. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "唔該。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 10,
         "role": "C",
         "source_lang": "yue",
-        "source": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "model": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "唔該。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "model": "Thanks. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "en": "Thanks. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "唔該。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 11,
@@ -9985,7 +9985,7 @@
         "wc": 24
       }
     ],
-    "total": 270,
+    "total": 272,
     "maxseg": 33,
     "difficulty": "Easy"
   },
@@ -10070,21 +10070,21 @@
         "n": 8,
         "role": "C",
         "source_lang": "en",
-        "source": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "model": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "Thanks. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "model": "唔該。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "en": "Thanks. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "唔該。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 9,
         "role": "P",
         "source_lang": "yue",
-        "source": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "model": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "唔該。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "model": "Thanks. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "en": "Thanks. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "唔該。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 10,
@@ -10127,7 +10127,7 @@
         "n": 13
       }
     ],
-    "total": 281,
+    "total": 283,
     "maxseg": 35,
     "difficulty": "Medium"
   },
@@ -10201,11 +10201,11 @@
       {
         "role": "P",
         "source_lang": "en",
-        "en": "Have you got the relevant paperwork there now?",
-        "yue": "相關文件而家喺唔喺你度？",
-        "source": "Have you got the relevant paperwork there now?",
-        "model": "相關文件而家喺唔喺你度？",
-        "wc": 8,
+        "en": "Okay, Have you got the relevant paperwork there now?",
+        "yue": "好，相關文件而家喺唔喺你度？",
+        "source": "Okay, Have you got the relevant paperwork there now?",
+        "model": "好，相關文件而家喺唔喺你度？",
+        "wc": 9,
         "n": 7
       },
       {
@@ -10279,7 +10279,7 @@
         "wc": 17
       }
     ],
-    "total": 284,
+    "total": 285,
     "maxseg": 28,
     "difficulty": "Easy"
   },
@@ -10314,11 +10314,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Alright, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Alright, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -10441,7 +10441,7 @@
         "n": 15
       }
     ],
-    "total": 294,
+    "total": 295,
     "maxseg": 31,
     "difficulty": "Medium"
   },
@@ -10476,11 +10476,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "I see. Could you explain what that means for my case, and what I need to do next?",
+        "model": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "I see. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -10516,11 +10516,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "That helps. Could you explain what that means for my case, and what I need to do next?",
+        "model": "咁就清楚喇。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "That helps. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "咁就清楚喇。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 8,
@@ -10576,21 +10576,21 @@
         "n": 13,
         "role": "P",
         "source_lang": "en",
-        "source": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "model": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "Great, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "model": "好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "en": "Great, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 14,
         "role": "C",
         "source_lang": "yue",
-        "source": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "model": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "model": "Great, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "en": "Great, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 15,
@@ -10613,7 +10613,7 @@
         "wc": 18
       }
     ],
-    "total": 289,
+    "total": 295,
     "maxseg": 27,
     "difficulty": "Medium"
   },
@@ -10850,21 +10850,21 @@
         "n": 8,
         "role": "C",
         "source_lang": "yue",
-        "source": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "model": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "係。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "model": "Exactly. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "en": "Exactly. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "係。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 9,
         "role": "P",
         "source_lang": "en",
-        "source": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "model": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "Exactly. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "model": "係。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "en": "Exactly. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "係。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 10,
@@ -10907,7 +10907,7 @@
         "n": 13
       }
     ],
-    "total": 282,
+    "total": 284,
     "maxseg": 32,
     "difficulty": "Medium"
   },
@@ -11094,11 +11094,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Got it. Could you explain what that means for my case, and what I need to do next?",
+        "model": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Got it. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -11221,7 +11221,7 @@
         "n": 15
       }
     ],
-    "total": 296,
+    "total": 298,
     "maxseg": 29,
     "difficulty": "Medium"
   },
@@ -11256,11 +11256,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Sounds good. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Sounds good. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -11296,11 +11296,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "All right. Could you explain what that means for my case, and what I need to do next?",
+        "en": "All right. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 8,
@@ -11356,21 +11356,21 @@
         "n": 13,
         "role": "P",
         "source_lang": "yue",
-        "source": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "model": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "model": "Great, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "en": "Great, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 14,
         "role": "C",
         "source_lang": "en",
-        "source": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "model": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "Great, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "model": "好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "en": "Great, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 15,
@@ -11393,7 +11393,7 @@
         "wc": 18
       }
     ],
-    "total": 290,
+    "total": 296,
     "maxseg": 28,
     "difficulty": "Hard"
   },
@@ -11741,11 +11741,11 @@
       {
         "role": "P",
         "source_lang": "en",
-        "en": "Can you pull up those documents on your phone?",
-        "yue": "你可唔可以而家用電話開返啲文件？",
-        "source": "Can you pull up those documents on your phone?",
-        "model": "你可唔可以而家用電話開返啲文件？",
-        "wc": 9,
+        "en": "Right, Can you pull up those documents on your phone?",
+        "yue": "明白，你可唔可以而家用電話開返啲文件？",
+        "source": "Right, Can you pull up those documents on your phone?",
+        "model": "明白，你可唔可以而家用電話開返啲文件？",
+        "wc": 10,
         "n": 7
       },
       {
@@ -11819,7 +11819,7 @@
         "wc": 17
       }
     ],
-    "total": 292,
+    "total": 293,
     "maxseg": 30,
     "difficulty": "Easy"
   },
@@ -11934,21 +11934,21 @@
         "n": 11,
         "role": "P",
         "source_lang": "yue",
-        "source": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "model": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "係。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "model": "Exactly. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "en": "Exactly. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "係。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 12,
         "role": "C",
         "source_lang": "en",
-        "source": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "model": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "Exactly. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "model": "係。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "en": "Exactly. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "係。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 13,
@@ -11973,15 +11973,15 @@
       {
         "role": "P",
         "source_lang": "yue",
-        "en": "All right, I know what to do now. I’ll keep a copy of whatever I send.",
-        "yue": "好，而家我知點做喇。我交出去嘅資料都會留返副本。",
-        "source": "好，而家我知點做喇。我交出去嘅資料都會留返副本。",
-        "model": "All right, I know what to do now. I’ll keep a copy of whatever I send.",
-        "wc": 16,
+        "en": "Okay, All right, I know what to do now. I’ll keep a copy of whatever I send.",
+        "yue": "好，好，而家我知點做喇。我交出去嘅資料都會留返副本。",
+        "source": "好，好，而家我知點做喇。我交出去嘅資料都會留返副本。",
+        "model": "Okay, All right, I know what to do now. I’ll keep a copy of whatever I send.",
+        "wc": 17,
         "n": 15
       }
     ],
-    "total": 321,
+    "total": 324,
     "maxseg": 35,
     "difficulty": "Hard"
   },
@@ -12016,11 +12016,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "That’s clear. Could you explain what that means for my case, and what I need to do next?",
+        "model": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "That’s clear. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -12056,11 +12056,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "No problem. Could you explain what that means for my case, and what I need to do next?",
+        "model": "冇問題。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "No problem. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "冇問題。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 8,
@@ -12153,7 +12153,7 @@
         "wc": 18
       }
     ],
-    "total": 295,
+    "total": 299,
     "maxseg": 29,
     "difficulty": "Hard"
   },
@@ -12370,21 +12370,21 @@
         "n": 8,
         "role": "C",
         "source_lang": "yue",
-        "source": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "model": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "model": "Alright, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "en": "Alright, I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "好，我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 21
       },
       {
         "n": 9,
         "role": "P",
         "source_lang": "en",
-        "source": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "model": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "Alright, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "model": "好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "en": "Alright, Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "好，先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 20
       },
       {
         "n": 10,
@@ -12419,15 +12419,15 @@
       {
         "role": "P",
         "source_lang": "en",
-        "en": "Good, I’ll do that. If anything changes, I’ll let the service know straight away.",
-        "yue": "好呀，我會照做。如果有任何改動，我會即刻通知返個機構。",
-        "source": "Good, I’ll do that. If anything changes, I’ll let the service know straight away.",
-        "model": "好呀，我會照做。如果有任何改動，我會即刻通知返個機構。",
-        "wc": 14,
+        "en": "Okay, Good, I’ll do that. If anything changes, I’ll let the service know straight away.",
+        "yue": "好，好呀，我會照做。如果有任何改動，我會即刻通知返個機構。",
+        "source": "Okay, Good, I’ll do that. If anything changes, I’ll let the service know straight away.",
+        "model": "好，好呀，我會照做。如果有任何改動，我會即刻通知返個機構。",
+        "wc": 15,
         "n": 13
       }
     ],
-    "total": 289,
+    "total": 292,
     "maxseg": 35,
     "difficulty": "Medium"
   },
@@ -12766,11 +12766,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Fair enough. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Fair enough. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 18
       },
       {
         "n": 4,
@@ -12806,11 +12806,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "唔該，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Thanks, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Thanks, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "唔該，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -12903,7 +12903,7 @@
         "wc": 18
       }
     ],
-    "total": 294,
+    "total": 297,
     "maxseg": 29,
     "difficulty": "Hard"
   },
@@ -13140,21 +13140,21 @@
         "n": 8,
         "role": "C",
         "source_lang": "en",
-        "source": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "model": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "Alright, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "model": "好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "en": "Alright, If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "好，如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 22
       },
       {
         "n": 9,
         "role": "P",
         "source_lang": "yue",
-        "source": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "model": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "model": "Alright, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "en": "Alright, Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "好，重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 20
       },
       {
         "n": 10,
@@ -13180,11 +13180,11 @@
         "n": 12,
         "role": "C",
         "source_lang": "en",
-        "source": "Okay, I’ll deal with that today and keep the paperwork together.",
-        "model": "好，我今日就處理，啲文件亦會放埋一齊。",
-        "en": "Okay, I’ll deal with that today and keep the paperwork together.",
-        "yue": "好，我今日就處理，啲文件亦會放埋一齊。",
-        "wc": 11
+        "source": "Sure, Okay, I’ll deal with that today and keep the paperwork together.",
+        "model": "可以，好，我今日就處理，啲文件亦會放埋一齊。",
+        "en": "Sure, Okay, I’ll deal with that today and keep the paperwork together.",
+        "yue": "可以，好，我今日就處理，啲文件亦會放埋一齊。",
+        "wc": 12
       },
       {
         "role": "P",
@@ -13197,7 +13197,7 @@
         "n": 13
       }
     ],
-    "total": 295,
+    "total": 298,
     "maxseg": 32,
     "difficulty": "Hard"
   },
@@ -13271,11 +13271,11 @@
       {
         "role": "P",
         "source_lang": "en",
-        "en": "Have you got the relevant paperwork there now?",
-        "yue": "相關文件而家喺唔喺你度？",
-        "source": "Have you got the relevant paperwork there now?",
-        "model": "相關文件而家喺唔喺你度？",
-        "wc": 8,
+        "en": "Right, Have you got the relevant paperwork there now?",
+        "yue": "明白，相關文件而家喺唔喺你度？",
+        "source": "Right, Have you got the relevant paperwork there now?",
+        "model": "明白，相關文件而家喺唔喺你度？",
+        "wc": 9,
         "n": 7
       },
       {
@@ -13349,7 +13349,7 @@
         "wc": 17
       }
     ],
-    "total": 291,
+    "total": 292,
     "maxseg": 31,
     "difficulty": "Easy"
   },
@@ -13536,11 +13536,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Okay. Could you explain what that means for my case, and what I need to do next?",
+        "model": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Okay. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -13576,11 +13576,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Okay, Could you explain what that means for my case, and what I need to do next?",
+        "model": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Okay, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -13636,21 +13636,21 @@
         "n": 13,
         "role": "P",
         "source_lang": "en",
-        "source": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "model": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "I see. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "model": "明白。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "en": "I see. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "明白。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 22
       },
       {
         "n": 14,
         "role": "C",
         "source_lang": "yue",
-        "source": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "model": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "明白。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "model": "I see. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "en": "I see. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "明白。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 21
       },
       {
         "n": 15,
@@ -13673,7 +13673,7 @@
         "wc": 18
       }
     ],
-    "total": 282,
+    "total": 288,
     "maxseg": 29,
     "difficulty": "Hard"
   },
@@ -13768,21 +13768,21 @@
         "n": 9,
         "role": "P",
         "source_lang": "yue",
-        "source": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "model": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "model": "I see. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "en": "I see. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 23
       },
       {
         "n": 10,
         "role": "C",
         "source_lang": "en",
-        "source": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "model": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "I see. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "model": "明白。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "en": "I see. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "明白。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 21
       },
       {
         "n": 11,
@@ -13805,7 +13805,7 @@
         "wc": 20
       }
     ],
-    "total": 284,
+    "total": 288,
     "maxseg": 34,
     "difficulty": "Medium"
   },
@@ -14021,11 +14021,11 @@
       {
         "role": "P",
         "source_lang": "yue",
-        "en": "Can you show me the supporting records today?",
-        "yue": "你今日可唔可以畀我睇吓啲證明資料？",
-        "source": "你今日可唔可以畀我睇吓啲證明資料？",
-        "model": "Can you show me the supporting records today?",
-        "wc": 8,
+        "en": "Okay, Can you show me the supporting records today?",
+        "yue": "好，你今日可唔可以畀我睇吓啲證明資料？",
+        "source": "好，你今日可唔可以畀我睇吓啲證明資料？",
+        "model": "Okay, Can you show me the supporting records today?",
+        "wc": 9,
         "n": 7
       },
       {
@@ -14099,7 +14099,7 @@
         "wc": 18
       }
     ],
-    "total": 304,
+    "total": 305,
     "maxseg": 31,
     "difficulty": "Medium"
   },
@@ -14134,11 +14134,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Right, Could you explain what that means for my case, and what I need to do next?",
+        "model": "明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Right, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -14173,21 +14173,21 @@
       {
         "role": "P",
         "source_lang": "en",
-        "en": "Have you brought the records we just discussed?",
-        "yue": "頭先講嗰啲紀錄你有冇帶嚟？",
-        "source": "Have you brought the records we just discussed?",
-        "model": "頭先講嗰啲紀錄你有冇帶嚟？",
-        "wc": 8,
+        "en": "Okay, Have you brought the records we just discussed?",
+        "yue": "好，頭先講嗰啲紀錄你有冇帶嚟？",
+        "source": "Okay, Have you brought the records we just discussed?",
+        "model": "好，頭先講嗰啲紀錄你有冇帶嚟？",
+        "wc": 9,
         "n": 7
       },
       {
         "role": "C",
         "source_lang": "yue",
-        "en": "I have the main records. One document still needs to be downloaded.",
-        "yue": "主要紀錄有齊，仲有一份文件要下載返。",
-        "source": "主要紀錄有齊，仲有一份文件要下載返。",
-        "model": "I have the main records. One document still needs to be downloaded.",
-        "wc": 12,
+        "en": "Right, I have the main records. One document still needs to be downloaded.",
+        "yue": "明白，主要紀錄有齊，仲有一份文件要下載返。",
+        "source": "明白，主要紀錄有齊，仲有一份文件要下載返。",
+        "model": "Right, I have the main records. One document still needs to be downloaded.",
+        "wc": 13,
         "n": 8
       },
       {
@@ -14214,21 +14214,21 @@
         "n": 11,
         "role": "P",
         "source_lang": "en",
-        "source": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "model": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "en": "I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
-        "yue": "我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
-        "wc": 20
+        "source": "That helps. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "model": "咁就清楚喇。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "en": "That helps. I need to make a decision this week. Is there anything I should avoid doing while this is being checked?",
+        "yue": "咁就清楚喇。我今個星期要作決定。件事仲核對緊嗰陣，有冇啲嘢我應該避免做？",
+        "wc": 22
       },
       {
         "n": 12,
         "role": "C",
         "source_lang": "yue",
-        "source": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "model": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "en": "Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
-        "yue": "先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
-        "wc": 19
+        "source": "咁就清楚喇。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "model": "That helps. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "en": "That helps. Use the information already confirmed in writing, and keep any new documents or messages until the matter is finalised.",
+        "yue": "咁就清楚喇。先跟已經書面確認嘅資料做，亦要保留之後收到嘅文件同訊息，直到件事正式處理完。",
+        "wc": 21
       },
       {
         "n": 13,
@@ -14251,7 +14251,7 @@
         "wc": 21
       }
     ],
-    "total": 295,
+    "total": 302,
     "maxseg": 35,
     "difficulty": "Hard"
   },
@@ -14286,11 +14286,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Sure, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Sure, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "可以，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -14326,11 +14326,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Understood. Could you explain what that means for my case, and what I need to do next?",
+        "en": "Understood. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "明白。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -14345,11 +14345,11 @@
       {
         "role": "P",
         "source_lang": "yue",
-        "en": "Have you got the relevant paperwork there now?",
-        "yue": "相關文件而家喺唔喺你度？",
-        "source": "相關文件而家喺唔喺你度？",
-        "model": "Have you got the relevant paperwork there now?",
-        "wc": 8,
+        "en": "Sure, Have you got the relevant paperwork there now?",
+        "yue": "可以，相關文件而家喺唔喺你度？",
+        "source": "可以，相關文件而家喺唔喺你度？",
+        "model": "Sure, Have you got the relevant paperwork there now?",
+        "wc": 9,
         "n": 9
       },
       {
@@ -14423,7 +14423,7 @@
         "wc": 18
       }
     ],
-    "total": 289,
+    "total": 292,
     "maxseg": 26,
     "difficulty": "Medium"
   },
@@ -14640,21 +14640,21 @@
         "n": 8,
         "role": "C",
         "source_lang": "en",
-        "source": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "model": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "That helps. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "model": "咁就清楚喇。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "en": "That helps. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "咁就清楚喇。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 23
       },
       {
         "n": 9,
         "role": "P",
         "source_lang": "yue",
-        "source": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "model": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "咁就清楚喇。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "model": "That helps. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "en": "That helps. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "咁就清楚喇。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 21
       },
       {
         "n": 10,
@@ -14689,15 +14689,15 @@
       {
         "role": "P",
         "source_lang": "yue",
-        "en": "Thanks. I’ll make sure I keep the receipt and a copy of the documents.",
-        "yue": "唔該。我會保存收據，同埋留返啲文件副本。",
-        "source": "唔該。我會保存收據，同埋留返啲文件副本。",
-        "model": "Thanks. I’ll make sure I keep the receipt and a copy of the documents.",
-        "wc": 14,
+        "en": "Okay, Thanks. I’ll make sure I keep the receipt and a copy of the documents.",
+        "yue": "好，唔該。我會保存收據，同埋留返啲文件副本。",
+        "source": "好，唔該。我會保存收據，同埋留返啲文件副本。",
+        "model": "Okay, Thanks. I’ll make sure I keep the receipt and a copy of the documents.",
+        "wc": 15,
         "n": 13
       }
     ],
-    "total": 294,
+    "total": 299,
     "maxseg": 35,
     "difficulty": "Hard"
   },
@@ -14781,11 +14781,11 @@
       {
         "role": "C",
         "source_lang": "yue",
-        "en": "I have most of them; one is still at home.",
-        "yue": "大部分有呀，不過仲有一份喺屋企。",
-        "source": "大部分有呀，不過仲有一份喺屋企。",
-        "model": "I have most of them; one is still at home.",
-        "wc": 10,
+        "en": "Okay, I have most of them; one is still at home.",
+        "yue": "好，大部分有呀，不過仲有一份喺屋企。",
+        "source": "好，大部分有呀，不過仲有一份喺屋企。",
+        "model": "Okay, I have most of them; one is still at home.",
+        "wc": 11,
         "n": 8
       },
       {
@@ -14849,7 +14849,7 @@
         "wc": 17
       }
     ],
-    "total": 287,
+    "total": 288,
     "maxseg": 31,
     "difficulty": "Easy"
   },
@@ -14884,11 +14884,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "yue",
-        "source": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "model": "Could you explain what that means for my case, and what I need to do next?",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "model": "Good, Could you explain what that means for my case, and what I need to do next?",
+        "en": "Good, Could you explain what that means for my case, and what I need to do next?",
+        "yue": "好，你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -14923,11 +14923,11 @@
       {
         "role": "P",
         "source_lang": "yue",
-        "en": "Have you got the relevant paperwork there now?",
-        "yue": "相關文件而家喺唔喺你度？",
-        "source": "相關文件而家喺唔喺你度？",
-        "model": "Have you got the relevant paperwork there now?",
-        "wc": 8,
+        "en": "Understood. Have you got the relevant paperwork there now?",
+        "yue": "明白。相關文件而家喺唔喺你度？",
+        "source": "明白。相關文件而家喺唔喺你度？",
+        "model": "Understood. Have you got the relevant paperwork there now?",
+        "wc": 9,
         "n": 7
       },
       {
@@ -14964,21 +14964,21 @@
         "n": 11,
         "role": "P",
         "source_lang": "yue",
-        "source": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "model": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "en": "If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
-        "yue": "如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
-        "wc": 21
+        "source": "明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "model": "Got it. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "en": "Got it. If the details change before this is finalised, do I update them straight away or wait for someone to contact me?",
+        "yue": "明白。如果正式處理完之前資料有變，我應該即刻更新，定係等你哋聯絡我先？",
+        "wc": 23
       },
       {
         "n": 12,
         "role": "C",
         "source_lang": "en",
-        "source": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "model": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "en": "Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
-        "yue": "重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
-        "wc": 19
+        "source": "Got it. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "model": "明白。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "en": "Got it. Report any important change promptly through the channel shown on your notice, and keep the confirmation for your records.",
+        "yue": "明白。重要資料有變就按通知上面嘅渠道盡快申報，並保留確認紀錄。",
+        "wc": 21
       },
       {
         "n": 13,
@@ -15011,7 +15011,7 @@
         "n": 15
       }
     ],
-    "total": 295,
+    "total": 301,
     "maxseg": 30,
     "difficulty": "Medium"
   },
@@ -15046,11 +15046,11 @@
         "n": 3,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Certainly. Could you explain what that means for my case, and what I need to do next?",
+        "model": "可以。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Certainly. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "可以。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 4,
@@ -15086,11 +15086,11 @@
         "n": 7,
         "role": "P",
         "source_lang": "en",
-        "source": "Could you explain what that means for my case, and what I need to do next?",
-        "model": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "en": "Could you explain what that means for my case, and what I need to do next?",
-        "yue": "你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
-        "wc": 16
+        "source": "Thanks. Could you explain what that means for my case, and what I need to do next?",
+        "model": "唔該。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "en": "Thanks. Could you explain what that means for my case, and what I need to do next?",
+        "yue": "唔該。你可唔可以講下呢個對我個案有咩影響，同埋我下一步要做咩？",
+        "wc": 17
       },
       {
         "n": 8,
@@ -15183,7 +15183,7 @@
         "wc": 18
       }
     ],
-    "total": 297,
+    "total": 299,
     "maxseg": 31,
     "difficulty": "Hard"
   },
