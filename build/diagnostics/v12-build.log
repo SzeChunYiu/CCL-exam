@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/runner/work/CCL-exam/CCL-exam/scripts/build_native_500_v12.py", line 271, in <module>
+    if __name__=="__main__": raise SystemExit(main())
+                                              ^^^^^^
+  File "/home/runner/work/CCL-exam/CCL-exam/scripts/build_native_500_v12.py", line 267, in main
+    seeds=base.load_seeds(); ds=[make_dialogue(seed,i,v) for v in range(5) for i,seed in enumerate(seeds,1)]
+                                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/CCL-exam/CCL-exam/scripts/build_native_500_v12.py", line 247, in make_dialogue
+    en,y=medium(seed,idx,variant,action); y+=short(seed,variant,f"s{action}")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/CCL-exam/CCL-exam/scripts/build_native_500_v12.py", line 157, in medium
+    c=ctx(seed,idx,variant); ik=key(seed["issue_yue"]); tk=key(seed["term_yue"]); ek=key(seed["evidence_yue"])
+      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/CCL-exam/CCL-exam/scripts/build_native_500_v12.py", line 147, in ctx
+    "amount_y":f"{zh_int(amount)}蚊","amount_e":f"${amount:,}",
+                  ^^^^^^^^^^^^^^
+  File "/home/runner/work/CCL-exam/CCL-exam/scripts/build_native_500_v12.py", line 93, in zh_int
+    q,r=divmod(n,100); return DIGITS[q]+"百"+(zh_int(r) if r else "")
+                              ~~~~~~^^^
+IndexError: string index out of range

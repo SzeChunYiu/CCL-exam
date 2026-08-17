@@ -1,0 +1,73 @@
+{
+ "metrics": {
+  "segments": 688,
+  "chars": 20929,
+  "particle_per100": 2.47,
+  "particle_variety": 7,
+  "top4_share": 88.8,
+  "median_sentence": 17.0,
+  "sentences_per_seg": 1.76,
+  "boilerplate_pct": 65.0,
+  "dup_sentence_pct": 57.8,
+  "written_chinese_per100": 0.043,
+  "written_connective_per100": 0.0,
+  "literary": 22,
+  "dropped_glyphs": 0,
+  "calque_per100": 1.25,
+  "connective_per100": 0.75,
+  "connective_variety": 9,
+  "a_not_a_per100": 0.85
+ },
+ "failures": [
+  "particle density 2.47 < 4.5 (reference 6.23)",
+  "particle variety 7 < 8 (reference 15)",
+  "median sentence 17.0 > 14 Han chars (reference 12)",
+  "sentences/turn 1.76 < 2.0 (reference 2.26)",
+  "repeated 10-grams 65.0% > 8.0% (reference 0.0)",
+  "duplicate sentences 57.8% > 5.0% (reference 0.0)",
+  "literary vocabulary: 22",
+  "English calques 1.25/100字 > 0.35 (reference 0.17)",
+  "spoken connectives 0.75/100字 < 1.2 (NAATI 1.40, HKCanCor 3.24)",
+  "top-4 particle share 88.8% > 82.0% — over-reliance on a few particles (NAATI 68.0, HKCanCor 75.5)",
+  "model answers: written-Chinese 0.117/100字",
+  "model answers: literary vocabulary 30",
+  "model answers: English calques 1.38/100字 > 0.35"
+ ],
+ "detail": {
+  "written_chinese": {
+   "不": 8,
+   "還": 1
+  },
+  "written_connectives": {},
+  "literary": {
+   "憂心": 5,
+   "申報": 13,
+   "確保": 1,
+   "狀況": 3
+  },
+  "dropped_glyphs": {},
+  "calques": {
+   "細節": 40,
+   "更新": 39,
+   "呢個詞": 37,
+   "下一步": 36,
+   "確認": 29,
+   "處理好": 21,
+   "我嘅情況": 20,
+   "對我嘅情況": 20,
+   "我唔肯定": 20
+  },
+  "risky_to_official": {
+   "咩": 41
+  },
+  "particles": {
+   "嘅": 197,
+   "呢": 175,
+   "喇": 46,
+   "咩": 41,
+   "呀": 36,
+   "㗎": 21,
+   "架": 1
+  }
+ }
+}
