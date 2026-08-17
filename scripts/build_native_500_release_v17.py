@@ -50,7 +50,7 @@ def low_yue(seed,variant,action,c):
 
 def officer(seed,variant,action):
     c=cue_set17(seed,variant,action); en=english_officer(seed,variant,action,c); y=low_yue(seed,variant,action,c)
-    if c['e'].lower() in en.lower() and c['ec'] not in y: raise SystemExit(f"evidence pair lost: {seed['title']} v{variant} a{action}: {en} || {y}")
+    if action!=1 and c['ec'] not in y: raise SystemExit(f"evidence pair lost: {seed['title']} v{variant} a{action}: {en} || {y}")
     if action==1 and c['fc'] not in y: raise SystemExit(f"fact pair lost: {seed['title']} v{variant}: {en} || {y}")
     return en,y
 r.client_model=lambda seed,variant,action:v11.client_model(seed,variant,action,r._ORIG_CLIENT(seed,variant,action)[1])
