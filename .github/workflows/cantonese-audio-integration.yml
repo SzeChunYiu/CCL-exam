@@ -19,6 +19,7 @@ jobs:
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/audit_cantonese_naturalness.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
+          python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
           python3 -m py_compile scripts/generate_v4_audio.py
           python3 -m py_compile scripts/upload_v4_segments.py
       - name: Current-bank structural baseline
@@ -52,4 +53,13 @@ jobs:
           for y in x['near_duplicates'][:20]: print(y['ratio'],y['a'],y['b'],y['text_a'],'<>',y['text_b'])
           print('\nWorst skeletons:')
           for y in x['skeleton_repeats'][:15]: print(len(y['dialogues']),y['skeleton'],y['examples'][:2])
+          PY
+      - name: Cantonese-only lexical-transfer baseline
+        run: |
+          python3 scripts/audit_cantonese_lexical_transfer.py --json > /tmp/lexical.json || true
+          python3 - <<'PY'
+          import json
+          x=json.load(open('/tmp/lexical.json'))
+          print(json.dumps({k:x[k] for k in ['dialogues','violating_segments','latin_tokens','unique_tokens','top_tokens']},ensure_ascii=False,indent=2))
+          for y in x['violations'][:60]: print(y['dialogue'],f"S{y['segment']}",y['tokens'],'::',y['source'])
           PY
