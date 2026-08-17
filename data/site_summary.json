@@ -1,31 +1,31 @@
 {
-  "dialogues": 100,
-  "mock_tests": 50,
-  "segments": 1412,
+  "dialogues": 500,
+  "mock_tests": 250,
+  "segments": 6000,
   "topics": 12,
   "glossary_entries": 198,
   "minSegments": 12,
-  "maxSegments": 16,
+  "maxSegments": 12,
   "segment_count_range": [
     12,
-    16
+    12
   ],
-  "maxWords": 35,
-  "max_segment_words": 35,
-  "meanDialogueWords": 294.9,
-  "minDialogueWords": 272,
-  "maxDialogueWords": 324,
+  "maxWords": 33,
+  "max_segment_words": 33,
+  "meanDialogueWords": 234.4,
+  "minDialogueWords": 212,
+  "maxDialogueWords": 289,
   "word_range": [
-    272,
-    324
+    212,
+    289
   ],
-  "maxExactRepeat": 4,
-  "diversifiedTurns": 120,
+  "maxExactRepeat": 1,
+  "diversifiedTurns": 6000,
   "audioTarget": {
-    "englishWpm": 160,
-    "cantoneseCharsPerSecond": 4.0
+    "englishWpm": 168.0,
+    "cantoneseCharsPerSecond": 4.07
   },
-  "version": "v3-neural",
+  "version": "v10-grounded-native-500",
   "speakerPolicy": {
     "professional": "English",
     "client": "Cantonese",
