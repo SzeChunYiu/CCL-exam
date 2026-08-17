@@ -1,0 +1,39 @@
+name: Cantonese Script + Audio Integration QA
+
+on:
+  push:
+    branches: [cantonese-script-audio-v4-integration]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python syntax
+        run: |
+          python3 -m py_compile scripts/qa_cantonese.py
+          python3 -m py_compile scripts/verify_rewrite.py
+          python3 -m py_compile scripts/audit_cantonese_naturalness.py
+          python3 -m py_compile scripts/generate_v4_audio.py
+          python3 -m py_compile scripts/upload_v4_segments.py
+      - name: Current-bank structural verification
+        run: python3 scripts/verify_rewrite.py data/dialogues.json --baseline data/dialogues.json
+      - name: Corpus-calibrated Cantonese metrics
+        run: |
+          python3 scripts/qa_cantonese.py data/dialogues.json --json > /tmp/cantonese-hard.json || true
+          cat /tmp/cantonese-hard.json
+      - name: Interactional naturalness audit
+        run: |
+          python3 scripts/audit_cantonese_naturalness.py --json > /tmp/cantonese-soft.json
+          python3 - <<'PY'
+          import json
+          x=json.load(open('/tmp/cantonese-soft.json'))
+          print(json.dumps({k:x[k] for k in ['dialogues','client_turns','dialogues_with_warnings','total_warnings','role_language_policy_errors']},ensure_ascii=False,indent=2))
+          for r in x['results']:
+              if r['warnings']:
+                  print(r['id'], ' | '.join(r['warnings']))
+          PY
