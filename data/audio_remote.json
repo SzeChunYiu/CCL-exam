@@ -11,6 +11,11 @@
   },
   "rates": {
     "en": "+0%",
-    "yue": "+5%"
+    "yue": "+10%"
+  },
+  "speakerPolicy": {
+    "professional": "English",
+    "client": "Cantonese",
+    "clientContext": "immigrant/community life in Australia"
   }
 }
