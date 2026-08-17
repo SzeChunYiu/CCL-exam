@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  diagnose-v11:
+  diagnose-v12:
     if: ${{ !contains(github.event.head_commit.message || '', '[skip ci]') }}
     runs-on: ubuntu-latest
     steps:
@@ -21,36 +21,40 @@ jobs:
         run: |
           python3 -m py_compile scripts/build_native_500_v10.py
           python3 -m py_compile scripts/build_native_500_v11.py
+          python3 -m py_compile scripts/build_native_500_v12.py
+          python3 -m py_compile scripts/postprocess_native_v12.py
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
           python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
 
-      - name: Build candidate but keep diagnostics on preflight failure
+      - name: Build candidate and apply two reviewed implementation fixes
         run: |
           mkdir -p build/diagnostics
           set +e
-          python3 scripts/build_native_500_v11.py > build/diagnostics/v11-build.log 2>&1
-          echo $? > build/diagnostics/v11-build-exit.txt
+          python3 scripts/build_native_500_v12.py > build/diagnostics/v12-build.log 2>&1
+          echo $? > build/diagnostics/v12-build-exit.txt
           set -e
-          cat build/diagnostics/v11-build.log
+          cat build/diagnostics/v12-build.log
+          python3 scripts/postprocess_native_v12.py > build/diagnostics/v12-postprocess.log 2>&1
+          cat build/diagnostics/v12-postprocess.log
 
       - name: Run independent audits diagnostically
         run: |
           set +e
-          python3 scripts/verify_rewrite.py data/dialogues.json --no-baseline > build/diagnostics/v11-verify.txt 2>&1
-          echo $? > build/diagnostics/v11-verify-exit.txt
-          python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > build/diagnostics/v11-native.json 2> build/diagnostics/v11-native.stderr
-          echo $? > build/diagnostics/v11-native-exit.txt
-          python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > build/diagnostics/v11-lexical.json 2> build/diagnostics/v11-lexical.stderr
-          echo $? > build/diagnostics/v11-lexical-exit.txt
-          python3 scripts/qa_cantonese.py data/dialogues.json --json > build/diagnostics/v11-corpus.json 2> build/diagnostics/v11-corpus.stderr
-          echo $? > build/diagnostics/v11-corpus-exit.txt
+          python3 scripts/verify_rewrite.py data/dialogues.json --no-baseline > build/diagnostics/v12-verify.txt 2>&1
+          echo $? > build/diagnostics/v12-verify-exit.txt
+          python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > build/diagnostics/v12-native.json 2> build/diagnostics/v12-native.stderr
+          echo $? > build/diagnostics/v12-native-exit.txt
+          python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > build/diagnostics/v12-lexical.json 2> build/diagnostics/v12-lexical.stderr
+          echo $? > build/diagnostics/v12-lexical-exit.txt
+          python3 scripts/qa_cantonese.py data/dialogues.json --json > build/diagnostics/v12-corpus.json 2> build/diagnostics/v12-corpus.stderr
+          echo $? > build/diagnostics/v12-corpus-exit.txt
           set -e
 
       - name: Add repetition hotspot report
         run: |
-          python3 - <<'PY' > build/diagnostics/v11-hotspots.txt
+          python3 - <<'PY' > build/diagnostics/v12-hotspots.txt
           import json,re
           from collections import Counter
           data=json.load(open('data/dialogues.json'))
@@ -70,6 +74,6 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add build/diagnostics/v11-*
-          git commit -m 'Record v11 native-bank diagnostics [skip ci]'
+          git add build/diagnostics/v12-*
+          git commit -m 'Record v12 native-bank diagnostics [skip ci]'
           git push
