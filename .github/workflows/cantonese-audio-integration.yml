@@ -21,52 +21,53 @@ jobs:
         run: |
           python3 -m py_compile scripts/build_native_500_v10.py
           python3 -m py_compile scripts/build_native_500_v11.py
-          python3 -m py_compile scripts/build_native_500_final.py
+          python3 -m py_compile scripts/build_native_500_final2.py
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/verify_rewrite.py
+          python3 -m py_compile scripts/verify_final_bank.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
           python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
 
-      - name: Build final 500-dialogue candidate
+      - name: Build final2 500-dialogue candidate
         id: build
         continue-on-error: true
         run: |
           mkdir -p build/diagnostics
-          python3 scripts/build_native_500_final.py > build/diagnostics/final-build.log 2>&1
-          cat build/diagnostics/final-build.log
+          python3 scripts/build_native_500_final2.py > build/diagnostics/final2-build.log 2>&1
+          cat build/diagnostics/final2-build.log
 
-      - name: Structural verification
+      - name: Lexical-transfer-aware structural verification
         id: verify
         continue-on-error: true
         run: |
-          python3 scripts/verify_rewrite.py data/dialogues.json --no-baseline > build/diagnostics/final-verify.txt 2>&1
-          cat build/diagnostics/final-verify.txt
+          python3 scripts/verify_final_bank.py data/dialogues.json --json > build/diagnostics/final2-verify.json
+          cat build/diagnostics/final2-verify.json
 
       - name: Native template-distance gate
         id: native
         continue-on-error: true
         run: |
-          python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > build/diagnostics/final-native.json
-          cat build/diagnostics/final-native.json
+          python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > build/diagnostics/final2-native.json
+          cat build/diagnostics/final2-native.json
 
       - name: Cantonese-only lexical-transfer gate
         id: lexical
         continue-on-error: true
         run: |
-          python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > build/diagnostics/final-lexical.json
-          cat build/diagnostics/final-lexical.json
+          python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > build/diagnostics/final2-lexical.json
+          cat build/diagnostics/final2-lexical.json
 
       - name: Corpus-calibrated Cantonese hard gate
         id: corpus
         continue-on-error: true
         run: |
-          python3 scripts/qa_cantonese.py data/dialogues.json --json > build/diagnostics/final-corpus.json
-          cat build/diagnostics/final-corpus.json
+          python3 scripts/qa_cantonese.py data/dialogues.json --json > build/diagnostics/final2-corpus.json
+          cat build/diagnostics/final2-corpus.json
 
-      - name: Add repetition hotspot report
+      - name: Add final2 repetition hotspot report
         if: always()
         run: |
-          python3 - <<'PY' > build/diagnostics/final-hotspots.txt
+          python3 - <<'PY' > build/diagnostics/final2-hotspots.txt
           import json,re
           from collections import Counter
           data=json.load(open('data/dialogues.json'))
@@ -81,18 +82,18 @@ jobs:
           for g,n in grams.most_common(160):
             if n>1: print(n,g)
           PY
-          cat build/diagnostics/final-hotspots.txt
+          cat build/diagnostics/final2-hotspots.txt
 
-      - name: Persist diagnostic evidence
+      - name: Persist final2 diagnostic evidence
         if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add build/diagnostics/final-*
-          git commit -m 'Record final native-bank gate evidence [skip ci]' || true
+          git add build/diagnostics/final2-*
+          git commit -m 'Record final2 native-bank gate evidence [skip ci]' || true
           git push
 
-      - name: Enforce all unchanged release gates
+      - name: Enforce all release gates
         if: always()
         env:
           BUILD: ${{ steps.build.outcome }}
