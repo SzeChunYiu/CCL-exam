@@ -1,0 +1,992 @@
+[
+  {
+    "topic": "Business",
+    "en": "Australian Business Number, or ABN",
+    "yue": "澳洲商業號碼，即係 ABN"
+  },
+  {
+    "topic": "Business",
+    "en": "registered business name",
+    "yue": "註冊商業名稱"
+  },
+  {
+    "topic": "Business",
+    "en": "Goods and Services Tax, or GST",
+    "yue": "商品及服務稅，即係 GST"
+  },
+  {
+    "topic": "Business",
+    "en": "tax invoice",
+    "yue": "稅務發票"
+  },
+  {
+    "topic": "Business",
+    "en": "Business Activity Statement, or BAS",
+    "yue": "業務活動報表，即係 BAS"
+  },
+  {
+    "topic": "Business",
+    "en": "proprietary limited company, or Pty Ltd",
+    "yue": "私人有限公司，即係 Pty Ltd"
+  },
+  {
+    "topic": "Business",
+    "en": "temporary food stall permit",
+    "yue": "臨時食品攤位許可證"
+  },
+  {
+    "topic": "Business",
+    "en": "thirty-day trading terms",
+    "yue": "三十日商業付款期"
+  },
+  {
+    "topic": "Business",
+    "en": "ABN",
+    "yue": "澳洲商業號碼"
+  },
+  {
+    "topic": "Business",
+    "en": "ACN",
+    "yue": "澳洲公司號碼"
+  },
+  {
+    "topic": "Business",
+    "en": "sole trader",
+    "yue": "獨資經營者"
+  },
+  {
+    "topic": "Business",
+    "en": "partnership",
+    "yue": "合夥企業"
+  },
+  {
+    "topic": "Business",
+    "en": "Pty Ltd",
+    "yue": "私人有限公司"
+  },
+  {
+    "topic": "Business",
+    "en": "GST",
+    "yue": "商品及服務稅"
+  },
+  {
+    "topic": "Business",
+    "en": "BAS",
+    "yue": "業務活動報表"
+  },
+  {
+    "topic": "Business",
+    "en": "turnover",
+    "yue": "營業額"
+  },
+  {
+    "topic": "Business",
+    "en": "supplier",
+    "yue": "供應商"
+  },
+  {
+    "topic": "Business",
+    "en": "trading terms",
+    "yue": "付款條款"
+  },
+  {
+    "topic": "Business",
+    "en": "public liability insurance",
+    "yue": "公眾責任保險"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "consumer guarantee",
+    "yue": "消費者保障"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "major failure",
+    "yue": "嚴重故障"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "proof of purchase",
+    "yue": "購買證明"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "cancellation terms",
+    "yue": "取消條款"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "itemised bill",
+    "yue": "分項賬單"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "written quote",
+    "yue": "書面報價"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "refund entitlement",
+    "yue": "退款權益"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "meter reading",
+    "yue": "電錶讀數"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "Australian Consumer Law",
+    "yue": "澳洲消費者法"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "repair",
+    "yue": "維修"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "replacement",
+    "yue": "更換"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "refund",
+    "yue": "退款"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "cooling-off period",
+    "yue": "冷靜期"
+  },
+  {
+    "topic": "Consumer affairs",
+    "en": "remedy",
+    "yue": "補救"
+  },
+  {
+    "topic": "Employment",
+    "en": "casual loading",
+    "yue": "臨時僱員附加薪酬"
+  },
+  {
+    "topic": "Employment",
+    "en": "penalty rates",
+    "yue": "特別時段附加工資"
+  },
+  {
+    "topic": "Employment",
+    "en": "modern award classification",
+    "yue": "現代 award 職級分類"
+  },
+  {
+    "topic": "Employment",
+    "en": "annual leave balance",
+    "yue": "年假結餘"
+  },
+  {
+    "topic": "Employment",
+    "en": "personal or sick leave",
+    "yue": "個人假或者病假"
+  },
+  {
+    "topic": "Employment",
+    "en": "superannuation guarantee contribution",
+    "yue": "法定退休金供款"
+  },
+  {
+    "topic": "Employment",
+    "en": "incident report",
+    "yue": "事故報告"
+  },
+  {
+    "topic": "Employment",
+    "en": "unfair dismissal application",
+    "yue": "不公平解僱申請"
+  },
+  {
+    "topic": "Employment",
+    "en": "flexible working arrangement",
+    "yue": "彈性工作安排"
+  },
+  {
+    "topic": "Employment",
+    "en": "Tax File Number declaration",
+    "yue": "稅務檔案號碼申報"
+  },
+  {
+    "topic": "Employment",
+    "en": "Fair Work Ombudsman",
+    "yue": "Fair Work 公平工作監察專員署"
+  },
+  {
+    "topic": "Employment",
+    "en": "award",
+    "yue": "行業工資及僱傭條件規定"
+  },
+  {
+    "topic": "Employment",
+    "en": "enterprise agreement",
+    "yue": "企業協議"
+  },
+  {
+    "topic": "Employment",
+    "en": "allowance",
+    "yue": "津貼"
+  },
+  {
+    "topic": "Employment",
+    "en": "pay slip",
+    "yue": "糧單"
+  },
+  {
+    "topic": "Employment",
+    "en": "roster",
+    "yue": "更表"
+  },
+  {
+    "topic": "Employment",
+    "en": "annual leave",
+    "yue": "年假"
+  },
+  {
+    "topic": "Employment",
+    "en": "personal leave",
+    "yue": "個人假"
+  },
+  {
+    "topic": "Employment",
+    "en": "superannuation",
+    "yue": "退休金"
+  },
+  {
+    "topic": "Employment",
+    "en": "TFN",
+    "yue": "稅務檔案號碼"
+  },
+  {
+    "topic": "Health",
+    "en": "bulk billing",
+    "yue": "直接向 Medicare 收費"
+  },
+  {
+    "topic": "Health",
+    "en": "specialist referral",
+    "yue": "專科轉介信"
+  },
+  {
+    "topic": "Health",
+    "en": "out-of-pocket cost",
+    "yue": "自付費用"
+  },
+  {
+    "topic": "Health",
+    "en": "Pharmaceutical Benefits Scheme, or PBS",
+    "yue": "藥物福利計劃，即係 PBS"
+  },
+  {
+    "topic": "Health",
+    "en": "Medicare Urgent Care Clinic",
+    "yue": "Medicare 緊急護理診所"
+  },
+  {
+    "topic": "Health",
+    "en": "treatment plan",
+    "yue": "治療計劃"
+  },
+  {
+    "topic": "Health",
+    "en": "gap payment",
+    "yue": "差額自付費"
+  },
+  {
+    "topic": "Health",
+    "en": "mental health treatment plan",
+    "yue": "心理健康治療計劃"
+  },
+  {
+    "topic": "Health",
+    "en": "discharge summary",
+    "yue": "出院摘要"
+  },
+  {
+    "topic": "Health",
+    "en": "antenatal care",
+    "yue": "產前護理"
+  },
+  {
+    "topic": "Health",
+    "en": "Medicare",
+    "yue": "Medicare 澳洲醫療保險制度"
+  },
+  {
+    "topic": "Health",
+    "en": "rebate",
+    "yue": "回贈"
+  },
+  {
+    "topic": "Health",
+    "en": "GP",
+    "yue": "家庭醫生／普通科醫生"
+  },
+  {
+    "topic": "Health",
+    "en": "specialist",
+    "yue": "專科醫生"
+  },
+  {
+    "topic": "Health",
+    "en": "referral",
+    "yue": "轉介信"
+  },
+  {
+    "topic": "Health",
+    "en": "PBS",
+    "yue": "藥物福利計劃"
+  },
+  {
+    "topic": "Health",
+    "en": "prescription",
+    "yue": "處方"
+  },
+  {
+    "topic": "Health",
+    "en": "pathology",
+    "yue": "病理化驗"
+  },
+  {
+    "topic": "Health",
+    "en": "urgent care clinic",
+    "yue": "緊急護理診所"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "Visa Entitlement Verification Online, or VEVO",
+    "yue": "網上簽證權益查核系統，即係 VEVO"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "Bridging Visa A",
+    "yue": "A 類過橋簽證"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "Bridging Visa B",
+    "yue": "B 類過橋簽證"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "visa condition",
+    "yue": "簽證條件"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "ImmiAccount update",
+    "yue": "ImmiAccount 資料更新"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "identity documents",
+    "yue": "身份證明文件"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "Adult Migrant English Program, or AMEP",
+    "yue": "成人移民英語計劃，即係 AMEP"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "qualification assessment",
+    "yue": "學歷評估"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "Department of Home Affairs",
+    "yue": "內政部"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "ImmiAccount",
+    "yue": "ImmiAccount"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "VEVO",
+    "yue": "網上簽證權益查核系統"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "visa grant notice",
+    "yue": "簽證批准通知"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "substantive visa",
+    "yue": "實質簽證"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "citizenship appointment",
+    "yue": "入籍預約"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "AMEP",
+    "yue": "成人移民英語計劃"
+  },
+  {
+    "topic": "Immigration and settlement",
+    "en": "settlement service",
+    "yue": "定居支援服務"
+  },
+  {
+    "topic": "Legal",
+    "en": "infringement notice",
+    "yue": "違規罰款通知"
+  },
+  {
+    "topic": "Legal",
+    "en": "Apprehended Violence Order, or AVO",
+    "yue": "暴力禁制令，即係 AVO"
+  },
+  {
+    "topic": "Legal",
+    "en": "bail condition",
+    "yue": "保釋條件"
+  },
+  {
+    "topic": "Legal",
+    "en": "witness statement",
+    "yue": "證人供詞"
+  },
+  {
+    "topic": "Legal",
+    "en": "family dispute resolution",
+    "yue": "家庭爭議解決"
+  },
+  {
+    "topic": "Legal",
+    "en": "civil claim",
+    "yue": "民事索償"
+  },
+  {
+    "topic": "Legal",
+    "en": "legal aid",
+    "yue": "法律援助"
+  },
+  {
+    "topic": "Legal",
+    "en": "adjournment",
+    "yue": "押後聆訊"
+  },
+  {
+    "topic": "Legal",
+    "en": "court notice",
+    "yue": "法院通知"
+  },
+  {
+    "topic": "Legal",
+    "en": "hearing",
+    "yue": "聆訊"
+  },
+  {
+    "topic": "Legal",
+    "en": "bail",
+    "yue": "保釋"
+  },
+  {
+    "topic": "Legal",
+    "en": "AVO",
+    "yue": "暴力禁制令"
+  },
+  {
+    "topic": "Legal",
+    "en": "interim order",
+    "yue": "臨時命令"
+  },
+  {
+    "topic": "Legal",
+    "en": "mediation",
+    "yue": "調解"
+  },
+  {
+    "topic": "Legal",
+    "en": "tribunal",
+    "yue": "審裁處"
+  },
+  {
+    "topic": "Community",
+    "en": "hard-waste collection",
+    "yue": "大型廢物收集"
+  },
+  {
+    "topic": "Community",
+    "en": "library card",
+    "yue": "圖書證"
+  },
+  {
+    "topic": "Community",
+    "en": "concession fee",
+    "yue": "優惠收費"
+  },
+  {
+    "topic": "Community",
+    "en": "resident parking permit",
+    "yue": "居民泊車許可證"
+  },
+  {
+    "topic": "Community",
+    "en": "pet registration",
+    "yue": "寵物登記"
+  },
+  {
+    "topic": "Community",
+    "en": "Working with Children Check, or WWCC",
+    "yue": "兒童工作審查，即係 WWCC"
+  },
+  {
+    "topic": "Community",
+    "en": "noise complaint",
+    "yue": "噪音投訴"
+  },
+  {
+    "topic": "Community",
+    "en": "facility hire",
+    "yue": "場地租用"
+  },
+  {
+    "topic": "Community",
+    "en": "local council",
+    "yue": "市議會"
+  },
+  {
+    "topic": "Community",
+    "en": "microchip",
+    "yue": "晶片"
+  },
+  {
+    "topic": "Community",
+    "en": "community centre",
+    "yue": "社區中心"
+  },
+  {
+    "topic": "Community",
+    "en": "Working with Children Check",
+    "yue": "兒童工作審查"
+  },
+  {
+    "topic": "Community",
+    "en": "volunteer",
+    "yue": "義工"
+  },
+  {
+    "topic": "Education",
+    "en": "local intake area",
+    "yue": "本地收生區"
+  },
+  {
+    "topic": "Education",
+    "en": "parent-teacher interview",
+    "yue": "家長教師面談"
+  },
+  {
+    "topic": "Education",
+    "en": "attendance record",
+    "yue": "出席紀錄"
+  },
+  {
+    "topic": "Education",
+    "en": "Child Care Subsidy, or CCS",
+    "yue": "托兒津貼，即係 CCS"
+  },
+  {
+    "topic": "Education",
+    "en": "Vocational Education and Training, or VET",
+    "yue": "職業教育及培訓，即係 VET"
+  },
+  {
+    "topic": "Education",
+    "en": "Commonwealth Supported Place, or CSP",
+    "yue": "聯邦資助學額，即係 CSP"
+  },
+  {
+    "topic": "Education",
+    "en": "census date",
+    "yue": "學籍及費用責任截止日，即係 census date"
+  },
+  {
+    "topic": "Education",
+    "en": "Unique Student Identifier, or USI",
+    "yue": "唯一學生識別號碼，即係 USI"
+  },
+  {
+    "topic": "Education",
+    "en": "enrolment",
+    "yue": "註冊／入學"
+  },
+  {
+    "topic": "Education",
+    "en": "attendance",
+    "yue": "出席紀錄"
+  },
+  {
+    "topic": "Education",
+    "en": "Child Care Subsidy",
+    "yue": "托兒津貼"
+  },
+  {
+    "topic": "Education",
+    "en": "TAFE",
+    "yue": "TAFE 技術及持續教育院校"
+  },
+  {
+    "topic": "Education",
+    "en": "VET",
+    "yue": "職業教育及培訓"
+  },
+  {
+    "topic": "Education",
+    "en": "placement",
+    "yue": "實習"
+  },
+  {
+    "topic": "Education",
+    "en": "CSP",
+    "yue": "聯邦資助學額"
+  },
+  {
+    "topic": "Education",
+    "en": "HECS-HELP",
+    "yue": "HECS-HELP 學費貸款"
+  },
+  {
+    "topic": "Education",
+    "en": "USI",
+    "yue": "唯一學生識別號碼"
+  },
+  {
+    "topic": "Education",
+    "en": "academic transcript",
+    "yue": "成績表"
+  },
+  {
+    "topic": "Financial",
+    "en": "unauthorised transaction",
+    "yue": "未經授權交易"
+  },
+  {
+    "topic": "Financial",
+    "en": "direct debit",
+    "yue": "自動扣賬"
+  },
+  {
+    "topic": "Financial",
+    "en": "BPAY customer reference number",
+    "yue": "BPAY 客戶參考號碼"
+  },
+  {
+    "topic": "Financial",
+    "en": "interest-free period",
+    "yue": "免息期"
+  },
+  {
+    "topic": "Financial",
+    "en": "offset account",
+    "yue": "對沖戶口"
+  },
+  {
+    "topic": "Financial",
+    "en": "redraw facility",
+    "yue": "提取多還款項功能"
+  },
+  {
+    "topic": "Financial",
+    "en": "financial hardship assistance",
+    "yue": "財務困難援助"
+  },
+  {
+    "topic": "Financial",
+    "en": "income tax assessment",
+    "yue": "入息稅評稅通知"
+  },
+  {
+    "topic": "Financial",
+    "en": "transaction account",
+    "yue": "交易戶口"
+  },
+  {
+    "topic": "Financial",
+    "en": "BPAY",
+    "yue": "BPAY"
+  },
+  {
+    "topic": "Financial",
+    "en": "EFTPOS",
+    "yue": "EFTPOS"
+  },
+  {
+    "topic": "Financial",
+    "en": "home loan",
+    "yue": "按揭／房屋貸款"
+  },
+  {
+    "topic": "Financial",
+    "en": "financial hardship",
+    "yue": "財務困難"
+  },
+  {
+    "topic": "Financial",
+    "en": "ATO",
+    "yue": "澳洲稅務局"
+  },
+  {
+    "topic": "Financial",
+    "en": "AFCA",
+    "yue": "澳洲金融投訴局"
+  },
+  {
+    "topic": "Housing",
+    "en": "rental application",
+    "yue": "租屋申請"
+  },
+  {
+    "topic": "Housing",
+    "en": "condition report",
+    "yue": "物業狀況報告"
+  },
+  {
+    "topic": "Housing",
+    "en": "urgent repair",
+    "yue": "緊急維修"
+  },
+  {
+    "topic": "Housing",
+    "en": "rent increase notice",
+    "yue": "加租通知"
+  },
+  {
+    "topic": "Housing",
+    "en": "termination notice",
+    "yue": "終止租約通知"
+  },
+  {
+    "topic": "Housing",
+    "en": "break lease",
+    "yue": "提前終止租約"
+  },
+  {
+    "topic": "Housing",
+    "en": "bond claim",
+    "yue": "按金申索"
+  },
+  {
+    "topic": "Housing",
+    "en": "entry notice",
+    "yue": "入屋通知"
+  },
+  {
+    "topic": "Housing",
+    "en": "utility apportionment",
+    "yue": "公用事業費用分攤"
+  },
+  {
+    "topic": "Housing",
+    "en": "NSW Civil and Administrative Tribunal, or NCAT",
+    "yue": "新州民事及行政審裁處，即係 NCAT"
+  },
+  {
+    "topic": "Housing",
+    "en": "residential tenancy agreement",
+    "yue": "住宅租約"
+  },
+  {
+    "topic": "Housing",
+    "en": "tenant / renter",
+    "yue": "租客"
+  },
+  {
+    "topic": "Housing",
+    "en": "landlord / rental provider",
+    "yue": "業主／出租方"
+  },
+  {
+    "topic": "Housing",
+    "en": "property manager",
+    "yue": "物業管理員／租務經理"
+  },
+  {
+    "topic": "Housing",
+    "en": "rental bond",
+    "yue": "租屋按金"
+  },
+  {
+    "topic": "Housing",
+    "en": "routine inspection",
+    "yue": "例行租屋檢查"
+  },
+  {
+    "topic": "Housing",
+    "en": "NCAT",
+    "yue": "新州民事及行政審裁處"
+  },
+  {
+    "topic": "Insurance",
+    "en": "policy excess",
+    "yue": "保單自付額"
+  },
+  {
+    "topic": "Insurance",
+    "en": "make-safe work",
+    "yue": "防止損失擴大嘅緊急工程"
+  },
+  {
+    "topic": "Insurance",
+    "en": "covered event",
+    "yue": "受保事件"
+  },
+  {
+    "topic": "Insurance",
+    "en": "waiting period",
+    "yue": "等候期"
+  },
+  {
+    "topic": "Insurance",
+    "en": "insurance premium",
+    "yue": "保費"
+  },
+  {
+    "topic": "Insurance",
+    "en": "proof of ownership",
+    "yue": "物品擁有證明"
+  },
+  {
+    "topic": "Insurance",
+    "en": "Australian Financial Complaints Authority, or AFCA",
+    "yue": "澳洲金融投訴局，即係 AFCA"
+  },
+  {
+    "topic": "Insurance",
+    "en": "premium",
+    "yue": "保費"
+  },
+  {
+    "topic": "Insurance",
+    "en": "policy",
+    "yue": "保單"
+  },
+  {
+    "topic": "Insurance",
+    "en": "policy schedule",
+    "yue": "保單資料表"
+  },
+  {
+    "topic": "Insurance",
+    "en": "PDS",
+    "yue": "產品披露聲明"
+  },
+  {
+    "topic": "Insurance",
+    "en": "excess",
+    "yue": "自付額"
+  },
+  {
+    "topic": "Insurance",
+    "en": "claim",
+    "yue": "索償"
+  },
+  {
+    "topic": "Insurance",
+    "en": "sum insured",
+    "yue": "保額"
+  },
+  {
+    "topic": "Insurance",
+    "en": "exclusion",
+    "yue": "不保事項"
+  },
+  {
+    "topic": "Insurance",
+    "en": "internal dispute resolution",
+    "yue": "內部爭議處理"
+  },
+  {
+    "topic": "Insurance",
+    "en": "AFCA",
+    "yue": "澳洲金融投訴局"
+  },
+  {
+    "topic": "Social services",
+    "en": "JobSeeker Payment",
+    "yue": "JobSeeker 求職者補助金"
+  },
+  {
+    "topic": "Social services",
+    "en": "Rent Assistance",
+    "yue": "租金援助"
+  },
+  {
+    "topic": "Social services",
+    "en": "Child Care Subsidy, or CCS",
+    "yue": "托兒津貼，即係 CCS"
+  },
+  {
+    "topic": "Social services",
+    "en": "Parenting Payment",
+    "yue": "育兒補助金"
+  },
+  {
+    "topic": "Social services",
+    "en": "Carer Payment",
+    "yue": "照顧者補助金"
+  },
+  {
+    "topic": "Social services",
+    "en": "plan manager",
+    "yue": "計劃管理人"
+  },
+  {
+    "topic": "Social services",
+    "en": "emergency relief",
+    "yue": "緊急生活援助"
+  },
+  {
+    "topic": "Social services",
+    "en": "Services Australia",
+    "yue": "Services Australia"
+  },
+  {
+    "topic": "Social services",
+    "en": "Centrelink",
+    "yue": "Centrelink"
+  },
+  {
+    "topic": "Social services",
+    "en": "myGov",
+    "yue": "myGov"
+  },
+  {
+    "topic": "Social services",
+    "en": "CRN",
+    "yue": "客戶參考編號"
+  },
+  {
+    "topic": "Social services",
+    "en": "Child Care Subsidy",
+    "yue": "托兒津貼"
+  },
+  {
+    "topic": "Social services",
+    "en": "NDIS",
+    "yue": "國家殘障保險計劃"
+  },
+  {
+    "topic": "Social services",
+    "en": "support coordinator",
+    "yue": "支援協調員"
+  },
+  {
+    "topic": "Social services",
+    "en": "service agreement",
+    "yue": "服務協議"
+  }
+]

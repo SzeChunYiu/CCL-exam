@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "pack-guide",
+    "title": "Pack Guide"
+  },
+  {
+    "slug": "study-guide",
+    "title": "Study Guide"
+  },
+  {
+    "slug": "numbers-notes",
+    "title": "Numbers & Note-taking"
+  },
+  {
+    "slug": "self-review",
+    "title": "Self-review"
+  },
+  {
+    "slug": "glossary-notes",
+    "title": "Glossary Notes"
+  },
+  {
+    "slug": "official-notes",
+    "title": "Official References"
+  },
+  {
+    "slug": "audio-calibration",
+    "title": "Audio Calibration"
+  }
+]

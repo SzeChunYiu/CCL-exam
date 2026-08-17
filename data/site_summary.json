@@ -1,0 +1,21 @@
+{
+  "dialogues": 100,
+  "mock_tests": 50,
+  "segments": 1394,
+  "topics": 12,
+  "glossary_entries": 198,
+  "word_range": [
+    267,
+    327
+  ],
+  "segment_count_range": [
+    12,
+    16
+  ],
+  "max_segment_words": 35,
+  "difficulty": {
+    "Medium": 33,
+    "Easy": 34,
+    "Hard": 33
+  }
+}
