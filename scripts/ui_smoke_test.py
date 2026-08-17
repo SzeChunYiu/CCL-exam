@@ -42,4 +42,28 @@ css=(ROOT/'practice-player-v3.css').read_text()
 for selector in ['.question-player-v3','.question-dialogue.active-dialogue','.q-player-main','.ux-nav a']:
     assert selector in css, f'missing CSS selector {selector}'
 
-print('UI route/player smoke checks passed')
+# Catch the most common broken-button regression: an inline handler references a
+# function that is not globally defined by any classic script loaded by the site.
+js_files=[ROOT/p.lstrip('/') for p in required_scripts]
+js_text='\n'.join(p.read_text() for p in js_files)
+html_and_templates='\n'.join(p.read_text() for p in routes.values())+'\n'+js_text
+attrs=re.findall(r'on(?:click|change|input)="([^"]+)"',html_and_templates)
+called=set()
+for attr in attrs:
+    called.update(re.findall(r'\b([A-Za-z_$][\w$]*)\s*\(',attr))
+known={'if','for','while','switch','Math','Number','String','Object','Array','Date','JSON','Promise','setTimeout','clearTimeout','setInterval','clearInterval','confirm','alert'}
+called-=known
+
+def global_def(name):
+    patterns=[
+        rf'\bfunction\s+{re.escape(name)}\s*\(',
+        rf'\bwindow\.{re.escape(name)}\s*=',
+        rf'(^|\n)\s*{re.escape(name)}\s*=\s*function\b',
+        rf'(^|\n)\s*(?:const|let|var)\s+{re.escape(name)}\s*=\s*(?:async\s*)?(?:function|\([^\n]*?\)\s*=>|[A-Za-z_$][\w$]*\s*=>)',
+    ]
+    return any(re.search(p,js_text,re.M) for p in patterns)
+
+missing=sorted(name for name in called if not global_def(name))
+assert not missing, f'inline UI handlers reference missing globals: {missing}'
+
+print(f'UI route/player smoke checks passed; {len(called)} inline handler functions resolved')
