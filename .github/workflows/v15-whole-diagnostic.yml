@@ -1,0 +1,44 @@
+name: V15 Whole Dialogue Diagnostic
+
+on:
+  push:
+    branches: [release/native-500-final2]
+
+permissions:
+  contents: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  diagnostic:
+    if: ${{ contains(github.event.head_commit.message || '', '[diag v15]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build v15 candidate
+        run: |
+          set -euo pipefail
+          python3 scripts/build_native_500_release_v15.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" > v15-build.json
+      - name: Run whole-dialogue audit and keep report
+        run: |
+          set +e
+          python3 scripts/audit_whole_dialogue_naturalness.py build/candidate/dialogues.json --json > v15-whole.json
+          code=$?
+          set -e
+          echo "audit_exit=$code"
+          test -s v15-whole.json
+      - name: Persist diagnostic
+        run: |
+          set -euo pipefail
+          mkdir -p diagnostics
+          cp v15-build.json diagnostics/v15-build.json
+          cp v15-whole.json diagnostics/v15-whole.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add diagnostics/v15-build.json diagnostics/v15-whole.json
+          git commit -m 'Record v15 whole-dialogue diagnostic [skip release gate] [skip audio]'
+          git push origin HEAD:release/native-500-final2
