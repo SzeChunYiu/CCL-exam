@@ -6,18 +6,29 @@
   "glossary_entries": 198,
   "minSegments": 12,
   "maxSegments": 16,
-  "segment_count_range": [12, 16],
+  "segment_count_range": [
+    12,
+    16
+  ],
   "maxWords": 35,
   "max_segment_words": 35,
   "meanDialogueWords": 294.9,
   "minDialogueWords": 272,
   "maxDialogueWords": 324,
-  "word_range": [272, 324],
+  "word_range": [
+    272,
+    324
+  ],
   "maxExactRepeat": 4,
   "diversifiedTurns": 120,
   "audioTarget": {
     "englishWpm": 160,
     "cantoneseCharsPerSecond": 4.0
   },
-  "version": "v3-neural"
+  "version": "v3-neural",
+  "speakerPolicy": {
+    "professional": "English",
+    "client": "Cantonese",
+    "clientContext": "immigrant/community life in Australia"
+  }
 }
