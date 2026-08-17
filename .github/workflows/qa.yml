@@ -27,6 +27,7 @@ jobs:
           node --check ux-v4.js
           node --check question-card-play.js
           node --check practice-studio-v5.js
+          node --check practice-runtime-v5.js
           node --check ux-v5.js
       - name: UI route and player smoke checks
         run: python3 scripts/ui_smoke_test.py
@@ -47,7 +48,10 @@ jobs:
           grep -q 'jumpPracticeV5' practice-studio-v5.js
           grep -q 'practiceAutoPlay' practice-studio-v5.js
           grep -q 'practiceAutoAdvance' practice-studio-v5.js
+          grep -q "mode==='topic'" practice-runtime-v5.js
+          grep -q "mode==='drill'" practice-runtime-v5.js
           grep -q 'practice-studio-v5.js' practice/index.html
+          grep -q 'practice-runtime-v5.js' practice/index.html
           grep -q 'ux-v5.js' progress/index.html
       - name: Dialogue bank invariants
         run: |
