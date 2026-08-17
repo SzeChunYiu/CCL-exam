@@ -57,18 +57,35 @@ jobs:
       - name: Cantonese-only lexical-transfer gate
         run: python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > /tmp/lexical.json
 
-      - name: Inspect full metrics
+      - name: Inspect full metrics and repetition hotspots
         if: always()
         run: |
           python3 scripts/qa_cantonese.py data/dialogues.json --json > /tmp/cantonese-hard.json || true
           python3 - <<'PY'
-          import json, pathlib
+          import json, pathlib, re
+          from collections import Counter
           x=json.load(open('/tmp/cantonese-hard.json'))
           print(json.dumps({'metrics':x.get('metrics'),'failures':x.get('failures')},ensure_ascii=False,indent=2))
+          data=json.load(open('data/dialogues.json'))
+          H=re.compile(r'[㐀-鿿]')
+          grams=Counter()
+          for d in data:
+            for s in d['segments']:
+              if s.get('source_lang')!='yue': continue
+              h=''.join(H.findall(s['source']))
+              grams.update(h[i:i+10] for i in range(max(0,len(h)-9)))
+          print('TOP_REPEATED_10GRAMS')
+          for g,n in grams.most_common(80):
+            if n>1: print(n,g)
+          literary=['憂心','申報','狀況','確保','實體','予以','加以','方可','應當','事宜']
+          print('LITERARY_HITS')
+          for d in data:
+            for s in d['segments']:
+              hits=[w for w in literary if w in s['yue']]
+              if hits: print(d['id'],s['n'],hits,s['yue'])
           for name in ['native-v2','lexical']:
             p=pathlib.Path('/tmp/'+name+'.json')
-            if p.exists():
-              print(name, p.read_text())
+            if p.exists(): print(name,p.read_text())
           PY
 
       - name: Commit generated bank after every gate passes
