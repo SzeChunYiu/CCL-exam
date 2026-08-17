@@ -19,6 +19,7 @@ jobs:
         run: |
           node --check app.js
           node --check neural-audio.js
+          node --check simple-ui.js
       - name: Dialogue bank invariants
         run: |
           python3 - <<'PY'
