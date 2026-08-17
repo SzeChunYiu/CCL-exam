@@ -1,4 +1,4 @@
-name: Native Cantonese 500 Bank Integration
+name: Native Cantonese 500 Bank Diagnostics
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  build-and-audit:
+  diagnose-v11:
     if: ${{ !contains(github.event.head_commit.message || '', '[skip ci]') }}
     runs-on: ubuntu-latest
     steps:
@@ -25,80 +25,51 @@ jobs:
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
           python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
-          python3 -m py_compile scripts/generate_v4_audio.py
-          python3 -m py_compile scripts/upload_v4_segments.py
 
-      - name: Build 500 grounded dialogues from rich CCL seeds
-        run: python3 scripts/build_native_500_v11.py
-
-      - name: Apply audio and UI release settings
+      - name: Build candidate but keep diagnostics on preflight failure
         run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          p=Path('scripts/generate_v4_audio.py')
-          s=p.read_text(encoding='utf-8')
-          s=s.replace('"zh-HK-HiuMaanNeural": "+12%"', '"zh-HK-HiuMaanNeural": "+17%"')
-          s=s.replace('CCL_PITCH_CYCLE", "+0Hz,+6Hz,-5Hz,+3Hz,-8Hz"', 'CCL_PITCH_CYCLE", "+0Hz"')
-          s=s.replace('# Slight per-dialogue pitch offset adds speaker individuality without changing\n# pace. Cycle is deliberately coprime with the voice-pool sizes so voice and\n# pitch do not lock into the same repeating pair.', '# Keep Cantonese lexical-tone contours untouched by default. Speaker variety\n# comes from the calibrated native zh-HK voice pool, not arbitrary pitch shifts.')
-          p.write_text(s,encoding='utf-8')
-          a=Path('app.js')
-          a.write_text(a.read_text(encoding='utf-8').replace("'100-dialogue Library'", "'Question Library'"),encoding='utf-8')
-          PY
+          mkdir -p build/diagnostics
+          set +e
+          python3 scripts/build_native_500_v11.py > build/diagnostics/v11-build.log 2>&1
+          echo $? > build/diagnostics/v11-build-exit.txt
+          set -e
+          cat build/diagnostics/v11-build.log
 
-      - name: Structural verification
-        run: python3 scripts/verify_rewrite.py data/dialogues.json --no-baseline
-
-      - name: Native template-distance gate
-        run: python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > /tmp/native-v2.json
-
-      - name: Cantonese-only lexical-transfer gate
-        run: python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > /tmp/lexical.json
-
-      - name: Corpus-calibrated Cantonese hard gate
-        run: python3 scripts/qa_cantonese.py data/dialogues.json
-
-      - name: Inspect every metric even after a failed gate
-        if: always()
+      - name: Run independent audits diagnostically
         run: |
-          python3 scripts/qa_cantonese.py data/dialogues.json --json > /tmp/cantonese-hard.json || true
-          python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > /tmp/native-v2.json || true
-          python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > /tmp/lexical.json || true
-          python3 - <<'PY'
-          import json, pathlib, re
+          set +e
+          python3 scripts/verify_rewrite.py data/dialogues.json --no-baseline > build/diagnostics/v11-verify.txt 2>&1
+          echo $? > build/diagnostics/v11-verify-exit.txt
+          python3 scripts/audit_native_cantonese_v2.py data/dialogues.json --json > build/diagnostics/v11-native.json 2> build/diagnostics/v11-native.stderr
+          echo $? > build/diagnostics/v11-native-exit.txt
+          python3 scripts/audit_cantonese_lexical_transfer.py data/dialogues.json --json > build/diagnostics/v11-lexical.json 2> build/diagnostics/v11-lexical.stderr
+          echo $? > build/diagnostics/v11-lexical-exit.txt
+          python3 scripts/qa_cantonese.py data/dialogues.json --json > build/diagnostics/v11-corpus.json 2> build/diagnostics/v11-corpus.stderr
+          echo $? > build/diagnostics/v11-corpus-exit.txt
+          set -e
+
+      - name: Add repetition hotspot report
+        run: |
+          python3 - <<'PY' > build/diagnostics/v11-hotspots.txt
+          import json,re
           from collections import Counter
-          native=None
-          for name in ['cantonese-hard','native-v2','lexical']:
-            p=pathlib.Path('/tmp/'+name+'.json')
-            if p.exists():
-              try:
-                x=json.loads(p.read_text())
-                if name=='native-v2': native=x
-                keys=['metrics','failures','dialogues','client_turns','client_sentences','exact_reuse_count','near_duplicate_count','skeleton_repeat_count','repair_turns','change_state_turns','short_turns_le10','long_turns_ge45','bare_endings','violating_segments','latin_tokens','unique_tokens','fingerprints','top_openers','top_endings']
-                print(name, json.dumps({k:x.get(k) for k in keys if k in x},ensure_ascii=False,indent=2))
-              except Exception as e: print(name,'parse error',e,p.read_text()[:4000])
-          if native:
-            print('TOP_NEAR_DUPLICATE_PAIRS')
-            print(json.dumps(native.get('near_duplicates',[])[:40],ensure_ascii=False,indent=2))
-            print('SKELETON_REPEATS')
-            print(json.dumps(native.get('skeleton_repeats',[])[:20],ensure_ascii=False,indent=2))
-          data=json.load(open('data/dialogues.json')); H=re.compile(r'[㐀-鿿]'); grams=Counter()
+          data=json.load(open('data/dialogues.json'))
+          H=re.compile(r'[㐀-鿿]')
+          grams=Counter()
           for d in data:
             for s in d['segments']:
               if s.get('source_lang')!='yue': continue
-              h=''.join(H.findall(s['source'])); grams.update(h[i:i+10] for i in range(max(0,len(h)-9)))
+              h=''.join(H.findall(s['source']))
+              grams.update(h[i:i+10] for i in range(max(0,len(h)-9)))
           print('TOP_REPEATED_10GRAMS')
-          for g,n in grams.most_common(60):
+          for g,n in grams.most_common(120):
             if n>1: print(n,g)
           PY
 
-      - name: Commit generated bank after every gate passes
+      - name: Persist diagnostics only
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add scripts/build_native_500_v10.py scripts/build_native_500_v11.py data/dialogues.json data/site_summary.json data/config.json app.js scripts/generate_v4_audio.py
-          if git diff --cached --quiet; then
-            echo 'Generated bank already matches the committed bank.'
-          else
-            git commit -m 'Generate v11 native Cantonese 500-dialogue bank [skip ci]'
-            git push
-          fi
+          git add build/diagnostics/v11-*
+          git commit -m 'Record v11 native-bank diagnostics [skip ci]'
+          git push
