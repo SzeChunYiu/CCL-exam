@@ -1,0 +1,11 @@
+{
+  "dialogues": 500,
+  "segments": 6000,
+  "mean_words": 236.3,
+  "min_words": 209,
+  "max_words": 276,
+  "max_segment": 33,
+  "local_errors": [
+    "exact D464/D496: 結果嗰度更正返，我問托兒津貼，即係相關英文項目個決定，唔係重開申請"
+  ]
+}
