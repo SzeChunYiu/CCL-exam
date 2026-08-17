@@ -20,6 +20,7 @@ jobs:
       - name: Python syntax
         run: |
           python3 -m py_compile scripts/build_native_500_v10.py
+          python3 -m py_compile scripts/build_native_500_v11.py
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
@@ -27,20 +28,8 @@ jobs:
           python3 -m py_compile scripts/generate_v4_audio.py
           python3 -m py_compile scripts/upload_v4_segments.py
 
-      - name: Compact release-builder long professional closing
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          p=Path('scripts/build_native_500_v10.py')
-          s=p.read_text(encoding='utf-8')
-          old='en = f"For now, keep the record about {issue_e}, the {ev_e}, and any written outcome together. That protects the history if {eff_e} is reviewed later."'
-          new='en = f"Keep the {ev_e} with the {term_e} record and any written outcome. That gives the service a clear history if the matter is reviewed."'
-          if old not in s: raise SystemExit('expected professional closing not found')
-          p.write_text(s.replace(old,new),encoding='utf-8')
-          PY
-
       - name: Build 500 grounded dialogues from rich CCL seeds
-        run: python3 scripts/build_native_500_v10.py
+        run: python3 scripts/build_native_500_v11.py
 
       - name: Apply audio and UI release settings
         run: |
@@ -106,10 +95,10 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add scripts/build_native_500_v10.py data/dialogues.json data/site_summary.json data/config.json app.js scripts/generate_v4_audio.py
+          git add scripts/build_native_500_v10.py scripts/build_native_500_v11.py data/dialogues.json data/site_summary.json data/config.json app.js scripts/generate_v4_audio.py
           if git diff --cached --quiet; then
             echo 'Generated bank already matches the committed bank.'
           else
-            git commit -m 'Generate grounded native Cantonese 500-dialogue bank [skip ci]'
+            git commit -m 'Generate v11 native Cantonese 500-dialogue bank [skip ci]'
             git push
           fi
