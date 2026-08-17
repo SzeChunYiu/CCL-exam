@@ -35,6 +35,12 @@ jobs:
           assert s['dialogues']==100 and s['mock_tests']==50 and s['segments']==1412
           assert s['maxExactRepeat']<=4
           assert r['provider']=='supabase' and r['mode']=='segments' and r['version']=='v3-neural'
+          assert r['rates']['yue']=='+10%'
+          # Permanent speaker policy: Australian professional/officer speaks English;
+          # immigrant/community client speaks Cantonese.
+          assert all(seg['source_lang']==('en' if seg['role']=='P' else 'yue') for x in d for seg in x['segments'])
+          assert s.get('speakerPolicy',{}).get('professional')=='English'
+          assert s.get('speakerPolicy',{}).get('client')=='Cantonese'
           banned=re.compile(r'remember the term|key expression|safest next step',re.I)
           assert not any(banned.search(seg['en']) for x in d for seg in x['segments'])
           print('CCL V3 QA passed')
