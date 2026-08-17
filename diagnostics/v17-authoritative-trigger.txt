@@ -1,0 +1,1 @@
+Authoritative v17 full-gate trigger after bilingual pairing and human review fixes.
