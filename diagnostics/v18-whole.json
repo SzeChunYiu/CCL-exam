@@ -1,0 +1,524 @@
+{
+  "dialogues": 500,
+  "officer_turns": 3000,
+  "client_english_model_turns": 3000,
+  "thresholds": {
+    "officer_en_near": 25,
+    "officer_yue_near": 25,
+    "client_en_near": 25,
+    "officer_en_repeated_8gram_pct": 8.0,
+    "officer_yue_repeated_10gram_pct": 8.0,
+    "client_en_repeated_8gram_pct": 8.0,
+    "officer_yue_written_per1000": 2.0
+  },
+  "metrics": {
+    "officer_en_exact": 0,
+    "officer_yue_exact": 0,
+    "client_en_exact": 0,
+    "officer_en_near": 1,
+    "officer_yue_near": 4,
+    "client_en_near": 9,
+    "officer_en_repeated_8gram_pct": 2.67,
+    "officer_yue_repeated_10gram_pct": 5.75,
+    "client_en_repeated_8gram_pct": 5.97,
+    "officer_yue_written_per1000": 0.0,
+    "malformed_english": 0,
+    "stage_label_hits": 0
+  },
+  "audit_performance": {
+    "officer_en": {
+      "sentences": 3000,
+      "sequence_matcher_pairs": 8400,
+      "safely_pruned_pairs": 4490100
+    },
+    "officer_yue": {
+      "sentences": 3000,
+      "sequence_matcher_pairs": 89,
+      "safely_pruned_pairs": 4498411
+    },
+    "client_en": {
+      "sentences": 2500,
+      "sequence_matcher_pairs": 1766,
+      "safely_pruned_pairs": 3121984
+    }
+  },
+  "examples": {
+    "officer_en_exact": [],
+    "officer_yue_exact": [],
+    "client_en_exact": [],
+    "officer_en_near": [
+      {
+        "a": "D064:S5",
+        "b": "D196:S5",
+        "ratio": 0.921,
+        "sentence_a": "On this call, for childcare place, let me verify the date; Child Care Subsidy, or CCS comes after that.",
+        "sentence_b": "On this call, for changed childcare use, let me verify the date; Child Care Subsidy, or CCS comes after that."
+      }
+    ],
+    "officer_yue_near": [
+      {
+        "a": "D080:S12",
+        "b": "D081:S11",
+        "ratio": 0.857,
+        "sentence_a": "完成呢次之後，租約留喺加租通知；加租通知最終回覆亦要保存",
+        "sentence_b": "完成呢次之後，租約留喺終止租約通知；終止租約通知最終回覆亦要保存"
+      },
+      {
+        "a": "D081:S9",
+        "b": "D180:S12",
+        "ratio": 0.852,
+        "sentence_a": "先修正租約個錯位；終止租約通知用返同一宗，終止租約通知最後再核",
+        "sentence_b": "先修正租約個錯位；加租通知用返同一宗，加租通知最後再核"
+      },
+      {
+        "a": "D134:S1",
+        "b": "D334:S4",
+        "ratio": 0.852,
+        "sentence_a": "講心理輔導轉介，先用國民醫療保險卡；跟住清心理健康治療計劃",
+        "sentence_b": "心理輔導轉介同國民醫療保險卡放埋；跟住對心理健康治療計劃"
+      },
+      {
+        "a": "D181:S9",
+        "b": "D280:S9",
+        "ratio": 0.84,
+        "sentence_a": "先留返原本終止租約通知紀錄；更正租約之後，終止租約通知再查",
+        "sentence_b": "先留返原本加租通知紀錄；更正租約之後，加租通知再查"
+      }
+    ],
+    "client_en_near": [
+      {
+        "a": "D064:S2",
+        "b": "D096:S1",
+        "ratio": 0.915,
+        "sentence_a": "To begin, I’m asking about a childcare place; can you clarify Child Care Subsidy, or CCS?",
+        "sentence_b": "To begin, I’m asking about changed childcare use; can you clarify Child Care Subsidy, or CCS?"
+      },
+      {
+        "a": "D156:S3",
+        "b": "D456:S4",
+        "ratio": 0.889,
+        "sentence_a": "On this call, can you clarify resident parking permit for resident parking permit?",
+        "sentence_b": "On the written answer, can you clarify resident parking permit for resident parking permit?"
+      },
+      {
+        "a": "D216:S3",
+        "b": "D232:S4",
+        "ratio": 0.887,
+        "sentence_a": "With the versions apart, please check the amount before deciding meter reading.",
+        "sentence_b": "With the versions apart, please check the amount before deciding treatment plan."
+      },
+      {
+        "a": "D248:S2",
+        "b": "D298:S1",
+        "ratio": 0.887,
+        "sentence_a": "On the documents, can you verify the date and then tell me where witness statement stands?",
+        "sentence_b": "On the documents, can you verify the date and then tell me where Carer Payment stands?"
+      },
+      {
+        "a": "D252:S4",
+        "b": "D298:S1",
+        "ratio": 0.891,
+        "sentence_a": "On the documents, can you verify the time and then tell me where adjournment stands?",
+        "sentence_b": "On the documents, can you verify the date and then tell me where Carer Payment stands?"
+      },
+      {
+        "a": "D323:S10",
+        "b": "D367:S9",
+        "ratio": 0.881,
+        "sentence_a": "With time tight, let me correct the date; I was referring to incident report.",
+        "sentence_b": "With time tight, let me correct the date; I was referring to census date."
+      },
+      {
+        "a": "D350:S10",
+        "b": "D383:S8",
+        "ratio": 0.927,
+        "sentence_a": "Before time runs out, I meant civil claim; my point about the amount was wrong.",
+        "sentence_b": "Before time runs out, I meant bond claim; my point about the amount was wrong."
+      },
+      {
+        "a": "D416:S3",
+        "b": "D432:S3",
+        "ratio": 0.887,
+        "sentence_a": "Before a review, I’m asking you to reconsider meter reading because of the amount.",
+        "sentence_b": "Before a review, I’m asking you to reconsider treatment plan because of the amount."
+      },
+      {
+        "a": "D461:S3",
+        "b": "D488:S2",
+        "ratio": 0.886,
+        "sentence_a": "Looking at the result, can you verify the date and then tell me where local intake area stands?",
+        "sentence_b": "Looking at the result, can you verify the date and then tell me where make-safe work stands?"
+      }
+    ],
+    "malformed": [],
+    "stage_labels": [],
+    "written_yue": [],
+    "officer_en_top_8grams": [
+      [
+        "before i answer child care subsidy or ccs",
+        7
+      ],
+      [
+        "i’ll read medicare card after that we can",
+        5
+      ],
+      [
+        "read medicare card after that we can sort",
+        5
+      ],
+      [
+        "medicare card after that we can sort out",
+        5
+      ],
+      [
+        "the written child care subsidy or ccs answer",
+        5
+      ],
+      [
+        "start with photo id i’ll use it to",
+        4
+      ],
+      [
+        "with photo id i’ll use it to clarify",
+        4
+      ],
+      [
+        "before i answer proprietary limited company or pty",
+        4
+      ],
+      [
+        "i answer proprietary limited company or pty ltd",
+        4
+      ],
+      [
+        "on this call i’ll compare the amount with",
+        4
+      ],
+      [
+        "on this call i’ll compare the date with",
+        4
+      ],
+      [
+        "before i answer visa entitlement verification online or",
+        4
+      ],
+      [
+        "i answer visa entitlement verification online or vevo",
+        4
+      ],
+      [
+        "before i answer commonwealth supported place or csp",
+        4
+      ],
+      [
+        "if photo id is wrong amend it under",
+        4
+      ],
+      [
+        "before i answer australian business number or abn",
+        4
+      ],
+      [
+        "before i answer business activity statement or bas",
+        4
+      ],
+      [
+        "i’ll use photos as the reference before i",
+        4
+      ],
+      [
+        "use photos as the reference before i answer",
+        4
+      ],
+      [
+        "show me medicare card then we can settle",
+        4
+      ],
+      [
+        "before i answer adult migrant english program or",
+        4
+      ],
+      [
+        "i answer adult migrant english program or amep",
+        4
+      ],
+      [
+        "on the timing i’ll compare the date with",
+        4
+      ],
+      [
+        "australian business number or abn for new sole-trader",
+        3
+      ],
+      [
+        "business number or abn for new sole-trader registration",
+        3
+      ],
+      [
+        "the written australian business number or abn answer",
+        3
+      ],
+      [
+        "goods and services tax or gst for gst",
+        3
+      ],
+      [
+        "and services tax or gst for gst registration",
+        3
+      ],
+      [
+        "services tax or gst for gst registration question",
+        3
+      ],
+      [
+        "at this point i need the amount checked",
+        3
+      ]
+    ],
+    "officer_yue_top_10grams": [
+      [
+        "暫時跟返原先做法我查",
+        46
+      ],
+      [
+        "時跟返原先做法我查完",
+        46
+      ],
+      [
+        "對好之後先再講改唔改",
+        42
+      ],
+      [
+        "錯嗰部分直接改返之後",
+        39
+      ],
+      [
+        "嗰部分直接改返之後再",
+        39
+      ],
+      [
+        "部分直接改返之後再核",
+        39
+      ],
+      [
+        "個日期係基準我用嚟對",
+        25
+      ],
+      [
+        "嗰個日期係基準我用嚟",
+        14
+      ],
+      [
+        "國民醫療保險緊急護理",
+        12
+      ],
+      [
+        "民醫療保險緊急護理診",
+        12
+      ],
+      [
+        "醫療保險緊急護理診所",
+        12
+      ],
+      [
+        "嗰筆數係基準我用嚟對",
+        10
+      ],
+      [
+        "要查嗰個日期清楚先定",
+        8
+      ],
+      [
+        "資料錯嗰部分直接改返",
+        7
+      ],
+      [
+        "料錯嗰部分直接改返之",
+        7
+      ],
+      [
+        "醫療保險嗰間緊急護理",
+        7
+      ],
+      [
+        "療保險嗰間緊急護理診",
+        7
+      ],
+      [
+        "保險嗰間緊急護理診所",
+        7
+      ],
+      [
+        "個金額係基準我用嚟對",
+        7
+      ],
+      [
+        "同由獨資經營轉做公司",
+        7
+      ],
+      [
+        "資料直接更正最後再對",
+        7
+      ],
+      [
+        "料直接更正最後再對清",
+        7
+      ],
+      [
+        "緊急護理診所嘅醫療保",
+        6
+      ],
+      [
+        "急護理診所嘅醫療保險",
+        6
+      ],
+      [
+        "護理診所嘅醫療保險安",
+        6
+      ],
+      [
+        "理診所嘅醫療保險安排",
+        6
+      ],
+      [
+        "住先核實嗰個日期再跟",
+        6
+      ],
+      [
+        "查詢而家唔需要預先改",
+        6
+      ],
+      [
+        "表直接更正最後再對清",
+        6
+      ],
+      [
+        "資料如果有錯喺同一個",
+        6
+      ]
+    ],
+    "client_en_top_8grams": [
+      [
+        "the detail i need checked is the date",
+        23
+      ],
+      [
+        "does not line up i need the right",
+        16
+      ],
+      [
+        "not line up i need the right version",
+        16
+      ],
+      [
+        "line up i need the right version identified",
+        16
+      ],
+      [
+        "can you verify the date and then tell",
+        16
+      ],
+      [
+        "you verify the date and then tell me",
+        16
+      ],
+      [
+        "verify the date and then tell me where",
+        16
+      ],
+      [
+        "can you verify the time and then tell",
+        14
+      ],
+      [
+        "you verify the time and then tell me",
+        14
+      ],
+      [
+        "verify the time and then tell me where",
+        14
+      ],
+      [
+        "details is what i have what else does",
+        13
+      ],
+      [
+        "the detail i need checked is the time",
+        11
+      ],
+      [
+        "i need to amend the date please use",
+        10
+      ],
+      [
+        "details tell me what is still needed for",
+        9
+      ],
+      [
+        "the detail i need checked is the amount",
+        8
+      ],
+      [
+        "one correction the date was not the point",
+        8
+      ],
+      [
+        "notice is what i have what else does",
+        7
+      ],
+      [
+        "with the versions apart i found a conflict",
+        7
+      ],
+      [
+        "the versions apart i found a conflict in",
+        7
+      ],
+      [
+        "can you verify the amount and then tell",
+        7
+      ],
+      [
+        "you verify the amount and then tell me",
+        7
+      ],
+      [
+        "verify the amount and then tell me where",
+        7
+      ],
+      [
+        "depends on one detail here the date i",
+        7
+      ],
+      [
+        "for the deadline the deadline i need checked",
+        7
+      ],
+      [
+        "the deadline the deadline i need checked is",
+        7
+      ],
+      [
+        "what i said about the date was off",
+        7
+      ],
+      [
+        "i said about the date was off i",
+        7
+      ],
+      [
+        "said about the date was off i mean",
+        7
+      ],
+      [
+        "i need you to check the date okay",
+        6
+      ],
+      [
+        "on one detail here the date i understand",
+        6
+      ]
+    ]
+  },
+  "failures": []
+}
