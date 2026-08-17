@@ -18,15 +18,18 @@ jobs:
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/audit_cantonese_naturalness.py
+          python3 -m py_compile scripts/audit_native_cantonese_v2.py
           python3 -m py_compile scripts/generate_v4_audio.py
           python3 -m py_compile scripts/upload_v4_segments.py
-      - name: Current-bank structural verification
-        run: python3 scripts/verify_rewrite.py data/dialogues.json --baseline data/dialogues.json
-      - name: Corpus-calibrated Cantonese metrics
+      - name: Current-bank structural baseline
+        run: |
+          python3 scripts/verify_rewrite.py data/dialogues.json --baseline data/dialogues.json > /tmp/structural.txt 2>&1 || true
+          tail -n 80 /tmp/structural.txt
+      - name: Corpus-calibrated Cantonese baseline
         run: |
           python3 scripts/qa_cantonese.py data/dialogues.json --json > /tmp/cantonese-hard.json || true
           cat /tmp/cantonese-hard.json
-      - name: Interactional naturalness audit
+      - name: Interactional naturalness baseline
         run: |
           python3 scripts/audit_cantonese_naturalness.py --json > /tmp/cantonese-soft.json
           python3 - <<'PY'
@@ -36,4 +39,17 @@ jobs:
           for r in x['results']:
               if r['warnings']:
                   print(r['id'], ' | '.join(r['warnings']))
+          PY
+      - name: Native Cantonese template-distance baseline
+        run: |
+          python3 scripts/audit_native_cantonese_v2.py --json > /tmp/native-v2.json || true
+          python3 - <<'PY'
+          import json
+          x=json.load(open('/tmp/native-v2.json'))
+          keys=['dialogues','client_turns','client_sentences','exact_reuse_count','near_duplicate_count','skeleton_repeat_count','repair_turns','change_state_turns','short_turns_le10','long_turns_ge45','bare_endings','fingerprints','failures']
+          print(json.dumps({k:x[k] for k in keys},ensure_ascii=False,indent=2))
+          print('\nWorst near duplicates:')
+          for y in x['near_duplicates'][:20]: print(y['ratio'],y['a'],y['b'],y['text_a'],'<>',y['text_b'])
+          print('\nWorst skeletons:')
+          for y in x['skeleton_repeats'][:15]: print(len(y['dialogues']),y['skeleton'],y['examples'][:2])
           PY
