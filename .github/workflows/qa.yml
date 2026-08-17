@@ -21,6 +21,7 @@ jobs:
           node --check neural-audio.js
           node --check simple-ui.js
           node --check questions-page.js
+          node --check ux-v2.js
       - name: Dialogue bank invariants
         run: |
           python3 - <<'PY'
@@ -36,8 +37,6 @@ jobs:
           assert s['maxExactRepeat']<=4
           assert r['provider']=='supabase' and r['mode']=='segments' and r['version']=='v3-neural'
           assert r['rates']['yue']=='+10%'
-          # Permanent speaker policy: Australian professional/officer speaks English;
-          # immigrant/community client speaks Cantonese.
           assert all(seg['source_lang']==('en' if seg['role']=='P' else 'yue') for x in d for seg in x['segments'])
           assert s.get('speakerPolicy',{}).get('professional')=='English'
           assert s.get('speakerPolicy',{}).get('client')=='Cantonese'
