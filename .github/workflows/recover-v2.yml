@@ -19,38 +19,29 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
           fetch-depth: 0
-      - name: Recover static payload
+      - name: Decode payload
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import base64,gzip,io,tarfile,json,hashlib
+          import base64,gzip,hashlib
           root=Path('.')
           parts=sorted((root/'src/v2').glob('static.part*'))
           enc=''.join(p.read_text().strip() for p in parts)
           raw=gzip.decompress(base64.b64decode(enc))
+          out=root/'src/v2/recovered_payload.bin'
+          out.write_bytes(raw)
           print('decoded bytes',len(raw),'sha256',hashlib.sha256(raw).hexdigest())
-          with tarfile.open(fileobj=io.BytesIO(raw),mode='r:') as tf:
-              names=[m.name for m in tf.getmembers() if m.isfile()]
-              print('members',names)
-              for m in tf.getmembers():
-                  if not m.isfile(): continue
-                  dst=(root/m.name).resolve()
-                  if root.resolve() not in dst.parents: raise SystemExit('unsafe path '+m.name)
-                  dst.parent.mkdir(parents=True,exist_ok=True)
-                  dst.write_bytes(tf.extractfile(m).read())
-          if (root/'data/dialogues.json').exists():
-              d=json.loads((root/'data/dialogues.json').read_text())
-              print('dialogues',len(d),'segments',sum(len(x['segments']) for x in d),'minmax',min(len(x['segments']) for x in d),max(len(x['segments']) for x in d),'maxwc',max(s.get('wc',0) for x in d for s in x['segments']))
+          print('prefix',repr(raw[:160]))
           PY
-      - name: Commit recovered payload
+          file src/v2/recovered_payload.bin || true
+      - name: Commit decoded payload
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git reset .github/workflows/recover-v2.yml src/v2 || true
+          git add src/v2/recovered_payload.bin
           if git diff --cached --quiet; then
             echo 'No recovered changes'
           else
-            git commit -m 'Recover final v2 static build [skip ci]'
+            git commit -m 'Decode final v2 static payload [skip ci]'
             git push origin HEAD:${GITHUB_REF_NAME}
           fi
