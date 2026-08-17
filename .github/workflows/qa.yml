@@ -25,8 +25,17 @@ jobs:
           node --check practice-player-v3.js
           node --check route-pages.js
           node --check ux-v4.js
+          node --check question-card-play.js
       - name: UI route and player smoke checks
         run: python3 scripts/ui_smoke_test.py
+      - name: Question card quick play
+        run: |
+          grep -q 'question-card-play.js' questions/index.html
+          grep -q 'question-card-play.css' questions/index.html
+          grep -q 'playQuestionDialogue' question-card-play.js
+          grep -q 'event.preventDefault' question-card-play.js
+          grep -q 'event.stopPropagation' question-card-play.js
+          grep -q 'question-dialogue.active-dialogue .question-card-play' question-card-play.css
       - name: Dialogue bank invariants
         run: |
           python3 - <<'PY'
