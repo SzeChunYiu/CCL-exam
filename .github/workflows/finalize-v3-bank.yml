@@ -1,0 +1,46 @@
+name: Finalize v3 CCL bank
+
+on:
+  push:
+    branches: [final-ccl-v3]
+    paths:
+      - 'scripts/naturalize_final_bank.py'
+      - '.github/workflows/finalize-v3-bank.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Naturalize and validate final bank
+        run: python3 scripts/naturalize_final_bank.py
+      - name: Verify final invariants
+        run: |
+          python3 - <<'PY'
+          import json,re
+          d=json.load(open('data/dialogues.json'))
+          assert len(d)==100
+          assert sum(len(x['segments']) for x in d)==1412
+          assert max(s['wc'] for x in d for s in x['segments'])<=35
+          assert all(12<=len(x['segments'])<=16 for x in d)
+          assert not any(re.search(r'remember the term|key expression|safest next step',s['en'],re.I) for x in d for s in x['segments'])
+          print('v3 QA OK')
+          PY
+      - name: Commit generated v3 bank
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/dialogues.json data/site_summary.json practice_pack/dialogues_metadata.json materials/SOURCE_SCRIPTS.md materials/MODEL_ANSWERS.md materials/QA_REPORT.md practice_pack/SOURCE_SCRIPTS.md practice_pack/MODEL_ANSWERS.md practice_pack/QA_REPORT.md
+          if git diff --cached --quiet; then
+            echo 'No generated changes'
+          else
+            git commit -m 'Build naturalized 100-dialogue v3 bank [skip ci]'
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
