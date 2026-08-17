@@ -17,7 +17,7 @@ jobs:
       - name: Build candidate
         run: |
           set -euo pipefail
-          python3 scripts/build_native_500_release_v16.py --out build/v16-dialogues.json | tee v16-build.json
+          python3 scripts/build_native_500_release_v16.py --out "$GITHUB_WORKSPACE/build/v16-dialogues.json" | tee v16-build.json
       - name: Full release gates
         run: |
           set -euo pipefail
@@ -32,9 +32,9 @@ jobs:
           cp data/dialogues.json data/dialogues.before-v16.json
           cp build/v16-dialogues.json data/dialogues.json
           python3 scripts/export_final_materials.py
+          mkdir -p diagnostics
           cp build/release-samples.md diagnostics/v16-samples.md
           mv data/dialogues.before-v16.json data/dialogues.json
-          mkdir -p diagnostics
           cp v16-build.json v16-verify.json v16-native.json v16-lexical.json v16-corpus.json v16-whole.json diagnostics/
       - name: Persist reports only
         run: |
