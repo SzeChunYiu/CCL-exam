@@ -11,27 +11,55 @@
     state.user.prefs.questionPause=n;
     saveUser();
   }
+  function shuffleEnabled(){
+    return !!state.user?.prefs?.questionShuffle;
+  }
+  function shuffled(items){
+    const a=[...items];
+    for(let i=a.length-1;i>0;i--){
+      const j=Math.floor(Math.random()*(i+1));
+      [a[i],a[j]]=[a[j],a[i]];
+    }
+    return a;
+  }
+  function updateShuffleButton(){
+    const btn=$('#qShuffle');if(!btn)return;
+    const on=shuffleEnabled();
+    btn.classList.toggle('shuffle-on',on);
+    btn.setAttribute('aria-pressed',String(on));
+    btn.textContent=on?'🔀 Shuffle on':'🔀 Shuffle';
+  }
+  window.toggleQuestionShuffle=function(){
+    state.user.prefs.questionShuffle=!shuffleEnabled();
+    saveUser();
+    updateShuffleButton();
+    setAutoStatus(shuffleEnabled()?'Shuffle on · dialogue order will be random':'Shuffle off · dialogue order is normal');
+  };
   function setAutoStatus(text,active=false){
     const el=$('#qAutoStatus');
     if(el){el.textContent=text;el.classList.toggle('active',active)}
     const stop=$('#qStopAll');if(stop)stop.disabled=!player.running;
     const play=$('#qPlayAll');if(play)play.disabled=player.running;
   }
-  function highlightQuestion(id,n){
+  function clearHighlights(){
     document.querySelectorAll('.question-segment.autoplaying').forEach(x=>x.classList.remove('autoplaying'));
+    document.querySelectorAll('.question-dialogue.dialogue-playing').forEach(x=>x.classList.remove('dialogue-playing'));
+  }
+  function highlightQuestion(id,n){
+    clearHighlights();
     const row=document.getElementById(`question-${id}-${n}`);
-    if(row){
-      row.classList.add('autoplaying');
-      row.scrollIntoView({behavior:'smooth',block:'center'});
-      const details=row.closest('details');if(details)details.open=true;
-    }
+    const details=row?.closest('details.question-dialogue')||document.querySelector(`details.question-dialogue[data-dialogue-id="${id}"]`);
+    if(details)details.classList.add('dialogue-playing');
+    if(row)row.classList.add('autoplaying');
+    const target=(details&&!details.open)?details.querySelector('summary'):row||details?.querySelector('summary');
+    if(target)target.scrollIntoView({behavior:'smooth',block:'center'});
   }
   function stopQuestionAutoplay(message='Stopped'){
     player.running=false;
     player.token++;
     if(player.timer){clearTimeout(player.timer);player.timer=null}
     stopPlayback();
-    document.querySelectorAll('.question-segment.autoplaying').forEach(x=>x.classList.remove('autoplaying'));
+    clearHighlights();
     setAutoStatus(message,false);
   }
   window.stopQuestionAutoplay=stopQuestionAutoplay;
@@ -107,7 +135,7 @@
     }
     if(token===player.token){
       player.running=false;
-      document.querySelectorAll('.question-segment.autoplaying').forEach(x=>x.classList.remove('autoplaying'));
+      clearHighlights();
       setAutoStatus(`${label} complete`,false);
     }
   }
@@ -121,11 +149,12 @@
   };
   window.playAllVisibleQuestions=function(){
     const filters=currentFilters();
-    const ds=visibleDialogues(filters);
+    let ds=visibleDialogues(filters);
+    if(shuffleEnabled())ds=shuffled(ds);
     const queue=[];
     ds.forEach(d=>visibleSegments(d,filters).forEach(seg=>queue.push({d,seg})));
     if(!queue.length){setAutoStatus('No visible questions to play');return}
-    runQueue(queue,`${ds.length} visible dialogue${ds.length===1?'':'s'}`);
+    runQueue(queue,`${ds.length} visible dialogue${ds.length===1?'':'s'}${shuffleEnabled()?' · shuffled':''}`);
   };
 
   nav=function(active='dashboard'){
@@ -160,6 +189,7 @@
       <div class="simple-page-head"><div><div class="eyebrow">Open practice bank</div><h1>All practice questions</h1><p>Press one button for hands-free practice: source segment → beep → silent interpreting time → next segment.</p></div><button class="btn" onclick="renderPracticeSetup()">Hidden-script practice</button></div>
       <div class="question-autoplay-bar">
         <button id="qPlayAll" class="btn primary" onclick="playAllVisibleQuestions()">▶ Play all visible</button>
+        <button id="qShuffle" class="btn" type="button" aria-pressed="false" onclick="toggleQuestionShuffle()">🔀 Shuffle</button>
         <label>Interpretation pause
           <select id="qPause" class="select" onchange="setQuestionPause(this.value)">${[5,6,7,8,9,10].map(n=>`<option value="${n}" ${n===stored?'selected':''}>${n} seconds</option>`).join('')}</select>
         </label>
@@ -174,6 +204,7 @@
       </div>
       <div id="questionsList" class="questions-list"></div>
     </section>`,'questions');
+    updateShuffleButton();
     filterQuestions();
   };
 
@@ -187,8 +218,8 @@
 
   function questionDialogueHTML(d,filters){
     const shown=visibleSegments(d,filters);
-    return `<details class="question-dialogue">
-      <summary><div><span class="question-id">${d.id}</span><strong>${esc(d.title)}</strong><small>${esc(d.topic)} · ${d.difficulty} · ${shown.length} segments</small></div><span class="question-chevron">⌄</span></summary>
+    return `<details class="question-dialogue" data-dialogue-id="${d.id}">
+      <summary><div><span class="question-id">${d.id}</span><strong>${esc(d.title)}</strong><small>${esc(d.topic)} · ${d.difficulty} · ${shown.length} segments</small></div><span class="question-now-playing" aria-hidden="true">▶ Playing</span><span class="question-chevron">⌄</span></summary>
       <div class="dialogue-autoplay"><button class="btn primary" onclick="playQuestionDialogue('${d.id}',this)">▶ Play full dialogue</button><span>Uses the ${pauseSeconds()}s interpretation pause selected above.</span></div>
       <div class="question-segments">${shown.map(s=>questionSegmentHTML(d,s)).join('')}</div>
     </details>`;
@@ -217,9 +248,11 @@
     stopQuestionAutoplay('Ready');
     const d=state.byId[id],seg=d?.segments?.[n-1]; if(!d||!seg)return;
     stopPlayback();
-    document.querySelectorAll('.question-segment.playing').forEach(x=>x.classList.remove('playing'));
+    clearHighlights();
     const row=document.getElementById(`question-${id}-${n}`);
+    const details=row?.closest('details.question-dialogue');
     if(row)row.classList.add('playing');
+    if(details)details.classList.add('dialogue-playing');
     const old=button.textContent; button.disabled=true; button.textContent='Playing…';
     try{
       await new Promise((resolve,reject)=>{
@@ -232,6 +265,7 @@
       catch(_){button.textContent='Audio unavailable'}
     }finally{
       if(row)row.classList.remove('playing');
+      if(details)details.classList.remove('dialogue-playing');
       button.disabled=false;
       if(button.textContent!=='Audio unavailable')button.textContent=old;
     }
