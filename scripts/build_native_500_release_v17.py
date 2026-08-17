@@ -3,6 +3,7 @@
 from __future__ import annotations
 import build_native_500_release_v11 as v11
 import build_native_500_release_v6 as v6
+import verify_rewrite as vr
 r=v11.r; base=v11.base; f2=v11.f2; v7=v11.v10.v7
 v11.FACT=[
 "{p}, for {y}, the detail I need checked is {x}.",
@@ -49,7 +50,12 @@ def low_yue(seed,variant,action,c):
     return f2.clean_yue(forms[idx].format(ic=ic,tc=tc,fc=fc,ec=ec))
 
 def officer(seed,variant,action):
-    c=cue_set17(seed,variant,action); en=english_officer(seed,variant,action,c); y=low_yue(seed,variant,action,c)
+    c=cue_set17(seed,variant,action); en=english_officer(seed,variant,action,c)
+    if action==1:
+        missing_scoreable=any(forms and not any(form in c['fc'] for form in forms) for _label,forms in vr.scoreables(en))
+        if missing_scoreable:
+            c=dict(c); c['fc']=f2.atom(seed['fact_yue'])
+    y=low_yue(seed,variant,action,c)
     if action!=1 and c['ec'] not in y: raise SystemExit(f"evidence pair lost: {seed['title']} v{variant} a{action}: {en} || {y}")
     return en,y
 r.client_model=lambda seed,variant,action:v11.client_model(seed,variant,action,r._ORIG_CLIENT(seed,variant,action)[1])
