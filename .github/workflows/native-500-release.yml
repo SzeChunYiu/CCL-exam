@@ -8,6 +8,10 @@ on:
 permissions:
   contents: read
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   candidate-gate:
     runs-on: ubuntu-latest
@@ -15,21 +19,35 @@ jobs:
       - uses: actions/checkout@v4
       - name: Syntax
         run: |
+          set -euo pipefail
           python3 -m py_compile scripts/build_native_500_release.py
+          python3 -m py_compile scripts/build_native_500_release_v2.py
           python3 -m py_compile scripts/verify_final4_bank.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
           python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/audit_whole_dialogue_naturalness.py
       - name: Build immutable candidate
-        run: python3 scripts/build_native_500_release.py --out build/candidate/dialogues.json | tee build-release.json
+        run: |
+          set -euo pipefail
+          python3 scripts/build_native_500_release_v2.py --out build/candidate/dialogues.json | tee build-release.json
       - name: Structural verification
-        run: python3 scripts/verify_final4_bank.py build/candidate/dialogues.json --json | tee verify-release.json
+        run: |
+          set -euo pipefail
+          python3 scripts/verify_final4_bank.py build/candidate/dialogues.json --json | tee verify-release.json
       - name: Cantonese source native gate
-        run: python3 scripts/audit_native_cantonese_v2.py build/candidate/dialogues.json --json | tee native-release.json
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_native_cantonese_v2.py build/candidate/dialogues.json --json | tee native-release.json
       - name: Cantonese lexical-transfer gate
-        run: python3 scripts/audit_cantonese_lexical_transfer.py build/candidate/dialogues.json --json | tee lexical-release.json
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_cantonese_lexical_transfer.py build/candidate/dialogues.json --json | tee lexical-release.json
       - name: Cantonese corpus gate
-        run: python3 scripts/qa_cantonese.py build/candidate/dialogues.json --json | tee corpus-release.json
+        run: |
+          set -euo pipefail
+          python3 scripts/qa_cantonese.py build/candidate/dialogues.json --json | tee corpus-release.json
       - name: Whole-dialogue naturalness gate
-        run: python3 scripts/audit_whole_dialogue_naturalness.py build/candidate/dialogues.json --json | tee whole-release.json
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_whole_dialogue_naturalness.py build/candidate/dialogues.json --json | tee whole-release.json
