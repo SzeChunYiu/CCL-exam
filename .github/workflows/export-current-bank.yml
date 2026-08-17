@@ -1,0 +1,30 @@
+name: Export Current Dialogue Bank
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [cantonese-script-audio-v4-integration]
+    paths: [.github/workflows/export-current-bank.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: current-ccl-bank
+          path: |
+            data/dialogues.json
+            data/site_summary.json
+            data/audio_remote.json
+            materials/CANTONESE_SCRIPT_GENERATION_SPEC.md
+            materials/CANTONESE_LINGUISTICS_RESEARCH_LANE.md
+            scripts/audit_cantonese_naturalness.py
+            scripts/audit_native_cantonese_v2.py
+            scripts/audit_cantonese_lexical_transfer.py
+            scripts/qa_cantonese.py
+            scripts/verify_rewrite.py
