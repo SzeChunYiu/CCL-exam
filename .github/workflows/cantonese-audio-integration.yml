@@ -19,17 +19,24 @@ jobs:
 
       - name: Python syntax
         run: |
-          for f in scripts/build_native_500.py scripts/build_native_500_v2.py scripts/build_native_500_v3.py scripts/build_native_500_v4.py scripts/build_native_500_v5.py scripts/build_native_500_v6.py scripts/build_native_500_v7.py scripts/build_native_500_v8.py scripts/build_native_500_v9.py scripts/qa_cantonese.py scripts/verify_rewrite.py scripts/audit_native_cantonese_v2.py scripts/audit_cantonese_lexical_transfer.py scripts/generate_v4_audio.py scripts/upload_v4_segments.py; do python3 -m py_compile "$f"; done
+          python3 -m py_compile scripts/build_native_500_v10.py
+          python3 -m py_compile scripts/qa_cantonese.py
+          python3 -m py_compile scripts/verify_rewrite.py
+          python3 -m py_compile scripts/audit_native_cantonese_v2.py
+          python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
+          python3 -m py_compile scripts/generate_v4_audio.py
+          python3 -m py_compile scripts/upload_v4_segments.py
 
-      - name: Build all 500 dialogues from scenario blueprints
-        run: python3 scripts/build_native_500_v9.py
+      - name: Build 500 grounded dialogues from rich CCL seeds
+        run: python3 scripts/build_native_500_v10.py
 
-      - name: Remove artificial Cantonese pitch cycling and stale 100-bank UI copy
+      - name: Apply audio and UI release settings
         run: |
           python3 - <<'PY'
           from pathlib import Path
           p=Path('scripts/generate_v4_audio.py')
           s=p.read_text(encoding='utf-8')
+          s=s.replace('"zh-HK-HiuMaanNeural": "+12%"', '"zh-HK-HiuMaanNeural": "+17%"')
           s=s.replace('CCL_PITCH_CYCLE", "+0Hz,+6Hz,-5Hz,+3Hz,-8Hz"', 'CCL_PITCH_CYCLE", "+0Hz"')
           s=s.replace('# Slight per-dialogue pitch offset adds speaker individuality without changing\n# pace. Cycle is deliberately coprime with the voice-pool sizes so voice and\n# pitch do not lock into the same repeating pair.', '# Keep Cantonese lexical-tone contours untouched by default. Speaker variety\n# comes from the calibrated native zh-HK voice pool, not arbitrary pitch shifts.')
           p.write_text(s,encoding='utf-8')
@@ -91,6 +98,6 @@ jobs:
           if git diff --cached --quiet; then
             echo 'Generated bank already matches the committed bank.'
           else
-            git commit -m 'Generate native Cantonese 500-dialogue bank [skip ci]'
+            git commit -m 'Generate grounded native Cantonese 500-dialogue bank [skip ci]'
             git push
           fi
