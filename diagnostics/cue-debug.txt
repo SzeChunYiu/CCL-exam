@@ -1,0 +1,188 @@
+
+### 1 Applying for an ABN
+issue EN= a new sole-trader registration
+issue YU= 新成立嘅獨資經營登記
+ enparts= ['new sole-trader registration']
+ yuparts= ['新成立嘅獨資經營登記']
+term EN= Australian Business Number, or ABN
+term YU= 澳洲商業號碼
+ yuparts= ['澳洲商業號碼']
+fact EN= trading is planned to start on 1 September
+fact YU= 計劃九月一日開始營業
+ enparts= ['trading is planned to start on September']
+ yuparts= ['計劃九月一日開始營業']
+evidence EN= photo ID and tax details
+evidence YU= 有相身份證明同稅務資料
+ enparts= ['photo ID', 'tax details']
+ yuparts= ['有相身份證明', '稅務資料']
+v/a 0 0 e= photo ID ec= 稅務資料 f= the date fc= 嗰個日期 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 0 1 e= photo ID ec= 有相身份證明 f= the date fc= 嗰個日期 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 0 2 e= tax details ec= 稅務資料 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 0 3 e= photo ID ec= 有相身份證明 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 0 4 e= photo ID ec= 有相身份證明 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 0 5 e= tax details ec= 稅務資料 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 1 0 e= photo ID ec= 有相身份證明 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 1 1 e= photo ID ec= 稅務資料 f= the date fc= 嗰個日期 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 1 2 e= tax details ec= 有相身份證明 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 1 3 e= tax details ec= 稅務資料 f= the date fc= 嗰個日期 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 1 4 e= tax details ec= 稅務資料 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 1 5 e= photo ID ec= 有相身份證明 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 2 0 e= tax details ec= 有相身份證明 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 2 1 e= photo ID ec= 有相身份證明 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 2 2 e= photo ID ec= 稅務資料 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 2 3 e= tax details ec= 稅務資料 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 2 4 e= tax details ec= 稅務資料 f= the date fc= 嗰個日期 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 2 5 e= tax details ec= 有相身份證明 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 3 0 e= tax details ec= 有相身份證明 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 3 1 e= photo ID ec= 稅務資料 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 3 2 e= photo ID ec= 有相身份證明 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 3 3 e= tax details ec= 有相身份證明 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 3 4 e= photo ID ec= 有相身份證明 f= the date fc= 嗰個日期 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 3 5 e= photo ID ec= 有相身份證明 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 4 0 e= photo ID ec= 有相身份證明 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 4 1 e= photo ID ec= 稅務資料 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 4 2 e= tax details ec= 稅務資料 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 4 3 e= photo ID ec= 稅務資料 f= the time fc= 個時間 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 4 4 e= photo ID ec= 有相身份證明 f= the date fc= 嗰個日期 t= Australian Business Number, or ABN tc= 商業號碼
+v/a 4 5 e= photo ID ec= 有相身份證明 f= the date fc= 個日子 t= Australian Business Number, or ABN tc= 商業號碼
+
+### 31 Urgent care clinic
+issue EN= same-day medical-care options
+issue YU= 即日醫療選擇
+ enparts= ['same-day medical-care options']
+ yuparts= ['即日醫療選擇']
+term EN= Medicare Urgent Care Clinic
+term YU= 國民醫療保險緊急護理診所
+ yuparts= ['國民醫療保險緊急護理診所']
+fact EN= the symptoms are not life-threatening
+fact YU= 症狀唔屬於危及生命
+ enparts= ['symptoms are not life-threatening']
+ yuparts= ['症狀唔屬於危及生命']
+evidence EN= Medicare card and medication list
+evidence YU= 國民醫療保險卡同現用藥物清單
+ enparts= ['Medicare card', 'medication list']
+ yuparts= ['國民醫療保險卡', '現用藥物清單']
+v/a 0 0 e= medication list ec= 醫療保險 f= symptoms are not life-threatening fc= 嗰一點 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 0 1 e= card ec= 現用藥物清單 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 0 2 e= medication list ec= 現用藥物清單 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 0 3 e= medication list ec= 醫療保險 f= symptoms are not life-threatening fc= 嗰一點 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 0 4 e= card ec= 現用藥物清單 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 0 5 e= card ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰一點 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 1 0 e= medication list ec= 醫療保險 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 1 1 e= Medicare card ec= 醫療保險 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 1 2 e= medication list ec= 醫療保險 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 1 3 e= medication list ec= 醫療保險 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 1 4 e= card ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 1 5 e= medication list ec= 現用藥物清單 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 2 0 e= card ec= 現用藥物清單 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 2 1 e= card ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 2 2 e= medication list ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰一點 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 2 3 e= medication list ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 2 4 e= card ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰一點 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 2 5 e= medication list ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 3 0 e= medication list ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰一點 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 3 1 e= medication list ec= 醫療保險 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 3 2 e= Medicare card ec= 醫療保險 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 3 3 e= Medicare card ec= 醫療保險 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 3 4 e= Medicare card ec= 醫療保險 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 3 5 e= medication list ec= 現用藥物清單 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 4 0 e= Medicare card ec= 醫療保險 f= symptoms are not life-threatening fc= 嗰一點 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 4 1 e= card ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 4 2 e= Medicare card ec= 醫療保險 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 4 3 e= medication list ec= 醫療保險 f= symptoms are not life-threatening fc= 實際情況 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 4 4 e= medication list ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+v/a 4 5 e= card ec= 現用藥物清單 f= symptoms are not life-threatening fc= 嗰個資料 t= Medicare Urgent Care Clinic tc= 醫療保險
+
+### 37 Checking VEVO
+issue EN= a visa-status check
+issue YU= 簽證情況查核
+ enparts= ['visa-status check']
+ yuparts= ['簽證情況查核']
+term EN= Visa Entitlement Verification Online, or VEVO
+term YU= 網上簽證權益查核系統，即係網上簽證查核服務
+ yuparts= ['網上簽證權益查核系統']
+fact EN= the passport was renewed last month
+fact YU= 上個月換咗新護照
+ enparts= ['passport was renewed last month']
+ yuparts= ['上個月換咗新護照']
+evidence EN= passport and visa grant notice
+evidence YU= 護照同簽證批准通知
+ enparts= ['passport', 'visa grant notice']
+ yuparts= ['護照', '簽證批准通知']
+v/a 0 0 e= passport ec= 護照 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 0 1 e= visa grant notice ec= 簽證批准通知 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 0 2 e= passport ec= 護照 f= the date fc= 嗰個日期 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 0 3 e= passport ec= 簽證批准通知 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 0 4 e= passport ec= 護照 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 0 5 e= passport ec= 簽證批准通知 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 1 0 e= visa grant notice ec= 護照 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 1 1 e= passport ec= 護照 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 1 2 e= passport ec= 簽證批准通知 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 1 3 e= passport ec= 護照 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 1 4 e= passport ec= 簽證批准通知 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 1 5 e= visa grant notice ec= 簽證批准通知 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 2 0 e= visa grant notice ec= 護照 f= the date fc= 嗰個日期 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 2 1 e= passport ec= 簽證批准通知 f= the date fc= 嗰個日期 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 2 2 e= visa grant notice ec= 簽證批准通知 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 2 3 e= visa grant notice ec= 護照 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 2 4 e= passport ec= 護照 f= the time fc= 個時間 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 2 5 e= passport ec= 護照 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 3 0 e= visa grant notice ec= 護照 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 3 1 e= passport ec= 簽證批准通知 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 3 2 e= visa grant notice ec= 簽證批准通知 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 3 3 e= visa grant notice ec= 簽證批准通知 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 3 4 e= visa grant notice ec= 簽證批准通知 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 3 5 e= passport ec= 護照 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 4 0 e= visa grant notice ec= 護照 f= the date fc= 嗰個日期 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 4 1 e= visa grant notice ec= 簽證批准通知 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 4 2 e= passport ec= 護照 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 4 3 e= visa grant notice ec= 護照 f= the date fc= 嗰個日期 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 4 4 e= passport ec= 簽證批准通知 f= the date fc= 個日子 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+v/a 4 5 e= passport ec= 護照 f= the date fc= 嗰個日期 t= Visa Entitlement Verification Online, or VEVO tc= 簽證權益查核系統
+
+### 38 Bridging Visa A
+issue EN= a bridging-visa status query
+issue YU= 過橋簽證情況查詢
+ enparts= ['bridging-visa status query']
+ yuparts= ['過橋簽證情況查詢']
+term EN= Bridging Visa A
+term YU= 甲類過橋簽證
+ yuparts= ['甲類過橋簽證']
+fact EN= the current substantive visa expires on 30 September
+fact YU= 現有實質簽證喺九月三十日到期
+ enparts= ['current substantive visa expires on September']
+ yuparts= ['現有實質簽證喺九月三十日到期']
+evidence EN= visa grant notices and passport
+evidence YU= 簽證批准通知同護照
+ enparts= ['visa grant notices', 'passport']
+ yuparts= ['簽證批准通知', '護照']
+v/a 0 0 e= visa grant notices ec= 護照 f= the date fc= 嗰個日期 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 0 1 e= visa grant notices ec= 護照 f= the date fc= 嗰個日期 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 0 2 e= visa grant notices ec= 簽證批准通知 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 0 3 e= passport ec= 簽證批准通知 f= the date fc= 嗰個日期 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 0 4 e= visa grant notices ec= 護照 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 0 5 e= visa grant notices ec= 護照 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 1 0 e= visa grant notices ec= 簽證批准通知 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 1 1 e= visa grant notices ec= 護照 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 1 2 e= visa grant notices ec= 護照 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 1 3 e= visa grant notices ec= 簽證批准通知 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 1 4 e= passport ec= 簽證批准通知 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 1 5 e= visa grant notices ec= 護照 f= the date fc= 嗰個日期 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 2 0 e= visa grant notices ec= 簽證批准通知 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 2 1 e= visa grant notices ec= 護照 f= the date fc= 嗰個日期 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 2 2 e= visa grant notices ec= 簽證批准通知 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 2 3 e= passport ec= 護照 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 2 4 e= visa grant notices ec= 簽證批准通知 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 2 5 e= passport ec= 簽證批准通知 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 3 0 e= visa grant notices ec= 簽證批准通知 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 3 1 e= visa grant notices ec= 護照 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 3 2 e= visa grant notices ec= 護照 f= the date fc= 嗰個日期 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 3 3 e= passport ec= 護照 f= the date fc= 嗰個日期 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 3 4 e= passport ec= 簽證批准通知 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 3 5 e= passport ec= 護照 f= the date fc= 嗰個日期 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 4 0 e= visa grant notices ec= 簽證批准通知 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 4 1 e= passport ec= 護照 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 4 2 e= visa grant notices ec= 護照 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 4 3 e= passport ec= 簽證批准通知 f= the date fc= 嗰個日期 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 4 4 e= passport ec= 護照 f= the time fc= 個時間 t= Bridging Visa A tc= 甲類過橋簽證
+v/a 4 5 e= visa grant notices ec= 護照 f= the date fc= 個日子 t= Bridging Visa A tc= 甲類過橋簽證
