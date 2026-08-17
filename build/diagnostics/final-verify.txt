@@ -1,0 +1,446 @@
+  FAIL D001 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D001 seg8: proper noun 'ABN' in English but not in Cantonese
+  FAIL D001 seg12: proper noun 'ABN' in English but not in Cantonese
+  FAIL D002 seg8: proper noun 'ABN' in English but not in Cantonese
+  FAIL D002 seg10: proper noun 'ABN' in English but not in Cantonese
+  FAIL D004 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D004 seg12: proper noun 'ABN' in English but not in Cantonese
+  FAIL D026 seg8: proper noun 'TFN' in English but not in Cantonese
+  FAIL D026 seg10: proper noun 'TFN' in English but not in Cantonese
+  FAIL D027 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D027 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D027 seg12: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D029 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D029 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D030 seg3: proper noun 'PBS' in English but not in Cantonese
+  FAIL D030 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D030 seg5: proper noun 'PBS' in English but not in Cantonese
+  FAIL D030 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D030 seg11: proper noun 'PBS' in English but not in Cantonese
+  FAIL D031 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D031 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D031 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D034 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D034 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D036 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D036 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D037 seg4: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D037 seg6: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D037 seg10: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D041 seg2: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D041 seg8: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D041 seg10: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D042 seg6: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D099 seg1: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg4: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg5: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg7: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg9: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg10: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D099 seg11: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D101 seg4: proper noun 'ABN' in English but not in Cantonese
+  FAIL D101 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D101 seg10: proper noun 'ABN' in English but not in Cantonese
+  FAIL D102 seg9: proper noun 'ABN' in English but not in Cantonese
+  FAIL D102 seg10: proper noun 'ABN' in English but not in Cantonese
+  FAIL D102 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D104 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D104 seg9: proper noun 'ABN' in English but not in Cantonese
+  FAIL D104 seg12: proper noun 'ABN' in English but not in Cantonese
+  FAIL D126 seg5: proper noun 'TFN' in English but not in Cantonese
+  FAIL D126 seg10: proper noun 'TFN' in English but not in Cantonese
+  FAIL D126 seg11: proper noun 'TFN' in English but not in Cantonese
+  FAIL D127 seg1: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D127 seg2: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D127 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D127 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D127 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D129 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D129 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D129 seg12: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D130 seg3: proper noun 'PBS' in English but not in Cantonese
+  FAIL D130 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D130 seg5: proper noun 'PBS' in English but not in Cantonese
+  FAIL D130 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D130 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D130 seg11: proper noun 'PBS' in English but not in Cantonese
+  FAIL D131 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D131 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D131 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D131 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D134 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D134 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D134 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D136 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D136 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D136 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D137 seg3: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D137 seg5: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D137 seg11: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D141 seg4: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D141 seg6: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D141 seg10: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D142 seg1: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D142 seg2: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D199 seg2: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D199 seg4: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D199 seg8: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D199 seg9: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D199 seg10: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D199 seg12: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D201 seg5: proper noun 'ABN' in English but not in Cantonese
+  FAIL D201 seg9: proper noun 'ABN' in English but not in Cantonese
+  FAIL D201 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D202 seg3: proper noun 'ABN' in English but not in Cantonese
+  FAIL D202 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D202 seg7: proper noun 'ABN' in English but not in Cantonese
+  FAIL D202 seg12: proper noun 'ABN' in English but not in Cantonese
+  FAIL D204 seg2: proper noun 'ABN' in English but not in Cantonese
+  FAIL D204 seg9: proper noun 'ABN' in English but not in Cantonese
+  FAIL D204 seg10: proper noun 'ABN' in English but not in Cantonese
+  FAIL D204 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D226 seg3: proper noun 'TFN' in English but not in Cantonese
+  FAIL D226 seg4: proper noun 'TFN' in English but not in Cantonese
+  FAIL D226 seg8: proper noun 'TFN' in English but not in Cantonese
+  FAIL D226 seg11: proper noun 'TFN' in English but not in Cantonese
+  FAIL D227 seg2: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D227 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D227 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D227 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D227 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D229 seg2: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D229 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D229 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D229 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D230 seg1: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D230 seg2: proper noun 'PBS' in English but not in Cantonese
+  FAIL D230 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D230 seg8: proper noun 'PBS' in English but not in Cantonese
+  FAIL D230 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D230 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D230 seg10: proper noun 'PBS' in English but not in Cantonese
+  FAIL D231 seg2: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D231 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D231 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D231 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D231 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D234 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D234 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D234 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D234 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D236 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D236 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D236 seg7: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D236 seg12: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D237 seg3: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D237 seg7: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D237 seg11: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D241 seg4: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D241 seg6: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D241 seg10: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D242 seg3: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D299 seg2: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg3: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg4: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg6: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg7: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg10: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D299 seg12: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D301 seg3: proper noun 'ABN' in English but not in Cantonese
+  FAIL D301 seg5: proper noun 'ABN' in English but not in Cantonese
+  FAIL D301 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D302 seg8: proper noun 'ABN' in English but not in Cantonese
+  FAIL D302 seg10: proper noun 'ABN' in English but not in Cantonese
+  FAIL D304 seg6: proper noun 'ABN' in English but not in Cantonese
+  FAIL D304 seg12: proper noun 'ABN' in English but not in Cantonese
+  FAIL D326 seg6: proper noun 'TFN' in English but not in Cantonese
+  FAIL D326 seg12: proper noun 'TFN' in English but not in Cantonese
+  FAIL D327 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D327 seg5: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D327 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D329 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D329 seg12: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D330 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D330 seg6: proper noun 'PBS' in English but not in Cantonese
+  FAIL D330 seg8: proper noun 'PBS' in English but not in Cantonese
+  FAIL D330 seg12: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D330 seg12: proper noun 'PBS' in English but not in Cantonese
+  FAIL D331 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D331 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D331 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D334 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D334 seg12: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D336 seg8: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D336 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D337 seg4: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D337 seg6: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D337 seg10: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D341 seg6: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D341 seg8: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D341 seg12: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D342 seg3: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D399 seg1: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D399 seg5: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D399 seg7: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D399 seg9: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D399 seg11: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D401 seg1: proper noun 'ABN' in English but not in Cantonese
+  FAIL D401 seg2: proper noun 'ABN' in English but not in Cantonese
+  FAIL D401 seg8: proper noun 'ABN' in English but not in Cantonese
+  FAIL D401 seg9: proper noun 'ABN' in English but not in Cantonese
+  FAIL D401 seg10: proper noun 'ABN' in English but not in Cantonese
+  FAIL D402 seg9: proper noun 'ABN' in English but not in Cantonese
+  FAIL D402 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D404 seg5: proper noun 'ABN' in English but not in Cantonese
+  FAIL D404 seg11: proper noun 'ABN' in English but not in Cantonese
+  FAIL D426 seg4: proper noun 'TFN' in English but not in Cantonese
+  FAIL D426 seg10: proper noun 'TFN' in English but not in Cantonese
+  FAIL D427 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D427 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D427 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D429 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D429 seg12: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D430 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D430 seg3: proper noun 'PBS' in English but not in Cantonese
+  FAIL D430 seg4: proper noun 'PBS' in English but not in Cantonese
+  FAIL D430 seg5: proper noun 'PBS' in English but not in Cantonese
+  FAIL D430 seg8: proper noun 'PBS' in English but not in Cantonese
+  FAIL D430 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D430 seg11: proper noun 'PBS' in English but not in Cantonese
+  FAIL D431 seg1: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D431 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D431 seg6: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D431 seg9: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D431 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D434 seg3: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D434 seg11: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D436 seg4: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D436 seg10: proper noun 'Medicare' in English but not in Cantonese
+  FAIL D437 seg1: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D437 seg2: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D437 seg8: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D437 seg9: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D437 seg10: proper noun 'VEVO' in English but not in Cantonese
+  FAIL D441 seg1: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D441 seg4: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D441 seg6: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D441 seg9: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D441 seg12: proper noun 'ImmiAccount' in English but not in Cantonese
+  FAIL D442 seg3: scoreable '30' lost in the Cantonese (expected one of ['30', '三十'])
+  FAIL D499 seg2: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D499 seg4: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D499 seg6: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D499 seg10: proper noun 'NDIS' in English but not in Cantonese
+  FAIL D499 seg12: proper noun 'NDIS' in English but not in Cantonese
+  FAIL sentence reused across D003 and D005: 我記錯咗，講緊呢次登記先啱
+  FAIL sentence reused across D009 and D014: 付款嗰份喺手，係咪就可以
+  FAIL sentence reused across D013 and D016: 唔係呀，呢單投訴嗰句我要改返
+  FAIL sentence reused across D017 and D022: 我攞住付款嗰份，下一份要咩
+  FAIL sentence reused across D021 and D025: 講返份工嗰邊，我應該跟邊樣
+  FAIL sentence reused across D026 and D032: 嗰份證明喺手，係咪就可以
+  FAIL sentence reused across D029 and D032: 等等，頭先醫療嗰邊個次序唔啱
+  FAIL sentence reused across D013 and D035: 我攞住份收據，下一份要咩
+  FAIL sentence reused across D032 and D036: 講返醫療嗰邊，我應該跟邊樣
+  FAIL sentence reused across D040 and D042: 嗰封信已經有，仲欠咩呀
+  FAIL sentence reused across D008 and D043: 我攞住手頭資料，下一份要咩
+  FAIL sentence reused across D034 and D045: 我手頭係嗰封信，要唔要再補
+  FAIL sentence reused across D007 and D051: 我手頭係份文件，要唔要再補
+  FAIL sentence reused across D049 and D051: 如果呢次聆訊卡住，聆訊照唔照行
+  FAIL sentence reused across D036 and D052: 份通知喺手，係咪就可以
+  FAIL sentence reused across D054 and D056: 呢次服務嗰邊，點樣先算啱
+  FAIL sentence reused across D021 and D057: 講證明，我得份文件，得唔得
+  FAIL sentence reused across D004 and D059: 我攞住留底嗰份，下一份要咩
+  FAIL sentence reused across D058 and D061: 嗰份證明已經有，仲欠咩呀
+  FAIL sentence reused across D061 and D064: 嗰份證明已經有，仲欠咩呀
+  FAIL sentence reused across D064 and D067: 等陣，入學嗰邊我頭先講反咗
+  FAIL sentence reused across D065 and D068: 學校嗰邊我有個位唔明，點計
+  FAIL sentence reused across D035 and D071: 我攞住份收據，下一份要咩
+  FAIL sentence reused across D070 and D073: 唔係呀，個戶口嗰句我要改返
+  FAIL sentence reused across D066 and D076: 我攞住份通知，下一份要咩
+  FAIL sentence reused across D084 and D086: 我想分清租屋嗰邊要做咩
+  FAIL sentence reused across D085 and D086: 等陣，租務嗰邊我頭先講反咗
+  FAIL sentence reused across D074 and D088: 我留低嗰份已經有，仲欠咩呀
+  FAIL sentence reused across D042 and D091: 嗰封信已經有，仲欠咩呀
+  FAIL sentence reused across D014 and D093: 付款嗰份喺手，係咪就可以
+  FAIL sentence reused across D060 and D097: 份文件喺手，係咪就可以
+  FAIL sentence reused across D046 and D100: 份文件已經有，仲欠咩呀
+  FAIL sentence reused across D119 and D120: 等陣，上次仲有我留低嗰份未講
+  FAIL sentence reused across D119 and D123: 份工嗰邊今次個講法變咗
+  FAIL sentence reused across D120 and D125: 今次出糧嗰邊兩次答案唔同嘛
+  FAIL sentence reused across D101 and D126: 我記漏咗手頭資料，要補一句
+  FAIL sentence reused across D137 and D144: 我再問定居嗰邊，因為前後唔同㗎
+  FAIL sentence reused across D140 and D145: 我記漏咗嗰封信，要補一句
+  FAIL sentence reused across D123 and D146: 等陣，上次仲有份文件未講
+  FAIL sentence reused across D147 and D148: 個程序今次個講法變咗
+  FAIL sentence reused across D126 and D154: 我記漏咗手頭資料，要補一句
+  FAIL sentence reused across D135 and D156: 個預約同上次唔同，我想對返
+  FAIL sentence reused across D130 and D157: 等陣，上次仲有手頭資料未講
+  FAIL sentence reused across D154 and D158: 我記漏咗手頭資料，要補一句
+  FAIL sentence reused across D150 and D159: 講返份紀錄，上次嗰份收咗未
+  FAIL sentence reused across D121 and D160: 份文件上次交過，我想知收妥未
+  FAIL sentence reused across D133 and D163: 我頭先漏咗份通知，今次補返㗎
+  FAIL sentence reused across D162 and D165: 講返修讀嗰邊，新回覆有出入㗎
+  FAIL sentence reused across D172 and D173: 銀行紀錄而家照做，定等個戶口
+  FAIL sentence reused across D157 and D175: 等陣，上次仲有手頭資料未講
+  FAIL sentence reused across D139 and D180: 書面嗰份之前已交，今次使唔使帶
+  FAIL sentence reused across D138 and D180: 我頭先漏咗書面嗰份，今次補返
+  FAIL sentence reused across D178 and D183: 嗰張單上次交過，我想知收妥未
+  FAIL sentence reused across D179 and D184: 交租而家照做，定等租務嗰邊
+  FAIL sentence reused across D136 and D191: 書面嗰份上次交過，我想知收妥未
+  FAIL sentence reused across D110 and D193: 講返付款嗰份，上次嗰份收咗未
+  FAIL sentence reused across D193 and D194: 我頭先漏咗嗰張單，今次補返
+  FAIL sentence reused across D161 and D196: 上次畀咗份文件，系統有冇見到
+  FAIL sentence reused across D158 and D196: 我記漏咗手頭資料，要補一句
+  FAIL sentence reused across D196 and D197: 我記漏咗手頭資料，要補一句
+  FAIL sentence reused across D105 and D198: 我記漏咗系統嗰份，要補一句嘞
+  FAIL sentence reused across D111 and D199: 我頭先漏咗付款嗰份，今次補返呀
+  FAIL sentence reused across D201 and D206: 我見寫低嗰日有兩個版本，點跟
+  FAIL sentence reused across D210 and D216: 唔係呀，今次要對份收據
+  FAIL sentence reused across D210 and D220: 嗰個日子前後唔一樣，要改邊份
+  FAIL sentence reused across D212 and D235: 個時間前後唔一樣，要改邊份
+  FAIL sentence reused across D222 and D235: 嗰張單有兩份，係咪揀最新嗰份
+  FAIL sentence reused across D224 and D236: 唔係嗰樣，我講緊嗰封信㗎
+  FAIL sentence reused across D222 and D238: 文件同嗰個日子打交叉，我想分清
+  FAIL sentence reused across D232 and D241: 我手上手頭資料對唔齊，點處理
+  FAIL sentence reused across D235 and D241: 個時間前後唔一樣，要改邊份
+  FAIL sentence reused across D232 and D241: 唔係呀，今次要對份文件
+  FAIL sentence reused across D229 and D246: 講個時間，我手上兩份對唔上呀
+  FAIL sentence reused across D226 and D246: 講證明，嗰份證明前後有變，點算
+  FAIL sentence reused across D243 and D247: 文件同個時間打交叉，我想分清
+  FAIL sentence reused across D238 and D248: 我頭先撈亂咗，係書面嗰份嗰份喇
+  FAIL sentence reused across D237 and D252: 我見個時間有兩個版本，點跟
+  FAIL sentence reused across D242 and D253: 寫低嗰日嗰點有出入，應該信邊份
+  FAIL sentence reused across D202 and D254: 嗰份證明唔一致，我使唔使先更正喇
+  FAIL sentence reused across D243 and D258: 嗰份證明唔一致，我使唔使先更正
+  FAIL sentence reused across D252 and D258: 我見個時間有兩個版本，點跟
+  FAIL sentence reused across D241 and D260: 我手上手頭資料對唔齊，點處理
+  FAIL sentence reused across D251 and D262: 講個時間，我手上兩份對唔上
+  FAIL sentence reused across D221 and D262: 手頭資料版本唔同，要唔要兩份都畀喇
+  FAIL sentence reused across D254 and D262: 唔係嗰樣，我講緊手頭資料
+  FAIL sentence reused across D238 and D264: 文件同嗰個日子打交叉，我想分清
+  FAIL sentence reused across D256 and D265: 文件同頭先個日期打交叉，我想分清
+  FAIL sentence reused across D203 and D267: 等陣，我指份紀錄，唔係另一份
+  FAIL sentence reused across D260 and D268: 等陣，我指手頭資料，唔係另一份
+  FAIL sentence reused across D232 and D269: 嗰筆數前後唔一樣，要改邊份喇
+  FAIL sentence reused across D247 and D272: 文件同個時間打交叉，我想分清
+  FAIL sentence reused across D227 and D274: 等陣，我指手頭嗰份，唔係另一份
+  FAIL sentence reused across D253 and D277: 寫低嗰日嗰點有出入，應該信邊份
+  FAIL sentence reused across D257 and D277: 我頭先撈亂咗，係份文件嗰份呀
+  FAIL sentence reused across D210 and D278: 我手上嗰張單對唔齊，點處理
+  FAIL sentence reused across D233 and D279: 唔係嗰樣，我講緊書面嗰份
+  FAIL sentence reused across D264 and D280: 文件同嗰個日子打交叉，我想分清
+  FAIL sentence reused across D260 and D286: 個時間同書面唔同，邊個先啱
+  FAIL sentence reused across D279 and D286: 文件仲有出入，交租要停嗎㗎
+  FAIL sentence reused across D263 and D287: 我手上嗰封信對唔齊，點處理
+  FAIL sentence reused across D206 and D288: 我見寫低嗰日有兩個版本，點跟
+  FAIL sentence reused across D279 and D288: 書面嗰份唔一致，我使唔使先更正
+  FAIL sentence reused across D244 and D289: 等陣，我指書面嗰份，唔係另一份
+  FAIL sentence reused across D217 and D290: 我頭先撈亂咗，係付款嗰份嗰份
+  FAIL sentence reused across D276 and D291: 嗰封信有兩份，係咪揀最新嗰份
+  FAIL sentence reused across D270 and D291: 唔係呀，今次要對書面嗰份㗎
+  FAIL sentence reused across D216 and D292: 講嗰筆數，我手上兩份對唔上
+  FAIL sentence reused across D274 and D294: 個金額前後唔一樣，要改邊份
+  FAIL sentence reused across D290 and D294: 兩份付款嗰份唔同，我要交邊份
+  FAIL sentence reused across D259 and D296: 寫低嗰日前後唔一樣，要改邊份
+  FAIL sentence reused across D205 and D298: 頭先個日期同書面唔同，邊個先啱呢
+  FAIL sentence reused across D214 and D299: 嗰筆數嗰點有出入，應該信邊份
+  FAIL sentence reused across D260 and D300: 我手上手頭資料對唔齊，點處理
+  FAIL sentence reused across D305 and D309: 唔係，個限期我要用頭先個日期再核實
+  FAIL sentence reused across D303 and D314: 唔係，個限期我要用個金額再核實
+  FAIL sentence reused across D311 and D322: 份收據未齊，我可唔可以交住
+  FAIL sentence reused across D319 and D325: 手頭嗰份趕唔切到，應該點講呢
+  FAIL sentence reused across D311 and D326: 等陣，限期嗰句我記錯咗，要對寫低嗰日
+  FAIL sentence reused across D316 and D327: 嗰筆數係我記低嗰個，限期點計
+  FAIL sentence reused across D324 and D329: 我係按頭先個日期去計，啱唔啱㗎
+  FAIL sentence reused across D310 and D330: 頭先個日期會唔會改到個限期
+  FAIL sentence reused across D303 and D332: 個金額會唔會改到個限期喇
+  FAIL sentence reused across D327 and D332: 萬一遲咗，收費仲可唔可以跟
+  FAIL sentence reused across D312 and D336: 個日子我講錯咗，寫低嗰日先係我手上嗰個
+  FAIL sentence reused across D330 and D338: 頭先個日期會唔會改到個限期
+  FAIL sentence reused across D334 and D338: 唔係，個限期我要用個時間再核實
+  FAIL sentence reused across D326 and D339: 等陣，限期嗰句我記錯咗，要對寫低嗰日
+  FAIL sentence reused across D307 and D340: 個時間係我記低嗰個，限期點計
+  FAIL sentence reused across D337 and D347: 我想由頭先個日期對返實際限期呀
+  FAIL sentence reused across D339 and D347: 等陣，限期嗰句我記錯咗，要對寫低嗰日
+  FAIL sentence reused across D347 and D348: 遲咗先補到，聆訊會唔會受影響
+  FAIL sentence reused across D315 and D350: 唔係，個限期我要用寫住嗰筆再核實
+  FAIL sentence reused across D329 and D351: 等陣，限期嗰句我記錯咗，要對個時間
+  FAIL sentence reused across D306 and D352: 等陣，限期嗰句我記錯咗，要對頭先個日期
+  FAIL sentence reused across D324 and D353: 書面嗰份趕唔切到，應該點講
+  FAIL sentence reused across D308 and D354: 限期就到，嗰份證明可唔可以後補
+  FAIL sentence reused across D312 and D356: 我係按個時間去計，啱唔啱
+  FAIL sentence reused across D334 and D358: 講日子，我手上得嗰個日子，點核實
+  FAIL sentence reused across D346 and D358: 手頭資料趕唔切到，應該點講
+  FAIL sentence reused across D304 and D359: 留底嗰份未齊，我可唔可以交住
+  FAIL sentence reused across D346 and D359: 我頭先講反個時間，應該查頭先個日期
+  FAIL sentence reused across D310 and D361: 唔係，個限期我要用嗰個日子再核實呀
+  FAIL sentence reused across D362 and D364: 講限期，學校嗰邊我想穩陣啲
+  FAIL sentence reused across D354 and D364: 限期同頭先個日期有關，我想對日子呢
+  FAIL sentence reused across D349 and D364: 我頭先講反個時間，應該查寫低嗰日呢
+  FAIL sentence reused across D330 and D365: 個日子我講錯咗，頭先個日期先係我手上嗰個㗎
+  FAIL sentence reused across D334 and D366: 差嗰封信嗰邊，會唔會當遲
+  FAIL sentence reused across D338 and D367: 頭先個日期會唔會改到個限期
+  FAIL sentence reused across D338 and D370: 唔係，個限期我要用個時間再核實
+  FAIL sentence reused across D305 and D371: 限期同個時間有關，我想對日子
+  FAIL sentence reused across D323 and D372: 我頭先講反個時間，應該查個時間
+  FAIL sentence reused across D369 and D373: 過咗限期先搞掂，交易安排有咩後果
+  FAIL sentence reused across D350 and D373: 唔係，個限期我要用寫住嗰筆再核實
+  FAIL sentence reused across D358 and D377: 手頭資料趕唔切到，應該點講
+  FAIL sentence reused across D313 and D377: 等陣，限期嗰句我記錯咗，要對嗰個日子
+  FAIL sentence reused across D371 and D380: 限期同個時間有關，我想對日子
+  FAIL sentence reused across D352 and D381: 等陣，限期嗰句我記錯咗，要對頭先個日期
+  FAIL sentence reused across D372 and D384: 我頭先講反個時間，應該查個時間
+  FAIL sentence reused across D377 and D390: 等陣，限期嗰句我記錯咗，要對嗰個日子
+  FAIL sentence reused across D314 and D391: 唔係，個限期我要用個金額再核實
+  FAIL sentence reused across D314 and D394: 頭先嗰數係我記低嗰個，限期點計
+  FAIL sentence reused across D384 and D400: 我頭先講反個時間，應該查個時間
+  FAIL sentence reused across D402 and D406: 個決定維持，登記仲有咩可以做
+  FAIL sentence reused across D401 and D406: 唔係重新申請，我係問公司嗰邊嗰個決定
+  FAIL sentence reused across D403 and D408: 個金額對唔上個決定，係用咗咩資料喎
+  FAIL sentence reused across D405 and D408: 唔係重新申請，我係問呢宗生意嗰個決定
+  FAIL sentence reused across D409 and D414: 決定照舊嘅話，維修跟住點做係咩
+  FAIL sentence reused across D413 and D415: 決定照舊嘅話，退款跟住點做係咩
+  FAIL sentence reused across D411 and D422: 我留住份收據，想知評估時有冇用
+  FAIL sentence reused across D405 and D424: 寫低嗰日同結果打交叉，應該點睇㗎
+  FAIL sentence reused across D416 and D435: 講證明，嗰張單有冇放入個決定度
+  FAIL sentence reused across D433 and D438: 份通知喺紀錄入面，決定有冇理到
+  FAIL sentence reused across D437 and D439: 嗰封信之前交過，個決定有冇睇到
+  FAIL sentence reused across D426 and D440: 決定入面嗰個日子似乎唔啱，我想問返
+  FAIL sentence reused across D440 and D442: 我講清楚先：定居嗰邊係覆核個結果
+  FAIL sentence reused across D428 and D443: 我見結果同個時間有出入，想核實
+  FAIL sentence reused across D413 and D446: 頭先個日期對唔上個決定，係用咗咩資料
+  FAIL sentence reused across D445 and D452: 等陣，今次係問呢次聆訊個決定，唔係重做
+  FAIL sentence reused across D446 and D454: 頭先個日期對唔上個決定，係用咗咩資料
+  FAIL sentence reused across D432 and D454: 手頭資料喺紀錄入面，決定有冇理到
+  FAIL sentence reused across D425 and D455: 決定入面頭先個日期似乎唔啱，我想問返呀
+  FAIL sentence reused across D454 and D456: 頭先個日期對唔上個決定，係用咗咩資料
+  FAIL sentence reused across D455 and D458: 決定照舊嘅話，個預約跟住點做係咩
+  FAIL sentence reused across D404 and D459: 講證明，留底嗰份有冇放入個決定度
+  FAIL sentence reused across D430 and D459: 我係追問個預約個結果，唔係開新一宗囉
+  FAIL sentence reused across D446 and D461: 手頭資料之前交過，個決定有冇睇到㗎
+  FAIL sentence reused across D421 and D462: 嗰個日子對唔上個決定，係用咗咩資料
+  FAIL sentence reused across D443 and D465: 我見結果同個時間有出入，想核實
+  FAIL sentence reused across D461 and D468: 唔係重新申請，我係問入學嗰邊嗰個決定
+  FAIL sentence reused across D435 and D469: 講證明，嗰張單有冇放入個決定度
+  FAIL sentence reused across D458 and D471: 個時間對唔上個決定，係用咗咩資料
+  FAIL sentence reused across D448 and D476: 書面嗰份喺紀錄入面，決定有冇理到
+  FAIL sentence reused across D438 and D481: 份通知喺紀錄入面，決定有冇理到
+  FAIL sentence reused across D419 and D482: 決定入面頭先個日期似乎唔啱，我想問返
+  FAIL sentence reused across D410 and D482: 如果決定唔變，維修跟住點喇
+  FAIL sentence reused across D480 and D482: 我係追問租屋嗰邊個結果，唔係開新一宗
+  FAIL sentence reused across D422 and D485: 我留住份收據，想知評估時有冇用
+  FAIL sentence reused across D453 and D486: 頭先個日期同結果打交叉，應該點睇
+  FAIL sentence reused across D432 and D487: 決定入面嗰筆數似乎唔啱，我想問返㗎
+  FAIL sentence reused across D449 and D489: 我留住嗰封信，想知評估時有冇用
+  FAIL sentence reused across D469 and D489: 寫住嗰筆對唔上個決定，係用咗咩資料呀
+  FAIL sentence reused across D417 and D490: 份收據喺紀錄入面，決定有冇理到
+  FAIL sentence reused across D485 and D494: 我留住份收據，想知評估時有冇用
+  FAIL sentence reused across D491 and D495: 我留住份通知，想知評估時有冇用
+  FAIL sentence reused across D452 and D496: 我見結果同嗰個日子有出入，想核實
+  FAIL sentence reused across D484 and D497: 決定入面寫低嗰日似乎唔啱，我想問返喎
+  FAIL sentence reused across D496 and D497: 我留住手頭資料，想知評估時有冇用
+  FAIL sentence reused across D494 and D497: 我係追問福利嗰邊個結果，唔係開新一宗
+  FAIL sentence reused across D488 and D500: 寫低嗰日同結果打交叉，應該點睇
+  FAIL sentence reused across D497 and D500: 決定照舊嘅話，津貼跟住點做係咩
+
+VERIFY: FAIL (444 violation(s)) -- 500 dialogues, 6000 segments  [frozen-field comparison SKIPPED]
