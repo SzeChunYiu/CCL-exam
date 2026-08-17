@@ -24,8 +24,9 @@ jobs:
           python3 -m py_compile scripts/build_native_500_release_v2.py
           python3 -m py_compile scripts/build_native_500_release_v3.py
           python3 -m py_compile scripts/build_native_500_release_v4.py
-          python3 -m py_compile scripts/build_native_500_release_v5.py
+          python3 -m py_compile scripts/build_native_500_release_v6.py
           python3 -m py_compile scripts/generate_release_audio.py
+          python3 -m py_compile scripts/build_release_audio_manifest.py
           python3 -m py_compile scripts/verify_final4_bank.py
           python3 -m py_compile scripts/audit_native_cantonese_v2.py
           python3 -m py_compile scripts/audit_cantonese_lexical_transfer.py
@@ -34,7 +35,7 @@ jobs:
       - name: Build immutable candidate
         run: |
           set -euo pipefail
-          python3 scripts/build_native_500_release_v5.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
+          python3 scripts/build_native_500_release_v6.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
       - name: Structural verification
         run: |
           set -euo pipefail
