@@ -23,6 +23,7 @@ jobs:
           set -euo pipefail
           python3 -m py_compile scripts/build_native_500_release.py
           python3 -m py_compile scripts/build_native_500_release_v7.py
+          python3 -m py_compile scripts/build_native_500_release_v8.py
           python3 -m py_compile scripts/generate_release_audio.py
           python3 -m py_compile scripts/build_release_audio_manifest.py
           python3 -m py_compile scripts/verify_final4_bank.py
@@ -33,7 +34,7 @@ jobs:
       - name: Build immutable candidate
         run: |
           set -euo pipefail
-          python3 scripts/build_native_500_release_v7.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
+          python3 scripts/build_native_500_release_v8.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" | tee build-release.json
       - name: Structural verification
         run: |
           set -euo pipefail
