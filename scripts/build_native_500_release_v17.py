@@ -20,14 +20,16 @@ def paired_evidence(seed,variant,action):
     ec=v11.v10.strip_unspoken_entities(ep[idx],yc)
     return ec,yc
 
-def accurate_term_yue(seed,fallback):
+def accurate_term_yue(seed,variant,action,fallback):
     full=f2.clean_yue(seed['term_yue']).split('即係',1)[0]
-    if '緊急護理診所' in full: return '緊急護理診所'
+    if '緊急護理診所' in full:
+        forms=['醫療保險嘅緊急護理診所','國民醫療保險緊急護理診所','醫療保險嗰間緊急護理診所','緊急護理診所嘅醫療保險安排']
+        return forms[base.h(seed['title'],variant,action,'urgent-clinic-term')%len(forms)]
     return fallback
 
 def cue_set17(seed,variant,action):
     c=dict(v11.cue_set(seed,variant,action)); e,ec=paired_evidence(seed,variant,action)
-    c['e'],c['ec']=e,ec; c['tc']=accurate_term_yue(seed,c['tc'])
+    c['e'],c['ec']=e,ec; c['tc']=accurate_term_yue(seed,variant,action,c['tc'])
     if action==1:
         c['f']=str(seed['fact_en']).strip(); c['fc']=f2.atom(seed['fact_yue'])
     return c
