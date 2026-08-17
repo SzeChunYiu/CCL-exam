@@ -1,0 +1,95 @@
+name: Build CCL content and calibrated audio
+
+on:
+  push:
+    branches: [ccl-practice-pack, main]
+    paths:
+      - 'scripts/**'
+      - 'src/**'
+      - 'resources/espeak-cantonese/**'
+      - '.github/workflows/build-content-and-audio.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Expand committed source payloads
+        run: python3 scripts/unpack_sources.py
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y espeak ffmpeg python3-pip
+          python3 -m pip install --break-system-packages mistune numpy
+
+      - name: Build the final dialogue bank and study assets
+        run: python3 scripts/build_all_content.py
+
+      - name: Validate content
+        run: |
+          python3 - <<'PY'
+          import json
+          d=json.load(open('data/dialogues.json'))
+          c=json.load(open('data/config.json'))
+          g=json.load(open('data/glossary.json'))
+          assert len(d)==100
+          assert sum(len(x['segments']) for x in d)==1394
+          assert all(12<=len(x['segments'])<=16 for x in d)
+          assert max(s['wc'] for x in d for s in x['segments'])<=35
+          assert min(x['total'] for x in d)>=260 and max(x['total'] for x in d)<=330
+          assert len(c['mockPairs'])==50
+          by={x['id']:x for x in d}
+          flat=[i for p in c['mockPairs'] for i in p]
+          assert len(flat)==100 and len(set(flat))==100 and set(flat)==set(by)
+          assert all(by[a]['topic']!=by[b]['topic'] for a,b in c['mockPairs'])
+          assert len(g)==198
+          print('content QA OK')
+          PY
+
+      - name: Expand and compile Cantonese pronunciation dictionary
+        run: |
+          python3 scripts/fetch_cantonese_dict.py
+          cd resources/espeak-cantonese
+          sudo espeak --compile=zhy
+          rm -f zhy_list
+
+      - name: Build calibrated MP3 bundles
+        run: python3 scripts/build_audio_bundles.py
+
+      - name: Validate audio and pace
+        run: |
+          python3 - <<'PY'
+          import json, os
+          d=json.load(open('data/dialogues.json'))
+          a=json.load(open('data/audio_manifest.json'))
+          assert len(a['dialogues'])==100
+          assert sum(len(v['segments']) for v in a['dialogues'].values()) == sum(len(x['segments']) for x in d)
+          assert len(a['bundles'])==4
+          assert all(os.path.getsize('assets/audio-bundles/'+name)==meta['bytes'] for name,meta in a['bundles'].items())
+          c=a['calibration']
+          assert abs(c['generatedEnglishWpm']-160)<=3
+          assert abs(c['generatedCantoneseEquivalentWpm']-179)<=3
+          print('audio QA OK',c)
+          PY
+
+      - name: Commit generated site assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app.js scripts/build_ccl_pack.py data study materials practice_pack assets/audio-bundles
+          if git diff --cached --quiet; then
+            echo "Generated assets unchanged"
+          else
+            git commit -m "Build final CCL content and calibrated audio [skip ci]"
+            git push origin HEAD:${GITHUB_REF_NAME}
+          fi
