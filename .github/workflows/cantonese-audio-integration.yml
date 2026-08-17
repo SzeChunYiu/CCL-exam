@@ -25,6 +25,7 @@ jobs:
           python3 -m py_compile scripts/build_native_500_final3.py
           python3 -m py_compile scripts/build_native_500_final4.py
           python3 -m py_compile scripts/build_native_500_final5.py
+          python3 -m py_compile scripts/export_final_materials.py
           python3 -m py_compile scripts/qa_cantonese.py
           python3 -m py_compile scripts/verify_rewrite.py
           python3 -m py_compile scripts/verify_final_bank.py
@@ -69,6 +70,13 @@ jobs:
           python3 scripts/qa_cantonese.py data/dialogues.json --json > build/diagnostics/final5-corpus.json
           cat build/diagnostics/final5-corpus.json
 
+      - name: Export study materials from final JSON
+        id: export
+        continue-on-error: true
+        run: |
+          python3 scripts/export_final_materials.py > build/diagnostics/final5-export.json
+          cat build/diagnostics/final5-export.json
+
       - name: Add final5 repetition hotspot report
         if: always()
         run: |
@@ -106,18 +114,20 @@ jobs:
           NATIVE: ${{ steps.native.outcome }}
           LEXICAL: ${{ steps.lexical.outcome }}
           CORPUS: ${{ steps.corpus.outcome }}
+          EXPORT: ${{ steps.export.outcome }}
         run: |
-          printf 'build=%s verify=%s native=%s lexical=%s corpus=%s\n' "$BUILD" "$VERIFY" "$NATIVE" "$LEXICAL" "$CORPUS"
+          printf 'build=%s verify=%s native=%s lexical=%s corpus=%s export=%s\n' "$BUILD" "$VERIFY" "$NATIVE" "$LEXICAL" "$CORPUS" "$EXPORT"
           test "$BUILD" = success
           test "$VERIFY" = success
           test "$NATIVE" = success
           test "$LEXICAL" = success
           test "$CORPUS" = success
+          test "$EXPORT" = success
 
-      - name: Commit generated bank only after every gate passes
+      - name: Commit generated bank and fresh materials only after every gate passes
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/dialogues.json data/config.json data/site_summary.json data/repetition_qa.json practice_pack materials/SOURCE_SCRIPTS.md materials/MODEL_ANSWERS.md || true
-          git commit -m 'Finalize 500 native Cantonese CCL dialogues [skip ci]' || true
+          git add data/dialogues.json data/config.json data/site_summary.json data/repetition_qa.json practice_pack materials/SOURCE_SCRIPTS.md materials/MODEL_ANSWERS.md build/release-samples.md || true
+          git commit -m 'Finalize 500 native Cantonese CCL dialogues and study materials [skip ci]' || true
           git push
