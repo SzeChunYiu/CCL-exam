@@ -1,0 +1,16 @@
+{
+  "provider": "supabase",
+  "mode": "segments",
+  "version": "v3-neural",
+  "baseUrl": "https://dmoputkgxuaeoypmdfhm.supabase.co/storage/v1/object/public/ccl-audio/v3",
+  "voices": {
+    "en-P": "en-AU-WilliamNeural",
+    "en-C": "en-AU-NatashaNeural",
+    "yue-P": "zh-HK-WanLungNeural",
+    "yue-C": "zh-HK-HiuGaaiNeural"
+  },
+  "rates": {
+    "en": "+0%",
+    "yue": "+5%"
+  }
+}
