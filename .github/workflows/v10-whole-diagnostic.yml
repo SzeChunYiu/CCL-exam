@@ -1,4 +1,4 @@
-name: V10 Whole Dialogue Diagnostic
+name: V11 Whole Dialogue Diagnostic
 
 on:
   push:
@@ -13,32 +13,32 @@ defaults:
 
 jobs:
   diagnostic:
-    if: ${{ contains(github.event.head_commit.message || '', '[diag v10]') }}
+    if: ${{ contains(github.event.head_commit.message || '', '[diag v11]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Build v10 candidate
+      - name: Build v11 candidate
         run: |
           set -euo pipefail
-          python3 scripts/build_native_500_release_v10.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" > v10-build.json
+          python3 scripts/build_native_500_release_v11.py --out "$GITHUB_WORKSPACE/build/candidate/dialogues.json" > v11-build.json
       - name: Run whole-dialogue audit and keep report
         run: |
           set +e
-          python3 scripts/audit_whole_dialogue_naturalness.py build/candidate/dialogues.json --json > v10-whole.json
+          python3 scripts/audit_whole_dialogue_naturalness.py build/candidate/dialogues.json --json > v11-whole.json
           code=$?
           set -e
           echo "audit_exit=$code"
-          test -s v10-whole.json
+          test -s v11-whole.json
       - name: Persist diagnostic
         run: |
           set -euo pipefail
           mkdir -p diagnostics
-          cp v10-build.json diagnostics/v10-build.json
-          cp v10-whole.json diagnostics/v10-whole.json
+          cp v11-build.json diagnostics/v11-build.json
+          cp v11-whole.json diagnostics/v11-whole.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add diagnostics/v10-build.json diagnostics/v10-whole.json
-          git commit -m 'Record v10 whole-dialogue diagnostic [skip release gate] [skip audio]'
+          git add diagnostics/v11-build.json diagnostics/v11-whole.json
+          git commit -m 'Record v11 whole-dialogue diagnostic [skip release gate] [skip audio]'
           git push origin HEAD:release/native-500-final2
