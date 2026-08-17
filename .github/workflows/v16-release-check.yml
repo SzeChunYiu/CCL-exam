@@ -1,0 +1,46 @@
+name: V16 Aligned Release Check
+on:
+  push:
+    branches: [release/native-500-final2]
+permissions:
+  contents: write
+defaults:
+  run:
+    shell: bash
+jobs:
+  check:
+    if: ${{ contains(github.event.head_commit.message || '', '[diag v16]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - name: Build candidate
+        run: |
+          set -euo pipefail
+          python3 scripts/build_native_500_release_v16.py --out build/v16-dialogues.json | tee v16-build.json
+      - name: Full release gates
+        run: |
+          set -euo pipefail
+          python3 scripts/verify_final4_bank.py build/v16-dialogues.json --json | tee v16-verify.json
+          python3 scripts/audit_native_cantonese_v2.py build/v16-dialogues.json --json | tee v16-native.json
+          python3 scripts/audit_cantonese_lexical_transfer.py build/v16-dialogues.json --json | tee v16-lexical.json
+          python3 scripts/qa_cantonese.py build/v16-dialogues.json --json | tee v16-corpus.json
+          python3 scripts/audit_whole_dialogue_naturalness.py build/v16-dialogues.json --json | tee v16-whole.json
+      - name: Generate review slice
+        run: |
+          set -euo pipefail
+          cp data/dialogues.json data/dialogues.before-v16.json
+          cp build/v16-dialogues.json data/dialogues.json
+          python3 scripts/export_final_materials.py
+          cp build/release-samples.md diagnostics/v16-samples.md
+          mv data/dialogues.before-v16.json data/dialogues.json
+          mkdir -p diagnostics
+          cp v16-build.json v16-verify.json v16-native.json v16-lexical.json v16-corpus.json v16-whole.json diagnostics/
+      - name: Persist reports only
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add diagnostics/v16-*.json diagnostics/v16-samples.md
+          git commit -m 'Record v16 aligned release check [skip release gate] [skip audio]'
+          git push origin HEAD:release/native-500-final2
