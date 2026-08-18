@@ -21,6 +21,7 @@ jobs:
           python3 -m py_compile \
             scripts/build_coherent_500.py \
             scripts/build_coherent_500_v3.py \
+            scripts/build_coherent_500_v4.py \
             scripts/audit_dialogue_logic.py \
             scripts/verify_final4_bank.py \
             scripts/audit_native_cantonese_v2.py \
@@ -31,7 +32,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p build/coherent
-          python3 scripts/build_coherent_500_v3.py --out build/coherent/dialogues.json | tee build/coherent/build.json
+          python3 scripts/build_coherent_500_v4.py --out build/coherent/dialogues.json | tee build/coherent/build.json
       - name: Run every release audit
         id: audits
         run: |
