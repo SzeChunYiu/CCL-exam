@@ -2,6 +2,8 @@ name: Coherent 500 Dialogue Gate
 on:
   push:
     branches: [fix/coherent-dialogues-v1]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
