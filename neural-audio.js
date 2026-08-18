@@ -4,6 +4,7 @@
 // bundles whose speaker assignments may no longer match the release bank.
 (() => {
   const legacyPlay = AudioEngine.prototype.play;
+  const LEARNER_BASE_RATE = 0.88;
   AudioEngine.prototype.play = async function(id, segIndex, rate=1, onDone){
     const remote=state.remoteAudio;
     if(!remote || remote.mode!=='segments' || !remote.baseUrl){
@@ -18,7 +19,13 @@
       this.audio.load();
       this.audio.src=url;
       this.audio.preload='auto';
-      this.audio.playbackRate=rate;
+      // The stored files match the fast official-style reference pace, but that
+      // proved too quick for repeated learner practice. Slow every neural segment
+      // consistently while preserving voice pitch. Existing training rate controls
+      // still work, but are applied on top of this learner-friendly baseline.
+      if('preservesPitch' in this.audio) this.audio.preservesPitch=true;
+      if('webkitPreservesPitch' in this.audio) this.audio.webkitPreservesPitch=true;
+      this.audio.playbackRate=Math.max(0.75,Math.min(1.0,rate*LEARNER_BASE_RATE));
       await new Promise((resolve,reject)=>{
         const ok=()=>{cleanup();resolve()};
         const bad=()=>{cleanup();reject(new Error('Neural MP3 metadata failed'))};
@@ -47,8 +54,7 @@
   const oldAudioSettings=audioSettingsHTML;
   audioSettingsHTML=function(){
     if(!state.remoteAudio || state.remoteAudio.mode!=='segments') return oldAudioSettings();
-    const ref=state.config?.audioCalibration||{};
-    return `<section class="section card"><div class="section-head"><div><div class="eyebrow">Audio realism</div><h2>Neural two-speaker source audio</h2><p class="muted">The primary source audio is prerecorded as individual Supabase MP3 segments. The Australian professional/officer speaks <strong>English</strong>; the immigrant/community client speaks <strong>Cantonese</strong>. English is calibrated around <strong>${ref.englishTargetWpm||168} wpm</strong>. Cantonese uses two Hong Kong voices calibrated to the reference pace: <strong>WanLung +37%</strong> and <strong>HiuMaan +39%</strong>, with neutral <strong>+0Hz</strong> release pitch.</p></div></div><div class="notice">Mock mode uses 1.0× playback. Training can use 0.9×, 1.0× or 1.08×. If a neural file cannot load, the app falls back to current-text device speech rather than obsolete bundled audio.</div></section>`;
+    return `<section class="section card"><div class="section-head"><div><div class="eyebrow">Audio realism</div><h2>Neural two-speaker source audio</h2><p class="muted">The primary source audio is prerecorded as individual Supabase MP3 segments. The Australian professional/officer speaks <strong>English</strong>; the immigrant/community client speaks <strong>Cantonese</strong>. After listener review, neural playback now uses a <strong>0.88× learner baseline</strong> with pitch preservation, so normal practice is roughly <strong>145–150 English wpm</strong> and <strong>3.5–3.7 Cantonese Han/s</strong> instead of the faster reference-recording pace.</p></div></div><div class="notice">The speed buttons still adjust playback, but they now sit on top of the learner baseline. If a neural file cannot load, the app falls back to current-text device speech rather than obsolete bundled audio.</div></section>`;
   };
 
   // app.js historically named this card "100-dialogue Library" and hard-coded a
