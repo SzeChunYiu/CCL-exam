@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """Coherent v6: stage-level compact fallbacks for the full 500-bank.
 
-The causal planner remains coherent-v2.  This layer only replaces an overlong
-surface realization with a shorter realization of the *same dialogue stage*.
-No scoreable date/amount/detail/evidence that is contractually required at that
-stage is silently truncated.
+The causal planner remains coherent-v2. This layer replaces any overlong
+surface realization with a shorter realization of the same dialogue stage.
 """
 from __future__ import annotations
 import argparse,json
@@ -16,6 +14,45 @@ import build_coherent_500_v5 as v5
 
 ROOT=Path(__file__).resolve().parents[1]
 DEFAULT_OUT=ROOT/'build'/'coherent500.json'
+
+# The source catalogue has twelve exact topic labels. The first coherent surface
+# layer used simplified names for several of them; complete the policy here so no
+# domain is silently coerced into an unrelated service type.
+base.RULE.update({
+ 'Consumer affairs':('consumer guarantees and contract terms can affect the remedy','消費者保障同合約條款會影響可以要求嘅補救'),
+ 'Immigration and settlement':('visa action depends on the current status and conditions','簽證處理要跟而家嘅身份同條件'),
+ 'Community':('local services depend on the address, eligibility and booking details','本地服務要睇地址、資格同預約資料'),
+ 'Financial':('transactions and account features depend on the product terms','交易同戶口功能要跟實際產品條款'),
+ 'Legal':('deadlines and formal directions apply until officially changed','限期同正式指示未正式更改之前都要跟'),
+})
+base.CONCERN.update({
+ 'Consumer affairs':('I could lose money or a remedy','怕蝕錢或者冇補救'),
+ 'Immigration and settlement':('my visa status could be affected','怕簽證身份受影響'),
+ 'Community':('the booking or local service could be delayed','怕預約或者本地服務延誤'),
+ 'Financial':('my money or account access could be affected','怕款項或者戶口使用受影響'),
+ 'Legal':('I could miss a legal deadline or direction','怕錯過法律限期或者正式指示'),
+})
+base.INTERIM.update({
+ 'Consumer affairs':('keep the item and written messages','保留貨品同書面訊息'),
+ 'Immigration and settlement':('keep following the current visa conditions','繼續跟而家嘅簽證條件'),
+ 'Community':('keep the booking and contact details current','保留預約，聯絡資料有變就更新'),
+ 'Financial':('keep the account secure and save transaction records','保護好戶口，亦要保存交易紀錄'),
+ 'Legal':('follow the current direction and keep the legal papers together','照而家嘅正式指示做，法律文件放埋一齊'),
+})
+base.REVIEW.update({
+ 'Consumer affairs':('write to the trader, then use the state consumer service','先書面搵商戶，再用州消費者服務'),
+ 'Immigration and settlement':('use the formal migration review pathway','按正式移民覆核途徑處理'),
+ 'Community':('ask the council or service to review the decision','要求市議會或者服務機構覆核決定'),
+ 'Financial':('use internal dispute resolution, then AFCA if eligible','先用內部爭議程序，合資格先再向金融投訴機構跟進'),
+ 'Legal':('use the stated review process or get community legal advice','按列明嘅覆核程序處理，或者搵社區法律服務問清楚'),
+})
+v3.ACTION.update({
+ 'Consumer affairs':('write to the trader for a remedy','書面搵商戶要求補救'),
+ 'Immigration and settlement':('use the official migration process','用正式移民程序處理'),
+ 'Community':('ask the council or service to check the record','叫市議會或者服務機構核對紀錄'),
+ 'Financial':('ask the bank to review the account record','叫銀行覆核戶口紀錄'),
+ 'Legal':('follow the stated legal or service process','按列明嘅法律或者服務程序處理'),
+})
 
 def compact(stage,ns,s,i,v):
     org_en,org_yu,portal_en,portal_yu=base.service_pair(ns,s)
@@ -48,7 +85,6 @@ def compact(stage,ns,s,i,v):
       'review_answer':(f"For {issue}, keep the written reason and {review_en}. Put the result with the {term} record.",f"{iy}要留低書面原因，再{review_yu}。最後結果同{ty}紀錄放埋一齊。"),
       'closure':(f"Thanks. I’ll keep the reference and follow the {term} step for {issue}.",f"明白喇。{iy}我會留低編號，再照{ty}嗰步跟進呀。"),
     }
-    if stage not in table: raise KeyError(stage)
     en,yu=table[stage]
     return v3.tidy_articles(en),base.clean_yue(yu)
 
@@ -57,8 +93,7 @@ def make_dialogue(ns,s,i,v):
     did=f'D{v*100+i+1:03d}'; segs=[]
     for n,((role,en,yu),stage) in enumerate(zip(raw,base.STAGES[v]),1):
         en=v3.tidy_articles(en.replace("'","’")); yu=base.clean_yue(yu)
-        if len(en.split())>35:
-            en,yu=compact(stage,ns,s,i,v)
+        if len(en.split())>35: en,yu=compact(stage,ns,s,i,v)
         words=len(en.split()); want='P' if n%2 else 'C'
         if words>35: raise SystemExit(f'{did} S{n:02d}: compact {stage} still {words} words >35: {en}')
         if role!=want: raise SystemExit(f'{did} S{n:02d}: role {role} != {want}')
