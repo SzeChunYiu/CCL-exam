@@ -1,0 +1,80 @@
+name: Coherent 500 Dialogue Gate
+on:
+  push:
+    branches: [fix/coherent-dialogues-v1]
+  workflow_dispatch:
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  coherent-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax
+        run: |
+          set -euo pipefail
+          python3 -m py_compile \
+            scripts/build_coherent_500.py \
+            scripts/audit_dialogue_logic.py \
+            scripts/verify_final4_bank.py \
+            scripts/audit_native_cantonese_v2.py \
+            scripts/audit_cantonese_lexical_transfer.py \
+            scripts/qa_cantonese.py \
+            scripts/audit_whole_dialogue_naturalness.py
+      - name: Build coherent candidate
+        run: |
+          set -euo pipefail
+          mkdir -p build/coherent
+          python3 scripts/build_coherent_500.py --out build/coherent/dialogues.json | tee build/coherent/build.json
+      - name: Causal dialogue logic gate
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_dialogue_logic.py build/coherent/dialogues.json --json | tee build/coherent/logic.json
+      - name: Structural and scoreable fidelity gate
+        run: |
+          set -euo pipefail
+          python3 scripts/verify_final4_bank.py build/coherent/dialogues.json --json | tee build/coherent/verify.json
+      - name: Native Cantonese gate
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_native_cantonese_v2.py build/coherent/dialogues.json --json | tee build/coherent/native.json
+      - name: Cantonese lexical-transfer gate
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_cantonese_lexical_transfer.py build/coherent/dialogues.json --json | tee build/coherent/lexical.json
+      - name: Cantonese corpus gate
+        run: |
+          set -euo pipefail
+          python3 scripts/qa_cantonese.py build/coherent/dialogues.json --json | tee build/coherent/corpus.json
+      - name: Whole-dialogue anti-template gate
+        run: |
+          set -euo pipefail
+          python3 scripts/audit_whole_dialogue_naturalness.py build/coherent/dialogues.json --json | tee build/coherent/whole.json
+      - name: Write review slice
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('build/coherent/dialogues.json')
+          if not p.exists(): raise SystemExit(0)
+          bank=json.loads(p.read_text())
+          ids={'D001','D031','D037','D057','D101','D203','D307','D412','D499'}
+          out=[]
+          for d in bank:
+              if d['id'] in ids:
+                  out.append(f"## {d['id']} — {d['title']} ({d['topic']})")
+                  for s in d['segments']:
+                      out += [f"{s['n']:02d} {s['role']} [{s['stage']}]",f"EN: {s['en']}",f"粵: {s['yue']}",""]
+          Path('build/coherent/review.md').write_text('\n'.join(out),encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coherent500-candidate
+          path: build/coherent
+          if-no-files-found: warn
+          retention-days: 7
