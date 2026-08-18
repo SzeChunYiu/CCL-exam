@@ -124,6 +124,43 @@ def wc(text: str) -> int:
     return len(WORD.findall(text))
 
 
+# The older coherent backbone predates the strict <=35-word release cap and has
+# a handful of turns one or two words over.  Shorten only generic service filler;
+# scenario nouns, facts, evidence, dates, amounts and legal/modal content are
+# deliberately absent from this table.
+SHORTEN = [
+    ("Before we discuss the status, please confirm your full name and reference number for the file.",
+     "Before we discuss it, please confirm your name and file reference."),
+    ("Before we continue, please confirm your full name and reference number.",
+     "Before we continue, please confirm your name and reference."),
+    ("I don’t want to accidentally make it worse.", "I don’t want to make it worse."),
+    ("I don't want to accidentally make it worse.", "I don't want to make it worse."),
+    ("I don’t want to miss something important.", "I don’t want to miss anything."),
+    ("I don't want to miss something important.", "I don't want to miss anything."),
+    ("That gives the service the information needed to assess the matter.",
+     "That gives the service what it needs to assess the matter."),
+    ("If the issue remains unresolved,", "If it remains unresolved,"),
+    ("while the matter is being assessed", "while it is being assessed"),
+    ("rather than keep making phone calls", "rather than keep calling"),
+    ("I want to plan for that possibility.", "I want to plan for it."),
+    ("I’d rather provide it now than discover the problem after", "I’d rather provide it now than find out after"),
+    ("I'd rather provide it now than discover the problem after", "I'd rather provide it now than find out after"),
+    ("the service finishes assessing the matter", "the assessment finishes"),
+]
+
+
+def fit_cap(text: str, did: str, n: int) -> str:
+    if wc(text)<=35:
+        return text
+    out=text
+    for old,new in SHORTEN:
+        out=out.replace(old,new)
+        if wc(out)<=35:
+            return out
+    # A failure here is intentional.  Never silently truncate a scoreable turn.
+    raise SystemExit(f"{did} S{n:02d}: {wc(out)} words > 35 after safe shortening: {out}")
+
+
 def make_dialogue(ns: dict, seed: dict, seed_index: int, variant: int) -> dict:
     # make_turns chooses its complete encounter arc from i % 5.  Multiplying the
     # scenario index by five keeps scenario-specific rotation deterministic while
@@ -132,6 +169,7 @@ def make_dialogue(ns: dict, seed: dict, seed_index: int, variant: int) -> dict:
     if len(turns)!=12:
         raise SystemExit(f"{seed['title']} v{variant}: expected 12 turns, got {len(turns)}")
     stages=STAGES[variant]
+    did=f"D{variant*100+seed_index+1:03d}"
     segs=[]
     for n,((role,en,yue),stage) in enumerate(zip(turns,stages),1):
         if role not in {"P","C"}:
@@ -139,6 +177,7 @@ def make_dialogue(ns: dict, seed: dict, seed_index: int, variant: int) -> dict:
         expected_role = "P" if n % 2 else "C"
         if role != expected_role:
             raise SystemExit(f"{seed['title']} v{variant} S{n}: expected {expected_role}, got {role}")
+        en=fit_cap(en,did,n)
         source_lang = "en" if role=="P" else "yue"
         source = en if source_lang=="en" else yue
         model = yue if source_lang=="en" else en
@@ -147,7 +186,6 @@ def make_dialogue(ns: dict, seed: dict, seed_index: int, variant: int) -> dict:
             "source":source, "model":model, "en":en, "yue":yue,
             "wc":wc(en), "stage":stage,
         })
-    did=f"D{variant*100+seed_index+1:03d}"
     maxseg=max(s["wc"] for s in segs)
     if maxseg>35:
         raise SystemExit(f"{did}: max English segment {maxseg} > 35")
