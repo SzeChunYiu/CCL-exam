@@ -1,19 +1,28 @@
 {
   "provider": "supabase",
   "mode": "segments",
-  "version": "v3-neural",
-  "cacheVersion": "speaker-policy-20260817-r2",
-  "baseUrl": "https://dmoputkgxuaeoypmdfhm.supabase.co/storage/v1/object/public/ccl-audio/v3",
+  "version": "native500-fc50dedc153b-neural",
+  "cacheVersion": "native500-fc50dedc153b",
+  "baseUrl": "https://dmoputkgxuaeoypmdfhm.supabase.co/storage/v1/object/public/ccl-audio/native500-fc50dedc153b",
+  "previousBaseUrl": "https://dmoputkgxuaeoypmdfhm.supabase.co/storage/v1/object/public/ccl-audio/v3",
+  "uploadedAt": "2026-08-17T21:30:19.274456+00:00",
   "voices": {
-    "en-P": "en-AU-WilliamNeural",
-    "en-C": "en-AU-NatashaNeural",
-    "yue-P": "zh-HK-WanLungNeural",
-    "yue-C": "zh-HK-HiuGaaiNeural"
+    "en": [
+      "en-AU-WilliamNeural",
+      "en-AU-NatashaNeural"
+    ],
+    "yue": [
+      "zh-HK-WanLungNeural",
+      "zh-HK-HiuMaanNeural"
+    ]
   },
   "rates": {
-    "en": "+0%",
-    "yue": "+10%"
+    "en-AU-WilliamNeural": "+7%",
+    "en-AU-NatashaNeural": "+29%",
+    "zh-HK-WanLungNeural": "+37%",
+    "zh-HK-HiuMaanNeural": "+39%"
   },
+  "pitch": "+0Hz",
   "speakerPolicy": {
     "professional": "English",
     "client": "Cantonese",

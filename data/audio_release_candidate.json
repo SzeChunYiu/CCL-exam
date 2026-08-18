@@ -1,0 +1,89 @@
+{
+  "bankSha256": "fc50dedc153b595c5923269865c29446f18ec73b2c2918d9b74ffe500f8d08e9",
+  "prefix": "native500-fc50dedc153b",
+  "dialogues": 500,
+  "segments": 6000,
+  "storageVerified": true,
+  "verifiedAt": "2026-08-17T21:30:19.274456+00:00",
+  "rates": {
+    "en-AU-WilliamNeural": "+7%",
+    "en-AU-NatashaNeural": "+29%",
+    "zh-HK-WanLungNeural": "+37%",
+    "zh-HK-HiuMaanNeural": "+39%"
+  },
+  "pitch": "+0Hz",
+  "batchCalibration": [
+    {
+      "en": {
+        "n": 600,
+        "median": 165.26,
+        "target": 168.0,
+        "unit": "wpm",
+        "delta_pct": -1.6
+      },
+      "yue": {
+        "n": 600,
+        "median": 3.97,
+        "target": 4.07,
+        "unit": "Han/s",
+        "delta_pct": -2.5
+      },
+      "per_voice": {
+        "en-AU-NatashaNeural": {"n": 300, "median": 165.8},
+        "zh-HK-WanLungNeural": {"n": 300, "median": 3.93},
+        "zh-HK-HiuMaanNeural": {"n": 300, "median": 4.01},
+        "en-AU-WilliamNeural": {"n": 300, "median": 164.7}
+      },
+      "files": 1200,
+      "total_seconds": 6456.9
+    },
+    {
+      "en": {"n": 600, "median": 167.63, "target": 168.0, "unit": "wpm", "delta_pct": -0.2},
+      "yue": {"n": 600, "median": 4.07, "target": 4.07, "unit": "Han/s", "delta_pct": -0.1},
+      "per_voice": {
+        "zh-HK-WanLungNeural": {"n": 300, "median": 4.06},
+        "en-AU-NatashaNeural": {"n": 300, "median": 167.37},
+        "en-AU-WilliamNeural": {"n": 300, "median": 167.84},
+        "zh-HK-HiuMaanNeural": {"n": 300, "median": 4.07}
+      },
+      "files": 1200,
+      "total_seconds": 6661.1
+    },
+    {
+      "en": {"n": 600, "median": 167.88, "target": 168.0, "unit": "wpm", "delta_pct": -0.1},
+      "yue": {"n": 600, "median": 4.1, "target": 4.07, "unit": "Han/s", "delta_pct": 0.8},
+      "per_voice": {
+        "zh-HK-WanLungNeural": {"n": 300, "median": 4.1},
+        "en-AU-NatashaNeural": {"n": 300, "median": 167.88},
+        "zh-HK-HiuMaanNeural": {"n": 300, "median": 4.1},
+        "en-AU-WilliamNeural": {"n": 300, "median": 167.57}
+      },
+      "files": 1200,
+      "total_seconds": 6821.2
+    },
+    {
+      "en": {"n": 600, "median": 170.25, "target": 168.0, "unit": "wpm", "delta_pct": 1.3},
+      "yue": {"n": 600, "median": 4.1, "target": 4.07, "unit": "Han/s", "delta_pct": 0.7},
+      "per_voice": {
+        "en-AU-NatashaNeural": {"n": 300, "median": 170.13},
+        "zh-HK-WanLungNeural": {"n": 300, "median": 4.06},
+        "zh-HK-HiuMaanNeural": {"n": 300, "median": 4.14},
+        "en-AU-WilliamNeural": {"n": 300, "median": 170.35}
+      },
+      "files": 1200,
+      "total_seconds": 6628.7
+    },
+    {
+      "en": {"n": 600, "median": 166.67, "target": 168.0, "unit": "wpm", "delta_pct": -0.8},
+      "yue": {"n": 600, "median": 4.23, "target": 4.07, "unit": "Han/s", "delta_pct": 4.0},
+      "per_voice": {
+        "zh-HK-WanLungNeural": {"n": 300, "median": 4.23},
+        "en-AU-NatashaNeural": {"n": 300, "median": 167.32},
+        "en-AU-WilliamNeural": {"n": 300, "median": 165.95},
+        "zh-HK-HiuMaanNeural": {"n": 300, "median": 4.23}
+      },
+      "files": 1200,
+      "total_seconds": 6811.0
+    }
+  ]
+}
