@@ -3,7 +3,7 @@
 
 The older release gates were good at grammar, duplication, Cantonese register and
 scoreable fidelity, but they did not test whether turn N actually set up turn
-N+1.  This gate makes the conversation contract explicit.
+N+1. This gate makes the conversation contract explicit.
 
 It rejects:
 * broken P/C alternation or language-role policy;
@@ -11,7 +11,8 @@ It rejects:
 * a question not followed by its expected answer class;
 * premature filing/closure before process/timing/review answers;
 * v18-style artificial correction loops;
-* cross-language scenario-component swaps (issue, term, fact, evidence);
+* cross-language scenario-component swaps at the stage where that component is
+  contractually required (issue, term, fact, evidence);
 * generic acknowledgements pretending to be a substantive answer.
 """
 from __future__ import annotations
@@ -32,6 +33,24 @@ STAGES={
     2:["opening","fact_concern","term_rule","consequence_question","process_answer","evidence_question","submission_answer","consequence_followup","timing_answer","review_question","review_answer","closure"],
     3:["opening","deadline_concern","term_rule","consequence_question","process_answer","evidence_discrepancy","submission_answer","consequence_followup","timing_answer","review_question","review_answer","closure"],
     4:["opening","fact_concern","term_rule","missing_info_question","process_answer","evidence_question","submission_answer","timing_question","timing_answer","change_question","review_answer","closure"],
+}
+
+# Full scenario atoms that each whole-dialogue arc explicitly places in fixed
+# turns. Checking them there avoids false positives from short generic words
+# appearing coincidentally elsewhere, while still catching real bilingual swaps
+# such as English "photo ID" paired with Cantonese "tax details".
+EXPECTED_COMPONENTS={
+    0:{1:"issue",3:"term",4:"detail",6:"doc",7:"doc",12:"term"},
+    1:{1:"issue",2:"term",3:"detail",6:"doc",12:"term"},
+    2:{1:"issue",2:"detail",3:"term",6:"doc",12:"term"},
+    3:{1:"issue",2:"detail",3:"term",6:"doc",12:"term"},
+    4:{1:"issue",2:"detail",3:"term",6:"doc",12:"term"},
+}
+COMP_KEYS={
+    "issue":("issue_en","issue_yue"),
+    "term":("term_en","term_yue"),
+    "detail":("detail_en","detail_yue"),
+    "doc":("doc_en","doc_yue"),
 }
 
 ANSWER_AFTER={
@@ -137,18 +156,18 @@ def audit(bank:list[dict]) -> dict:
             for rx in BAD_EN:
                 if rx.search(en): failures.append(f"{did}:S{n:02d}:malformed_en:{rx.pattern}")
 
-            # Paired semantic atoms: if one side names a full scenario component,
-            # the other side must name its paired component in the same segment.
-            for ek,yk in (("issue_en","issue_yue"),("term_en","term_yue"),("detail_en","detail_yue"),("doc_en","doc_yue")):
-                epart,ypart=seed[ek],seed[yk]
-                ehas,yhas=has(en,epart),has(y,ypart)
-                if ehas or yhas:
-                    counts["component_checks"]+=1
-                    if ehas!=yhas:
-                        failures.append(f"{did}:S{n:02d}:component_swap:{ek}/{yk}")
+            comp=EXPECTED_COMPONENTS[variant].get(n)
+            if comp:
+                ek,yk=COMP_KEYS[comp]
+                counts["component_checks"]+=1
+                if not has(en,seed[ek]) or not has(y,seed[yk]):
+                    failures.append(
+                        f"{did}:S{n:02d}:missing_paired_{comp}:"
+                        f"en={has(en,seed[ek])},yue={has(y,seed[yk])}"
+                    )
 
             # Substantive professional answer stages must not collapse into a bare
-            # acknowledgement.  This catches dialogue shells that never answer.
+            # acknowledgement. This catches dialogue shells that never answer.
             if s.get("stage") in {"process_answer","submission_answer","timing_answer","review_answer","term_rule"}:
                 if ACK_EN.match(norm(en)) or len(re.findall(r"[A-Za-z]+",en))<8:
                     failures.append(f"{did}:S{n:02d}:non_substantive_answer:{s.get('stage')}")
@@ -160,7 +179,6 @@ def audit(bank:list[dict]) -> dict:
                 if segs[i+1].get("stage")!=ANSWER_AFTER[stage]:
                     failures.append(f"{did}:S{i+1:02d}:{stage}->expected {ANSWER_AFTER[stage]}")
 
-        # Closure must come after review/change handling and be spoken by client.
         if segs[-1].get("stage")!="closure" or segs[-1].get("role")!="C":
             failures.append(f"{did}:bad_closure")
 
