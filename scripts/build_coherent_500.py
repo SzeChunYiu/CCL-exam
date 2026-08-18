@@ -133,6 +133,7 @@ SHORTEN = [
      "Before we discuss it, please confirm your name and file reference."),
     ("Before we continue, please confirm your full name and reference number.",
      "Before we continue, please confirm your name and reference."),
+    ("The detail I was given is that", "I was told"),
     ("I don’t want to accidentally make it worse.", "I don’t want to make it worse."),
     ("I don't want to accidentally make it worse.", "I don't want to make it worse."),
     ("I don’t want to miss something important.", "I don’t want to miss anything."),
