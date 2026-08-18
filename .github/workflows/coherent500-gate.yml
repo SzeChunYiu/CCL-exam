@@ -1,0 +1,96 @@
+name: Coherent 500 Dialogue Gate
+on:
+  push:
+    branches: [fix/coherent-dialogues-v1]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  coherent-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax
+        run: |
+          set -euo pipefail
+          python3 -m py_compile \
+            scripts/build_coherent_500.py \
+            scripts/build_coherent_500_v3.py \
+            scripts/build_coherent_500_v4.py \
+            scripts/build_coherent_500_v5.py \
+            scripts/build_coherent_500_v6.py \
+            scripts/build_coherent_500_v7.py \
+            scripts/build_coherent_500_v8.py \
+            scripts/build_coherent_500_v9.py \
+            scripts/build_coherent_500_v10.py \
+            scripts/build_coherent_500_v11.py \
+            scripts/audit_dialogue_logic.py \
+            scripts/verify_final4_bank.py \
+            scripts/audit_native_cantonese_v2.py \
+            scripts/audit_cantonese_lexical_transfer.py \
+            scripts/qa_cantonese.py \
+            scripts/audit_whole_dialogue_naturalness.py
+      - name: Build coherent candidate
+        run: |
+          set -euo pipefail
+          mkdir -p build/coherent
+          python3 scripts/build_coherent_500_v11.py --out build/coherent/dialogues.json | tee build/coherent/build.json
+      - name: Run every release audit
+        id: audits
+        run: |
+          set +e
+          python3 scripts/audit_dialogue_logic.py build/coherent/dialogues.json --json > build/coherent/logic.json; logic=$?
+          python3 scripts/verify_final4_bank.py build/coherent/dialogues.json --json > build/coherent/verify.json; verify=$?
+          python3 scripts/audit_native_cantonese_v2.py build/coherent/dialogues.json --json > build/coherent/native.json; native=$?
+          python3 scripts/audit_cantonese_lexical_transfer.py build/coherent/dialogues.json --json > build/coherent/lexical.json; lexical=$?
+          python3 scripts/qa_cantonese.py build/coherent/dialogues.json --json > build/coherent/corpus.json; corpus=$?
+          python3 scripts/audit_whole_dialogue_naturalness.py build/coherent/dialogues.json --json > build/coherent/whole.json; whole=$?
+          set -e
+          printf 'logic=%s\nverify=%s\nnative=%s\nlexical=%s\ncorpus=%s\nwhole=%s\n' "$logic" "$verify" "$native" "$lexical" "$corpus" "$whole" | tee build/coherent/exit-codes.txt
+          echo "logic=$logic" >> "$GITHUB_OUTPUT"
+          echo "verify=$verify" >> "$GITHUB_OUTPUT"
+          echo "native=$native" >> "$GITHUB_OUTPUT"
+          echo "lexical=$lexical" >> "$GITHUB_OUTPUT"
+          echo "corpus=$corpus" >> "$GITHUB_OUTPUT"
+          echo "whole=$whole" >> "$GITHUB_OUTPUT"
+      - name: Write review slice
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('build/coherent/dialogues.json')
+          if not p.exists(): raise SystemExit(0)
+          bank=json.loads(p.read_text())
+          ids={'D001','D031','D037','D057','D101','D203','D307','D412','D499'}
+          out=[]
+          for d in bank:
+              if d['id'] in ids:
+                  out.append(f"## {d['id']} — {d['title']} ({d['topic']})")
+                  for s in d['segments']:
+                      out += [f"{s['n']:02d} {s['role']} [{s['stage']}]",f"EN: {s['en']}",f"粵: {s['yue']}",""]
+          Path('build/coherent/review.md').write_text('\n'.join(out),encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: coherent500-candidate
+          path: build/coherent
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Enforce all audits
+        if: always()
+        run: |
+          set -euo pipefail
+          cat build/coherent/exit-codes.txt
+          test '${{ steps.audits.outputs.logic }}' = '0'
+          test '${{ steps.audits.outputs.verify }}' = '0'
+          test '${{ steps.audits.outputs.native }}' = '0'
+          test '${{ steps.audits.outputs.lexical }}' = '0'
+          test '${{ steps.audits.outputs.corpus }}' = '0'
+          test '${{ steps.audits.outputs.whole }}' = '0'
